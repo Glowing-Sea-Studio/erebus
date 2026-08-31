@@ -1,0 +1,50 @@
+@layer erb.components {
+  .erb-inline {
+    display: flex;
+    flex-direction: row;
+    gap: var(--erb-inline-gap, var(--erb-space-4));
+    align-items: var(--erb-inline-align, center);
+    justify-content: var(--erb-inline-justify, flex-start);
+    flex-wrap: wrap;
+  }
+
+  @container (min-width: 480px) {
+    .erb-inline {
+      gap: var(--erb-inline-gap-sm, var(--erb-inline-gap, var(--erb-space-4)));
+      align-items: var(--erb-inline-align-sm, var(--erb-inline-align, center));
+      justify-content: var(--erb-inline-justify-sm, var(--erb-inline-justify, flex-start));
+    }
+  }
+
+  @container (min-width: 768px) {
+    .erb-inline {
+      gap: var(--erb-inline-gap-md, var(--erb-inline-gap-sm, var(--erb-inline-gap, var(--erb-space-4))));
+      align-items: var(--erb-inline-align-md, var(--erb-inline-align-sm, var(--erb-inline-align, center)));
+      justify-content: var(--erb-inline-justify-md, var(--erb-inline-justify-sm, var(--erb-inline-justify, flex-start)));
+    }
+  }
+
+  @container (min-width: 1024px) {
+    .erb-inline {
+      gap: var(--erb-inline-gap-lg, var(--erb-inline-gap-md, var(--erb-inline-gap-sm, var(--erb-inline-gap, var(--erb-space-4)))));
+      align-items: var(--erb-inline-align-lg, var(--erb-inline-align-md, var(--erb-inline-align-sm, var(--erb-inline-align, center))));
+      justify-content: var(--erb-inline-justify-lg, var(--erb-inline-justify-md, var(--erb-inline-justify-sm, var(--erb-inline-justify, flex-start))));
+    }
+  }
+
+  @container (min-width: 1280px) {
+    .erb-inline {
+      gap: var(--erb-inline-gap-xl, var(--erb-inline-gap-lg, var(--erb-inline-gap-md, var(--erb-inline-gap-sm, var(--erb-inline-gap, var(--erb-space-4))))));
+      align-items: var(--erb-inline-align-xl, var(--erb-inline-align-lg, var(--erb-inline-align-md, var(--erb-inline-align-sm, var(--erb-inline-align, center)))));
+      justify-content: var(--erb-inline-justify-xl, var(--erb-inline-justify-lg, var(--erb-inline-justify-md, var(--erb-inline-justify-sm, var(--erb-inline-justify, flex-start)))));
+    }
+  }
+
+  @container (min-width: 1536px) {
+    .erb-inline {
+      gap: var(--erb-inline-gap-2xl, var(--erb-inline-gap-xl, var(--erb-inline-gap-lg, var(--erb-inline-gap-md, var(--erb-inline-gap-sm, var(--erb-inline-gap, var(--erb-space-4)))))));
+      align-items: var(--erb-inline-align-2xl, var(--erb-inline-align-xl, var(--erb-inline-align-lg, var(--erb-inline-align-md, var(--erb-inline-align-sm, var(--erb-inline-align, center))))));
+      justify-content: var(--erb-inline-justify-2xl, var(--erb-inline-justify-xl, var(--erb-inline-justify-lg, var(--erb-inline-justify-md, var(--erb-inline-justify-sm, var(--erb-inline-justify, flex-start))))));
+    }
+  }
+}

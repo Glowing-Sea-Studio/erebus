@@ -1,0 +1,36 @@
+@layer erb.components {
+  .erb-split {
+    display: flex;
+    flex-direction: column;
+    gap: var(--erb-split-gap, var(--erb-space-4));
+    container-type: inline-size;
+  }
+
+  /* Usually split means side-by-side above a certain breakpoint (or container size) */
+  @container (min-width: 768px) {
+    .erb-split {
+      flex-direction: row;
+      align-items: var(--erb-split-align, stretch);
+    }
+
+    .erb-split > * {
+      flex: 1 1 0%;
+    }
+
+    /* Allows proportional splitting like 1/3 and 2/3 */
+    .erb-split[data-fraction="1/3"] > :first-child { flex: 1 1 0%; }
+    .erb-split[data-fraction="1/3"] > :last-child { flex: 2 1 0%; }
+    
+    .erb-split[data-fraction="2/3"] > :first-child { flex: 2 1 0%; }
+    .erb-split[data-fraction="2/3"] > :last-child { flex: 1 1 0%; }
+    
+    .erb-split[data-fraction="1/4"] > :first-child { flex: 1 1 0%; }
+    .erb-split[data-fraction="1/4"] > :last-child { flex: 3 1 0%; }
+    
+    .erb-split[data-fraction="3/4"] > :first-child { flex: 3 1 0%; }
+    .erb-split[data-fraction="3/4"] > :last-child { flex: 1 1 0%; }
+    
+    .erb-split[data-fraction="auto-start"] > :first-child { flex: 0 0 auto; }
+    .erb-split[data-fraction="auto-end"] > :last-child { flex: 0 0 auto; }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "panel": {
+    "bg": {
+      "$type": "color",
+      "$value": "{color.bg.surface}"
+    },
+    "shadow": {
+      "$type": "shadow",
+      "$value": "{shadow.2xl}"
+    },
+    "width": {
+      "$type": "dimension",
+      "$value": "24rem"
+    }
+  }
+}

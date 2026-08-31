@@ -1,0 +1,46 @@
+.erb-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--erb-card-bg);
+  border: 1px solid var(--erb-card-border);
+  border-radius: var(--erb-card-radius);
+  box-shadow: var(--erb-card-shadow);
+  overflow: hidden;
+}
+
+.erb-card-header {
+  padding: var(--erb-card-p-md);
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--erb-size-1);
+}
+
+.erb-card-title {
+  margin: 0;
+  font-family: var(--erb-font-heading);
+  font-size: var(--erb-text-lg-font-size);
+  font-weight: var(--erb-weight-semibold);
+  color: var(--erb-color-fg-default);
+}
+
+.erb-card-description {
+  margin: 0;
+  font-family: var(--erb-font-sans);
+  font-size: var(--erb-text-sm-font-size);
+  color: var(--erb-color-fg-muted);
+}
+
+.erb-card-body {
+  padding: var(--erb-card-p-md);
+  font-family: var(--erb-font-sans);
+  color: var(--erb-color-fg-default);
+}
+
+.erb-card-footer {
+  padding: var(--erb-card-p-md);
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--erb-size-2);
+}

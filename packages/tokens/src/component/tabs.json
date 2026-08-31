@@ -1,0 +1,20 @@
+{
+  "tabs": {
+    "border": {
+      "$type": "color",
+      "$value": "{color.border.default}"
+    },
+    "active-border": {
+      "$type": "color",
+      "$value": "{color.accent.bg}"
+    },
+    "active-color": {
+      "$type": "color",
+      "$value": "{color.accent.bg}"
+    },
+    "inactive-color": {
+      "$type": "color",
+      "$value": "{color.fg.muted}"
+    }
+  }
+}

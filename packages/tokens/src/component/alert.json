@@ -1,0 +1,16 @@
+{
+  "alert": {
+    "radius": {
+      "$type": "dimension",
+      "$value": "{radius.md}"
+    },
+    "p": {
+      "$type": "dimension",
+      "$value": "1rem"
+    },
+    "border-width": {
+      "$type": "dimension",
+      "$value": "1px"
+    }
+  }
+}

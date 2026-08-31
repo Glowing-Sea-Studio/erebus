@@ -1,0 +1,8 @@
+.erb-header {
+  height: var(--erb-header-height);
+  background-color: var(--erb-header-bg);
+  border-block-end: 1px solid var(--erb-header-border);
+  display: flex;
+  align-items: center;
+  padding-inline: 1.5rem;
+}

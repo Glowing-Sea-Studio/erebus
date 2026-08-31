@@ -1,0 +1,40 @@
+.erb-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--erb-modal-overlay-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+.erb-modal-content {
+  background-color: var(--erb-modal-bg);
+  border-radius: var(--erb-modal-radius);
+  box-shadow: var(--erb-modal-shadow);
+  padding: 1.5rem;
+  max-width: 32rem;
+  width: 100%;
+  position: relative;
+}
+.erb-modal-header {
+  margin-block-end: 1rem;
+}
+.erb-modal-title {
+  font-family: var(--erb-font-family-heading);
+  font-size: var(--erb-font-size-xl);
+  font-weight: 600;
+  color: var(--erb-color-fg-default);
+}
+.erb-modal-description {
+  color: var(--erb-color-fg-muted);
+  font-size: var(--erb-font-size-sm);
+  margin-block-start: 0.5rem;
+}
+.erb-modal-body {
+  margin-block-end: 1.5rem;
+}
+.erb-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

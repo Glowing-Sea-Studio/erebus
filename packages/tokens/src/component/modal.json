@@ -1,0 +1,20 @@
+{
+  "modal": {
+    "overlay-bg": {
+      "$type": "color",
+      "$value": "{color.bg.overlay}"
+    },
+    "bg": {
+      "$type": "color",
+      "$value": "{color.bg.surface}"
+    },
+    "radius": {
+      "$type": "dimension",
+      "$value": "{radius.xl}"
+    },
+    "shadow": {
+      "$type": "shadow",
+      "$value": "{shadow.xl}"
+    }
+  }
+}

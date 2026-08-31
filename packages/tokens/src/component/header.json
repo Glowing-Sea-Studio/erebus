@@ -1,0 +1,16 @@
+{
+  "header": {
+    "bg": {
+      "$type": "color",
+      "$value": "{color.bg.canvas}"
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{color.border.default}"
+    },
+    "height": {
+      "$type": "dimension",
+      "$value": "4rem"
+    }
+  }
+}

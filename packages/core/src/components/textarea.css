@@ -1,0 +1,32 @@
+
+.erb-textarea {
+  display: block;
+  width: 100%;
+  min-height: 5rem;
+  background-color: var(--erb-textarea-bg);
+  border: 1px solid var(--erb-textarea-border);
+  color: var(--erb-textarea-text);
+  border-radius: var(--erb-textarea-radius);
+  padding: 0.5rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  resize: vertical;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.erb-textarea:focus {
+  outline: none;
+  border-color: var(--erb-textarea-focus-ring);
+  box-shadow: 0 0 0 2px var(--erb-textarea-focus-ring);
+}
+
+.erb-textarea:disabled {
+  background-color: var(--erb-textarea-disabled-bg);
+  color: var(--erb-textarea-disabled-text);
+  cursor: not-allowed;
+}
+
+.erb-textarea[aria-invalid="true"] {
+  border-color: var(--erb-color-danger-main);
+}

@@ -1,0 +1,163 @@
+@layer erb.base {
+  :root {
+    color-scheme: light dark;
+  }
+
+  [data-erb-theme='default'][data-erb-mode='light'] {
+    --erb-color-bg-canvas: var(--erb-color-gray-50);
+    --erb-color-bg-surface: var(--erb-color-gray-50);
+    --erb-color-bg-surface-raised: var(--erb-color-gray-50);
+    --erb-color-bg-surface-sunken: var(--erb-color-gray-100);
+    --erb-color-bg-overlay: rgb(0 0 0 / 0.5);
+    --erb-color-bg-muted: var(--erb-color-gray-100);
+    --erb-color-bg-inverse: var(--erb-color-gray-900);
+
+    --erb-color-fg-default: var(--erb-color-gray-900);
+    --erb-color-fg-muted: var(--erb-color-gray-600);
+    --erb-color-fg-subtle: var(--erb-color-gray-500);
+    --erb-color-fg-on-accent: var(--erb-color-gray-50);
+    --erb-color-fg-on-inverse: var(--erb-color-gray-50);
+    --erb-color-fg-disabled: var(--erb-color-gray-400);
+    --erb-color-fg-link: var(--erb-color-blue-600);
+    --erb-color-fg-link-hover: var(--erb-color-blue-700);
+
+    --erb-color-border-default: var(--erb-color-gray-200);
+    --erb-color-border-muted: var(--erb-color-gray-100);
+    --erb-color-border-strong: var(--erb-color-gray-300);
+    --erb-color-border-focus: var(--erb-color-blue-500);
+    --erb-color-border-inverse: var(--erb-color-gray-700);
+    
+    --erb-color-accent-bg: var(--erb-color-blue-600);
+    --erb-color-accent-bg-hover: var(--erb-color-blue-700);
+    --erb-color-accent-bg-active: var(--erb-color-blue-800);
+    --erb-color-accent-bg-subtle: var(--erb-color-blue-50);
+    --erb-color-accent-bg-subtle-hover: var(--erb-color-blue-100);
+    --erb-color-accent-fg: var(--erb-color-blue-600);
+    --erb-color-accent-fg-on-bg: var(--erb-color-blue-50);
+    --erb-color-accent-border: var(--erb-color-blue-200);
+
+    --erb-color-neutral-bg: var(--erb-color-gray-800);
+    --erb-color-neutral-bg-hover: var(--erb-color-gray-900);
+    --erb-color-neutral-bg-active: var(--erb-color-gray-950);
+    --erb-color-neutral-bg-subtle: var(--erb-color-gray-100);
+    --erb-color-neutral-bg-subtle-hover: var(--erb-color-gray-200);
+    --erb-color-neutral-fg: var(--erb-color-gray-700);
+    --erb-color-neutral-fg-on-bg: var(--erb-color-gray-50);
+    --erb-color-neutral-border: var(--erb-color-gray-300);
+
+    --erb-color-success-bg: var(--erb-color-green-600);
+    --erb-color-success-bg-hover: var(--erb-color-green-700);
+    --erb-color-success-bg-active: var(--erb-color-green-800);
+    --erb-color-success-bg-subtle: var(--erb-color-green-50);
+    --erb-color-success-bg-subtle-hover: var(--erb-color-green-100);
+    --erb-color-success-fg: var(--erb-color-green-700);
+    --erb-color-success-fg-on-bg: var(--erb-color-green-50);
+    --erb-color-success-border: var(--erb-color-green-200);
+
+    --erb-color-warning-bg: var(--erb-color-amber-500);
+    --erb-color-warning-bg-hover: var(--erb-color-amber-600);
+    --erb-color-warning-bg-active: var(--erb-color-amber-700);
+    --erb-color-warning-bg-subtle: var(--erb-color-amber-50);
+    --erb-color-warning-bg-subtle-hover: var(--erb-color-amber-100);
+    --erb-color-warning-fg: var(--erb-color-amber-800);
+    --erb-color-warning-fg-on-bg: var(--erb-color-amber-50);
+    --erb-color-warning-border: var(--erb-color-amber-200);
+
+    --erb-color-danger-bg: var(--erb-color-red-600);
+    --erb-color-danger-bg-hover: var(--erb-color-red-700);
+    --erb-color-danger-bg-active: var(--erb-color-red-800);
+    --erb-color-danger-bg-subtle: var(--erb-color-red-50);
+    --erb-color-danger-bg-subtle-hover: var(--erb-color-red-100);
+    --erb-color-danger-fg: var(--erb-color-red-600);
+    --erb-color-danger-fg-on-bg: var(--erb-color-red-50);
+    --erb-color-danger-border: var(--erb-color-red-200);
+
+    --erb-color-info-bg: var(--erb-color-blue-600);
+    --erb-color-info-bg-hover: var(--erb-color-blue-700);
+    --erb-color-info-bg-active: var(--erb-color-blue-800);
+    --erb-color-info-bg-subtle: var(--erb-color-blue-50);
+    --erb-color-info-bg-subtle-hover: var(--erb-color-blue-100);
+    --erb-color-info-fg: var(--erb-color-blue-700);
+    --erb-color-info-fg-on-bg: var(--erb-color-blue-50);
+    --erb-color-info-border: var(--erb-color-blue-200);
+  }
+
+  [data-erb-theme='default'][data-erb-mode='dark'] {
+    --erb-color-bg-canvas: var(--erb-color-gray-950);
+    --erb-color-bg-surface: var(--erb-color-gray-900);
+    --erb-color-bg-surface-raised: var(--erb-color-gray-800);
+    --erb-color-bg-surface-sunken: var(--erb-color-gray-950);
+    --erb-color-bg-overlay: rgb(0 0 0 / 0.8);
+    --erb-color-bg-muted: var(--erb-color-gray-800);
+    --erb-color-bg-inverse: var(--erb-color-gray-50);
+
+    --erb-color-fg-default: var(--erb-color-gray-50);
+    --erb-color-fg-muted: var(--erb-color-gray-400);
+    --erb-color-fg-subtle: var(--erb-color-gray-500);
+    --erb-color-fg-on-accent: var(--erb-color-gray-50);
+    --erb-color-fg-on-inverse: var(--erb-color-gray-900);
+    --erb-color-fg-disabled: var(--erb-color-gray-600);
+    --erb-color-fg-link: var(--erb-color-blue-400);
+    --erb-color-fg-link-hover: var(--erb-color-blue-300);
+
+    --erb-color-border-default: var(--erb-color-gray-800);
+    --erb-color-border-muted: var(--erb-color-gray-900);
+    --erb-color-border-strong: var(--erb-color-gray-700);
+    --erb-color-border-focus: var(--erb-color-blue-500);
+    --erb-color-border-inverse: var(--erb-color-gray-300);
+
+    --erb-color-accent-bg: var(--erb-color-blue-600);
+    --erb-color-accent-bg-hover: var(--erb-color-blue-500);
+    --erb-color-accent-bg-active: var(--erb-color-blue-400);
+    --erb-color-accent-bg-subtle: var(--erb-color-blue-900);
+    --erb-color-accent-bg-subtle-hover: var(--erb-color-blue-800);
+    --erb-color-accent-fg: var(--erb-color-blue-400);
+    --erb-color-accent-fg-on-bg: var(--erb-color-blue-50);
+    --erb-color-accent-border: var(--erb-color-blue-800);
+
+    --erb-color-neutral-bg: var(--erb-color-gray-50);
+    --erb-color-neutral-bg-hover: var(--erb-color-gray-200);
+    --erb-color-neutral-bg-active: var(--erb-color-gray-300);
+    --erb-color-neutral-bg-subtle: var(--erb-color-gray-800);
+    --erb-color-neutral-bg-subtle-hover: var(--erb-color-gray-700);
+    --erb-color-neutral-fg: var(--erb-color-gray-300);
+    --erb-color-neutral-fg-on-bg: var(--erb-color-gray-900);
+    --erb-color-neutral-border: var(--erb-color-gray-700);
+
+    --erb-color-success-bg: var(--erb-color-green-600);
+    --erb-color-success-bg-hover: var(--erb-color-green-500);
+    --erb-color-success-bg-active: var(--erb-color-green-400);
+    --erb-color-success-bg-subtle: var(--erb-color-green-900);
+    --erb-color-success-bg-subtle-hover: var(--erb-color-green-800);
+    --erb-color-success-fg: var(--erb-color-green-400);
+    --erb-color-success-fg-on-bg: var(--erb-color-green-50);
+    --erb-color-success-border: var(--erb-color-green-800);
+
+    --erb-color-warning-bg: var(--erb-color-amber-500);
+    --erb-color-warning-bg-hover: var(--erb-color-amber-400);
+    --erb-color-warning-bg-active: var(--erb-color-amber-300);
+    --erb-color-warning-bg-subtle: var(--erb-color-amber-900);
+    --erb-color-warning-bg-subtle-hover: var(--erb-color-amber-800);
+    --erb-color-warning-fg: var(--erb-color-amber-400);
+    --erb-color-warning-fg-on-bg: var(--erb-color-amber-950);
+    --erb-color-warning-border: var(--erb-color-amber-800);
+
+    --erb-color-danger-bg: var(--erb-color-red-600);
+    --erb-color-danger-bg-hover: var(--erb-color-red-500);
+    --erb-color-danger-bg-active: var(--erb-color-red-400);
+    --erb-color-danger-bg-subtle: var(--erb-color-red-900);
+    --erb-color-danger-bg-subtle-hover: var(--erb-color-red-800);
+    --erb-color-danger-fg: var(--erb-color-red-400);
+    --erb-color-danger-fg-on-bg: var(--erb-color-red-50);
+    --erb-color-danger-border: var(--erb-color-red-800);
+
+    --erb-color-info-bg: var(--erb-color-blue-600);
+    --erb-color-info-bg-hover: var(--erb-color-blue-500);
+    --erb-color-info-bg-active: var(--erb-color-blue-400);
+    --erb-color-info-bg-subtle: var(--erb-color-blue-900);
+    --erb-color-info-bg-subtle-hover: var(--erb-color-blue-800);
+    --erb-color-info-fg: var(--erb-color-blue-400);
+    --erb-color-info-fg-on-bg: var(--erb-color-blue-50);
+    --erb-color-info-border: var(--erb-color-blue-800);
+  }
+}

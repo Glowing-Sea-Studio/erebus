@@ -1,0 +1,35 @@
+.erb-menu {
+  background-color: var(--erb-menu-bg);
+  border: 1px solid var(--erb-menu-border);
+  border-radius: var(--erb-menu-radius);
+  box-shadow: var(--erb-menu-shadow);
+  padding: 0.25rem;
+  min-width: 12rem;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+}
+.erb-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  font-size: var(--erb-font-size-sm);
+  color: var(--erb-color-fg-default);
+  border-radius: calc(var(--erb-menu-radius) - 2px);
+  cursor: pointer;
+  user-select: none;
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: start;
+}
+.erb-menu-item:hover,
+.erb-menu-item:focus {
+  background-color: var(--erb-menu-item-bg-hover);
+  outline: none;
+}
+.erb-menu-separator {
+  height: 1px;
+  background-color: var(--erb-menu-border);
+  margin-block: 0.25rem;
+}

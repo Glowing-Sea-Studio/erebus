@@ -1,0 +1,60 @@
+@layer erb.components {
+  .erb-flex {
+    display: flex;
+    flex-direction: var(--erb-flex-direction, row);
+    gap: var(--erb-flex-gap, 0);
+    align-items: var(--erb-flex-align, stretch);
+    justify-content: var(--erb-flex-justify, flex-start);
+    flex-wrap: var(--erb-flex-wrap, nowrap);
+  }
+
+  @container (min-width: 480px) {
+    .erb-flex {
+      flex-direction: var(--erb-flex-direction-sm, var(--erb-flex-direction, row));
+      gap: var(--erb-flex-gap-sm, var(--erb-flex-gap, 0));
+      align-items: var(--erb-flex-align-sm, var(--erb-flex-align, stretch));
+      justify-content: var(--erb-flex-justify-sm, var(--erb-flex-justify, flex-start));
+      flex-wrap: var(--erb-flex-wrap-sm, var(--erb-flex-wrap, nowrap));
+    }
+  }
+
+  @container (min-width: 768px) {
+    .erb-flex {
+      flex-direction: var(--erb-flex-direction-md, var(--erb-flex-direction-sm, var(--erb-flex-direction, row)));
+      gap: var(--erb-flex-gap-md, var(--erb-flex-gap-sm, var(--erb-flex-gap, 0)));
+      align-items: var(--erb-flex-align-md, var(--erb-flex-align-sm, var(--erb-flex-align, stretch)));
+      justify-content: var(--erb-flex-justify-md, var(--erb-flex-justify-sm, var(--erb-flex-justify, flex-start)));
+      flex-wrap: var(--erb-flex-wrap-md, var(--erb-flex-wrap-sm, var(--erb-flex-wrap, nowrap)));
+    }
+  }
+
+  @container (min-width: 1024px) {
+    .erb-flex {
+      flex-direction: var(--erb-flex-direction-lg, var(--erb-flex-direction-md, var(--erb-flex-direction-sm, var(--erb-flex-direction, row))));
+      gap: var(--erb-flex-gap-lg, var(--erb-flex-gap-md, var(--erb-flex-gap-sm, var(--erb-flex-gap, 0))));
+      align-items: var(--erb-flex-align-lg, var(--erb-flex-align-md, var(--erb-flex-align-sm, var(--erb-flex-align, stretch))));
+      justify-content: var(--erb-flex-justify-lg, var(--erb-flex-justify-md, var(--erb-flex-justify-sm, var(--erb-flex-justify, flex-start))));
+      flex-wrap: var(--erb-flex-wrap-lg, var(--erb-flex-wrap-md, var(--erb-flex-wrap-sm, var(--erb-flex-wrap, nowrap))));
+    }
+  }
+
+  @container (min-width: 1280px) {
+    .erb-flex {
+      flex-direction: var(--erb-flex-direction-xl, var(--erb-flex-direction-lg, var(--erb-flex-direction-md, var(--erb-flex-direction-sm, var(--erb-flex-direction, row)))));
+      gap: var(--erb-flex-gap-xl, var(--erb-flex-gap-lg, var(--erb-flex-gap-md, var(--erb-flex-gap-sm, var(--erb-flex-gap, 0)))));
+      align-items: var(--erb-flex-align-xl, var(--erb-flex-align-lg, var(--erb-flex-align-md, var(--erb-flex-align-sm, var(--erb-flex-align, stretch)))));
+      justify-content: var(--erb-flex-justify-xl, var(--erb-flex-justify-lg, var(--erb-flex-justify-md, var(--erb-flex-justify-sm, var(--erb-flex-justify, flex-start)))));
+      flex-wrap: var(--erb-flex-wrap-xl, var(--erb-flex-wrap-lg, var(--erb-flex-wrap-md, var(--erb-flex-wrap-sm, var(--erb-flex-wrap, nowrap)))));
+    }
+  }
+
+  @container (min-width: 1536px) {
+    .erb-flex {
+      flex-direction: var(--erb-flex-direction-2xl, var(--erb-flex-direction-xl, var(--erb-flex-direction-lg, var(--erb-flex-direction-md, var(--erb-flex-direction-sm, var(--erb-flex-direction, row))))));
+      gap: var(--erb-flex-gap-2xl, var(--erb-flex-gap-xl, var(--erb-flex-gap-lg, var(--erb-flex-gap-md, var(--erb-flex-gap-sm, var(--erb-flex-gap, 0))))));
+      align-items: var(--erb-flex-align-2xl, var(--erb-flex-align-xl, var(--erb-flex-align-lg, var(--erb-flex-align-md, var(--erb-flex-align-sm, var(--erb-flex-align, stretch))))));
+      justify-content: var(--erb-flex-justify-2xl, var(--erb-flex-justify-xl, var(--erb-flex-justify-lg, var(--erb-flex-justify-md, var(--erb-flex-justify-sm, var(--erb-flex-justify, flex-start))))));
+      flex-wrap: var(--erb-flex-wrap-2xl, var(--erb-flex-wrap-xl, var(--erb-flex-wrap-lg, var(--erb-flex-wrap-md, var(--erb-flex-wrap-sm, var(--erb-flex-wrap, nowrap))))));
+    }
+  }
+}

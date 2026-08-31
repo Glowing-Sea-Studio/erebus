@@ -1,0 +1,48 @@
+.erb-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--erb-size-3);
+  padding: var(--erb-alert-p);
+  border-radius: var(--erb-alert-radius);
+  border: var(--erb-alert-border-width) solid transparent;
+  font-family: var(--erb-font-sans);
+}
+
+.erb-alert-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--erb-size-1);
+}
+
+.erb-alert-title {
+  font-size: var(--erb-text-base-font-size);
+  font-weight: var(--erb-weight-semibold);
+  margin: 0;
+}
+
+.erb-alert-description {
+  font-size: var(--erb-text-sm-font-size);
+  margin: 0;
+}
+
+/* Intents */
+.erb-alert[data-intent="info"] {
+  background-color: var(--erb-color-info-bg-subtle);
+  border-color: var(--erb-color-info-border);
+  color: var(--erb-color-info-fg);
+}
+.erb-alert[data-intent="success"] {
+  background-color: var(--erb-color-success-bg-subtle);
+  border-color: var(--erb-color-success-border);
+  color: var(--erb-color-success-fg);
+}
+.erb-alert[data-intent="warning"] {
+  background-color: var(--erb-color-warning-bg-subtle);
+  border-color: var(--erb-color-warning-border);
+  color: var(--erb-color-warning-fg);
+}
+.erb-alert[data-intent="danger"] {
+  background-color: var(--erb-color-danger-bg-subtle);
+  border-color: var(--erb-color-danger-border);
+  color: var(--erb-color-danger-fg);
+}

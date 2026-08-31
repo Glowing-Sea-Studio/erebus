@@ -1,0 +1,16 @@
+{
+  "footer": {
+    "bg": {
+      "$type": "color",
+      "$value": "{color.bg.surface-sunken}"
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{color.border.default}"
+    },
+    "p": {
+      "$type": "dimension",
+      "$value": "2rem"
+    }
+  }
+}

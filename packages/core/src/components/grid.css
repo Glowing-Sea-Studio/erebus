@@ -1,0 +1,91 @@
+@layer erb.components {
+  .erb-grid {
+    container-type: inline-size;
+    display: grid;
+    grid-template-columns: var(--erb-grid-cols, repeat(1, minmax(0, 1fr)));
+    gap: var(--erb-grid-gap, var(--erb-space-4));
+    align-items: var(--erb-grid-align, stretch);
+    justify-items: var(--erb-grid-justify, stretch);
+  }
+
+  @container (min-width: 480px) {
+    .erb-grid {
+      grid-template-columns: var(--erb-grid-cols-sm, var(--erb-grid-cols, repeat(1, minmax(0, 1fr))));
+      gap: var(--erb-grid-gap-sm, var(--erb-grid-gap, var(--erb-space-4)));
+      align-items: var(--erb-grid-align-sm, var(--erb-grid-align, stretch));
+      justify-items: var(--erb-grid-justify-sm, var(--erb-grid-justify, stretch));
+    }
+  }
+
+  @container (min-width: 768px) {
+    .erb-grid {
+      grid-template-columns: var(--erb-grid-cols-md, var(--erb-grid-cols-sm, var(--erb-grid-cols, repeat(1, minmax(0, 1fr)))));
+      gap: var(--erb-grid-gap-md, var(--erb-grid-gap-sm, var(--erb-grid-gap, var(--erb-space-4))));
+      align-items: var(--erb-grid-align-md, var(--erb-grid-align-sm, var(--erb-grid-align, stretch)));
+      justify-items: var(--erb-grid-justify-md, var(--erb-grid-justify-sm, var(--erb-grid-justify, stretch)));
+    }
+  }
+
+  @container (min-width: 1024px) {
+    .erb-grid {
+      grid-template-columns: var(--erb-grid-cols-lg, var(--erb-grid-cols-md, var(--erb-grid-cols-sm, var(--erb-grid-cols, repeat(1, minmax(0, 1fr))))));
+      gap: var(--erb-grid-gap-lg, var(--erb-grid-gap-md, var(--erb-grid-gap-sm, var(--erb-grid-gap, var(--erb-space-4)))));
+      align-items: var(--erb-grid-align-lg, var(--erb-grid-align-md, var(--erb-grid-align-sm, var(--erb-grid-align, stretch))));
+      justify-items: var(--erb-grid-justify-lg, var(--erb-grid-justify-md, var(--erb-grid-justify-sm, var(--erb-grid-justify, stretch))));
+    }
+  }
+
+  @container (min-width: 1280px) {
+    .erb-grid {
+      grid-template-columns: var(--erb-grid-cols-xl, var(--erb-grid-cols-lg, var(--erb-grid-cols-md, var(--erb-grid-cols-sm, var(--erb-grid-cols, repeat(1, minmax(0, 1fr)))))));
+      gap: var(--erb-grid-gap-xl, var(--erb-grid-gap-lg, var(--erb-grid-gap-md, var(--erb-grid-gap-sm, var(--erb-grid-gap, var(--erb-space-4))))));
+      align-items: var(--erb-grid-align-xl, var(--erb-grid-align-lg, var(--erb-grid-align-md, var(--erb-grid-align-sm, var(--erb-grid-align, stretch)))));
+      justify-items: var(--erb-grid-justify-xl, var(--erb-grid-justify-lg, var(--erb-grid-justify-md, var(--erb-grid-justify-sm, var(--erb-grid-justify, stretch)))));
+    }
+  }
+
+  @container (min-width: 1536px) {
+    .erb-grid {
+      grid-template-columns: var(--erb-grid-cols-2xl, var(--erb-grid-cols-xl, var(--erb-grid-cols-lg, var(--erb-grid-cols-md, var(--erb-grid-cols-sm, var(--erb-grid-cols, repeat(1, minmax(0, 1fr))))))));
+      gap: var(--erb-grid-gap-2xl, var(--erb-grid-gap-xl, var(--erb-grid-gap-lg, var(--erb-grid-gap-md, var(--erb-grid-gap-sm, var(--erb-grid-gap, var(--erb-space-4)))))));
+      align-items: var(--erb-grid-align-2xl, var(--erb-grid-align-xl, var(--erb-grid-align-lg, var(--erb-grid-align-md, var(--erb-grid-align-sm, var(--erb-grid-align, stretch))))));
+      justify-items: var(--erb-grid-justify-2xl, var(--erb-grid-justify-xl, var(--erb-grid-justify-lg, var(--erb-grid-justify-md, var(--erb-grid-justify-sm, var(--erb-grid-justify, stretch))))));
+    }
+  }
+
+  .erb-grid-item {
+    grid-column: span var(--erb-grid-item-col-span, 1) / span var(--erb-grid-item-col-span, 1);
+    grid-row: span var(--erb-grid-item-row-span, 1) / span var(--erb-grid-item-row-span, 1);
+  }
+
+  @container (min-width: 480px) {
+    .erb-grid-item {
+      grid-column: span var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1)) / span var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1));
+      grid-row: span var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1)) / span var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1));
+    }
+  }
+  @container (min-width: 768px) {
+    .erb-grid-item {
+      grid-column: span var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1))) / span var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1)));
+      grid-row: span var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1))) / span var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1)));
+    }
+  }
+  @container (min-width: 1024px) {
+    .erb-grid-item {
+      grid-column: span var(--erb-grid-item-col-span-lg, var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1)))) / span var(--erb-grid-item-col-span-lg, var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1))));
+      grid-row: span var(--erb-grid-item-row-span-lg, var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1)))) / span var(--erb-grid-item-row-span-lg, var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1))));
+    }
+  }
+  @container (min-width: 1280px) {
+    .erb-grid-item {
+      grid-column: span var(--erb-grid-item-col-span-xl, var(--erb-grid-item-col-span-lg, var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1))))) / span var(--erb-grid-item-col-span-xl, var(--erb-grid-item-col-span-lg, var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1)))));
+      grid-row: span var(--erb-grid-item-row-span-xl, var(--erb-grid-item-row-span-lg, var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1))))) / span var(--erb-grid-item-row-span-xl, var(--erb-grid-item-row-span-lg, var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1)))));
+    }
+  }
+  @container (min-width: 1536px) {
+    .erb-grid-item {
+      grid-column: span var(--erb-grid-item-col-span-2xl, var(--erb-grid-item-col-span-xl, var(--erb-grid-item-col-span-lg, var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1)))))) / span var(--erb-grid-item-col-span-2xl, var(--erb-grid-item-col-span-xl, var(--erb-grid-item-col-span-lg, var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1))))));
+      grid-row: span var(--erb-grid-item-row-span-2xl, var(--erb-grid-item-row-span-xl, var(--erb-grid-item-row-span-lg, var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1)))))) / span var(--erb-grid-item-row-span-2xl, var(--erb-grid-item-row-span-xl, var(--erb-grid-item-row-span-lg, var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1))))));
+    }
+  }
+}

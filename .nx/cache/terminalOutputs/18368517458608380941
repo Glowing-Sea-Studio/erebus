@@ -1,0 +1,28 @@
+
+> @glowing-sea-studio/erebus-angular@0.1.0 typecheck /media/thibault/SSD_DATA/DEV/workspaces/Glowing Sea Studio/APPS/erebus/packages/angular
+> tsc --noEmit
+
+src/checkbox-group/checkbox-group.spec.ts(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/checkbox-group/checkbox-group.spec.ts(8,3): error TS2304: Cannot find name 'beforeEach'.
+src/checkbox-group/checkbox-group.spec.ts(18,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/checkbox-group/checkbox-group.spec.ts(19,5): error TS2304: Cannot find name 'expect'.
+src/checkbox-group/checkbox-group.stories.ts(15,12): error TS7006: Parameter 'args' implicitly has an 'any' type.
+src/number-input/number-input.spec.ts(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/number-input/number-input.spec.ts(8,3): error TS2304: Cannot find name 'beforeEach'.
+src/number-input/number-input.spec.ts(18,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/number-input/number-input.spec.ts(19,5): error TS2304: Cannot find name 'expect'.
+src/radio-group/radio-group.spec.ts(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/radio-group/radio-group.spec.ts(8,3): error TS2304: Cannot find name 'beforeEach'.
+src/radio-group/radio-group.spec.ts(18,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/radio-group/radio-group.spec.ts(19,5): error TS2304: Cannot find name 'expect'.
+src/radio-group/radio-group.stories.ts(15,12): error TS7006: Parameter 'args' implicitly has an 'any' type.
+src/search-input/search-input.spec.ts(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/search-input/search-input.spec.ts(8,3): error TS2304: Cannot find name 'beforeEach'.
+src/search-input/search-input.spec.ts(18,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/search-input/search-input.spec.ts(19,5): error TS2304: Cannot find name 'expect'.
+src/select/select.spec.ts(12,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/select/select.spec.ts(16,3): error TS2304: Cannot find name 'beforeEach'.
+src/select/select.spec.ts(26,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/select/select.spec.ts(27,5): error TS2304: Cannot find name 'expect'.
+src/select/select.stories.ts(24,12): error TS7006: Parameter 'args' implicitly has an 'any' type.
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 2.[39m

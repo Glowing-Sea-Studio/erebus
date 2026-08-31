@@ -1,0 +1,6 @@
+.erb-footer {
+  background-color: var(--erb-footer-bg);
+  border-block-start: 1px solid var(--erb-footer-border);
+  padding: var(--erb-footer-p);
+  color: var(--erb-color-fg-muted);
+}

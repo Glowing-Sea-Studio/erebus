@@ -1,0 +1,63 @@
+
+.erb-search-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.erb-search-input-icon {
+  position: absolute;
+  inset-inline-start: 0.75rem;
+  color: var(--erb-color-fg-muted);
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.erb-search-input {
+  display: block;
+  width: 100%;
+  background-color: var(--erb-search-input-bg);
+  border: 1px solid var(--erb-search-input-border);
+  color: var(--erb-search-input-text);
+  border-radius: var(--erb-search-input-radius);
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  padding-inline-start: 2.5rem;
+  padding-inline-end: 2.5rem;
+}
+
+.erb-search-input[data-size="sm"] { height: var(--erb-search-input-height-sm); }
+.erb-search-input[data-size="md"] { height: var(--erb-search-input-height-md); }
+.erb-search-input[data-size="lg"] { height: var(--erb-search-input-height-lg); }
+
+.erb-search-input:focus {
+  outline: none;
+  border-color: var(--erb-search-input-focus-ring);
+  box-shadow: 0 0 0 2px var(--erb-search-input-focus-ring);
+}
+
+.erb-search-input:disabled {
+  background-color: var(--erb-search-input-disabled-bg);
+  color: var(--erb-search-input-disabled-text);
+  cursor: not-allowed;
+}
+
+.erb-search-input-clear-btn {
+  position: absolute;
+  inset-inline-end: 0.75rem;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--erb-color-fg-muted);
+  padding: 0;
+}
+
+.erb-search-input-clear-btn:hover {
+  color: var(--erb-color-fg-default);
+}

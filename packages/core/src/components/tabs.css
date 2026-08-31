@@ -1,0 +1,33 @@
+.erb-tabs {
+  display: flex;
+  flex-direction: column;
+}
+.erb-tabs-list {
+  display: flex;
+  border-block-end: 1px solid var(--erb-tabs-border);
+  gap: 1rem;
+}
+.erb-tab {
+  padding: 0.5rem 0;
+  color: var(--erb-tabs-inactive-color);
+  background: transparent;
+  border: none;
+  border-block-end: 2px solid transparent;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: var(--erb-font-size-sm);
+  margin-block-end: -1px;
+}
+.erb-tab:hover {
+  color: var(--erb-color-fg-default);
+}
+.erb-tab[data-state="active"] {
+  color: var(--erb-tabs-active-color);
+  border-block-end-color: var(--erb-tabs-active-border);
+}
+.erb-tabs-panel {
+  padding-block-start: 1rem;
+}
+.erb-tabs-panel[data-state="inactive"] {
+  display: none;
+}

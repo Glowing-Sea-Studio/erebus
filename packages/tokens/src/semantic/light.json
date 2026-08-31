@@ -1,0 +1,294 @@
+{
+  "color": {
+    "bg": {
+      "canvas": {
+        "$type": "color",
+        "$value": "{color.brand.ecume}"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{color.brand.ecume}"
+      },
+      "surface-raised": {
+        "$type": "color",
+        "$value": "{color.gray.50}"
+      },
+      "surface-sunken": {
+        "$type": "color",
+        "$value": "{color.gray.100}"
+      },
+      "overlay": {
+        "$type": "color",
+        "$value": "rgb(0 0 0 / 0.5)"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "{color.gray.100}"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{color.gray.900}"
+      }
+    },
+    "fg": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.gray.900}"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "{color.gray.600}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{color.gray.500}"
+      },
+      "on-accent": {
+        "$type": "color",
+        "$value": "{color.gray.50}"
+      },
+      "on-inverse": {
+        "$type": "color",
+        "$value": "{color.gray.50}"
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{color.gray.400}"
+      },
+      "link": {
+        "$type": "color",
+        "$value": "{color.blue.600}"
+      },
+      "link-hover": {
+        "$type": "color",
+        "$value": "{color.blue.700}"
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.gray.200}"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "{color.gray.100}"
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{color.gray.300}"
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{color.blue.500}"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{color.gray.700}"
+      }
+    },
+    "accent": {
+      "bg": {
+        "$type": "color",
+        "$value": "{color.brand.ocean}"
+      },
+      "bg-hover": {
+        "$type": "color",
+        "$value": "{color.brand.luminescent}"
+      },
+      "bg-active": {
+        "$type": "color",
+        "$value": "{color.blue.800}"
+      },
+      "bg-subtle": {
+        "$type": "color",
+        "$value": "{color.blue.50}"
+      },
+      "bg-subtle-hover": {
+        "$type": "color",
+        "$value": "{color.blue.100}"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "{color.brand.ocean}"
+      },
+      "fg-on-bg": {
+        "$type": "color",
+        "$value": "{color.blue.50}"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.blue.200}"
+      }
+    },
+    "neutral": {
+      "bg": {
+        "$type": "color",
+        "$value": "{color.gray.800}"
+      },
+      "bg-hover": {
+        "$type": "color",
+        "$value": "{color.gray.900}"
+      },
+      "bg-active": {
+        "$type": "color",
+        "$value": "{color.gray.950}"
+      },
+      "bg-subtle": {
+        "$type": "color",
+        "$value": "{color.gray.100}"
+      },
+      "bg-subtle-hover": {
+        "$type": "color",
+        "$value": "{color.gray.200}"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "{color.gray.700}"
+      },
+      "fg-on-bg": {
+        "$type": "color",
+        "$value": "{color.gray.50}"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.gray.300}"
+      }
+    },
+    "success": {
+      "bg": {
+        "$type": "color",
+        "$value": "{color.green.600}"
+      },
+      "bg-hover": {
+        "$type": "color",
+        "$value": "{color.green.700}"
+      },
+      "bg-active": {
+        "$type": "color",
+        "$value": "{color.green.800}"
+      },
+      "bg-subtle": {
+        "$type": "color",
+        "$value": "{color.green.50}"
+      },
+      "bg-subtle-hover": {
+        "$type": "color",
+        "$value": "{color.green.100}"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "{color.green.700}"
+      },
+      "fg-on-bg": {
+        "$type": "color",
+        "$value": "{color.green.50}"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.green.200}"
+      }
+    },
+    "warning": {
+      "bg": {
+        "$type": "color",
+        "$value": "{color.amber.500}"
+      },
+      "bg-hover": {
+        "$type": "color",
+        "$value": "{color.amber.600}"
+      },
+      "bg-active": {
+        "$type": "color",
+        "$value": "{color.amber.700}"
+      },
+      "bg-subtle": {
+        "$type": "color",
+        "$value": "{color.amber.50}"
+      },
+      "bg-subtle-hover": {
+        "$type": "color",
+        "$value": "{color.amber.100}"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "{color.amber.800}"
+      },
+      "fg-on-bg": {
+        "$type": "color",
+        "$value": "{color.amber.50}"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.amber.200}"
+      }
+    },
+    "danger": {
+      "bg": {
+        "$type": "color",
+        "$value": "{color.red.600}"
+      },
+      "bg-hover": {
+        "$type": "color",
+        "$value": "{color.red.700}"
+      },
+      "bg-active": {
+        "$type": "color",
+        "$value": "{color.red.800}"
+      },
+      "bg-subtle": {
+        "$type": "color",
+        "$value": "{color.red.50}"
+      },
+      "bg-subtle-hover": {
+        "$type": "color",
+        "$value": "{color.red.100}"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "{color.red.600}"
+      },
+      "fg-on-bg": {
+        "$type": "color",
+        "$value": "{color.red.50}"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.red.200}"
+      }
+    },
+    "info": {
+      "bg": {
+        "$type": "color",
+        "$value": "{color.blue.600}"
+      },
+      "bg-hover": {
+        "$type": "color",
+        "$value": "{color.blue.700}"
+      },
+      "bg-active": {
+        "$type": "color",
+        "$value": "{color.blue.800}"
+      },
+      "bg-subtle": {
+        "$type": "color",
+        "$value": "{color.blue.50}"
+      },
+      "bg-subtle-hover": {
+        "$type": "color",
+        "$value": "{color.blue.100}"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "{color.blue.700}"
+      },
+      "fg-on-bg": {
+        "$type": "color",
+        "$value": "{color.blue.50}"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.blue.200}"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "button": {
+    "height": {
+      "sm": {
+        "$type": "dimension",
+        "$value": "2rem"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "2.5rem"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "3rem"
+      }
+    },
+    "px": {
+      "sm": {
+        "$type": "dimension",
+        "$value": "0.75rem"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "1rem"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "1.5rem"
+      }
+    },
+    "radius": {
+      "$type": "dimension",
+      "$value": "{radius.md}"
+    },
+    "font-weight": {
+      "$type": "fontWeight",
+      "$value": "{weight.medium}"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@layer erb.components {
+  .erb-scroll-area {
+    overflow: auto;
+    max-width: 100%;
+    max-height: var(--erb-scroll-area-max-height, 100%);
+    overscroll-behavior: contain;
+  }
+}

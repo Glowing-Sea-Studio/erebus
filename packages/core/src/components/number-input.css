@@ -1,0 +1,70 @@
+
+.erb-number-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.erb-number-input {
+  display: block;
+  width: 100%;
+  background-color: var(--erb-number-input-bg);
+  border: 1px solid var(--erb-number-input-border);
+  color: var(--erb-number-input-text);
+  border-radius: var(--erb-number-input-radius);
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.erb-number-input[data-size="sm"] { height: var(--erb-number-input-height-sm); padding-inline-start: var(--erb-number-input-px-sm); padding-inline-end: calc(var(--erb-number-input-px-sm) + 2rem); }
+.erb-number-input[data-size="md"] { height: var(--erb-number-input-height-md); padding-inline-start: var(--erb-number-input-px-md); padding-inline-end: calc(var(--erb-number-input-px-md) + 2.5rem); }
+.erb-number-input[data-size="lg"] { height: var(--erb-number-input-height-lg); padding-inline-start: var(--erb-number-input-px-lg); padding-inline-end: calc(var(--erb-number-input-px-lg) + 3rem); }
+
+.erb-number-input:focus {
+  outline: none;
+  border-color: var(--erb-number-input-focus-ring);
+  box-shadow: 0 0 0 2px var(--erb-number-input-focus-ring);
+}
+
+.erb-number-input:disabled {
+  background-color: var(--erb-number-input-disabled-bg);
+  color: var(--erb-number-input-disabled-text);
+  cursor: not-allowed;
+}
+
+.erb-number-input[aria-invalid="true"] {
+  border-color: var(--erb-color-danger-main);
+}
+
+.erb-number-input-stepper {
+  position: absolute;
+  inset-inline-end: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-inline-start: 1px solid var(--erb-number-input-border);
+}
+
+.erb-number-input-stepper-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--erb-color-fg-muted);
+  padding: 0 0.5rem;
+}
+
+.erb-number-input-stepper-btn:hover {
+  background: var(--erb-color-bg-surface-raised);
+}
+
+.erb-number-input-stepper-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

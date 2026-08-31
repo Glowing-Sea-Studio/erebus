@@ -1,0 +1,28 @@
+{
+  "switch": {
+    "width": {
+      "sm": { "$value": "1.75rem" },
+      "md": { "$value": "2.25rem" },
+      "lg": { "$value": "2.75rem" }
+    },
+    "height": {
+      "sm": { "$value": "1rem" },
+      "md": { "$value": "1.25rem" },
+      "lg": { "$value": "1.5rem" }
+    },
+    "thumb-size": {
+      "sm": { "$value": "0.75rem" },
+      "md": { "$value": "1rem" },
+      "lg": { "$value": "1.25rem" }
+    },
+    "bg": { "$value": "{color.bg.muted}" },
+    "checked": {
+      "bg": { "$value": "{color.accent.bg}" }
+    },
+    "thumb-bg": { "$value": "{color.bg.canvas}" },
+    "focus-ring": { "$value": "{color.border.focus}" },
+    "disabled": {
+      "bg": { "$value": "{color.bg.muted}" }
+    }
+  }
+}

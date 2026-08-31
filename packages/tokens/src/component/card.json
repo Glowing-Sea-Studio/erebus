@@ -1,0 +1,34 @@
+{
+  "card": {
+    "bg": {
+      "$type": "color",
+      "$value": "{color.bg.surface}"
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{color.border.default}"
+    },
+    "radius": {
+      "$type": "dimension",
+      "$value": "{radius.lg}"
+    },
+    "shadow": {
+      "$type": "shadow",
+      "$value": "{shadow.sm}"
+    },
+    "p": {
+      "sm": {
+        "$type": "dimension",
+        "$value": "1rem"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "1.5rem"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "2rem"
+      }
+    }
+  }
+}

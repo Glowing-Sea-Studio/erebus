@@ -1,0 +1,18 @@
+@layer erb.components {
+  .erb-section {
+    padding-block: var(--erb-section-spacing, var(--erb-space-8));
+    container-type: inline-size;
+  }
+
+  @container (min-width: 768px) {
+    .erb-section {
+      --erb-section-spacing: var(--erb-space-16);
+    }
+  }
+
+  @container (min-width: 1024px) {
+    .erb-section {
+      --erb-section-spacing: var(--erb-space-24);
+    }
+  }
+}

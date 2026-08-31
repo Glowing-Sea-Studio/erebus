@@ -1,0 +1,22 @@
+{
+  "name": "@glowing-sea-studio/erebus-angular",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json",
+    "lint": "eslint \"src/**/*.ts\" --no-error-on-unmatched-pattern",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "@angular/core": "^18.0.0 || ^19.0.0",
+    "@angular/cdk": "^22.1.4"
+  },
+  "devDependencies": {
+    "vitest": "^2.0.0"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "dependencies": {}
+}

@@ -1,0 +1,42 @@
+.erb-panel-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--erb-modal-overlay-bg); /* Use modal overlay color */
+  z-index: 40;
+}
+.erb-panel {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+  width: var(--erb-panel-width);
+  background-color: var(--erb-panel-bg);
+  box-shadow: var(--erb-panel-shadow);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+}
+.erb-panel[data-position="left"] {
+  inset-inline-start: 0;
+  inset-inline-end: auto;
+}
+.erb-panel-header {
+  padding: 1.5rem;
+  border-block-end: 1px solid var(--erb-color-border-default);
+}
+.erb-panel-title {
+  font-family: var(--erb-font-family-heading);
+  font-size: var(--erb-font-size-lg);
+  font-weight: 600;
+}
+.erb-panel-body {
+  padding: 1.5rem;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.erb-panel-footer {
+  padding: 1.5rem;
+  border-block-start: 1px solid var(--erb-color-border-default);
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

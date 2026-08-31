@@ -1,0 +1,71 @@
+
+.erb-switch-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.erb-switch-wrapper[data-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.erb-switch {
+  appearance: none;
+  background-color: var(--erb-switch-bg);
+  border-radius: 9999px;
+  margin: 0;
+  position: relative;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.erb-switch[data-size="sm"] { width: var(--erb-switch-width-sm); height: var(--erb-switch-height-sm); }
+.erb-switch[data-size="md"] { width: var(--erb-switch-width-md); height: var(--erb-switch-height-md); }
+.erb-switch[data-size="lg"] { width: var(--erb-switch-width-lg); height: var(--erb-switch-height-lg); }
+
+.erb-switch::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  inset-inline-start: 2px;
+  background-color: var(--erb-switch-thumb-bg);
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.erb-switch[data-size="sm"]::before { width: var(--erb-switch-thumb-size-sm); height: var(--erb-switch-thumb-size-sm); }
+.erb-switch[data-size="md"]::before { width: var(--erb-switch-thumb-size-md); height: var(--erb-switch-thumb-size-md); }
+.erb-switch[data-size="lg"]::before { width: var(--erb-switch-thumb-size-lg); height: var(--erb-switch-thumb-size-lg); }
+
+.erb-switch:checked {
+  background-color: var(--erb-switch-checked-bg);
+}
+
+.erb-switch[data-size="sm"]:checked::before {
+  transform: translate(calc(var(--erb-switch-width-sm) - var(--erb-switch-thumb-size-sm) - 4px), -50%);
+}
+.erb-switch[data-size="md"]:checked::before {
+  transform: translate(calc(var(--erb-switch-width-md) - var(--erb-switch-thumb-size-md) - 4px), -50%);
+}
+.erb-switch[data-size="lg"]:checked::before {
+  transform: translate(calc(var(--erb-switch-width-lg) - var(--erb-switch-thumb-size-lg) - 4px), -50%);
+}
+
+.erb-switch:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--erb-switch-focus-ring);
+}
+
+.erb-switch:disabled {
+  background-color: var(--erb-switch-disabled-bg);
+  cursor: not-allowed;
+}
+
+.erb-switch-label {
+  font-size: 1rem;
+  color: var(--erb-color-text-primary);
+}

@@ -1,0 +1,30 @@
+
+> @glowing-sea-studio/erebus-react@0.1.0 typecheck /media/thibault/SSD_DATA/DEV/workspaces/Glowing Sea Studio/APPS/erebus/packages/react
+> tsc --noEmit
+
+src/checkbox-group/CheckboxGroup.test.tsx(1,24): error TS2307: Cannot find module '@testing-library/react' or its corresponding type declarations.
+src/checkbox-group/CheckboxGroup.test.tsx(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/checkbox-group/CheckboxGroup.test.tsx(5,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/checkbox-group/CheckboxGroup.tsx(28,40): error TS2375: Type '{ name: string | undefined; size: "sm" | "md" | "lg" | undefined; disabled: boolean | undefined; }' is not assignable to type 'CheckboxGroupContextValue' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'name' are incompatible.
+    Type 'string | undefined' is not assignable to type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+src/number-input/NumberInput.test.tsx(1,24): error TS2307: Cannot find module '@testing-library/react' or its corresponding type declarations.
+src/number-input/NumberInput.test.tsx(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/number-input/NumberInput.test.tsx(5,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/number-input/NumberInput.tsx(33,19): error TS2540: Cannot assign to 'current' because it is a read-only property.
+src/radio-group/RadioGroup.test.tsx(1,24): error TS2307: Cannot find module '@testing-library/react' or its corresponding type declarations.
+src/radio-group/RadioGroup.test.tsx(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/radio-group/RadioGroup.test.tsx(5,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/radio-group/RadioGroup.tsx(28,37): error TS2375: Type '{ name: string | undefined; size: "sm" | "md" | "lg" | undefined; disabled: boolean | undefined; }' is not assignable to type 'RadioGroupContextValue' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'name' are incompatible.
+    Type 'string | undefined' is not assignable to type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+src/search-input/SearchInput.test.tsx(1,24): error TS2307: Cannot find module '@testing-library/react' or its corresponding type declarations.
+src/search-input/SearchInput.test.tsx(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/search-input/SearchInput.test.tsx(5,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/search-input/SearchInput.tsx(39,19): error TS2540: Cannot assign to 'current' because it is a read-only property.
+src/select/Select.test.tsx(1,24): error TS2307: Cannot find module '@testing-library/react' or its corresponding type declarations.
+src/select/Select.test.tsx(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/select/Select.test.tsx(5,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 2.[39m
