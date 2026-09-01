@@ -92,8 +92,8 @@ Prévoir un découpage en deux tâches (logique/accessibilité, puis habillage) 
 - [x] `CTA`
 - [x] `Testimonial`
 - [x] `LogoCloud`
-- [ ] `FAQ`
-- [ ] `CommandPalette`
+- [x] `FAQ`
+- [x] `CommandPalette`
 
 ## Lot 8 — Finition
 - [ ] Thèmes supplémentaires (`corporate`, `vibrant`, `minimal`, `high-contrast`)

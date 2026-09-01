@@ -89,3 +89,5 @@ export * from './FeatureGrid';
 export * from './CTA';
 export * from './Testimonial';
 export * from './LogoCloud';
+export * from './FAQ';
+export * from './CommandPalette';

@@ -1,0 +1,8 @@
+.erb-faq {
+  display: block;
+}
+
+.erb-command-palette {
+  display: flex;
+  flex-direction: column;
+}

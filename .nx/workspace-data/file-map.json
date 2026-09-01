@@ -70,112 +70,112 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "AGENTS.md",
-        "hash": "16952903342658093389"
-      },
-      {
         "file": "create_lot7.py",
         "hash": "5080225553300619829"
-      },
-      {
-        "file": "specs/01-specifications-metier.md",
-        "hash": "17707256249961281613"
-      },
-      {
-        "file": "package.json",
-        "hash": "4659196307326787815"
-      },
-      {
-        "file": "specs/02-specifications-techniques.md",
-        "hash": "10764395224646981999"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "7418268071776220994"
-      },
-      {
-        "file": "stylelint.config.js",
-        "hash": "17353201888065353557"
-      },
-      {
-        "file": "nx.json",
-        "hash": "13497546736868009048"
-      },
-      {
-        "file": "jules_msg.json",
-        "hash": "3082920335506272569"
-      },
-      {
-        "file": "specs/Charte_Graphique_Glowing_Sea_Studio.md",
-        "hash": "12015017107697981722"
-      },
-      {
-        "file": "jules_response_retry.json",
-        "hash": "545784860517342293"
-      },
-      {
-        "file": "specs/00-roadmap.md",
-        "hash": "3099287831347358098"
-      },
-      {
-        "file": "specs/04-instructions-readme.md",
-        "hash": "5133977881871017630"
-      },
-      {
-        "file": "jules-tasks/lot-4-superpositions-socle-20260831-2352.md",
-        "hash": "4714358981224981548"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": "README.md",
-        "hash": "9686789429054710927"
-      },
-      {
-        "file": "jules_payload.json",
-        "hash": "14229674980074399362"
-      },
-      {
-        "file": "jules-tasks/lots-2-3-20260901-1017.md",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": "specs/03-deploiement-github.md",
-        "hash": "12874211706838362349"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "2653529739611990858"
-      },
-      {
-        "file": "generate.py",
-        "hash": "6221542141565332190"
-      },
-      {
-        "file": "jules_response.json",
-        "hash": "6580593296038942516"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "3985985064516675909"
       },
       {
         "file": "generate.js",
         "hash": "594916967396753585"
       },
       {
-        "file": "eslint.config.js",
-        "hash": "194146092283452222"
+        "file": "jules_response.json",
+        "hash": "6580593296038942516"
+      },
+      {
+        "file": "AGENTS.md",
+        "hash": "16952903342658093389"
+      },
+      {
+        "file": "jules-tasks/lot-4-superpositions-socle-20260831-2352.md",
+        "hash": "4714358981224981548"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "jules-tasks/lots-2-3-20260901-1017.md",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "nx.json",
+        "hash": "13497546736868009048"
+      },
+      {
+        "file": "package.json",
+        "hash": "4659196307326787815"
+      },
+      {
+        "file": "jules_response_retry.json",
+        "hash": "545784860517342293"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "3985985064516675909"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "7418268071776220994"
       },
       {
         "file": "pnpm-lock.yaml",
         "hash": "1346067979362158458"
+      },
+      {
+        "file": "specs/04-instructions-readme.md",
+        "hash": "5133977881871017630"
+      },
+      {
+        "file": "specs/Charte_Graphique_Glowing_Sea_Studio.md",
+        "hash": "12015017107697981722"
+      },
+      {
+        "file": "specs/02-specifications-techniques.md",
+        "hash": "10764395224646981999"
+      },
+      {
+        "file": "generate.py",
+        "hash": "6221542141565332190"
+      },
+      {
+        "file": "specs/03-deploiement-github.md",
+        "hash": "12874211706838362349"
+      },
+      {
+        "file": "README.md",
+        "hash": "9686789429054710927"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "2653529739611990858"
+      },
+      {
+        "file": "specs/00-roadmap.md",
+        "hash": "2016287911406896361"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "194146092283452222"
+      },
+      {
+        "file": "stylelint.config.js",
+        "hash": "17353201888065353557"
+      },
+      {
+        "file": "jules_msg.json",
+        "hash": "3082920335506272569"
+      },
+      {
+        "file": "jules_payload.json",
+        "hash": "14229674980074399362"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": "specs/01-specifications-metier.md",
+        "hash": "17707256249961281613"
       }
     ],
     "projectFileMap": {
@@ -501,6 +501,10 @@
         {
           "file": "packages/core/src/components/error-state.css",
           "hash": "8327565909639464940"
+        },
+        {
+          "file": "packages/core/src/components/faq-command-palette.css",
+          "hash": "9210867233922180944"
         },
         {
           "file": "packages/core/src/components/featuregrid.css",
@@ -894,6 +898,17 @@
           "hash": "6531097394477867140"
         },
         {
+          "file": "packages/react/src/CommandPalette/CommandPalette.tsx",
+          "hash": "18348014776963723349",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/CommandPalette/index.ts",
+          "hash": "18147393656066167598"
+        },
+        {
           "file": "packages/react/src/DatePicker/DatePicker.stories.tsx",
           "hash": "2918141153149688641",
           "deps": [
@@ -1024,6 +1039,17 @@
         {
           "file": "packages/react/src/ErrorState/index.ts",
           "hash": "18195090020150093274"
+        },
+        {
+          "file": "packages/react/src/FAQ/FAQ.tsx",
+          "hash": "10763187054301925464",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/FAQ/index.ts",
+          "hash": "4565533555432757730"
         },
         {
           "file": "packages/react/src/FeatureGrid/FeatureGrid.stories.tsx",
@@ -2002,7 +2028,7 @@
         },
         {
           "file": "packages/react/src/index.ts",
-          "hash": "14517148131891308018"
+          "hash": "6278277834893498716"
         },
         {
           "file": "packages/react/src/inline/Inline.test.tsx",
@@ -3054,6 +3080,17 @@
           "hash": "4961971853646796700"
         },
         {
+          "file": "packages/angular/src/CommandPalette/CommandPalette.component.ts",
+          "hash": "10662202118357956240",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/CommandPalette/index.ts",
+          "hash": "16973841343633538859"
+        },
+        {
           "file": "packages/angular/src/DatePicker/datepicker.component.spec.ts",
           "hash": "17097662113418889209",
           "deps": [
@@ -3156,6 +3193,17 @@
         {
           "file": "packages/angular/src/ErrorState/index.ts",
           "hash": "10948406978826217166"
+        },
+        {
+          "file": "packages/angular/src/FAQ/FAQ.component.ts",
+          "hash": "16945371175489300549",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/FAQ/index.ts",
+          "hash": "9189536426795027988"
         },
         {
           "file": "packages/angular/src/FeatureGrid/featuregrid.component.spec.ts",
@@ -4067,7 +4115,7 @@
         },
         {
           "file": "packages/angular/src/index.ts",
-          "hash": "6817370691114823204"
+          "hash": "5455034723663930802"
         },
         {
           "file": "packages/angular/src/inline/index.ts",
