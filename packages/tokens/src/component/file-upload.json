@@ -1,10 +1,10 @@
 {
   "file-upload": {
-    "background": { "$type": "color", "$value": "{colors.background.alt}" },
-    "background-active": { "$type": "color", "$value": "{colors.background.main}" },
-    "border": { "$type": "color", "$value": "{colors.border.base}" },
-    "border-active": { "$type": "color", "$value": "{colors.border.focus}" },
-    "border-radius": { "$type": "dimension", "$value": "{radii.lg}" },
-    "padding": { "$type": "dimension", "$value": "{spacing.xl}" }
+    "background": { "$type": "color", "$value": "{color.bg.surface-sunken}" },
+    "background-active": { "$type": "color", "$value": "{color.bg.canvas}" },
+    "border": { "$type": "color", "$value": "{color.border.default}" },
+    "border-active": { "$type": "color", "$value": "{color.border.focus}" },
+    "border-radius": { "$type": "dimension", "$value": "{radius.lg}" },
+    "padding": { "$type": "dimension", "$value": "{space.6}" }
   }
 }

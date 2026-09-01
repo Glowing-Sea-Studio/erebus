@@ -1,10 +1,10 @@
 {
   "alert-dialog": {
     "overlay": {
-      "background": { "$value": "{color.overlay}" }
+      "background": { "$value": "{color.bg.overlay}" }
     },
     "content": {
-      "background": { "$value": "{color.background}" },
+      "background": { "$value": "{color.bg.canvas}" },
       "border": { "$value": "{color.border}" },
       "shadow": { "$value": "{shadow.lg}" },
       "radius": { "$value": "{radius.md}" }

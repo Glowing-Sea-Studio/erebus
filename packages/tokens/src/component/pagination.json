@@ -1,10 +1,10 @@
 {
   "pagination": {
     "bg": {
-      "value": "{colors.background}"
+      "value": "{color.bg.canvas}"
     },
     "color": {
-      "value": "{colors.text}"
+      "value": "{color.fg.default}"
     }
   }
 }

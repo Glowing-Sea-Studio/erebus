@@ -1,11 +1,11 @@
 {
   "field": {
-    "gap": { "value": "{spacing.2}" },
-    "hint-font-size": { "value": "{typography.font-size.xs}" },
-    "hint-color": { "value": "{colors.neutral.500}" },
-    "hint-margin-top": { "value": "{spacing.1}" },
-    "error-font-size": { "value": "{typography.font-size.xs}" },
-    "error-color": { "value": "{colors.danger.500}" },
-    "error-margin-top": { "value": "{spacing.1}" }
+    "gap": { "value": "{space.2}" },
+    "hint-font-size": { "value": "{text.xs.fontSize}" },
+    "hint-color": { "value": "{color.gray.500}" },
+    "hint-margin-top": { "value": "{space.1}" },
+    "error-font-size": { "value": "{text.xs.fontSize}" },
+    "error-color": { "value": "{color.red.500}" },
+    "error-margin-top": { "value": "{space.1}" }
   }
 }

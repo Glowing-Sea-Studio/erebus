@@ -1,10 +1,10 @@
 {
   "label": {
-    "font-size": { "value": "{typography.font-size.sm}" },
-    "font-weight": { "value": "{typography.font-weight.medium}" },
-    "color": { "value": "{colors.neutral.900}" },
-    "margin-bottom": { "value": "{spacing.1}" },
-    "disabled-color": { "value": "{colors.neutral.400}" },
-    "required-color": { "value": "{colors.danger.500}" }
+    "font-size": { "value": "{text.sm.fontSize}" },
+    "font-weight": { "value": "{weight.medium}" },
+    "color": { "value": "{color.gray.900}" },
+    "margin-bottom": { "value": "{space.1}" },
+    "disabled-color": { "value": "{color.gray.400}" },
+    "required-color": { "value": "{color.red.500}" }
   }
 }

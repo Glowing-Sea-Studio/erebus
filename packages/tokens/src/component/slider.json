@@ -2,7 +2,7 @@
   "slider": {
     "track": {
       "bg": {
-        "$value": "{color.neutral.300}",
+        "$value": "{color.gray.300}",
         "$type": "color"
       },
       "height": {
@@ -16,17 +16,17 @@
     },
     "fill": {
       "bg": {
-        "$value": "{color.primary.500}",
+        "$value": "{color.blue.500}",
         "$type": "color"
       }
     },
     "thumb": {
       "bg": {
-        "$value": "{color.neutral.0}",
+        "$value": "{color.gray.50}",
         "$type": "color"
       },
       "border": {
-        "$value": "{color.primary.500}",
+        "$value": "{color.blue.500}",
         "$type": "color"
       },
       "size": {
@@ -39,7 +39,7 @@
       },
       "focus": {
         "ring": {
-          "$value": "{color.primary.200}",
+          "$value": "{color.blue.200}",
           "$type": "color"
         }
       }

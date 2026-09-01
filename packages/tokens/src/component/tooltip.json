@@ -6,7 +6,7 @@
     },
     "text": {
       "$type": "color",
-      "$value": "{color.text.inverse}"
+      "$value": "{color.fg.on-inverse}"
     },
     "radius": {
       "$type": "dimension",

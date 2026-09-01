@@ -1,9 +1,9 @@
 {
   "tag": {
-    "padding-x": { "value": "{spacing.3}" },
-    "padding-y": { "value": "{spacing.1}" },
-    "font-size": { "value": "{font-size.sm}" },
-    "font-weight": { "value": "{font-weight.normal}" },
-    "border-radius": { "value": "{radii.md}" }
+    "padding-x": { "value": "{space.3}" },
+    "padding-y": { "value": "{space.1}" },
+    "font-size": { "value": "{text.sm.fontSize}" },
+    "font-weight": { "value": "{weight.normal}" },
+    "border-radius": { "value": "{radius.md}" }
   }
 }
