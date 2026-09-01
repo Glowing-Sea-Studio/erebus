@@ -1,0 +1,19 @@
+.erb-error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--erb-spacing-8);
+  text-align: center;
+  color: var(--erb-color-danger-700);
+  background-color: var(--erb-color-danger-50);
+  border-radius: var(--erb-border-radius-md);
+}
+.erb-error-state-title {
+  font-size: var(--erb-font-size-lg);
+  font-weight: var(--erb-font-weight-bold);
+  margin-bottom: var(--erb-spacing-2);
+}
+.erb-error-state-description {
+  font-size: var(--erb-font-size-md);
+}

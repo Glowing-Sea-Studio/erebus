@@ -1,0 +1,22 @@
+.erb-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: var(--erb-typography-font-family-base, sans-serif);
+}
+
+.erb-table th,
+.erb-table td {
+  padding: var(--erb-spacing-3, 0.75rem);
+  border-bottom: 1px solid var(--erb-color-border-subtle, #e5e7eb);
+}
+
+.erb-table th {
+  font-weight: var(--erb-typography-font-weight-semibold, 600);
+  color: var(--erb-color-text-secondary, #4b5563);
+  background-color: var(--erb-color-background-subtle, #f9fafb);
+}
+
+.erb-table tr:hover {
+  background-color: var(--erb-color-background-hover, #f3f4f6);
+}

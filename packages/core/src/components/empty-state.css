@@ -1,0 +1,18 @@
+.erb-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--erb-spacing-8);
+  text-align: center;
+  color: var(--erb-color-neutral-600);
+}
+.erb-empty-state-title {
+  font-size: var(--erb-font-size-lg);
+  font-weight: var(--erb-font-weight-bold);
+  margin-bottom: var(--erb-spacing-2);
+  color: var(--erb-color-neutral-900);
+}
+.erb-empty-state-description {
+  font-size: var(--erb-font-size-md);
+}

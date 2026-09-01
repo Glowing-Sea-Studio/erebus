@@ -70,72 +70,28 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "jules-tasks/lots-2-3-20260901-1017.md",
-        "hash": "3244421341483603138"
+        "file": "AGENTS.md",
+        "hash": "16952903342658093389"
       },
       {
-        "file": "specs/03-deploiement-github.md",
-        "hash": "12874211706838362349"
-      },
-      {
-        "file": "package.json",
-        "hash": "4659196307326787815"
-      },
-      {
-        "file": "jules_response_retry.json",
-        "hash": "545784860517342293"
-      },
-      {
-        "file": "eslint.config.js",
-        "hash": "194146092283452222"
-      },
-      {
-        "file": "README.md",
-        "hash": "9686789429054710927"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "7418268071776220994"
-      },
-      {
-        "file": "jules_payload.json",
-        "hash": "14229674980074399362"
-      },
-      {
-        "file": "jules-tasks/lot-4-superpositions-socle-20260831-2352.md",
-        "hash": "4714358981224981548"
-      },
-      {
-        "file": "jules_msg.json",
-        "hash": "3082920335506272569"
+        "file": "create_lot7.py",
+        "hash": "5080225553300619829"
       },
       {
         "file": "specs/01-specifications-metier.md",
         "hash": "17707256249961281613"
       },
       {
-        "file": "specs/04-instructions-readme.md",
-        "hash": "5133977881871017630"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": "specs/Charte_Graphique_Glowing_Sea_Studio.md",
-        "hash": "12015017107697981722"
-      },
-      {
-        "file": "generate.py",
-        "hash": "6221542141565332190"
+        "file": "package.json",
+        "hash": "4659196307326787815"
       },
       {
         "file": "specs/02-specifications-techniques.md",
         "hash": "10764395224646981999"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "7418268071776220994"
       },
       {
         "file": "stylelint.config.js",
@@ -146,20 +102,60 @@
         "hash": "13497546736868009048"
       },
       {
+        "file": "jules_msg.json",
+        "hash": "3082920335506272569"
+      },
+      {
+        "file": "specs/Charte_Graphique_Glowing_Sea_Studio.md",
+        "hash": "12015017107697981722"
+      },
+      {
+        "file": "jules_response_retry.json",
+        "hash": "545784860517342293"
+      },
+      {
         "file": "specs/00-roadmap.md",
-        "hash": "6284745422747154500"
+        "hash": "3099287831347358098"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "1346067979362158458"
+        "file": "specs/04-instructions-readme.md",
+        "hash": "5133977881871017630"
       },
       {
-        "file": "generate.js",
-        "hash": "594916967396753585"
+        "file": "jules-tasks/lot-4-superpositions-socle-20260831-2352.md",
+        "hash": "4714358981224981548"
       },
       {
-        "file": "AGENTS.md",
-        "hash": "16952903342658093389"
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": "README.md",
+        "hash": "9686789429054710927"
+      },
+      {
+        "file": "jules_payload.json",
+        "hash": "14229674980074399362"
+      },
+      {
+        "file": "jules-tasks/lots-2-3-20260901-1017.md",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "specs/03-deploiement-github.md",
+        "hash": "12874211706838362349"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "2653529739611990858"
+      },
+      {
+        "file": "generate.py",
+        "hash": "6221542141565332190"
       },
       {
         "file": "jules_response.json",
@@ -170,8 +166,16 @@
         "hash": "3985985064516675909"
       },
       {
-        "file": "pnpm-workspace.yaml",
-        "hash": "2653529739611990858"
+        "file": "generate.js",
+        "hash": "594916967396753585"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "194146092283452222"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "1346067979362158458"
       }
     ],
     "projectFileMap": {
@@ -419,6 +423,10 @@
           "hash": "10332004179716691248"
         },
         {
+          "file": "packages/core/src/components/banner.css",
+          "hash": "2871944117011594862"
+        },
+        {
           "file": "packages/core/src/components/bottom-nav.css",
           "hash": "2519824359346148139"
         },
@@ -443,6 +451,10 @@
           "hash": "7467317541258578258"
         },
         {
+          "file": "packages/core/src/components/carousel.css",
+          "hash": "13680378140610409727"
+        },
+        {
           "file": "packages/core/src/components/center.css",
           "hash": "6801205181499456930"
         },
@@ -463,6 +475,10 @@
           "hash": "1047757526130212711"
         },
         {
+          "file": "packages/core/src/components/cta.css",
+          "hash": "13610235906386389601"
+        },
+        {
           "file": "packages/core/src/components/datepicker.css",
           "hash": "11849050829010357145"
         },
@@ -471,8 +487,24 @@
           "hash": "14161866820800781518"
         },
         {
+          "file": "packages/core/src/components/description-list.css",
+          "hash": "17719491208247722069"
+        },
+        {
           "file": "packages/core/src/components/drawer.css",
           "hash": "6604848575789028452"
+        },
+        {
+          "file": "packages/core/src/components/empty-state.css",
+          "hash": "7909188676811555764"
+        },
+        {
+          "file": "packages/core/src/components/error-state.css",
+          "hash": "8327565909639464940"
+        },
+        {
+          "file": "packages/core/src/components/featuregrid.css",
+          "hash": "2018950275851550579"
         },
         {
           "file": "packages/core/src/components/field.css",
@@ -491,6 +523,10 @@
           "hash": "5667636314997551795"
         },
         {
+          "file": "packages/core/src/components/gallery.css",
+          "hash": "17602464147934464525"
+        },
+        {
           "file": "packages/core/src/components/grid.css",
           "hash": "12657131424988940488"
         },
@@ -499,8 +535,16 @@
           "hash": "17692722784906806163"
         },
         {
+          "file": "packages/core/src/components/hero.css",
+          "hash": "4726747711731126159"
+        },
+        {
           "file": "packages/core/src/components/icon-button.css",
           "hash": "5844259897859618336"
+        },
+        {
+          "file": "packages/core/src/components/image.css",
+          "hash": "6643971700420882444"
         },
         {
           "file": "packages/core/src/components/index.css",
@@ -517,6 +561,22 @@
         {
           "file": "packages/core/src/components/label.css",
           "hash": "15085050856525243596"
+        },
+        {
+          "file": "packages/core/src/components/lightbox.css",
+          "hash": "10072556066193328319"
+        },
+        {
+          "file": "packages/core/src/components/list.css",
+          "hash": "418126626315917111"
+        },
+        {
+          "file": "packages/core/src/components/loading-overlay.css",
+          "hash": "8323977838834239823"
+        },
+        {
+          "file": "packages/core/src/components/logocloud.css",
+          "hash": "14753589442310536468"
         },
         {
           "file": "packages/core/src/components/menu.css",
@@ -553,6 +613,10 @@
         {
           "file": "packages/core/src/components/popover.css",
           "hash": "16112271978267253835"
+        },
+        {
+          "file": "packages/core/src/components/progress.css",
+          "hash": "5180125968525247698"
         },
         {
           "file": "packages/core/src/components/radio.css",
@@ -611,12 +675,20 @@
           "hash": "7221886802469095069"
         },
         {
+          "file": "packages/core/src/components/stat.css",
+          "hash": "2542475033461760545"
+        },
+        {
           "file": "packages/core/src/components/stepper.css",
           "hash": "11595628084394146957"
         },
         {
           "file": "packages/core/src/components/switch.css",
           "hash": "17624328715277207984"
+        },
+        {
+          "file": "packages/core/src/components/table.css",
+          "hash": "13791995004895430716"
         },
         {
           "file": "packages/core/src/components/tabs.css",
@@ -631,12 +703,24 @@
           "hash": "1168060938996539688"
         },
         {
+          "file": "packages/core/src/components/testimonial.css",
+          "hash": "10114695737238192253"
+        },
+        {
           "file": "packages/core/src/components/textarea.css",
           "hash": "15934802603858503680"
         },
         {
+          "file": "packages/core/src/components/timeline.css",
+          "hash": "9432252263692993941"
+        },
+        {
           "file": "packages/core/src/components/timepicker.css",
           "hash": "8638784481939449758"
+        },
+        {
+          "file": "packages/core/src/components/toast.css",
+          "hash": "5703205260486191185"
         },
         {
           "file": "packages/core/src/components/tooltip.css",
@@ -756,6 +840,33 @@
           "hash": "7753387251924734731"
         },
         {
+          "file": "packages/react/src/CTA/CTA.stories.tsx",
+          "hash": "4055639014215726748",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/CTA/CTA.test.tsx",
+          "hash": "6380888666308742589",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/CTA/CTA.tsx",
+          "hash": "17320138031898665740",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/CTA/index.ts",
+          "hash": "15914941567009002658"
+        },
+        {
           "file": "packages/react/src/ColorPicker/ColorPicker.stories.tsx",
           "hash": "5225010214318412455",
           "deps": [
@@ -837,6 +948,111 @@
           "hash": "12617265541297250260"
         },
         {
+          "file": "packages/react/src/DescriptionList/DescriptionList.stories.tsx",
+          "hash": "403103844433015967",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/DescriptionList/DescriptionList.test.tsx",
+          "hash": "8938966767205265583",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/DescriptionList/DescriptionList.tsx",
+          "hash": "126618735375861407",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/DescriptionList/index.ts",
+          "hash": "14678959482646492913"
+        },
+        {
+          "file": "packages/react/src/EmptyState/EmptyState.stories.tsx",
+          "hash": "15774263344746122839",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/EmptyState/EmptyState.test.tsx",
+          "hash": "1601087140551386792",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/EmptyState/EmptyState.tsx",
+          "hash": "7611250148598146883",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/EmptyState/index.ts",
+          "hash": "5447746497930011907"
+        },
+        {
+          "file": "packages/react/src/ErrorState/ErrorState.stories.tsx",
+          "hash": "5112340587579663734",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/ErrorState/ErrorState.test.tsx",
+          "hash": "14721468042758545392",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/ErrorState/ErrorState.tsx",
+          "hash": "15696840923859063581",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/ErrorState/index.ts",
+          "hash": "18195090020150093274"
+        },
+        {
+          "file": "packages/react/src/FeatureGrid/FeatureGrid.stories.tsx",
+          "hash": "10076172641842985352",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/FeatureGrid/FeatureGrid.test.tsx",
+          "hash": "17985049901010254312",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/FeatureGrid/FeatureGrid.tsx",
+          "hash": "10764598449481819436",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/FeatureGrid/index.ts",
+          "hash": "3841970122455672419"
+        },
+        {
           "file": "packages/react/src/FileUpload/FileUpload.stories.tsx",
           "hash": "15554387761238936714",
           "deps": [
@@ -862,6 +1078,86 @@
         {
           "file": "packages/react/src/FileUpload/index.ts",
           "hash": "12357574043638583649"
+        },
+        {
+          "file": "packages/react/src/Hero/Hero.stories.tsx",
+          "hash": "5018392584954042961",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Hero/Hero.test.tsx",
+          "hash": "3853515546048085546",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Hero/Hero.tsx",
+          "hash": "7190276595437994212",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Hero/index.ts",
+          "hash": "13365055584349734815"
+        },
+        {
+          "file": "packages/react/src/List/List.stories.tsx",
+          "hash": "6908173378368108458",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/List/List.test.tsx",
+          "hash": "10752342920821930371",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/List/List.tsx",
+          "hash": "18128646753733220461",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/List/index.ts",
+          "hash": "17944075439037534861"
+        },
+        {
+          "file": "packages/react/src/LogoCloud/LogoCloud.stories.tsx",
+          "hash": "4610845654492329963",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/LogoCloud/LogoCloud.test.tsx",
+          "hash": "7384618668472369248",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/LogoCloud/LogoCloud.tsx",
+          "hash": "15839138479784328153",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/LogoCloud/index.ts",
+          "hash": "1468704350925393481"
         },
         {
           "file": "packages/react/src/MobileNav/MobileNav.stories.tsx",
@@ -916,6 +1212,85 @@
           "hash": "14389164802092745445"
         },
         {
+          "file": "packages/react/src/Stat/Stat.stories.tsx",
+          "hash": "14436897485348883717",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Stat/Stat.test.tsx",
+          "hash": "8807592368365107738",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Stat/Stat.tsx",
+          "hash": "1699719929497356686",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Stat/index.ts",
+          "hash": "16292013116528402748"
+        },
+        {
+          "file": "packages/react/src/Table/Table.stories.tsx",
+          "hash": "8396666411695285624",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Table/Table.test.tsx",
+          "hash": "6891776728893041191",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Table/Table.tsx",
+          "hash": "12022115610802830340",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Table/index.ts",
+          "hash": "1737326205370154182"
+        },
+        {
+          "file": "packages/react/src/Testimonial/Testimonial.stories.tsx",
+          "hash": "3056816681876058390",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Testimonial/Testimonial.test.tsx",
+          "hash": "18436670236376818809",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Testimonial/Testimonial.tsx",
+          "hash": "14049132205504409996",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Testimonial/index.ts",
+          "hash": "17172780196077652609"
+        },
+        {
           "file": "packages/react/src/TimePicker/TimePicker.stories.tsx",
           "hash": "922340108090936677",
           "deps": [
@@ -941,6 +1316,58 @@
         {
           "file": "packages/react/src/TimePicker/index.ts",
           "hash": "2112356001446048034"
+        },
+        {
+          "file": "packages/react/src/Timeline/Timeline.stories.tsx",
+          "hash": "7339778758749547875",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Timeline/Timeline.test.tsx",
+          "hash": "17502935260783005169",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Timeline/Timeline.tsx",
+          "hash": "13836876789198202534",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Timeline/index.ts",
+          "hash": "9621735730052923075"
+        },
+        {
+          "file": "packages/react/src/Toast/Toast.stories.tsx",
+          "hash": "102339389742439670",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Toast/Toast.test.tsx",
+          "hash": "7600950066004599265",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Toast/Toast.tsx",
+          "hash": "3371494578378329853",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/Toast/index.ts",
+          "hash": "9276329124043419057"
         },
         {
           "file": "packages/react/src/accordion/Accordion.stories.tsx",
@@ -1080,6 +1507,31 @@
           "hash": "14663468232077114161"
         },
         {
+          "file": "packages/react/src/banner/banner.stories.tsx",
+          "hash": "2284821472468985617",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/banner/banner.test.tsx",
+          "hash": "5918107962001774508",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/banner/banner.tsx",
+          "hash": "16045768101878714450",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/banner/index.ts",
+          "hash": "5659051729608692613"
+        },
+        {
           "file": "packages/react/src/breadcrumb/Breadcrumb.stories.tsx",
           "hash": "9152484374908222199",
           "deps": [
@@ -1172,6 +1624,33 @@
         {
           "file": "packages/react/src/card/index.ts",
           "hash": "9101593940483212797"
+        },
+        {
+          "file": "packages/react/src/carousel/Carousel.stories.tsx",
+          "hash": "17319297870182426509",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/carousel/Carousel.test.tsx",
+          "hash": "2041223476859314234",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/carousel/Carousel.tsx",
+          "hash": "9266956836029584152",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/carousel/index.ts",
+          "hash": "6411591454380749993"
         },
         {
           "file": "packages/react/src/center/Center.test.tsx",
@@ -1402,6 +1881,33 @@
           "hash": "13217032514544095680"
         },
         {
+          "file": "packages/react/src/gallery/Gallery.stories.tsx",
+          "hash": "13098042521008251940",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/gallery/Gallery.test.tsx",
+          "hash": "14782640508467190233",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/gallery/Gallery.tsx",
+          "hash": "5147012171658227585",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/gallery/index.ts",
+          "hash": "990965182159088890"
+        },
+        {
           "file": "packages/react/src/grid/Grid.test.tsx",
           "hash": "11272367386959394026",
           "deps": [
@@ -1470,8 +1976,33 @@
           "hash": "13371657410241450965"
         },
         {
+          "file": "packages/react/src/image/image.stories.tsx",
+          "hash": "14662849229006799601",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/image/image.test.tsx",
+          "hash": "6746892406976058390",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/image/image.tsx",
+          "hash": "14807958806670029035",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/image/index.ts",
+          "hash": "16584808758835938606"
+        },
+        {
           "file": "packages/react/src/index.ts",
-          "hash": "7566260512432442435"
+          "hash": "14517148131891308018"
         },
         {
           "file": "packages/react/src/inline/Inline.test.tsx",
@@ -1595,6 +2126,58 @@
           "hash": "2788726369441143935",
           "deps": [
             "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/react/src/lightbox/Lightbox.stories.tsx",
+          "hash": "14321065072084859856",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/lightbox/Lightbox.test.tsx",
+          "hash": "8532427631340034596",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/lightbox/Lightbox.tsx",
+          "hash": "11037082375849395820",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/lightbox/index.ts",
+          "hash": "13410820680036986563"
+        },
+        {
+          "file": "packages/react/src/loading-overlay/index.ts",
+          "hash": "4094586107259330935"
+        },
+        {
+          "file": "packages/react/src/loading-overlay/loading-overlay.stories.tsx",
+          "hash": "14015806692123591177",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/loading-overlay/loading-overlay.test.tsx",
+          "hash": "17523886923753455997",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/loading-overlay/loading-overlay.tsx",
+          "hash": "3101055506472707544",
+          "deps": [
+            "npm:react"
           ]
         },
         {
@@ -1797,6 +2380,31 @@
         {
           "file": "packages/react/src/popover/index.ts",
           "hash": "10165565951759916721"
+        },
+        {
+          "file": "packages/react/src/progress/index.ts",
+          "hash": "2133926014527591126"
+        },
+        {
+          "file": "packages/react/src/progress/progress.stories.tsx",
+          "hash": "3393692824001082424",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/progress/progress.test.tsx",
+          "hash": "1924091231140882828",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/progress/progress.tsx",
+          "hash": "16782861528215320843",
+          "deps": [
+            "npm:react"
+          ]
         },
         {
           "file": "packages/react/src/prose/Prose.tsx",
@@ -2392,6 +3000,32 @@
           ]
         },
         {
+          "file": "packages/angular/src/CTA/cta.component.spec.ts",
+          "hash": "10402312617046675489",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/CTA/cta.component.ts",
+          "hash": "13629337885531881767",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/CTA/cta.stories.ts",
+          "hash": "16814117415308765980",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/CTA/index.ts",
+          "hash": "18062519627570961358"
+        },
+        {
           "file": "packages/angular/src/ColorPicker/ColorPicker.component.spec.ts",
           "hash": "16408875519106855101",
           "deps": [
@@ -2472,6 +3106,84 @@
           "hash": "1377512288109810131"
         },
         {
+          "file": "packages/angular/src/EmptyState/empty-state.component.spec.ts",
+          "hash": "15478504749243371889",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/EmptyState/empty-state.component.ts",
+          "hash": "16889509372001103538",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/EmptyState/empty-state.stories.ts",
+          "hash": "2054654498853521633",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/EmptyState/index.ts",
+          "hash": "15246108111220288043"
+        },
+        {
+          "file": "packages/angular/src/ErrorState/error-state.component.spec.ts",
+          "hash": "738690581875425857",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/ErrorState/error-state.component.ts",
+          "hash": "17244440915493758845",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/ErrorState/error-state.stories.ts",
+          "hash": "9715001596997409644",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/ErrorState/index.ts",
+          "hash": "10948406978826217166"
+        },
+        {
+          "file": "packages/angular/src/FeatureGrid/featuregrid.component.spec.ts",
+          "hash": "12040686931538276884",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/FeatureGrid/featuregrid.component.ts",
+          "hash": "13466231781877035110",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/FeatureGrid/featuregrid.stories.ts",
+          "hash": "17787503716724810384",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/FeatureGrid/index.ts",
+          "hash": "7913750508913458676"
+        },
+        {
           "file": "packages/angular/src/FileUpload/FileUpload.component.spec.ts",
           "hash": "14534053371286014059",
           "deps": [
@@ -2500,6 +3212,84 @@
           "hash": "9766023800278812414"
         },
         {
+          "file": "packages/angular/src/Hero/hero.component.spec.ts",
+          "hash": "17694666828342706940",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/Hero/hero.component.ts",
+          "hash": "14125115186499394942",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/Hero/hero.stories.ts",
+          "hash": "11318822904619712157",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/Hero/index.ts",
+          "hash": "1358796995947350963"
+        },
+        {
+          "file": "packages/angular/src/LogoCloud/index.ts",
+          "hash": "8357147220689344140"
+        },
+        {
+          "file": "packages/angular/src/LogoCloud/logocloud.component.spec.ts",
+          "hash": "10923292963992859853",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/LogoCloud/logocloud.component.ts",
+          "hash": "8091338920094374585",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/LogoCloud/logocloud.stories.ts",
+          "hash": "14438801611733311678",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/Testimonial/index.ts",
+          "hash": "15361347299233706869"
+        },
+        {
+          "file": "packages/angular/src/Testimonial/testimonial.component.spec.ts",
+          "hash": "4035040287905231676",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/Testimonial/testimonial.component.ts",
+          "hash": "18378417531708338282",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/Testimonial/testimonial.stories.ts",
+          "hash": "15252391719039378376",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
           "file": "packages/angular/src/TimePicker/index.ts",
           "hash": "13797354747065001577"
         },
@@ -2523,6 +3313,67 @@
           "hash": "11335355452885662751",
           "deps": [
             "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/Timeline/index.ts",
+          "hash": "13580705992182742511"
+        },
+        {
+          "file": "packages/angular/src/Timeline/timeline.component.spec.ts",
+          "hash": "9991197593534492156",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/Timeline/timeline.component.ts",
+          "hash": "10063314867409690088",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/Timeline/timeline.stories.ts",
+          "hash": "7706148921427858039",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/Toast/index.ts",
+          "hash": "654625061955593373"
+        },
+        {
+          "file": "packages/angular/src/Toast/toast.component.spec.ts",
+          "hash": "4995237300223971023",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/Toast/toast.component.ts",
+          "hash": "470286571150745054",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/Toast/toast.service.ts",
+          "hash": "4563187324580621242",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "packages/angular/src/Toast/toast.stories.ts",
+          "hash": "14089260402424798417",
+          "deps": [
+            "npm:@storybook/angular",
+            "npm:@angular/core@19.2.25"
           ]
         },
         {
@@ -2682,6 +3533,31 @@
           "hash": "10167045822179394892"
         },
         {
+          "file": "packages/angular/src/banner/banner.component.spec.ts",
+          "hash": "10723179963572485403",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/banner/banner.component.ts",
+          "hash": "5404003125877862773",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/banner/banner.stories.ts",
+          "hash": "15567742145502945508",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/banner/index.ts",
+          "hash": "1729630874158164515"
+        },
+        {
           "file": "packages/angular/src/bottom-nav/bottom-nav.component.spec.ts",
           "hash": "1753826384474278756",
           "deps": [
@@ -2798,6 +3674,33 @@
         {
           "file": "packages/angular/src/card/index.ts",
           "hash": "15560743538288663931"
+        },
+        {
+          "file": "packages/angular/src/carousel/carousel.component.spec.ts",
+          "hash": "10775300243292851116",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "packages/angular/src/carousel/carousel.component.ts",
+          "hash": "3085261428938875879",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/carousel/carousel.stories.ts",
+          "hash": "14024885652694913469",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/carousel/index.ts",
+          "hash": "2497708843118541026"
         },
         {
           "file": "packages/angular/src/center/center.component.ts",
@@ -2919,6 +3822,32 @@
           "hash": "2213968004846676852"
         },
         {
+          "file": "packages/angular/src/description-list/description-list.component.spec.ts",
+          "hash": "7717919053942683672",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/description-list/description-list.component.ts",
+          "hash": "17911234992487410454",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/description-list/description-list.stories.ts",
+          "hash": "16609823876995501262",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/description-list/index.ts",
+          "hash": "7256604589849201291"
+        },
+        {
           "file": "packages/angular/src/divider/divider.component.ts",
           "hash": "7337266955153756938",
           "deps": [
@@ -3023,6 +3952,26 @@
           "hash": "3431716135328408191"
         },
         {
+          "file": "packages/angular/src/gallery/gallery.component.spec.ts",
+          "hash": "12069539869905019060",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "packages/angular/src/gallery/gallery.component.ts",
+          "hash": "3300067389415879784",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/gallery/index.ts",
+          "hash": "5681085101656837564"
+        },
+        {
           "file": "packages/angular/src/grid/grid-item.component.ts",
           "hash": "5306310610525075537",
           "deps": [
@@ -3091,8 +4040,34 @@
           "hash": "1686619661982958035"
         },
         {
+          "file": "packages/angular/src/image/image.component.spec.ts",
+          "hash": "6597908300928238020",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/image/image.component.ts",
+          "hash": "2337712960190968754",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/image/image.stories.ts",
+          "hash": "16989754013099313882",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/image/index.ts",
+          "hash": "9738083027401555248"
+        },
+        {
           "file": "packages/angular/src/index.ts",
-          "hash": "17126479574271730437"
+          "hash": "6817370691114823204"
         },
         {
           "file": "packages/angular/src/inline/index.ts",
@@ -3221,6 +4196,85 @@
           "hash": "613561944507020522",
           "deps": [
             "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/lightbox/index.ts",
+          "hash": "8063272750536265987"
+        },
+        {
+          "file": "packages/angular/src/lightbox/lightbox.component.spec.ts",
+          "hash": "3223115513250836958",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "packages/angular/src/lightbox/lightbox.component.ts",
+          "hash": "7371109695222022262",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/lightbox/lightbox.stories.ts",
+          "hash": "14426542396021714530",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/list/index.ts",
+          "hash": "6616800294341127205"
+        },
+        {
+          "file": "packages/angular/src/list/list.component.spec.ts",
+          "hash": "3975257204306373415",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/list/list.component.ts",
+          "hash": "1555373608572252402",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/list/list.stories.ts",
+          "hash": "4872885313582961758",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/loading-overlay/index.ts",
+          "hash": "2059274331054895990"
+        },
+        {
+          "file": "packages/angular/src/loading-overlay/loading-overlay.component.spec.ts",
+          "hash": "3923089596958553279",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/loading-overlay/loading-overlay.component.ts",
+          "hash": "9102968451609080239",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/loading-overlay/loading-overlay.stories.ts",
+          "hash": "9309704631441794868",
+          "deps": [
+            "npm:@storybook/angular"
           ]
         },
         {
@@ -3448,6 +4502,31 @@
         {
           "file": "packages/angular/src/popover/popover.stories.ts",
           "hash": "16676428040078928541",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/progress/index.ts",
+          "hash": "6253989572080592344"
+        },
+        {
+          "file": "packages/angular/src/progress/progress.component.spec.ts",
+          "hash": "14836739051997502709",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/progress/progress.component.ts",
+          "hash": "7085124131096814764",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/progress/progress.stories.ts",
+          "hash": "11940160135097097587",
           "deps": [
             "npm:@storybook/angular"
           ]
@@ -3827,6 +4906,32 @@
           ]
         },
         {
+          "file": "packages/angular/src/stat/index.ts",
+          "hash": "10728492903628236856"
+        },
+        {
+          "file": "packages/angular/src/stat/stat.component.spec.ts",
+          "hash": "7555303301862915533",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/stat/stat.component.ts",
+          "hash": "8281616546718444829",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/stat/stat.stories.ts",
+          "hash": "11670832922435187292",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
           "file": "packages/angular/src/stepper/index.ts",
           "hash": "5861669625604186073"
         },
@@ -3873,6 +4978,32 @@
         {
           "file": "packages/angular/src/switch/switch.stories.ts",
           "hash": "11704178539027852092",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/table/index.ts",
+          "hash": "1860358971566382900"
+        },
+        {
+          "file": "packages/angular/src/table/table.component.spec.ts",
+          "hash": "498927022438490144",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/table/table.component.ts",
+          "hash": "8815033943662233726",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/table/table.stories.ts",
+          "hash": "2701729105327115174",
           "deps": [
             "npm:@storybook/angular"
           ]

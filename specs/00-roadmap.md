@@ -72,26 +72,26 @@ Prévoir un découpage en deux tâches (logique/accessibilité, puis habillage) 
 - [x] `Rating`
 
 ## Lot 7 — Données, retours, vitrine
-- [ ] `Table`
-- [ ] `List`
-- [ ] `DescriptionList`
-- [ ] `Stat`
-- [ ] `Timeline`
-- [ ] `EmptyState`
-- [ ] `ErrorState`
-- [ ] `Toast`
-- [ ] `Banner`
-- [ ] `Progress`
-- [ ] `LoadingOverlay`
-- [ ] `Image`
-- [ ] `Gallery`
-- [ ] `Lightbox`
-- [ ] `Carousel`
-- [ ] `Hero`
-- [ ] `FeatureGrid`
-- [ ] `CTA`
-- [ ] `Testimonial`
-- [ ] `LogoCloud`
+- [x] `Table`
+- [x] `List`
+- [x] `DescriptionList`
+- [x] `Stat`
+- [x] `Timeline`
+- [x] `EmptyState`
+- [x] `ErrorState`
+- [x] `Toast`
+- [x] `Banner`
+- [x] `Progress`
+- [x] `LoadingOverlay`
+- [x] `Image`
+- [x] `Gallery`
+- [x] `Lightbox`
+- [x] `Carousel`
+- [x] `Hero`
+- [x] `FeatureGrid`
+- [x] `CTA`
+- [x] `Testimonial`
+- [x] `LogoCloud`
 - [ ] `FAQ`
 - [ ] `CommandPalette`
 

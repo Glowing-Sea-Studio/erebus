@@ -1,0 +1,27 @@
+.erb-toast-container {
+  position: fixed;
+  bottom: var(--erb-spacing-4);
+  right: var(--erb-spacing-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--erb-spacing-2);
+  z-index: 9999;
+}
+.erb-toast {
+  background-color: var(--erb-color-neutral-900);
+  color: var(--erb-color-neutral-50);
+  padding: var(--erb-spacing-3) var(--erb-spacing-4);
+  border-radius: var(--erb-border-radius-md);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 250px;
+}
+.erb-toast-close {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  margin-left: var(--erb-spacing-4);
+}

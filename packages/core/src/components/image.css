@@ -1,0 +1,16 @@
+.erb-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.erb-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.erb-image--fallback {
+  background-color: var(--erb-color-neutral-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--erb-color-neutral-500);
+}

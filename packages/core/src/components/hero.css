@@ -1,0 +1,14 @@
+.erb-hero {
+  display: flex;
+  flex-direction: column;
+  padding: var(--erb-spacing-6, 1.5rem);
+  gap: var(--erb-spacing-4, 1rem);
+  background-color: var(--erb-color-bg-base, #ffffff);
+  color: var(--erb-color-text-base, #000000);
+}
+
+@media (min-width: 768px) {
+  .erb-hero {
+    padding: var(--erb-spacing-8, 2rem);
+  }
+}

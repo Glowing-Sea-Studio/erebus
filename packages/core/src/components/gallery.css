@@ -1,0 +1,26 @@
+.erb-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--erb-gallery-item-min-width, 200px), 1fr));
+  gap: var(--erb-spacing-4, 16px);
+  width: 100%;
+}
+
+.erb-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--erb-border-radius-md, 8px);
+  aspect-ratio: var(--erb-gallery-item-aspect-ratio, 1 / 1);
+  cursor: pointer;
+  transition: transform var(--erb-transition-duration-normal, 0.2s) ease;
+}
+
+.erb-gallery-item:hover {
+  transform: scale(1.02);
+}
+
+.erb-gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

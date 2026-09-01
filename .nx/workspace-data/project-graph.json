@@ -18995,17 +18995,22 @@
       },
       {
         "source": "@glowing-sea-studio/erebus-angular",
-        "target": "npm:@angular/platform-browser",
-        "type": "static"
-      },
-      {
-        "source": "@glowing-sea-studio/erebus-angular",
         "target": "npm:@angular/common",
         "type": "static"
       },
       {
         "source": "@glowing-sea-studio/erebus-angular",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "@glowing-sea-studio/erebus-angular",
         "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "@glowing-sea-studio/erebus-angular",
+        "target": "npm:rxjs",
         "type": "static"
       }
     ],

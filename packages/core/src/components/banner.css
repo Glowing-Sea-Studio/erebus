@@ -1,0 +1,12 @@
+.erb-banner {
+  display: flex;
+  align-items: center;
+  padding: var(--erb-spacing-4);
+  background-color: var(--erb-color-primary-100);
+  color: var(--erb-color-primary-900);
+  border-radius: var(--erb-radius-md);
+  margin-bottom: var(--erb-spacing-4);
+}
+.erb-banner--success { background-color: var(--erb-color-success-100); color: var(--erb-color-success-900); }
+.erb-banner--warning { background-color: var(--erb-color-warning-100); color: var(--erb-color-warning-900); }
+.erb-banner--error { background-color: var(--erb-color-error-100); color: var(--erb-color-error-900); }

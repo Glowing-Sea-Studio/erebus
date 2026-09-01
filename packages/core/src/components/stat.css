@@ -1,0 +1,27 @@
+.erb-stat {
+  display: flex;
+  flex-direction: column;
+  padding: var(--erb-spacing-4, 1rem);
+  border: 1px solid var(--erb-color-border-subtle, #e5e7eb);
+  border-radius: var(--erb-border-radius-md, 0.375rem);
+  background-color: var(--erb-color-background-surface, #ffffff);
+  font-family: var(--erb-typography-font-family-base, sans-serif);
+}
+
+.erb-stat-label {
+  font-size: var(--erb-typography-size-sm, 0.875rem);
+  color: var(--erb-color-text-secondary, #4b5563);
+  margin-bottom: var(--erb-spacing-1, 0.25rem);
+}
+
+.erb-stat-value {
+  font-size: var(--erb-typography-size-2xl, 1.5rem);
+  font-weight: var(--erb-typography-font-weight-bold, 700);
+  color: var(--erb-color-text-primary, #111827);
+}
+
+.erb-stat-help-text {
+  font-size: var(--erb-typography-size-sm, 0.875rem);
+  color: var(--erb-color-text-tertiary, #6b7280);
+  margin-top: var(--erb-spacing-1, 0.25rem);
+}

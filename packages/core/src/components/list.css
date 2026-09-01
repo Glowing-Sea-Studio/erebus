@@ -1,0 +1,18 @@
+.erb-list {
+  padding-left: var(--erb-spacing-4, 1rem);
+  margin: var(--erb-spacing-0, 0);
+  color: var(--erb-color-text-primary, #111827);
+  font-family: var(--erb-typography-font-family-base, sans-serif);
+}
+
+.erb-list--unordered {
+  list-style-type: disc;
+}
+
+.erb-list--ordered {
+  list-style-type: decimal;
+}
+
+.erb-list-item {
+  margin-bottom: var(--erb-spacing-1, 0.25rem);
+}

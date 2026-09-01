@@ -1,0 +1,17 @@
+.erb-description-list {
+  display: grid;
+  grid-template-columns: minmax(120px, auto) 1fr;
+  gap: var(--erb-spacing-2, 0.5rem) var(--erb-spacing-4, 1rem);
+  font-family: var(--erb-typography-font-family-base, sans-serif);
+  margin: var(--erb-spacing-0, 0);
+}
+
+.erb-description-list-term {
+  font-weight: var(--erb-typography-font-weight-semibold, 600);
+  color: var(--erb-color-text-primary, #111827);
+}
+
+.erb-description-list-details {
+  margin: 0;
+  color: var(--erb-color-text-secondary, #4b5563);
+}
