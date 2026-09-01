@@ -1,13 +1,27 @@
 {
   "textarea": {
-    "bg": { "$value": "{color.bg.canvas}" },
-    "border": { "$value": "{color.border.default}" },
-    "text": { "$value": "{color.fg.default}" },
-    "radius": { "$value": "{radius.md}" },
-    "focus-ring": { "$value": "{color.border.focus}" },
+    "bg": {
+      "$value": "{color.bg.canvas}"
+    },
+    "border": {
+      "$value": "{color.border.default}"
+    },
+    "text": {
+      "$value": "{color.fg.default}"
+    },
+    "radius": {
+      "$value": "{radius.md}"
+    },
+    "focus-ring": {
+      "$value": "{color.border.focus}"
+    },
     "disabled": {
-      "bg": { "$value": "{color.bg.muted}" },
-      "text": { "$value": "{color.fg.disabled}" }
+      "bg": {
+        "$value": "{color.bg.muted}"
+      },
+      "text": {
+        "$value": "{color.fg.disabled}"
+      }
     }
   }
 }

@@ -1,23 +1,49 @@
 {
   "number-input": {
     "height": {
-      "sm": { "$value": "{input.height.sm}" },
-      "md": { "$value": "{input.height.md}" },
-      "lg": { "$value": "{input.height.lg}" }
+      "sm": {
+        "$value": "{input.height.sm}"
+      },
+      "md": {
+        "$value": "{input.height.md}"
+      },
+      "lg": {
+        "$value": "{input.height.lg}"
+      }
     },
     "px": {
-      "sm": { "$value": "{input.px.sm}" },
-      "md": { "$value": "{input.px.md}" },
-      "lg": { "$value": "{input.px.lg}" }
+      "sm": {
+        "$value": "{input.px.sm}"
+      },
+      "md": {
+        "$value": "{input.px.md}"
+      },
+      "lg": {
+        "$value": "{input.px.lg}"
+      }
     },
-    "radius": { "$value": "{radius.md}" },
-    "bg": { "$value": "{color.bg.canvas}" },
-    "border": { "$value": "{color.border.default}" },
-    "text": { "$value": "{color.fg.default}" },
-    "focus-ring": { "$value": "{color.border.focus}" },
+    "radius": {
+      "$value": "{radius.md}"
+    },
+    "bg": {
+      "$value": "{color.bg.canvas}"
+    },
+    "border": {
+      "$value": "{color.border.default}"
+    },
+    "text": {
+      "$value": "{color.fg.default}"
+    },
+    "focus-ring": {
+      "$value": "{color.border.focus}"
+    },
     "disabled": {
-      "bg": { "$value": "{color.bg.muted}" },
-      "text": { "$value": "{color.fg.disabled}" }
+      "bg": {
+        "$value": "{color.bg.muted}"
+      },
+      "text": {
+        "$value": "{color.fg.disabled}"
+      }
     }
   }
 }

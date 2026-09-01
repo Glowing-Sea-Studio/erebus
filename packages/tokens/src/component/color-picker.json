@@ -1,8 +1,20 @@
 {
   "color-picker": {
-    "background": { "$type": "color", "$value": "{color.bg.canvas}" },
-    "border": { "$type": "color", "$value": "{color.border.default}" },
-    "border-focus": { "$type": "color", "$value": "{color.border.focus}" },
-    "border-radius": { "$type": "dimension", "$value": "{radius.md}" }
+    "background": {
+      "$type": "color",
+      "$value": "{color.bg.canvas}"
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{color.border.default}"
+    },
+    "border-focus": {
+      "$type": "color",
+      "$value": "{color.border.focus}"
+    },
+    "border-radius": {
+      "$type": "dimension",
+      "$value": "{radius.md}"
+    }
   }
 }

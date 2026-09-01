@@ -2,13 +2,17 @@
   "version": "6.0",
   "nxVersion": "19.8.14",
   "deps": {
-    "@angular/animations": "^22.1.4",
+    "@angular/animations": "^18.2.14",
     "@angular/common": "^18.2.14",
+    "@angular-devkit/architect": "^0.1802.21",
+    "@angular-devkit/build-angular": "^18.2.14",
+    "@angular-devkit/core": "^18.2.14",
     "@angular/compiler": "18",
     "@angular/compiler-cli": "18",
     "@angular/core": "^18.2.14",
-    "@angular/forms": "*",
-    "@angular/platform-browser-dynamic": "^22.1.4",
+    "@angular/forms": "^18.2.14",
+    "@angular/platform-browser": "^18.2.14",
+    "@angular/platform-browser-dynamic": "^18.2.14",
     "@nx/eslint-plugin": "^19.8.14",
     "@nx/js": "^19.8.14",
     "@nx/storybook": "^19.8.14",
@@ -70,16 +74,108 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": "jules-tasks/lot-4-superpositions-socle-20260831-2352.md",
+        "hash": "4714358981224981548"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "1489902762421160859"
+      },
+      {
+        "file": "start.log",
+        "hash": "12388790527697588146"
+      },
+      {
+        "file": "test-react.js",
+        "hash": "7658837404095371006"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "specs/03-deploiement-github.md",
+        "hash": "12874211706838362349"
+      },
+      {
+        "file": "specs/01-specifications-metier.md",
+        "hash": "17707256249961281613"
+      },
+      {
+        "file": "specs/Charte_Graphique_Glowing_Sea_Studio.md",
+        "hash": "12015017107697981722"
+      },
+      {
         "file": "tsconfig.base.json",
         "hash": "7418268071776220994"
       },
       {
-        "file": "jules_response.json",
-        "hash": "6580593296038942516"
+        "file": "jules-tasks/lots-2-3-20260901-1017.md",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "3985985064516675909"
+      },
+      {
+        "file": "nx.json",
+        "hash": "346726414605041386"
+      },
+      {
+        "file": "AGENTS.md",
+        "hash": "16952903342658093389"
+      },
+      {
+        "file": "jules-tasks/component-library-demo-perfection-20260902-0009.md",
+        "hash": "8024516181449417050"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "2653529739611990858"
+      },
+      {
+        "file": "scripts/audit-parity.js",
+        "hash": "9537597396230781665"
+      },
+      {
+        "file": "package.json",
+        "hash": "8759861623996836303"
+      },
+      {
+        "file": "start.sh",
+        "hash": "9571994777860088418"
+      },
+      {
+        "file": "www/index.html",
+        "hash": "14519845841948577513"
       },
       {
         "file": "docs/i18n-rtl.md",
         "hash": "3419584650571028983"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "194146092283452222"
+      },
+      {
+        "file": "specs/02-specifications-techniques.md",
+        "hash": "10764395224646981999"
+      },
+      {
+        "file": "scripts/audit-contrast.js",
+        "hash": "11564428257103351950"
+      },
+      {
+        "file": "docs/README.md",
+        "hash": "12509993654206344867"
+      },
+      {
+        "file": "stylelint.config.js",
+        "hash": "17353201888065353557"
+      },
+      {
+        "file": "specs/04-instructions-readme.md",
+        "hash": "5133977881871017630"
       },
       {
         "file": ".prettierignore",
@@ -90,66 +186,6 @@
         "hash": "8209091685257225479"
       },
       {
-        "file": "jules_payload.json",
-        "hash": "14229674980074399362"
-      },
-      {
-        "file": "README.md",
-        "hash": "9686789429054710927"
-      },
-      {
-        "file": "specs/03-deploiement-github.md",
-        "hash": "12874211706838362349"
-      },
-      {
-        "file": "nx.json",
-        "hash": "13497546736868009048"
-      },
-      {
-        "file": "jules-tasks/lots-2-3-20260901-1017.md",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "create_lot7.py",
-        "hash": "5080225553300619829"
-      },
-      {
-        "file": "scripts/audit-contrast.js",
-        "hash": "11564428257103351950"
-      },
-      {
-        "file": "specs/04-instructions-readme.md",
-        "hash": "5133977881871017630"
-      },
-      {
-        "file": "scripts/audit-parity.js",
-        "hash": "9537597396230781665"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "3985985064516675909"
-      },
-      {
-        "file": "start.log",
-        "hash": "45536893548000758"
-      },
-      {
-        "file": "eslint.config.js",
-        "hash": "194146092283452222"
-      },
-      {
-        "file": "package.json",
-        "hash": "4659196307326787815"
-      },
-      {
-        "file": "specs/02-specifications-techniques.md",
-        "hash": "10764395224646981999"
-      },
-      {
-        "file": "AGENTS.md",
-        "hash": "16952903342658093389"
-      },
-      {
         "file": "specs/00-roadmap.md",
         "hash": "2870697171258609012"
       },
@@ -158,52 +194,8 @@
         "hash": "14118497793223556328"
       },
       {
-        "file": "start.sh",
-        "hash": "3831408539159839341"
-      },
-      {
-        "file": "specs/01-specifications-metier.md",
-        "hash": "17707256249961281613"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "2653529739611990858"
-      },
-      {
-        "file": "jules-tasks/lot-4-superpositions-socle-20260831-2352.md",
-        "hash": "4714358981224981548"
-      },
-      {
-        "file": "stylelint.config.js",
-        "hash": "17353201888065353557"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": "jules_msg.json",
-        "hash": "3082920335506272569"
-      },
-      {
-        "file": "specs/Charte_Graphique_Glowing_Sea_Studio.md",
-        "hash": "12015017107697981722"
-      },
-      {
-        "file": "docs/README.md",
-        "hash": "12509993654206344867"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "1346067979362158458"
-      },
-      {
-        "file": "jules_response_retry.json",
-        "hash": "545784860517342293"
-      },
-      {
-        "file": "generate.py",
-        "hash": "6221542141565332190"
+        "file": "README.md",
+        "hash": "9686789429054710927"
       }
     ],
     "projectFileMap": {
@@ -596,7 +588,7 @@
       "@glowing-sea-studio/erebus-angular": [
         {
           "file": "packages/angular/.storybook/main.ts",
-          "hash": "5767686390889070243",
+          "hash": "14275244969528158896",
           "deps": [
             "npm:@storybook/angular"
           ]
@@ -612,7 +604,7 @@
         },
         {
           "file": "packages/angular/.storybook/tsconfig.json",
-          "hash": "14127105163656186377"
+          "hash": "12434785287366240320"
         },
         {
           "file": "packages/angular/ng-package.json",
@@ -620,9 +612,11 @@
         },
         {
           "file": "packages/angular/package.json",
-          "hash": "16023823381768536149",
+          "hash": "9662728206540038984",
           "deps": [
             "npm:@angular/core@19.2.25",
+            "npm:@angular/common",
+            "npm:@angular/platform-browser",
             "npm:@angular/cdk",
             "npm:vitest"
           ]
@@ -843,7 +837,7 @@
         },
         {
           "file": "packages/angular/src/FileUpload/FileUpload.component.ts",
-          "hash": "4580668795802831725",
+          "hash": "17804355966100448885",
           "deps": [
             "npm:@angular/core@19.2.25",
             "npm:@angular/common"
@@ -1004,10 +998,11 @@
         },
         {
           "file": "packages/angular/src/Toast/toast.component.ts",
-          "hash": "6812790110606037004",
+          "hash": "31399086403348377",
           "deps": [
             "npm:@angular/core@19.2.25",
-            "npm:@angular/common"
+            "npm:@angular/common",
+            "npm:rxjs"
           ]
         },
         {
@@ -1112,7 +1107,7 @@
         },
         {
           "file": "packages/angular/src/app-shell/app-shell.component.ts",
-          "hash": "6757425950792231782",
+          "hash": "8277720460682670411",
           "deps": [
             "npm:@angular/core@19.2.25"
           ]
@@ -1148,7 +1143,7 @@
         },
         {
           "file": "packages/angular/src/avatar-group/avatar-group.component.ts",
-          "hash": "5045060001995422485",
+          "hash": "15026179217579496004",
           "deps": [
             "npm:@angular/core@19.2.25"
           ]
@@ -1227,7 +1222,7 @@
         },
         {
           "file": "packages/angular/src/bottom-nav/bottom-nav.component.ts",
-          "hash": "3045888695070117795",
+          "hash": "4912332180594495901",
           "deps": [
             "npm:@angular/core@19.2.25"
           ]
@@ -1448,7 +1443,7 @@
         },
         {
           "file": "packages/angular/src/combobox/combobox.component.ts",
-          "hash": "11176646985350419857",
+          "hash": "12561719751865225085",
           "deps": [
             "npm:@angular/forms",
             "npm:@angular/core@19.2.25",
@@ -2004,7 +1999,7 @@
         },
         {
           "file": "packages/angular/src/mobile-nav/mobile-nav.component.ts",
-          "hash": "10058580587609844715",
+          "hash": "3984744645103687082",
           "deps": [
             "npm:@angular/core@19.2.25"
           ]
@@ -2047,7 +2042,7 @@
         },
         {
           "file": "packages/angular/src/multi-select/multi-select.component.ts",
-          "hash": "14927445724310276414",
+          "hash": "2229180717783744429",
           "deps": [
             "npm:@angular/forms",
             "npm:@angular/core@19.2.25",
@@ -2408,7 +2403,7 @@
         },
         {
           "file": "packages/angular/src/sidebar/sidebar.component.ts",
-          "hash": "7507888024048607357",
+          "hash": "14287111917265973922",
           "deps": [
             "npm:@angular/core@19.2.25"
           ]
@@ -2513,7 +2508,7 @@
         },
         {
           "file": "packages/angular/src/slider/slider.component.ts",
-          "hash": "11653204459621442854",
+          "hash": "17798014964645188429",
           "deps": [
             "npm:@angular/core@19.2.25",
             "npm:@angular/common"
@@ -2859,210 +2854,182 @@
           "hash": "6685020122404191677"
         }
       ],
-      "@glowing-sea-studio/erebus-tokens": [
+      "demo-angular": [
         {
-          "file": "packages/tokens/package.json",
-          "hash": "4781000300324069859"
+          "file": "apps/demo-angular/.editorconfig",
+          "hash": "4165385352547808172"
         },
         {
-          "file": "packages/tokens/scripts/verify-parity.mjs",
-          "hash": "1673921158040622214"
+          "file": "apps/demo-angular/.gitignore",
+          "hash": "8735202651818384803"
         },
         {
-          "file": "packages/tokens/src/component/accordion.json",
-          "hash": "12001955867720342351"
+          "file": "apps/demo-angular/.vscode/extensions.json",
+          "hash": "5331566439708925252"
         },
         {
-          "file": "packages/tokens/src/component/alert-dialog.json",
-          "hash": "177215233586848464"
+          "file": "apps/demo-angular/.vscode/launch.json",
+          "hash": "17038929134016848735"
         },
         {
-          "file": "packages/tokens/src/component/alert.json",
-          "hash": "9929178502876039036"
+          "file": "apps/demo-angular/.vscode/tasks.json",
+          "hash": "5336636969995539451"
         },
         {
-          "file": "packages/tokens/src/component/app-shell.json",
-          "hash": "6005972353768651313"
+          "file": "apps/demo-angular/README.md",
+          "hash": "8862321000334776836"
         },
         {
-          "file": "packages/tokens/src/component/badge.json",
-          "hash": "12477822192313374110"
+          "file": "apps/demo-angular/angular.json",
+          "hash": "2846074144508930372"
         },
         {
-          "file": "packages/tokens/src/component/bottom-nav.json",
-          "hash": "12311614435875702669"
+          "file": "apps/demo-angular/package.json",
+          "hash": "7542494890021967721",
+          "deps": [
+            "npm:@angular/build@20.3.35",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli@20.3.30",
+            "npm:@types/jasmine",
+            "npm:jasmine-core@5.9.0",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:typescript@5.9.3",
+            "@glowing-sea-studio/erebus-angular",
+            "@glowing-sea-studio/erebus-core",
+            "npm:@angular/common@20.3.30",
+            "npm:@angular/compiler@20.3.30",
+            "npm:@angular/core@20.3.30",
+            "npm:@angular/forms@20.3.30",
+            "npm:@angular/platform-browser@20.3.30",
+            "npm:@angular/router",
+            "npm:rxjs",
+            "npm:tslib",
+            "npm:zone.js@0.15.1",
+            "@glowing-sea-studio/erebus-tokens"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/breadcrumb.json",
-          "hash": "15873153334182751709"
+          "file": "apps/demo-angular/public/favicon.ico",
+          "hash": "3988961587069885523"
         },
         {
-          "file": "packages/tokens/src/component/button.json",
-          "hash": "2217728288190738986"
+          "file": "apps/demo-angular/src/app/app.config.ts",
+          "hash": "16577217916543110499",
+          "deps": [
+            "npm:@angular/core@20.3.30",
+            "npm:@angular/router"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/card.json",
-          "hash": "8169410384902572122"
+          "file": "apps/demo-angular/src/app/app.css",
+          "hash": "3244421341483603138"
         },
         {
-          "file": "packages/tokens/src/component/checkbox.json",
-          "hash": "17232552977103923238"
+          "file": "apps/demo-angular/src/app/app.routes.ts",
+          "hash": "12397496131277534773",
+          "deps": [
+            "npm:@angular/router"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/color-picker.json",
-          "hash": "13990434287964192438"
+          "file": "apps/demo-angular/src/app/app.spec.ts",
+          "hash": "2932327571084101818",
+          "deps": [
+            "npm:@angular/core@20.3.30"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/drawer.json",
-          "hash": "3964999449729901151"
+          "file": "apps/demo-angular/src/app/app.ts",
+          "hash": "13208747584682429383",
+          "deps": [
+            "npm:@angular/core@20.3.30",
+            "npm:@angular/router"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/field.json",
-          "hash": "7821256340911288941"
+          "file": "apps/demo-angular/src/index.html",
+          "hash": "6375699906901735098"
         },
         {
-          "file": "packages/tokens/src/component/file-upload.json",
-          "hash": "11877772516777926535"
+          "file": "apps/demo-angular/src/main.ts",
+          "hash": "15944248449879998907",
+          "deps": [
+            "npm:@angular/platform-browser@20.3.30"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/footer.json",
-          "hash": "13993199793246114414"
+          "file": "apps/demo-angular/src/styles.css",
+          "hash": "16365324380857937441"
         },
         {
-          "file": "packages/tokens/src/component/header.json",
-          "hash": "9355039220362621363"
+          "file": "apps/demo-angular/tsconfig.app.json",
+          "hash": "8369321240499881643"
         },
         {
-          "file": "packages/tokens/src/component/input.json",
-          "hash": "6094819391865761606"
+          "file": "apps/demo-angular/tsconfig.json",
+          "hash": "32607162906042432"
         },
         {
-          "file": "packages/tokens/src/component/label.json",
-          "hash": "3299725101725082784"
+          "file": "apps/demo-angular/tsconfig.spec.json",
+          "hash": "647795770471502525"
+        }
+      ],
+      "demo-react": [
+        {
+          "file": "apps/demo-react/index.html",
+          "hash": "3790870668767993803"
         },
         {
-          "file": "packages/tokens/src/component/menu.json",
-          "hash": "3325627528143833354"
+          "file": "apps/demo-react/package.json",
+          "hash": "13760071255753854839",
+          "deps": [
+            "npm:@vitejs/plugin-react",
+            "npm:typescript@5.9.3",
+            "npm:vite",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "@glowing-sea-studio/erebus-react",
+            "@glowing-sea-studio/erebus-core",
+            "npm:react@18.3.1",
+            "npm:react-dom@18.3.1",
+            "@glowing-sea-studio/erebus-tokens"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/mobile-nav.json",
-          "hash": "3288473071201385326"
+          "file": "apps/demo-react/src/App.tsx",
+          "hash": "5531022774530339726",
+          "deps": [
+            "@glowing-sea-studio/erebus-tokens",
+            "@glowing-sea-studio/erebus-core"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/modal.json",
-          "hash": "10594128190978279155"
+          "file": "apps/demo-react/src/main.tsx",
+          "hash": "4932182688235645235",
+          "deps": [
+            "npm:react@18.3.1",
+            "npm:react-dom@18.3.1"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/number-input.json",
-          "hash": "12053036482524831121"
+          "file": "apps/demo-react/tsconfig.json",
+          "hash": "746105625540072805"
         },
         {
-          "file": "packages/tokens/src/component/pagination.json",
-          "hash": "13349503420843010414"
+          "file": "apps/demo-react/tsconfig.node.json",
+          "hash": "8586866767247417612"
         },
         {
-          "file": "packages/tokens/src/component/panel.json",
-          "hash": "8821292413705623826"
-        },
-        {
-          "file": "packages/tokens/src/component/popover.json",
-          "hash": "2285503551092917839"
-        },
-        {
-          "file": "packages/tokens/src/component/radio.json",
-          "hash": "696550571030629979"
-        },
-        {
-          "file": "packages/tokens/src/component/search-input.json",
-          "hash": "17408517298708384448"
-        },
-        {
-          "file": "packages/tokens/src/component/select.json",
-          "hash": "5765178605657316179"
-        },
-        {
-          "file": "packages/tokens/src/component/sidebar.json",
-          "hash": "6252514341813283051"
-        },
-        {
-          "file": "packages/tokens/src/component/skip-link.json",
-          "hash": "9722361938408388125"
-        },
-        {
-          "file": "packages/tokens/src/component/slider.json",
-          "hash": "8418683363289229227"
-        },
-        {
-          "file": "packages/tokens/src/component/stepper.json",
-          "hash": "7946769157220612058"
-        },
-        {
-          "file": "packages/tokens/src/component/switch.json",
-          "hash": "7021575072893578364"
-        },
-        {
-          "file": "packages/tokens/src/component/tabs.json",
-          "hash": "13938063717076199833"
-        },
-        {
-          "file": "packages/tokens/src/component/tag.json",
-          "hash": "17638582608754443377"
-        },
-        {
-          "file": "packages/tokens/src/component/textarea.json",
-          "hash": "15777306126749461932"
-        },
-        {
-          "file": "packages/tokens/src/component/tooltip.json",
-          "hash": "14010577977886592391"
-        },
-        {
-          "file": "packages/tokens/src/primitive/color.json",
-          "hash": "12186160541111284575"
-        },
-        {
-          "file": "packages/tokens/src/primitive/duration.json",
-          "hash": "3104775026330025833"
-        },
-        {
-          "file": "packages/tokens/src/primitive/easing.json",
-          "hash": "8777822411477263901"
-        },
-        {
-          "file": "packages/tokens/src/primitive/radius.json",
-          "hash": "4518721347119546999"
-        },
-        {
-          "file": "packages/tokens/src/primitive/shadow.json",
-          "hash": "15447864773980140962"
-        },
-        {
-          "file": "packages/tokens/src/primitive/size.json",
-          "hash": "1592480576616537614"
-        },
-        {
-          "file": "packages/tokens/src/primitive/typography.json",
-          "hash": "11541090277497120609"
-        },
-        {
-          "file": "packages/tokens/src/semantic/dark.json",
-          "hash": "6908541391402206002"
-        },
-        {
-          "file": "packages/tokens/src/semantic/light.json",
-          "hash": "3392984703032684786"
-        },
-        {
-          "file": "packages/tokens/src/semantic/shared.json",
-          "hash": "14600949275546318902"
-        },
-        {
-          "file": "packages/tokens/src/themes/default.json",
-          "hash": "13151533111637797710"
-        },
-        {
-          "file": "packages/tokens/style-dictionary.config.js",
-          "hash": "3127838050232476498"
+          "file": "apps/demo-react/vite.config.ts",
+          "hash": "14086564211205278727",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react"
+          ]
         }
       ],
       "@glowing-sea-studio/erebus-react": [
@@ -3087,7 +3054,7 @@
         },
         {
           "file": "packages/react/package.json",
-          "hash": "15233981404327770248",
+          "hash": "10416841264251024508",
           "deps": [
             "npm:react",
             "npm:react-dom",
@@ -5233,6 +5200,212 @@
           "deps": [
             "npm:tsup"
           ]
+        }
+      ],
+      "@glowing-sea-studio/erebus-tokens": [
+        {
+          "file": "packages/tokens/package.json",
+          "hash": "8803688344242918712"
+        },
+        {
+          "file": "packages/tokens/scripts/verify-parity.mjs",
+          "hash": "1673921158040622214"
+        },
+        {
+          "file": "packages/tokens/src/component/accordion.json",
+          "hash": "17769000255084995265"
+        },
+        {
+          "file": "packages/tokens/src/component/alert-dialog.json",
+          "hash": "15165493632073841017"
+        },
+        {
+          "file": "packages/tokens/src/component/alert.json",
+          "hash": "9929178502876039036"
+        },
+        {
+          "file": "packages/tokens/src/component/app-shell.json",
+          "hash": "16010571143894398831"
+        },
+        {
+          "file": "packages/tokens/src/component/badge.json",
+          "hash": "988864888325668970"
+        },
+        {
+          "file": "packages/tokens/src/component/bottom-nav.json",
+          "hash": "10090990350791915441"
+        },
+        {
+          "file": "packages/tokens/src/component/breadcrumb.json",
+          "hash": "14487023493059911919"
+        },
+        {
+          "file": "packages/tokens/src/component/button.json",
+          "hash": "2217728288190738986"
+        },
+        {
+          "file": "packages/tokens/src/component/card.json",
+          "hash": "8169410384902572122"
+        },
+        {
+          "file": "packages/tokens/src/component/checkbox.json",
+          "hash": "9741247125901539607"
+        },
+        {
+          "file": "packages/tokens/src/component/color-picker.json",
+          "hash": "15061903172542566290"
+        },
+        {
+          "file": "packages/tokens/src/component/drawer.json",
+          "hash": "2545794954942542060"
+        },
+        {
+          "file": "packages/tokens/src/component/field.json",
+          "hash": "5034650409582671680"
+        },
+        {
+          "file": "packages/tokens/src/component/file-upload.json",
+          "hash": "17499077966172381749"
+        },
+        {
+          "file": "packages/tokens/src/component/footer.json",
+          "hash": "13993199793246114414"
+        },
+        {
+          "file": "packages/tokens/src/component/header.json",
+          "hash": "9355039220362621363"
+        },
+        {
+          "file": "packages/tokens/src/component/input.json",
+          "hash": "6094819391865761606"
+        },
+        {
+          "file": "packages/tokens/src/component/label.json",
+          "hash": "11385221352478119084"
+        },
+        {
+          "file": "packages/tokens/src/component/menu.json",
+          "hash": "3325627528143833354"
+        },
+        {
+          "file": "packages/tokens/src/component/mobile-nav.json",
+          "hash": "14081264887366868343"
+        },
+        {
+          "file": "packages/tokens/src/component/modal.json",
+          "hash": "10594128190978279155"
+        },
+        {
+          "file": "packages/tokens/src/component/number-input.json",
+          "hash": "11135357833807113753"
+        },
+        {
+          "file": "packages/tokens/src/component/pagination.json",
+          "hash": "9990425168578183349"
+        },
+        {
+          "file": "packages/tokens/src/component/panel.json",
+          "hash": "8821292413705623826"
+        },
+        {
+          "file": "packages/tokens/src/component/popover.json",
+          "hash": "11868554330126863855"
+        },
+        {
+          "file": "packages/tokens/src/component/radio.json",
+          "hash": "11832698417596191490"
+        },
+        {
+          "file": "packages/tokens/src/component/search-input.json",
+          "hash": "4665872576346369364"
+        },
+        {
+          "file": "packages/tokens/src/component/select.json",
+          "hash": "3295063291596889907"
+        },
+        {
+          "file": "packages/tokens/src/component/sidebar.json",
+          "hash": "10842575255222097490"
+        },
+        {
+          "file": "packages/tokens/src/component/skip-link.json",
+          "hash": "9311474904906117007"
+        },
+        {
+          "file": "packages/tokens/src/component/slider.json",
+          "hash": "2332908027456471217"
+        },
+        {
+          "file": "packages/tokens/src/component/stepper.json",
+          "hash": "5215828109696293294"
+        },
+        {
+          "file": "packages/tokens/src/component/switch.json",
+          "hash": "10681577373338283805"
+        },
+        {
+          "file": "packages/tokens/src/component/tabs.json",
+          "hash": "13938063717076199833"
+        },
+        {
+          "file": "packages/tokens/src/component/tag.json",
+          "hash": "3672883114218759053"
+        },
+        {
+          "file": "packages/tokens/src/component/textarea.json",
+          "hash": "4907160169399243737"
+        },
+        {
+          "file": "packages/tokens/src/component/tooltip.json",
+          "hash": "7126356468394127987"
+        },
+        {
+          "file": "packages/tokens/src/primitive/color.json",
+          "hash": "12186160541111284575"
+        },
+        {
+          "file": "packages/tokens/src/primitive/duration.json",
+          "hash": "478491498838661856"
+        },
+        {
+          "file": "packages/tokens/src/primitive/easing.json",
+          "hash": "8256873214365405582"
+        },
+        {
+          "file": "packages/tokens/src/primitive/radius.json",
+          "hash": "13217544171725550318"
+        },
+        {
+          "file": "packages/tokens/src/primitive/shadow.json",
+          "hash": "240236104217289163"
+        },
+        {
+          "file": "packages/tokens/src/primitive/size.json",
+          "hash": "3659048680784628718"
+        },
+        {
+          "file": "packages/tokens/src/primitive/typography.json",
+          "hash": "16992653380576015546"
+        },
+        {
+          "file": "packages/tokens/src/semantic/dark.json",
+          "hash": "6908541391402206002"
+        },
+        {
+          "file": "packages/tokens/src/semantic/light.json",
+          "hash": "3392984703032684786"
+        },
+        {
+          "file": "packages/tokens/src/semantic/shared.json",
+          "hash": "13312357140773612442"
+        },
+        {
+          "file": "packages/tokens/src/themes/default.json",
+          "hash": "1458386534964804517"
+        },
+        {
+          "file": "packages/tokens/style-dictionary.config.js",
+          "hash": "3127838050232476498"
         }
       ],
       "@glowing-sea-studio/erebus-icons": [

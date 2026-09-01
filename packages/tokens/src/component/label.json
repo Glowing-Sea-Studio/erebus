@@ -1,10 +1,22 @@
 {
   "label": {
-    "font-size": { "value": "{text.sm.fontSize}" },
-    "font-weight": { "value": "{weight.medium}" },
-    "color": { "value": "{color.gray.900}" },
-    "margin-bottom": { "value": "{space.1}" },
-    "disabled-color": { "value": "{color.gray.400}" },
-    "required-color": { "value": "{color.red.500}" }
+    "font-size": {
+      "$value": "{text.sm.fontSize}"
+    },
+    "font-weight": {
+      "$value": "{weight.medium}"
+    },
+    "color": {
+      "$value": "{color.gray.900}"
+    },
+    "margin-bottom": {
+      "$value": "{space.1}"
+    },
+    "disabled-color": {
+      "$value": "{color.gray.400}"
+    },
+    "required-color": {
+      "$value": "{color.red.500}"
+    }
   }
 }

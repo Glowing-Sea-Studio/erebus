@@ -1,21 +1,43 @@
 {
   "radio": {
     "size": {
-      "sm": { "$value": "1rem" },
-      "md": { "$value": "1.25rem" },
-      "lg": { "$value": "1.5rem" }
+      "sm": {
+        "$value": "1rem"
+      },
+      "md": {
+        "$value": "1.25rem"
+      },
+      "lg": {
+        "$value": "1.5rem"
+      }
     },
-    "bg": { "$value": "{color.bg.canvas}" },
-    "border": { "$value": "{color.border.default}" },
+    "bg": {
+      "$value": "{color.bg.canvas}"
+    },
+    "border": {
+      "$value": "{color.border.default}"
+    },
     "checked": {
-      "bg": { "$value": "{color.accent.bg}" },
-      "border": { "$value": "{color.accent.bg}" },
-      "icon": { "$value": "{color.fg.on-accent}" }
+      "bg": {
+        "$value": "{color.accent.bg}"
+      },
+      "border": {
+        "$value": "{color.accent.bg}"
+      },
+      "icon": {
+        "$value": "{color.fg.on-accent}"
+      }
     },
-    "focus-ring": { "$value": "{color.border.focus}" },
+    "focus-ring": {
+      "$value": "{color.border.focus}"
+    },
     "disabled": {
-      "bg": { "$value": "{color.bg.muted}" },
-      "border": { "$value": "{color.border.muted}" }
+      "bg": {
+        "$value": "{color.bg.muted}"
+      },
+      "border": {
+        "$value": "{color.border.muted}"
+      }
     }
   }
 }

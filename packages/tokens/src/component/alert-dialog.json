@@ -1,13 +1,23 @@
 {
   "alert-dialog": {
     "overlay": {
-      "background": { "$value": "{color.bg.overlay}" }
+      "background": {
+        "$value": "{color.bg.overlay}"
+      }
     },
     "content": {
-      "background": { "$value": "{color.bg.canvas}" },
-      "border": { "$value": "{color.border}" },
-      "shadow": { "$value": "{shadow.lg}" },
-      "radius": { "$value": "{radius.md}" }
+      "background": {
+        "$value": "{color.bg.canvas}"
+      },
+      "border": {
+        "$value": "{color.border.default}"
+      },
+      "shadow": {
+        "$value": "{shadow.lg}"
+      },
+      "radius": {
+        "$value": "{radius.md}"
+      }
     }
   }
 }

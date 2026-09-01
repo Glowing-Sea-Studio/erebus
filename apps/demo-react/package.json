@@ -1,0 +1,25 @@
+{
+  "name": "demo-react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@glowing-sea-studio/erebus-react": "workspace:*",
+    "@glowing-sea-studio/erebus-core": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@glowing-sea-studio/erebus-tokens": "workspace:*"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22"
+  }
+}

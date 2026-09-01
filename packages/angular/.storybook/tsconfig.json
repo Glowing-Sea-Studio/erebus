@@ -3,12 +3,14 @@
   "compilerOptions": {
     "rootDir": "..",
     "emitDecoratorMetadata": true,
-    "composite": true,
     "experimentalDecorators": true
+  },
+  "angularCompilerOptions": {
+    "compilationMode": "full"
   },
   "exclude": ["../**/*.spec.ts"],
   "include": [
-    "../src/**/*.stories.ts",
+    "../src/**/*.ts",
     "../src/**/*.stories.js",
     "../src/**/*.stories.jsx",
     "../src/**/*.stories.tsx",

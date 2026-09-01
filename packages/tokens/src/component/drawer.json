@@ -1,12 +1,20 @@
 {
   "drawer": {
     "overlay": {
-      "background": { "$value": "{color.bg.overlay}" }
+      "background": {
+        "$value": "{color.bg.overlay}"
+      }
     },
     "content": {
-      "background": { "$value": "{color.bg.canvas}" },
-      "border": { "$value": "{color.border}" },
-      "shadow": { "$value": "{shadow.lg}" }
+      "background": {
+        "$value": "{color.bg.canvas}"
+      },
+      "border": {
+        "$value": "{color.border.default}"
+      },
+      "shadow": {
+        "$value": "{shadow.lg}"
+      }
     }
   }
 }

@@ -1,21 +1,65 @@
 {
   "run": {
-    "command": "nx storybook @glowing-sea-studio/erebus-angular --port=6007",
-    "startTime": "2026-09-01T14:07:47.078Z",
-    "endTime": "2026-09-01T14:07:56.230Z",
+    "command": "nx run-many -t build",
+    "startTime": "2026-09-01T22:07:52.561Z",
+    "endTime": "2026-09-01T22:08:01.655Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "@glowing-sea-studio/erebus-angular:storybook",
-      "target": "storybook",
-      "projectName": "@glowing-sea-studio/erebus-angular",
-      "hash": "18124196220768834485",
-      "startTime": "2026-09-01T14:07:47.087Z",
-      "endTime": "2026-09-01T14:07:56.230Z",
+      "taskId": "@glowing-sea-studio/erebus-tokens:build",
+      "target": "build",
+      "projectName": "@glowing-sea-studio/erebus-tokens",
+      "hash": "13084960675930481583",
+      "startTime": "2026-09-01T22:07:52.570Z",
+      "endTime": "2026-09-01T22:07:53.430Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 1
+      "status": 0
+    },
+    {
+      "taskId": "@glowing-sea-studio/erebus-react:build",
+      "target": "build",
+      "projectName": "@glowing-sea-studio/erebus-react",
+      "hash": "5047153942317719849",
+      "startTime": "2026-09-01T22:07:53.432Z",
+      "endTime": "2026-09-01T22:07:56.728Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@glowing-sea-studio/erebus-angular:build",
+      "target": "build",
+      "projectName": "@glowing-sea-studio/erebus-angular",
+      "hash": "10930876945180440718",
+      "startTime": "2026-09-01T22:07:53.432Z",
+      "endTime": "2026-09-01T22:07:57.810Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "demo-react:build",
+      "target": "build",
+      "projectName": "demo-react",
+      "hash": "17955580882260563871",
+      "startTime": "2026-09-01T22:07:56.730Z",
+      "endTime": "2026-09-01T22:07:58.099Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "demo-angular:build",
+      "target": "build",
+      "projectName": "demo-angular",
+      "hash": "7713253253186312853",
+      "startTime": "2026-09-01T22:07:57.811Z",
+      "endTime": "2026-09-01T22:08:01.652Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
     }
   ]
 }

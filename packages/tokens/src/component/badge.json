@@ -1,10 +1,22 @@
 {
   "badge": {
-    "padding-x": { "value": "{space.2}" },
-    "padding-y": { "value": "{space.1}" },
-    "font-size": { "value": "{text.xs.fontSize}" },
-    "font-weight": { "value": "{weight.medium}" },
-    "border-radius": { "value": "{radius.sm}" },
-    "pill-border-radius": { "value": "{radius.full}" }
+    "padding-x": {
+      "$value": "{space.2}"
+    },
+    "padding-y": {
+      "$value": "{space.1}"
+    },
+    "font-size": {
+      "$value": "{text.xs.fontSize}"
+    },
+    "font-weight": {
+      "$value": "{weight.medium}"
+    },
+    "border-radius": {
+      "$value": "{radius.sm}"
+    },
+    "pill-border-radius": {
+      "$value": "{radius.full}"
+    }
   }
 }

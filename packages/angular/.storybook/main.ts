@@ -7,6 +7,12 @@ const config: StorybookConfig = {
     name: '@storybook/angular',
     options: {},
   },
+  webpackFinal: async (cfg) => {
+    if (cfg.optimization) {
+      cfg.optimization.usedExports = false;
+    }
+    return cfg;
+  },
 };
 
 export default config;

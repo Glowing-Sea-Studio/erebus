@@ -1,6 +1,7 @@
 {
   "name": "@glowing-sea-studio/erebus-tokens",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "build": "style-dictionary build --config style-dictionary.config.js"

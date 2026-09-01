@@ -1,10 +1,10 @@
 {
   "bottom-nav": {
     "bg": {
-      "value": "{color.bg.canvas}"
+      "$value": "{color.bg.canvas}"
     },
     "color": {
-      "value": "{color.fg.default}"
+      "$value": "{color.fg.default}"
     }
   }
 }

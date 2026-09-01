@@ -1,11 +1,25 @@
 {
   "field": {
-    "gap": { "value": "{space.2}" },
-    "hint-font-size": { "value": "{text.xs.fontSize}" },
-    "hint-color": { "value": "{color.gray.500}" },
-    "hint-margin-top": { "value": "{space.1}" },
-    "error-font-size": { "value": "{text.xs.fontSize}" },
-    "error-color": { "value": "{color.red.500}" },
-    "error-margin-top": { "value": "{space.1}" }
+    "gap": {
+      "$value": "{space.2}"
+    },
+    "hint-font-size": {
+      "$value": "{text.xs.fontSize}"
+    },
+    "hint-color": {
+      "$value": "{color.gray.500}"
+    },
+    "hint-margin-top": {
+      "$value": "{space.1}"
+    },
+    "error-font-size": {
+      "$value": "{text.xs.fontSize}"
+    },
+    "error-color": {
+      "$value": "{color.red.500}"
+    },
+    "error-margin-top": {
+      "$value": "{space.1}"
+    }
   }
 }

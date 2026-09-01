@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Observable } from 'rxjs';
 import { ToastService, ToastMessage } from './toast.service';
 
 @Component({
@@ -16,9 +17,11 @@ import { ToastService, ToastMessage } from './toast.service';
   `
 })
 export class ToastComponent {
-  toasts$;
+  toasts$: Observable<ToastMessage[]>;
 
-  constructor(private toastService: ToastService) { this.toasts$; }
+  constructor(private toastService: ToastService) {
+    this.toasts$ = this.toastService.toasts$;
+  }
 
   remove(id: string) {
     this.toastService.remove(id);
