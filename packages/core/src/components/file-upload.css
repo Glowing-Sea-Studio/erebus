@@ -1,0 +1,22 @@
+.erb-file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--erb-file-upload-padding);
+  border: 2px dashed var(--erb-file-upload-border);
+  border-radius: var(--erb-file-upload-border-radius);
+  background-color: var(--erb-file-upload-background);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
+.erb-file-upload[data-drag-active="true"] {
+  border-color: var(--erb-file-upload-border-active);
+  background-color: var(--erb-file-upload-background-active);
+}
+
+.erb-file-upload-input {
+  display: none;
+}

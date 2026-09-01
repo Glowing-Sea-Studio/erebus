@@ -1,0 +1,79 @@
+.erb-combobox-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--erb-spacing-2);
+  position: relative;
+}
+
+.erb-combobox {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.erb-combobox-input {
+  width: 100%;
+  padding: var(--erb-spacing-2) var(--erb-spacing-3);
+  border: 1px solid var(--erb-color-border-default);
+  border-radius: var(--erb-radius-md);
+  font-family: var(--erb-font-sans);
+  font-size: var(--erb-font-size-base);
+  color: var(--erb-color-text-default);
+  background-color: var(--erb-color-bg-default);
+  transition: border-color var(--erb-transition-fast), box-shadow var(--erb-transition-fast);
+}
+
+.erb-combobox-input:focus {
+  outline: none;
+  border-color: var(--erb-color-primary);
+  box-shadow: 0 0 0 2px var(--erb-color-primary-alpha-20);
+}
+
+.erb-combobox-input[aria-invalid="true"] {
+  border-color: var(--erb-color-error);
+}
+
+.erb-combobox-input:disabled {
+  background-color: var(--erb-color-bg-subtle);
+  color: var(--erb-color-text-muted);
+  cursor: not-allowed;
+}
+
+.erb-combobox-listbox {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: var(--erb-spacing-1);
+  padding: var(--erb-spacing-1) 0;
+  background-color: var(--erb-color-bg-default);
+  border: 1px solid var(--erb-color-border-default);
+  border-radius: var(--erb-radius-md);
+  box-shadow: var(--erb-shadow-md);
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: var(--erb-z-index-dropdown);
+  display: none;
+}
+
+.erb-combobox-listbox[data-open="true"] {
+  display: block;
+}
+
+.erb-combobox-option {
+  padding: var(--erb-spacing-2) var(--erb-spacing-3);
+  cursor: pointer;
+  font-family: var(--erb-font-sans);
+  font-size: var(--erb-font-size-base);
+  color: var(--erb-color-text-default);
+}
+
+.erb-combobox-option:hover,
+.erb-combobox-option[aria-selected="true"] {
+  background-color: var(--erb-color-bg-subtle);
+}
+
+.erb-combobox-option[aria-selected="true"] {
+  font-weight: var(--erb-font-weight-medium);
+  color: var(--erb-color-primary);
+}

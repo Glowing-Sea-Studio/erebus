@@ -1,0 +1,40 @@
+.erb-datepicker {
+  box-sizing: border-box;
+  background-color: var(--erb-input-bg);
+  border: 1px solid var(--erb-input-border);
+  border-radius: var(--erb-input-radius);
+  color: var(--erb-color-fg-default);
+  font-family: var(--erb-font-sans);
+  font-size: var(--erb-text-base-font-size);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.erb-datepicker:focus,
+.erb-datepicker:focus-within {
+  outline: none;
+  border-color: var(--erb-input-border-focus);
+  box-shadow: 0 0 0 1px var(--erb-input-border-focus);
+}
+
+.erb-datepicker:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.erb-datepicker[data-size="sm"] {
+  height: var(--erb-input-height-sm);
+  padding-inline-start: var(--erb-input-px-sm);
+  padding-inline-end: var(--erb-input-px-sm);
+}
+
+.erb-datepicker[data-size="md"] {
+  height: var(--erb-input-height-md);
+  padding-inline-start: var(--erb-input-px-md);
+  padding-inline-end: var(--erb-input-px-md);
+}
+
+.erb-datepicker[data-size="lg"] {
+  height: var(--erb-input-height-lg);
+  padding-inline-start: var(--erb-input-px-lg);
+  padding-inline-end: var(--erb-input-px-lg);
+}

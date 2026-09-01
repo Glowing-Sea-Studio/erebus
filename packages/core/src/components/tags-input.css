@@ -1,0 +1,55 @@
+.erb-tags-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--erb-spacing-xs, 4px);
+  padding: var(--erb-spacing-xs, 4px);
+  border: 1px solid var(--erb-border-color, #ccc);
+  border-radius: var(--erb-radius-md, 6px);
+  background: var(--erb-bg-color, #fff);
+  min-height: var(--erb-size-10, 40px);
+  align-items: center;
+}
+.erb-tags-input:focus-within {
+  border-color: var(--erb-color-primary, #005fcc);
+  box-shadow: 0 0 0 2px var(--erb-color-focus-ring, rgba(0, 95, 204, 0.2));
+}
+.erb-tags-input__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--erb-spacing-xs, 4px);
+  padding: var(--erb-spacing-xxs, 2px) var(--erb-spacing-sm, 8px);
+  background: var(--erb-color-neutral-100, #f0f0f0);
+  border-radius: var(--erb-radius-sm, 4px);
+  font-size: var(--erb-font-size-sm, 14px);
+  color: var(--erb-text-color, #333);
+}
+.erb-tags-input__tag-remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--erb-text-muted, #666);
+}
+.erb-tags-input__tag-remove:hover {
+  color: var(--erb-color-danger, #d32f2f);
+}
+.erb-tags-input__input {
+  flex: 1;
+  min-width: 60px;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: var(--erb-spacing-xs, 4px);
+  font-size: var(--erb-font-size-md, 16px);
+  color: var(--erb-text-color, #333);
+}
+.erb-tags-input--disabled {
+  background: var(--erb-bg-disabled, #f5f5f5);
+  cursor: not-allowed;
+}
+.erb-tags-input--disabled .erb-tags-input__input {
+  cursor: not-allowed;
+}

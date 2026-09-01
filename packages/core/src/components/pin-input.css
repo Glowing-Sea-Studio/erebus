@@ -1,0 +1,24 @@
+.erb-pin-input {
+  display: inline-flex;
+  gap: var(--erb-spacing-sm, 8px);
+}
+.erb-pin-input__field {
+  width: var(--erb-size-10, 40px);
+  height: var(--erb-size-10, 40px);
+  text-align: center;
+  border: 1px solid var(--erb-border-color, #ccc);
+  border-radius: var(--erb-radius-md, 6px);
+  font-size: var(--erb-font-size-lg, 18px);
+  color: var(--erb-text-color, #333);
+  background: var(--erb-bg-color, #fff);
+  transition: border-color var(--erb-transition-fast, 0.2s);
+}
+.erb-pin-input__field:focus {
+  outline: none;
+  border-color: var(--erb-color-primary, #005fcc);
+  box-shadow: 0 0 0 2px var(--erb-color-focus-ring, rgba(0, 95, 204, 0.2));
+}
+.erb-pin-input__field:disabled {
+  background: var(--erb-bg-disabled, #f5f5f5);
+  cursor: not-allowed;
+}

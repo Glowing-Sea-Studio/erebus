@@ -1,0 +1,117 @@
+.erb-multi-select-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--erb-spacing-2);
+  position: relative;
+}
+
+.erb-multi-select-trigger {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--erb-spacing-1);
+  min-height: 40px;
+  padding: var(--erb-spacing-1) var(--erb-spacing-3);
+  border: 1px solid var(--erb-color-border-default);
+  border-radius: var(--erb-radius-md);
+  font-family: var(--erb-font-sans);
+  font-size: var(--erb-font-size-base);
+  color: var(--erb-color-text-default);
+  background-color: var(--erb-color-bg-default);
+  cursor: pointer;
+  align-items: center;
+}
+
+.erb-multi-select-trigger:focus-within {
+  outline: none;
+  border-color: var(--erb-color-primary);
+  box-shadow: 0 0 0 2px var(--erb-color-primary-alpha-20);
+}
+
+.erb-multi-select-trigger[aria-invalid="true"] {
+  border-color: var(--erb-color-error);
+}
+
+.erb-multi-select-trigger[aria-disabled="true"] {
+  background-color: var(--erb-color-bg-subtle);
+  color: var(--erb-color-text-muted);
+  cursor: not-allowed;
+}
+
+.erb-multi-select-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--erb-spacing-1);
+  padding: 2px var(--erb-spacing-2);
+  background-color: var(--erb-color-primary-alpha-10);
+  color: var(--erb-color-primary);
+  border-radius: var(--erb-radius-sm);
+  font-size: var(--erb-font-size-sm);
+}
+
+.erb-multi-select-tag-remove {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--erb-color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.erb-multi-select-tag-remove:hover {
+  color: var(--erb-color-primary-dark);
+}
+
+.erb-multi-select-input {
+  flex: 1;
+  min-width: 60px;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: var(--erb-spacing-1) 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.erb-multi-select-listbox {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: var(--erb-spacing-1);
+  padding: var(--erb-spacing-1) 0;
+  background-color: var(--erb-color-bg-default);
+  border: 1px solid var(--erb-color-border-default);
+  border-radius: var(--erb-radius-md);
+  box-shadow: var(--erb-shadow-md);
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: var(--erb-z-index-dropdown);
+  display: none;
+}
+
+.erb-multi-select-listbox[data-open="true"] {
+  display: block;
+}
+
+.erb-multi-select-option {
+  display: flex;
+  align-items: center;
+  gap: var(--erb-spacing-2);
+  padding: var(--erb-spacing-2) var(--erb-spacing-3);
+  cursor: pointer;
+  font-family: var(--erb-font-sans);
+  font-size: var(--erb-font-size-base);
+  color: var(--erb-color-text-default);
+}
+
+.erb-multi-select-option:hover,
+.erb-multi-select-option[data-focused="true"] {
+  background-color: var(--erb-color-bg-subtle);
+}
+
+.erb-multi-select-option[aria-selected="true"] {
+  font-weight: var(--erb-font-weight-medium);
+}

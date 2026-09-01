@@ -1,0 +1,29 @@
+.erb-color-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--erb-spacing-sm, 8px);
+}
+
+.erb-color-picker-input {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 1px solid var(--erb-color-picker-border);
+  border-radius: var(--erb-color-picker-border-radius);
+  background-color: var(--erb-color-picker-background);
+  cursor: pointer;
+}
+
+.erb-color-picker-input:focus {
+  outline: none;
+  border-color: var(--erb-color-picker-border-focus);
+}
+
+.erb-color-picker-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.erb-color-picker-input::-webkit-color-swatch {
+  border: none;
+  border-radius: var(--erb-color-picker-border-radius);
+}

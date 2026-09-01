@@ -1,0 +1,8 @@
+{
+  "color-picker": {
+    "background": { "$type": "color", "$value": "{colors.background.main}" },
+    "border": { "$type": "color", "$value": "{colors.border.base}" },
+    "border-focus": { "$type": "color", "$value": "{colors.border.focus}" },
+    "border-radius": { "$type": "dimension", "$value": "{radii.md}" }
+  }
+}

@@ -60,16 +60,16 @@ Implémentation des composants de base sur le modèle de `Button`.
 
 ## Lot 6 — Saisie avancée (Complexité élevée)
 Prévoir un découpage en deux tâches (logique/accessibilité, puis habillage) pour chacun de ces composants.
-- [ ] `Combobox`
-- [ ] `MultiSelect`
-- [ ] `Slider` & `RangeSlider`
-- [ ] `DatePicker` & `DateRangePicker`
-- [ ] `TimePicker`
-- [ ] `ColorPicker`
-- [ ] `FileUpload`
-- [ ] `PinInput`
-- [ ] `TagsInput`
-- [ ] `Rating`
+- [x] `Combobox`
+- [x] `MultiSelect`
+- [x] `Slider` & `RangeSlider`
+- [x] `DatePicker` & `DateRangePicker`
+- [x] `TimePicker`
+- [x] `ColorPicker`
+- [x] `FileUpload`
+- [x] `PinInput`
+- [x] `TagsInput`
+- [x] `Rating`
 
 ## Lot 7 — Données, retours, vitrine
 - [ ] `Table`

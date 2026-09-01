@@ -1,0 +1,48 @@
+{
+  "slider": {
+    "track": {
+      "bg": {
+        "$value": "{color.neutral.300}",
+        "$type": "color"
+      },
+      "height": {
+        "$value": "4px",
+        "$type": "dimension"
+      },
+      "radius": {
+        "$value": "{radius.full}",
+        "$type": "dimension"
+      }
+    },
+    "fill": {
+      "bg": {
+        "$value": "{color.primary.500}",
+        "$type": "color"
+      }
+    },
+    "thumb": {
+      "bg": {
+        "$value": "{color.neutral.0}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.primary.500}",
+        "$type": "color"
+      },
+      "size": {
+        "$value": "20px",
+        "$type": "dimension"
+      },
+      "shadow": {
+        "$value": "{shadow.sm}",
+        "$type": "shadow"
+      },
+      "focus": {
+        "ring": {
+          "$value": "{color.primary.200}",
+          "$type": "color"
+        }
+      }
+    }
+  }
+}

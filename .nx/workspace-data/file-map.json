@@ -70,12 +70,36 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": "jules-tasks/lots-2-3-20260901-1017.md",
+        "hash": "3244421341483603138"
+      },
+      {
         "file": "specs/03-deploiement-github.md",
         "hash": "12874211706838362349"
       },
       {
-        "file": ".gitignore",
-        "hash": "3985985064516675909"
+        "file": "package.json",
+        "hash": "4659196307326787815"
+      },
+      {
+        "file": "jules_response_retry.json",
+        "hash": "545784860517342293"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "194146092283452222"
+      },
+      {
+        "file": "README.md",
+        "hash": "9686789429054710927"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "7418268071776220994"
       },
       {
         "file": "jules_payload.json",
@@ -86,68 +110,36 @@
         "hash": "4714358981224981548"
       },
       {
-        "file": "eslint.config.js",
-        "hash": "194146092283452222"
-      },
-      {
-        "file": "specs/04-instructions-readme.md",
-        "hash": "5133977881871017630"
-      },
-      {
-        "file": "specs/02-specifications-techniques.md",
-        "hash": "10764395224646981999"
+        "file": "jules_msg.json",
+        "hash": "3082920335506272569"
       },
       {
         "file": "specs/01-specifications-metier.md",
         "hash": "17707256249961281613"
       },
       {
-        "file": "specs/Charte_Graphique_Glowing_Sea_Studio.md",
-        "hash": "12015017107697981722"
-      },
-      {
-        "file": "generate.js",
-        "hash": "18359625743736192151"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "7418268071776220994"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "1346067979362158458"
-      },
-      {
-        "file": "jules_msg.json",
-        "hash": "3082920335506272569"
-      },
-      {
-        "file": "stylelint.config.js",
-        "hash": "17353201888065353557"
+        "file": "specs/04-instructions-readme.md",
+        "hash": "5133977881871017630"
       },
       {
         "file": ".prettierrc",
         "hash": "16267754514737964994"
       },
       {
-        "file": "README.md",
-        "hash": "9686789429054710927"
+        "file": "specs/Charte_Graphique_Glowing_Sea_Studio.md",
+        "hash": "12015017107697981722"
       },
       {
-        "file": "package.json",
-        "hash": "4659196307326787815"
+        "file": "generate.py",
+        "hash": "6221542141565332190"
       },
       {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
+        "file": "specs/02-specifications-techniques.md",
+        "hash": "10764395224646981999"
       },
       {
-        "file": "pnpm-workspace.yaml",
-        "hash": "2653529739611990858"
-      },
-      {
-        "file": "AGENTS.md",
-        "hash": "16952903342658093389"
+        "file": "stylelint.config.js",
+        "hash": "17353201888065353557"
       },
       {
         "file": "nx.json",
@@ -155,19 +147,31 @@
       },
       {
         "file": "specs/00-roadmap.md",
-        "hash": "16379809887105254213"
+        "hash": "6284745422747154500"
       },
       {
-        "file": "jules-tasks/lots-2-3-20260901-1017.md",
-        "hash": "3244421341483603138"
+        "file": "pnpm-lock.yaml",
+        "hash": "1346067979362158458"
+      },
+      {
+        "file": "generate.js",
+        "hash": "594916967396753585"
+      },
+      {
+        "file": "AGENTS.md",
+        "hash": "16952903342658093389"
       },
       {
         "file": "jules_response.json",
         "hash": "6580593296038942516"
       },
       {
-        "file": "jules_response_retry.json",
-        "hash": "545784860517342293"
+        "file": ".gitignore",
+        "hash": "3985985064516675909"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "2653529739611990858"
       }
     ],
     "projectFileMap": {
@@ -221,12 +225,20 @@
           "hash": "17232552977103923238"
         },
         {
+          "file": "packages/tokens/src/component/color-picker.json",
+          "hash": "12321160817374621346"
+        },
+        {
           "file": "packages/tokens/src/component/drawer.json",
           "hash": "4752380982258424067"
         },
         {
           "file": "packages/tokens/src/component/field.json",
           "hash": "10590554541482554965"
+        },
+        {
+          "file": "packages/tokens/src/component/file-upload.json",
+          "hash": "11343740811259717553"
         },
         {
           "file": "packages/tokens/src/component/footer.json",
@@ -291,6 +303,10 @@
         {
           "file": "packages/tokens/src/component/skip-link.json",
           "hash": "4104299172624299004"
+        },
+        {
+          "file": "packages/tokens/src/component/slider.json",
+          "hash": "3642143431667781713"
         },
         {
           "file": "packages/tokens/src/component/stepper.json",
@@ -435,8 +451,24 @@
           "hash": "12333272156213849553"
         },
         {
+          "file": "packages/core/src/components/color-picker.css",
+          "hash": "2645582448809272420"
+        },
+        {
+          "file": "packages/core/src/components/combobox.css",
+          "hash": "569033902383654057"
+        },
+        {
           "file": "packages/core/src/components/container.css",
           "hash": "1047757526130212711"
+        },
+        {
+          "file": "packages/core/src/components/datepicker.css",
+          "hash": "11849050829010357145"
+        },
+        {
+          "file": "packages/core/src/components/daterangepicker.css",
+          "hash": "14161866820800781518"
         },
         {
           "file": "packages/core/src/components/drawer.css",
@@ -445,6 +477,10 @@
         {
           "file": "packages/core/src/components/field.css",
           "hash": "3557481766844921251"
+        },
+        {
+          "file": "packages/core/src/components/file-upload.css",
+          "hash": "12270568291472752524"
         },
         {
           "file": "packages/core/src/components/flex.css",
@@ -468,7 +504,7 @@
         },
         {
           "file": "packages/core/src/components/index.css",
-          "hash": "15434601949572454643"
+          "hash": "1660375443696228625"
         },
         {
           "file": "packages/core/src/components/inline.css",
@@ -495,6 +531,10 @@
           "hash": "17745326168251337422"
         },
         {
+          "file": "packages/core/src/components/multi-select.css",
+          "hash": "10530459036893114238"
+        },
+        {
           "file": "packages/core/src/components/number-input.css",
           "hash": "811278109272179276"
         },
@@ -507,12 +547,20 @@
           "hash": "1041921639829997352"
         },
         {
+          "file": "packages/core/src/components/pin-input.css",
+          "hash": "16768160152914728150"
+        },
+        {
           "file": "packages/core/src/components/popover.css",
           "hash": "16112271978267253835"
         },
         {
           "file": "packages/core/src/components/radio.css",
           "hash": "10405374149766872911"
+        },
+        {
+          "file": "packages/core/src/components/rating.css",
+          "hash": "17873608978609405825"
         },
         {
           "file": "packages/core/src/components/scroll-area.css",
@@ -541,6 +589,10 @@
         {
           "file": "packages/core/src/components/skip-link.css",
           "hash": "5700471022423032391"
+        },
+        {
+          "file": "packages/core/src/components/slider.css",
+          "hash": "11879275944770937514"
         },
         {
           "file": "packages/core/src/components/spacer.css",
@@ -575,8 +627,16 @@
           "hash": "16620831000337214929"
         },
         {
+          "file": "packages/core/src/components/tags-input.css",
+          "hash": "1168060938996539688"
+        },
+        {
           "file": "packages/core/src/components/textarea.css",
           "hash": "15934802603858503680"
+        },
+        {
+          "file": "packages/core/src/components/timepicker.css",
+          "hash": "8638784481939449758"
         },
         {
           "file": "packages/core/src/components/tooltip.css",
@@ -696,6 +756,114 @@
           "hash": "7753387251924734731"
         },
         {
+          "file": "packages/react/src/ColorPicker/ColorPicker.stories.tsx",
+          "hash": "5225010214318412455",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/ColorPicker/ColorPicker.test.tsx",
+          "hash": "15776491453025383371",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/react/src/ColorPicker/ColorPicker.tsx",
+          "hash": "11822425320609294277",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/ColorPicker/index.ts",
+          "hash": "6531097394477867140"
+        },
+        {
+          "file": "packages/react/src/DatePicker/DatePicker.stories.tsx",
+          "hash": "2918141153149688641",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/DatePicker/DatePicker.test.tsx",
+          "hash": "18271853310454766108",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/DatePicker/DatePicker.tsx",
+          "hash": "298471913711053841",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/DatePicker/index.ts",
+          "hash": "2124569702606288101"
+        },
+        {
+          "file": "packages/react/src/DateRangePicker/DateRangePicker.stories.tsx",
+          "hash": "14968454049015070768",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/DateRangePicker/DateRangePicker.test.tsx",
+          "hash": "1481834968360351793",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/DateRangePicker/DateRangePicker.tsx",
+          "hash": "2295358704950574935",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/DateRangePicker/index.ts",
+          "hash": "12617265541297250260"
+        },
+        {
+          "file": "packages/react/src/FileUpload/FileUpload.stories.tsx",
+          "hash": "15554387761238936714",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/FileUpload/FileUpload.test.tsx",
+          "hash": "15907774224949803264",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/react/src/FileUpload/FileUpload.tsx",
+          "hash": "7094195493017434077",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/FileUpload/index.ts",
+          "hash": "12357574043638583649"
+        },
+        {
           "file": "packages/react/src/MobileNav/MobileNav.stories.tsx",
           "hash": "11994503777759162959",
           "deps": [
@@ -746,6 +914,33 @@
         {
           "file": "packages/react/src/Sidebar/index.ts",
           "hash": "14389164802092745445"
+        },
+        {
+          "file": "packages/react/src/TimePicker/TimePicker.stories.tsx",
+          "hash": "922340108090936677",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/TimePicker/TimePicker.test.tsx",
+          "hash": "7372119406296159997",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/TimePicker/TimePicker.tsx",
+          "hash": "2349066595840403102",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/TimePicker/index.ts",
+          "hash": "2112356001446048034"
         },
         {
           "file": "packages/react/src/accordion/Accordion.stories.tsx",
@@ -1058,6 +1253,32 @@
           ]
         },
         {
+          "file": "packages/react/src/combobox/Combobox.stories.tsx",
+          "hash": "9737398937846823377",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/combobox/Combobox.test.tsx",
+          "hash": "7833399201862543949",
+          "deps": [
+            "npm:@testing-library/react",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/react/src/combobox/Combobox.tsx",
+          "hash": "2843317817766753136",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/combobox/index.ts",
+          "hash": "18100801598671047930"
+        },
+        {
           "file": "packages/react/src/container/Container.test.tsx",
           "hash": "16574377605878484979",
           "deps": [
@@ -1250,7 +1471,7 @@
         },
         {
           "file": "packages/react/src/index.ts",
-          "hash": "2697160973511659401"
+          "hash": "7566260512432442435"
         },
         {
           "file": "packages/react/src/inline/Inline.test.tsx",
@@ -1431,6 +1652,32 @@
           "hash": "961978680870062395"
         },
         {
+          "file": "packages/react/src/multi-select/MultiSelect.stories.tsx",
+          "hash": "17924016813581028849",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/multi-select/MultiSelect.test.tsx",
+          "hash": "12850173932070576353",
+          "deps": [
+            "npm:@testing-library/react",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/react/src/multi-select/MultiSelect.tsx",
+          "hash": "13106645352717893596",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/multi-select/index.ts",
+          "hash": "9284226526196866506"
+        },
+        {
           "file": "packages/react/src/number-input/NumberInput.stories.tsx",
           "hash": "10927917145551879302"
         },
@@ -1504,6 +1751,32 @@
         {
           "file": "packages/react/src/panel/index.ts",
           "hash": "14744043736947548578"
+        },
+        {
+          "file": "packages/react/src/pin-input/PinInput.stories.tsx",
+          "hash": "2713771367078781467",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/pin-input/PinInput.test.tsx",
+          "hash": "9777986529231873332",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/pin-input/PinInput.tsx",
+          "hash": "475560747695728416",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/pin-input/index.ts",
+          "hash": "7595758921092652661"
         },
         {
           "file": "packages/react/src/popover/Popover.test.tsx",
@@ -1585,6 +1858,32 @@
         {
           "file": "packages/react/src/radio/index.ts",
           "hash": "9749045379416787485"
+        },
+        {
+          "file": "packages/react/src/rating/Rating.stories.tsx",
+          "hash": "9234449852621179452",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/rating/Rating.test.tsx",
+          "hash": "4335368067274889966",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/rating/Rating.tsx",
+          "hash": "6227726054872857573",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/rating/index.ts",
+          "hash": "14887345927738981666"
         },
         {
           "file": "packages/react/src/scroll-area/ScrollArea.test.tsx",
@@ -1717,6 +2016,54 @@
         {
           "file": "packages/react/src/skip-link/index.ts",
           "hash": "12725350769788803915"
+        },
+        {
+          "file": "packages/react/src/slider/RangeSlider.stories.tsx",
+          "hash": "16263130173018161707",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/slider/RangeSlider.test.tsx",
+          "hash": "9514962758860962532",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/slider/RangeSlider.tsx",
+          "hash": "17126853483383584325",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/slider/Slider.stories.tsx",
+          "hash": "11580715599085904078",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/slider/Slider.test.tsx",
+          "hash": "14113886120778191880",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/slider/Slider.tsx",
+          "hash": "12487916415186973895",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/slider/index.ts",
+          "hash": "2878063217316576163"
         },
         {
           "file": "packages/react/src/spacer/Spacer.test.tsx",
@@ -1903,6 +2250,32 @@
           "hash": "6425926686383628588"
         },
         {
+          "file": "packages/react/src/tags-input/TagsInput.stories.tsx",
+          "hash": "2968225868447563592",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/tags-input/TagsInput.test.tsx",
+          "hash": "1460925715726147322",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/tags-input/TagsInput.tsx",
+          "hash": "4781098459872304824",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/tags-input/index.ts",
+          "hash": "3606240246940591038"
+        },
+        {
           "file": "packages/react/src/text/Text.tsx",
           "hash": "11659543296837686453",
           "deps": [
@@ -2016,6 +2389,140 @@
             "npm:@angular/core@19.2.25",
             "npm:@angular/cdk",
             "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/ColorPicker/ColorPicker.component.spec.ts",
+          "hash": "16408875519106855101",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "packages/angular/src/ColorPicker/ColorPicker.component.ts",
+          "hash": "17950163293708710865",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/ColorPicker/ColorPicker.stories.ts",
+          "hash": "7484433449469875629",
+          "deps": [
+            "npm:@storybook/angular",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/ColorPicker/index.ts",
+          "hash": "4961971853646796700"
+        },
+        {
+          "file": "packages/angular/src/DatePicker/datepicker.component.spec.ts",
+          "hash": "17097662113418889209",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/DatePicker/datepicker.component.ts",
+          "hash": "11757283652010936621",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "packages/angular/src/DatePicker/datepicker.stories.ts",
+          "hash": "11245598584891986245",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/DatePicker/index.ts",
+          "hash": "2597867918658390906"
+        },
+        {
+          "file": "packages/angular/src/DateRangePicker/daterangepicker.component.spec.ts",
+          "hash": "14358912812399817090",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/DateRangePicker/daterangepicker.component.ts",
+          "hash": "6468149127997320403",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "packages/angular/src/DateRangePicker/daterangepicker.stories.ts",
+          "hash": "8673568693958266152",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/DateRangePicker/index.ts",
+          "hash": "1377512288109810131"
+        },
+        {
+          "file": "packages/angular/src/FileUpload/FileUpload.component.spec.ts",
+          "hash": "14534053371286014059",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "packages/angular/src/FileUpload/FileUpload.component.ts",
+          "hash": "4580668795802831725",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/FileUpload/FileUpload.stories.ts",
+          "hash": "12512773258246188260",
+          "deps": [
+            "npm:@storybook/angular",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/FileUpload/index.ts",
+          "hash": "9766023800278812414"
+        },
+        {
+          "file": "packages/angular/src/TimePicker/index.ts",
+          "hash": "13797354747065001577"
+        },
+        {
+          "file": "packages/angular/src/TimePicker/timepicker.component.spec.ts",
+          "hash": "11243994559786195550",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/TimePicker/timepicker.component.ts",
+          "hash": "16681472873178125377",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "packages/angular/src/TimePicker/timepicker.stories.ts",
+          "hash": "11335355452885662751",
+          "deps": [
+            "npm:@storybook/angular"
           ]
         },
         {
@@ -2368,6 +2875,32 @@
           ]
         },
         {
+          "file": "packages/angular/src/combobox/combobox.component.ts",
+          "hash": "5977868863527329493",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/combobox/combobox.spec.ts",
+          "hash": "1869386774628681155",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/combobox/combobox.stories.ts",
+          "hash": "7257863629486483084",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/combobox/index.ts",
+          "hash": "1662297114141086185"
+        },
+        {
           "file": "packages/angular/src/container/container.component.ts",
           "hash": "11660098764922482063",
           "deps": [
@@ -2559,7 +3092,7 @@
         },
         {
           "file": "packages/angular/src/index.ts",
-          "hash": "4858315538038914280"
+          "hash": "17126479574271730437"
         },
         {
           "file": "packages/angular/src/inline/index.ts",
@@ -2766,6 +3299,32 @@
           ]
         },
         {
+          "file": "packages/angular/src/multi-select/index.ts",
+          "hash": "1215419975545143602"
+        },
+        {
+          "file": "packages/angular/src/multi-select/multi-select.component.ts",
+          "hash": "2097863048099393152",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/multi-select/multi-select.spec.ts",
+          "hash": "8817553748925891886",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/multi-select/multi-select.stories.ts",
+          "hash": "15537901999763554850",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
           "file": "packages/angular/src/number-input/index.ts",
           "hash": "7548483316407151303"
         },
@@ -2837,6 +3396,33 @@
         {
           "file": "packages/angular/src/panel/panel.stories.ts",
           "hash": "10007888474020020420",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/pin-input/index.ts",
+          "hash": "10240100287707046933"
+        },
+        {
+          "file": "packages/angular/src/pin-input/pin-input.component.spec.ts",
+          "hash": "6130052904233428429",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "packages/angular/src/pin-input/pin-input.component.ts",
+          "hash": "15878713685199296409",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/pin-input/pin-input.stories.ts",
+          "hash": "17307677648178599615",
           "deps": [
             "npm:@storybook/angular"
           ]
@@ -2919,6 +3505,33 @@
         {
           "file": "packages/angular/src/radio/radio.stories.ts",
           "hash": "1816054782167898705",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/rating/index.ts",
+          "hash": "17027336166782346441"
+        },
+        {
+          "file": "packages/angular/src/rating/rating.component.spec.ts",
+          "hash": "9934369654925538488",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "packages/angular/src/rating/rating.component.ts",
+          "hash": "10519553566831302979",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/rating/rating.stories.ts",
+          "hash": "6658529022806555828",
           "deps": [
             "npm:@storybook/angular"
           ]
@@ -3083,6 +3696,54 @@
           "hash": "15445983949415854208",
           "deps": [
             "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/slider/index.ts",
+          "hash": "14740016424482662805"
+        },
+        {
+          "file": "packages/angular/src/slider/range-slider.component.spec.ts",
+          "hash": "16564439270491856190",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/slider/range-slider.component.stories.ts",
+          "hash": "3041102334993699478",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/slider/range-slider.component.ts",
+          "hash": "4406880373315904445",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/slider/slider.component.spec.ts",
+          "hash": "11219851645109219937",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/slider/slider.component.stories.ts",
+          "hash": "18231831541778692398",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/slider/slider.component.ts",
+          "hash": "11653204459621442854",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
           ]
         },
         {
@@ -3263,6 +3924,34 @@
         {
           "file": "packages/angular/src/tag/tag.stories.ts",
           "hash": "17338493787101157646",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/tags-input/index.ts",
+          "hash": "13661685580728256869"
+        },
+        {
+          "file": "packages/angular/src/tags-input/tags-input.component.spec.ts",
+          "hash": "5364828524264223890",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "packages/angular/src/tags-input/tags-input.component.ts",
+          "hash": "4625058600320259837",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "packages/angular/src/tags-input/tags-input.stories.ts",
+          "hash": "9844377641345239743",
           "deps": [
             "npm:@storybook/angular"
           ]

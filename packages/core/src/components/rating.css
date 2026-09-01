@@ -1,0 +1,22 @@
+.erb-rating {
+  display: inline-flex;
+  gap: var(--erb-spacing-xs, 4px);
+  align-items: center;
+}
+.erb-rating__item {
+  cursor: pointer;
+  color: var(--erb-color-neutral-300, #ccc);
+  transition: color var(--erb-transition-fast, 0.2s);
+}
+.erb-rating__item--active {
+  color: var(--erb-color-primary, #ffb400);
+}
+.erb-rating__item:focus-visible {
+  outline: 2px solid var(--erb-color-focus, #005fcc);
+  outline-offset: 2px;
+  border-radius: var(--erb-radius-sm, 4px);
+}
+.erb-rating[aria-disabled="true"] .erb-rating__item {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
