@@ -1,0 +1,20 @@
+{
+  "popover": {
+    "bg": {
+      "$type": "color",
+      "$value": "{color.bg.surface}"
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{color.border.muted}"
+    },
+    "radius": {
+      "$type": "dimension",
+      "$value": "{radius.md}"
+    },
+    "shadow": {
+      "$type": "shadow",
+      "$value": "{shadow.md}"
+    }
+  }
+}

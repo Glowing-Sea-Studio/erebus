@@ -1,0 +1,12 @@
+{
+  "drawer": {
+    "overlay": {
+      "background": { "$value": "{color.overlay}" }
+    },
+    "content": {
+      "background": { "$value": "{color.background}" },
+      "border": { "$value": "{color.border}" },
+      "shadow": { "$value": "{shadow.lg}" }
+    }
+  }
+}

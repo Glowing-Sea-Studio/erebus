@@ -1,0 +1,10 @@
+{
+  "app-shell": {
+    "bg": {
+      "value": "{colors.background}"
+    },
+    "color": {
+      "value": "{colors.text}"
+    }
+  }
+}

@@ -20,3 +20,4 @@ export const Text = forwardRef<HTMLParagraphElement, TextProps>(
   }
 );
 Text.displayName = 'Text';
+

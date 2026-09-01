@@ -1,0 +1,11 @@
+
+import React from 'react';
+import { render } from '@testing-library/react';
+import { Sidebar } from './Sidebar';
+
+describe('Sidebar', () => {
+  it('renders correctly', () => {
+    const { container } = render(<Sidebar>Test</Sidebar>);
+    expect(container.firstChild).toHaveClass('erb-sidebar');
+  });
+});

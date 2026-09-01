@@ -1,0 +1,17 @@
+
+.erb-breadcrumb {
+  display: flex;
+}
+.erb-breadcrumb__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.erb-breadcrumb__item {
+  display: inline-flex;
+  align-items: center;
+}
+.erb-breadcrumb__separator {
+  margin: 0 var(--erb-breadcrumb-gap, 8px);
+}

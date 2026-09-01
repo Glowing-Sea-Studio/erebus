@@ -1,0 +1,23 @@
+
+.erb-accordion {
+  border-bottom: 1px solid var(--erb-accordion-border, #ccc);
+}
+.erb-accordion__header {
+  margin: 0;
+}
+.erb-accordion__button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--erb-accordion-padding, 16px);
+  background: var(--erb-accordion-bg, transparent);
+  border: none;
+  cursor: pointer;
+}
+.erb-accordion__panel {
+  padding: var(--erb-accordion-padding, 16px);
+  display: none;
+}
+.erb-accordion__button[aria-expanded="true"] + .erb-accordion__panel {
+  display: block;
+}

@@ -1,0 +1,10 @@
+{
+  "bottom-nav": {
+    "bg": {
+      "value": "{colors.background}"
+    },
+    "color": {
+      "value": "{colors.text}"
+    }
+  }
+}

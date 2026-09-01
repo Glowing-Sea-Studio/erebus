@@ -16,3 +16,4 @@ export class TextComponent {
   size = input<TextSize>('md');
   muted = input<boolean>(false);
 }
+

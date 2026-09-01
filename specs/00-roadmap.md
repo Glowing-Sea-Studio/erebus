@@ -38,25 +38,25 @@ Implémentation des composants de base sur le modèle de `Button`.
 ## Lot 4 — Superpositions (Parallélisable après le socle)
 - [x] **Socle commun (T4.1)** : `Portal`, `FocusTrap`, `ScrollLock`, `LayerManager`, `Floating UI`, `Transition`
 - [x] `Modal`
-- [ ] `AlertDialog`
-- [ ] `Drawer`
-- [ ] `Popover`
-- [ ] `Tooltip`
+- [x] `AlertDialog`
+- [x] `Drawer`
+- [x] `Popover`
+- [x] `Tooltip`
 - [x] `DropdownMenu`
 
 ## Lot 5 — Structure applicative
 - [x] `Header`
 - [x] `Footer`
-- [ ] `Sidebar`
-- [ ] `AppShell`
-- [ ] `MobileNav`
-- [ ] `BottomNav`
+- [x] `Sidebar`
+- [x] `AppShell`
+- [x] `MobileNav`
+- [x] `BottomNav`
 - [x] `Tabs`
-- [ ] `Breadcrumb`
-- [ ] `Pagination`
-- [ ] `Stepper`
-- [ ] `Accordion`
-- [ ] `SkipLink`
+- [x] `Breadcrumb`
+- [x] `Pagination`
+- [x] `Stepper`
+- [x] `Accordion`
+- [x] `SkipLink`
 
 ## Lot 6 — Saisie avancée (Complexité élevée)
 Prévoir un découpage en deux tâches (logique/accessibilité, puis habillage) pour chacun de ces composants.

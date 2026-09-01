@@ -1,0 +1,13 @@
+
+.erb-stepper {
+  display: flex;
+  gap: var(--erb-stepper-gap, 16px);
+}
+.erb-stepper__step {
+  display: flex;
+  align-items: center;
+  gap: var(--erb-stepper-step-gap, 8px);
+}
+.erb-stepper__step[aria-current="step"] {
+  font-weight: bold;
+}

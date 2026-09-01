@@ -1,0 +1,17 @@
+
+.erb-pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: var(--erb-pagination-gap, 4px);
+}
+.erb-pagination__item button {
+  padding: var(--erb-pagination-padding, 8px 12px);
+  background: var(--erb-pagination-bg, #eee);
+  border: 1px solid var(--erb-pagination-border, #ccc);
+  cursor: pointer;
+}
+.erb-pagination__item button[aria-current="page"] {
+  background: var(--erb-pagination-active-bg, #007bff);
+  color: var(--erb-pagination-active-color, #fff);
+}

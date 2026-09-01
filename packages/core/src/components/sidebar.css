@@ -1,0 +1,5 @@
+
+.erb-sidebar {
+  background-color: var(--erb-sidebar-bg, var(--erb-colors-background));
+  color: var(--erb-sidebar-color, var(--erb-colors-text));
+}

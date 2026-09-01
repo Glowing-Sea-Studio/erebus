@@ -1,0 +1,5 @@
+
+.erb-app-shell {
+  background-color: var(--erb-app-shell-bg, var(--erb-colors-background));
+  color: var(--erb-app-shell-color, var(--erb-colors-text));
+}
