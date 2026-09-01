@@ -70,476 +70,416 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "fix_angular_tests.py",
-        "hash": "16759628423379265979"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "7418268071776220994"
-      },
-      {
-        "file": "dist/packages/angular/spacer/index.d.ts",
-        "hash": "17623292704113813175"
-      },
-      {
-        "file": "dist/packages/angular/spacer/spacer.component.d.ts",
-        "hash": "5822103981690114236"
-      },
-      {
-        "file": "create_lot3_part2.py",
-        "hash": "16035659728474036001"
-      },
-      {
-        "file": "AGENTS.md",
-        "hash": "16952903342658093389"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/inline/inline.component.mjs",
-        "hash": "6940224400274926523"
-      },
-      {
-        "file": "jules-tasks/lot-4-superpositions-socle-20260831-2352.md",
-        "hash": "4714358981224981548"
-      },
-      {
-        "file": "fix_refs.py",
-        "hash": "16543558264519046207"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/flex/index.mjs",
-        "hash": "6367774936271906123"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": "dist/packages/angular/scroll-area/scroll-area.component.d.ts",
-        "hash": "11160928119532824296"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/center/index.mjs",
-        "hash": "10452902808166038"
-      },
-      {
         "file": "dist/packages/angular/button/index.d.ts",
         "hash": "11551908468621310145"
-      },
-      {
-        "file": "stylelint.config.js",
-        "hash": "17353201888065353557"
-      },
-      {
-        "file": "dist/packages/angular/split/split.component.d.ts",
-        "hash": "7001679972082219198"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/stack/stack.component.mjs",
-        "hash": "5837353462172523876"
-      },
-      {
-        "file": "create_lot3.py",
-        "hash": "14721710131280523919"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/center/center.component.mjs",
-        "hash": "1580226727507586521"
-      },
-      {
-        "file": "react_stories.py",
-        "hash": "18320011763899913752"
-      },
-      {
-        "file": "package.json",
-        "hash": "4659196307326787815"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/utils.mjs",
-        "hash": "11838504262549793337"
-      },
-      {
-        "file": "eslint.config.js",
-        "hash": "194146092283452222"
-      },
-      {
-        "file": "dist/packages/angular/input/index.d.ts",
-        "hash": "691406165205812755"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/grid/index.mjs",
-        "hash": "9651080036123713294"
-      },
-      {
-        "file": "README.md",
-        "hash": "9686789429054710927"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/radio/index.mjs",
-        "hash": "17054611894868732950"
-      },
-      {
-        "file": "dist/packages/angular/layer/index.d.ts",
-        "hash": "7464422720691234463"
-      },
-      {
-        "file": "dist/packages/angular/scroll-area/index.d.ts",
-        "hash": "16370330693580447536"
-      },
-      {
-        "file": "dist/packages/angular/inline/index.d.ts",
-        "hash": "2404750939680619103"
-      },
-      {
-        "file": "generate_tests.py",
-        "hash": "15698047278347970586"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/scroll-area/scroll-area.component.mjs",
-        "hash": "163902994571945305"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/aspect-ratio/aspect-ratio.component.mjs",
-        "hash": "18193104575160095759"
-      },
-      {
-        "file": "fix_angular_ts.py",
-        "hash": "4093299370411614315"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/grid/grid.component.mjs",
-        "hash": "17033699866961407779"
-      },
-      {
-        "file": "dist/packages/angular/checkbox/index.d.ts",
-        "hash": "5802415263398038748"
-      },
-      {
-        "file": "specs/04-instructions-readme.md",
-        "hash": "5133977881871017630"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/spacer/index.mjs",
-        "hash": "16029336182901056061"
-      },
-      {
-        "file": "dist/packages/angular/input/input-wrapper.component.d.ts",
-        "hash": "2873384884342267358"
-      },
-      {
-        "file": "fix_tests.py",
-        "hash": "11517740404809897461"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/aspect-ratio/index.mjs",
-        "hash": "11322966052305507709"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/scroll-area/index.mjs",
-        "hash": "20273053595739740"
-      },
-      {
-        "file": "dist/packages/angular/container/index.d.ts",
-        "hash": "558074726338285471"
-      },
-      {
-        "file": "specs/03-deploiement-github.md",
-        "hash": "12874211706838362349"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/textarea/index.mjs",
-        "hash": "9055924363465293994"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/split/split.component.mjs",
-        "hash": "10031203113842256026"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/radio/radio.component.mjs",
-        "hash": "2830155911920675842"
-      },
-      {
-        "file": "dist/packages/angular/fesm2022/glowing-sea-studio-erebus-angular.mjs",
-        "hash": "6372431909035243632"
-      },
-      {
-        "file": "dist/packages/angular/container/container.component.d.ts",
-        "hash": "16651610292483328018"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/inline/index.mjs",
-        "hash": "11292570870725397102"
-      },
-      {
-        "file": "specs/02-specifications-techniques.md",
-        "hash": "10764395224646981999"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "1346067979362158458"
-      },
-      {
-        "file": "fix_lint.py",
-        "hash": "3795794527616941600"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/index.mjs",
-        "hash": "5456795163625410107"
-      },
-      {
-        "file": "dist/packages/angular/button/button.directive.d.ts",
-        "hash": "4895420124065321236"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/section/section.component.mjs",
-        "hash": "8128371271120931053"
-      },
-      {
-        "file": "fix_react_ts.py",
-        "hash": "915810284633372908"
-      },
-      {
-        "file": "dist/packages/angular/grid/grid.component.d.ts",
-        "hash": "10000870670530537139"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "2653529739611990858"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/glowing-sea-studio-erebus-angular.mjs",
-        "hash": "1702454415379572420"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/spacer/spacer.component.mjs",
-        "hash": "13905890576028496621"
-      },
-      {
-        "file": "dist/packages/angular/input/input.directive.d.ts",
-        "hash": "15536068390583288761"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/stack/index.mjs",
-        "hash": "8557996629575172858"
-      },
-      {
-        "file": "fix_angular_args.py",
-        "hash": "11217885166999170321"
-      },
-      {
-        "file": "dist/packages/angular/inline/inline.component.d.ts",
-        "hash": "3014459823383349553"
-      },
-      {
-        "file": "specs/Charte_Graphique_Glowing_Sea_Studio.md",
-        "hash": "12015017107697981722"
-      },
-      {
-        "file": "dist/packages/angular/center/center.component.d.ts",
-        "hash": "9195844700511609609"
-      },
-      {
-        "file": "dist/packages/angular/aspect-ratio/aspect-ratio.component.d.ts",
-        "hash": "3484003451330886311"
-      },
-      {
-        "file": "dist/packages/angular/stack/index.d.ts",
-        "hash": "10498474418254008687"
-      },
-      {
-        "file": "dist/packages/angular/split/index.d.ts",
-        "hash": "10972688247041133954"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/flex/flex.component.mjs",
-        "hash": "17498393442127281407"
-      },
-      {
-        "file": "dist/packages/angular/section/index.d.ts",
-        "hash": "8822797241933439163"
-      },
-      {
-        "file": "dist/packages/angular/radio/index.d.ts",
-        "hash": "12891819585971623109"
-      },
-      {
-        "file": "fix_all2.py",
-        "hash": "582802581094583840"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/input/input-wrapper.component.mjs",
-        "hash": "12066515475362744200"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/input/input.directive.mjs",
-        "hash": "7888829804052395028"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/card/index.mjs",
-        "hash": "14499919688105617603"
-      },
-      {
-        "file": "dist/packages/angular/checkbox/checkbox.component.d.ts",
-        "hash": "7653258687420150162"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/split/index.mjs",
-        "hash": "3792507824657761286"
-      },
-      {
-        "file": "dist/packages/angular/flex/flex.component.d.ts",
-        "hash": "10610802810962509218"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/section/index.mjs",
-        "hash": "351867676001336262"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/textarea/textarea.directive.mjs",
-        "hash": "14883649301473579712"
-      },
-      {
-        "file": "dist/packages/angular/card/card.component.d.ts",
-        "hash": "1940421362520466794"
-      },
-      {
-        "file": "dist/packages/angular/grid/index.d.ts",
-        "hash": "3865652445752883203"
-      },
-      {
-        "file": "dist/packages/angular/aspect-ratio/index.d.ts",
-        "hash": "7963854807365372573"
-      },
-      {
-        "file": "dist/packages/angular/utils.d.ts",
-        "hash": "15929914225246668098"
-      },
-      {
-        "file": "angular_stories.py",
-        "hash": "3332634985349513245"
-      },
-      {
-        "file": "dist/packages/angular/radio/radio.component.d.ts",
-        "hash": "558423418712896007"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/container/index.mjs",
-        "hash": "14376833611048769965"
-      },
-      {
-        "file": "dist/packages/angular/section/section.component.d.ts",
-        "hash": "3985485959492490857"
-      },
-      {
-        "file": "dist/packages/angular/flex/index.d.ts",
-        "hash": "4355719841030374337"
-      },
-      {
-        "file": "dist/packages/angular/textarea/textarea.directive.d.ts",
-        "hash": "12810102178975573777"
-      },
-      {
-        "file": "dist/packages/angular/package.json",
-        "hash": "4466490013156458481"
-      },
-      {
-        "file": "dist/packages/angular/stack/stack.component.d.ts",
-        "hash": "16414274000018194497"
-      },
-      {
-        "file": "fix_exact_optional.py",
-        "hash": "7103335041221356447"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/checkbox/checkbox.component.mjs",
-        "hash": "13816045584491283142"
-      },
-      {
-        "file": "nx.json",
-        "hash": "13497546736868009048"
-      },
-      {
-        "file": "dist/packages/angular/.npmignore",
-        "hash": "5396670232953713277"
-      },
-      {
-        "file": "jules_response.json",
-        "hash": "7910623724561831277"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/checkbox/index.mjs",
-        "hash": "3613885163952317543"
-      },
-      {
-        "file": "dist/packages/angular/textarea/index.d.ts",
-        "hash": "14917849613980624440"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "3682338014613345919"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/input/index.mjs",
-        "hash": "1871003575375496183"
-      },
-      {
-        "file": "fix_index.py",
-        "hash": "6442707351355871914"
       },
       {
         "file": "dist/packages/angular/esm2022/grid/grid-item.component.mjs",
         "hash": "9906908575993335987"
       },
       {
-        "file": "dist/packages/angular/grid/grid-item.component.d.ts",
-        "hash": "5170979846386396435"
+        "file": "dist/packages/angular/esm2022/flex/flex.component.mjs",
+        "hash": "17498393442127281407"
       },
       {
-        "file": "fix_all.py",
-        "hash": "5289978183103923702"
+        "file": "dist/packages/angular/container/index.d.ts",
+        "hash": "558074726338285471"
       },
       {
-        "file": "specs/01-specifications-metier.md",
-        "hash": "17707256249961281613"
+        "file": "dist/packages/angular/esm2022/grid/grid.component.mjs",
+        "hash": "17033699866961407779"
       },
       {
-        "file": "dist/packages/angular/index.d.ts",
-        "hash": "15712386243028748096"
+        "file": "specs/02-specifications-techniques.md",
+        "hash": "10764395224646981999"
       },
       {
-        "file": "dist/packages/angular/esm2022/card/card.component.mjs",
-        "hash": "5011036480961989450"
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
       },
       {
-        "file": "dist/packages/angular/esm2022/button/index.mjs",
-        "hash": "7277697648628721613"
+        "file": "dist/packages/angular/utils.d.ts",
+        "hash": "15929914225246668098"
       },
       {
-        "file": "dist/packages/angular/fesm2022/glowing-sea-studio-erebus-angular.mjs.map",
-        "hash": "6375603258729305945"
+        "file": "dist/packages/angular/scroll-area/index.d.ts",
+        "hash": "16370330693580447536"
       },
       {
-        "file": "jules_payload.json",
-        "hash": "15620384564791235355"
+        "file": "dist/packages/angular/section/index.d.ts",
+        "hash": "8822797241933439163"
       },
       {
-        "file": "dist/packages/angular/esm2022/container/container.component.mjs",
-        "hash": "814993524963682046"
+        "file": "tsconfig.base.json",
+        "hash": "7418268071776220994"
       },
       {
-        "file": "dist/packages/angular/center/index.d.ts",
-        "hash": "3148429325539911466"
+        "file": "dist/packages/angular/fesm2022/glowing-sea-studio-erebus-angular.mjs",
+        "hash": "6372431909035243632"
       },
       {
         "file": "dist/packages/angular/esm2022/button/button.directive.mjs",
         "hash": "9803136972850293772"
       },
       {
+        "file": "dist/packages/angular/esm2022/glowing-sea-studio-erebus-angular.mjs",
+        "hash": "1702454415379572420"
+      },
+      {
+        "file": "dist/packages/angular/input/index.d.ts",
+        "hash": "691406165205812755"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/textarea/index.mjs",
+        "hash": "9055924363465293994"
+      },
+      {
+        "file": "dist/packages/angular/section/section.component.d.ts",
+        "hash": "3985485959492490857"
+      },
+      {
+        "file": "dist/packages/angular/.npmignore",
+        "hash": "5396670232953713277"
+      },
+      {
+        "file": "dist/packages/angular/button/button.directive.d.ts",
+        "hash": "4895420124065321236"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/split/index.mjs",
+        "hash": "3792507824657761286"
+      },
+      {
+        "file": "dist/packages/angular/inline/index.d.ts",
+        "hash": "2404750939680619103"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "2653529739611990858"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "1346067979362158458"
+      },
+      {
+        "file": "dist/packages/angular/spacer/spacer.component.d.ts",
+        "hash": "5822103981690114236"
+      },
+      {
+        "file": "dist/packages/angular/card/card.component.d.ts",
+        "hash": "1940421362520466794"
+      },
+      {
+        "file": "dist/packages/angular/aspect-ratio/index.d.ts",
+        "hash": "7963854807365372573"
+      },
+      {
+        "file": "dist/packages/angular/flex/flex.component.d.ts",
+        "hash": "10610802810962509218"
+      },
+      {
+        "file": "dist/packages/angular/grid/grid-item.component.d.ts",
+        "hash": "5170979846386396435"
+      },
+      {
+        "file": "specs/00-roadmap.md",
+        "hash": "2846804419698462529"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/scroll-area/index.mjs",
+        "hash": "20273053595739740"
+      },
+      {
+        "file": "dist/packages/angular/grid/grid.component.d.ts",
+        "hash": "10000870670530537139"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/section/index.mjs",
+        "hash": "351867676001336262"
+      },
+      {
+        "file": "dist/packages/angular/spacer/index.d.ts",
+        "hash": "17623292704113813175"
+      },
+      {
+        "file": "dist/packages/angular/input/input.directive.d.ts",
+        "hash": "15536068390583288761"
+      },
+      {
+        "file": "dist/packages/angular/flex/index.d.ts",
+        "hash": "4355719841030374337"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/checkbox/index.mjs",
+        "hash": "3613885163952317543"
+      },
+      {
+        "file": "dist/packages/angular/grid/index.d.ts",
+        "hash": "3865652445752883203"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "3682338014613345919"
+      },
+      {
+        "file": "package.json",
+        "hash": "4659196307326787815"
+      },
+      {
+        "file": "dist/packages/angular/stack/index.d.ts",
+        "hash": "10498474418254008687"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/scroll-area/scroll-area.component.mjs",
+        "hash": "163902994571945305"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/stack/index.mjs",
+        "hash": "8557996629575172858"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/container/index.mjs",
+        "hash": "14376833611048769965"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/grid/index.mjs",
+        "hash": "9651080036123713294"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/button/index.mjs",
+        "hash": "7277697648628721613"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/input/index.mjs",
+        "hash": "1871003575375496183"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/input/input-wrapper.component.mjs",
+        "hash": "12066515475362744200"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": "stylelint.config.js",
+        "hash": "17353201888065353557"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "194146092283452222"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/checkbox/checkbox.component.mjs",
+        "hash": "13816045584491283142"
+      },
+      {
+        "file": "dist/packages/angular/aspect-ratio/aspect-ratio.component.d.ts",
+        "hash": "3484003451330886311"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/card/index.mjs",
+        "hash": "14499919688105617603"
+      },
+      {
+        "file": "specs/01-specifications-metier.md",
+        "hash": "17707256249961281613"
+      },
+      {
+        "file": "dist/packages/angular/input/input-wrapper.component.d.ts",
+        "hash": "2873384884342267358"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/radio/index.mjs",
+        "hash": "17054611894868732950"
+      },
+      {
+        "file": "dist/packages/angular/center/center.component.d.ts",
+        "hash": "9195844700511609609"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/aspect-ratio/index.mjs",
+        "hash": "11322966052305507709"
+      },
+      {
+        "file": "dist/packages/angular/textarea/textarea.directive.d.ts",
+        "hash": "12810102178975573777"
+      },
+      {
+        "file": "dist/packages/angular/checkbox/checkbox.component.d.ts",
+        "hash": "7653258687420150162"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/inline/inline.component.mjs",
+        "hash": "6940224400274926523"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/utils.mjs",
+        "hash": "11838504262549793337"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/spacer/spacer.component.mjs",
+        "hash": "13905890576028496621"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/textarea/textarea.directive.mjs",
+        "hash": "14883649301473579712"
+      },
+      {
+        "file": "dist/packages/angular/checkbox/index.d.ts",
+        "hash": "5802415263398038748"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/section/section.component.mjs",
+        "hash": "8128371271120931053"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/card/card.component.mjs",
+        "hash": "5011036480961989450"
+      },
+      {
+        "file": "jules_response.json",
+        "hash": "7910623724561831277"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/aspect-ratio/aspect-ratio.component.mjs",
+        "hash": "18193104575160095759"
+      },
+      {
+        "file": "dist/packages/angular/package.json",
+        "hash": "4466490013156458481"
+      },
+      {
+        "file": "dist/packages/angular/textarea/index.d.ts",
+        "hash": "14917849613980624440"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/flex/index.mjs",
+        "hash": "6367774936271906123"
+      },
+      {
+        "file": "dist/packages/angular/stack/stack.component.d.ts",
+        "hash": "16414274000018194497"
+      },
+      {
+        "file": "dist/packages/angular/split/split.component.d.ts",
+        "hash": "7001679972082219198"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/center/center.component.mjs",
+        "hash": "1580226727507586521"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/input/input.directive.mjs",
+        "hash": "7888829804052395028"
+      },
+      {
         "file": "dist/packages/angular/card/index.d.ts",
         "hash": "15560743538288663931"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/radio/radio.component.mjs",
+        "hash": "2830155911920675842"
+      },
+      {
+        "file": "dist/packages/angular/radio/radio.component.d.ts",
+        "hash": "558423418712896007"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/split/split.component.mjs",
+        "hash": "10031203113842256026"
+      },
+      {
+        "file": "dist/packages/angular/radio/index.d.ts",
+        "hash": "12891819585971623109"
+      },
+      {
+        "file": "specs/04-instructions-readme.md",
+        "hash": "5133977881871017630"
+      },
+      {
+        "file": "README.md",
+        "hash": "9686789429054710927"
+      },
+      {
+        "file": "dist/packages/angular/layer/index.d.ts",
+        "hash": "7464422720691234463"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/stack/stack.component.mjs",
+        "hash": "5837353462172523876"
+      },
+      {
+        "file": "dist/packages/angular/container/container.component.d.ts",
+        "hash": "16651610292483328018"
+      },
+      {
+        "file": "dist/packages/angular/index.d.ts",
+        "hash": "15712386243028748096"
+      },
+      {
+        "file": "dist/packages/angular/center/index.d.ts",
+        "hash": "3148429325539911466"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/container/container.component.mjs",
+        "hash": "814993524963682046"
+      },
+      {
+        "file": "specs/Charte_Graphique_Glowing_Sea_Studio.md",
+        "hash": "12015017107697981722"
+      },
+      {
+        "file": "jules-tasks/lot-4-superpositions-socle-20260831-2352.md",
+        "hash": "4714358981224981548"
+      },
+      {
+        "file": "specs/03-deploiement-github.md",
+        "hash": "12874211706838362349"
+      },
+      {
+        "file": "dist/packages/angular/split/index.d.ts",
+        "hash": "10972688247041133954"
+      },
+      {
+        "file": "dist/packages/angular/fesm2022/glowing-sea-studio-erebus-angular.mjs.map",
+        "hash": "6375603258729305945"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/inline/index.mjs",
+        "hash": "11292570870725397102"
+      },
+      {
+        "file": "dist/packages/angular/scroll-area/scroll-area.component.d.ts",
+        "hash": "11160928119532824296"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/spacer/index.mjs",
+        "hash": "16029336182901056061"
+      },
+      {
+        "file": "jules_payload.json",
+        "hash": "15620384564791235355"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/center/index.mjs",
+        "hash": "10452902808166038"
+      },
+      {
+        "file": "dist/packages/angular/esm2022/index.mjs",
+        "hash": "5456795163625410107"
+      },
+      {
+        "file": "nx.json",
+        "hash": "13497546736868009048"
+      },
+      {
+        "file": "dist/packages/angular/inline/inline.component.d.ts",
+        "hash": "3014459823383349553"
+      },
+      {
+        "file": "AGENTS.md",
+        "hash": "16952903342658093389"
       }
     ],
     "projectFileMap": {
