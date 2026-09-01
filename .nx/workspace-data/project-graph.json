@@ -19084,11 +19084,6 @@
       },
       {
         "source": "@glowing-sea-studio/erebus-react",
-        "target": "npm:@testing-library/react",
-        "type": "static"
-      },
-      {
-        "source": "@glowing-sea-studio/erebus-react",
         "target": "npm:tsup",
         "type": "static"
       }

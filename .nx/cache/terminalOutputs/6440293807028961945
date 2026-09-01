@@ -1,0 +1,65 @@
+
+> @glowing-sea-studio/erebus-react@0.1.0 test /media/thibault/SSD_DATA/DEV/workspaces/Glowing Sea Studio/APPS/erebus/packages/react
+> vitest run
+
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90m/media/thibault/SSD_DATA/DEV/workspaces/Glowing Sea Studio/APPS/erebus/packages/react[39m
+
+ [32m✓[39m src/aspect-ratio/AspectRatio.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/footer/Footer.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/inline/Inline.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/checkbox/Checkbox.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/scroll-area/ScrollArea.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/container/Container.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/section/Section.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/button/Button.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/header/Header.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/spacer/Spacer.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/textarea/Textarea.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/center/Center.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/switch/Switch.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/alert/Alert.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 4[2mms[22m[39m
+ [32m✓[39m src/input/Input.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/modal/Modal.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/panel/Panel.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/split/Split.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/radio/Radio.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/stack/Stack.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/card/Card.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/grid/Grid.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/flex/Flex.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/number-input/NumberInput.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/menu/Menu.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/search-input/SearchInput.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 5[2mms[22m[39m
+ [32m✓[39m src/tabs/Tabs.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 4[2mms[22m[39m
+ [32m✓[39m src/checkbox-group/CheckboxGroup.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/radio-group/RadioGroup.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/select/Select.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 2[2mms[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯[1m[7m Unhandled Errors [27m[22m⎯⎯⎯⎯⎯⎯[39m
+[31m[1m
+Vitest caught 1 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯[1m[7m Unhandled Error [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+[31m[1mTypeError[22m: webidl.util.markAsUncloneable is not a function[39m
+[90m [2m❯[22m new CacheStorage ../../node_modules/.pnpm/undici@8.10.1/node_modules/undici/lib/web/cache/cachestorage.js:[2m20:17[22m[39m
+[90m [2m❯[22m Object.<anonymous> ../../node_modules/.pnpm/undici@8.10.1/node_modules/undici/index.js:[2m179:25[22m[39m
+[90m [2m❯[22m Module._compile node:internal/modules/cjs/loader:[2m1521:14[22m[39m
+[90m [2m❯[22m Object.Module._extensions..js node:internal/modules/cjs/loader:[2m1623:10[22m[39m
+[90m [2m❯[22m Module.load node:internal/modules/cjs/loader:[2m1266:32[22m[39m
+[90m [2m❯[22m Function.Module._load node:internal/modules/cjs/loader:[2m1091:12[22m[39m
+[90m [2m❯[22m Module.require node:internal/modules/cjs/loader:[2m1289:19[22m[39m
+[90m [2m❯[22m require node:internal/modules/helpers:[2m182:18[22m[39m
+[90m [2m❯[22m Object.<anonymous> ../../node_modules/.pnpm/jsdom@30.0.1/node_modules/jsdom/lib/api.js:[2m12:33[22m[39m
+[90m [2m❯[22m Module._compile node:internal/modules/cjs/loader:[2m1521:14[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[39m
+
+[2m Test Files [22m [1m[32m30 passed[39m[22m[90m (30)[39m
+[2m      Tests [22m [1m[32m30 passed[39m[22m[90m (30)[39m
+[2m     Errors [22m [1m[31m1 error[39m[22m
+[2m   Start at [22m 09:49:53
+[2m   Duration [22m 1.84s[2m (transform 397ms, setup 0ms, collect 1.60s, tests 66ms, environment 4ms, prepare 9.66s)[22m
+
+[41m[30m ELIFECYCLE [39m[49m [31mTest failed. See above for more details.[39m

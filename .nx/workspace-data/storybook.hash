@@ -5544,5 +5544,543 @@
         "staticFilePath": "packages/react/storybook-static"
       }
     }
+  },
+  "15684240537331792442": {
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "options": {
+        "configDir": "packages/angular/.storybook",
+        "browserTarget": "@glowing-sea-studio/erebus-angular:build-storybook",
+        "compodoc": false,
+        "outputDir": "packages/angular/storybook-static"
+      },
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/storybook-static",
+        "{options.output-dir}",
+        "{options.outputDir}",
+        "{options.o}"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/angular",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "configDir": "packages/angular/.storybook",
+        "browserTarget": "@glowing-sea-studio/erebus-angular:build-storybook",
+        "compodoc": false
+      }
+    },
+    "test-storybook": {
+      "command": "test-storybook",
+      "options": {
+        "cwd": "packages/angular"
+      },
+      "inputs": [
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build-storybook",
+        "staticFilePath": "packages/angular/storybook-static"
+      }
+    }
+  },
+  "9654061704318482398": {
+    "build-storybook": {
+      "command": "storybook build",
+      "options": {
+        "cwd": "packages/react"
+      },
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/storybook-static",
+        "{options.output-dir}",
+        "{options.outputDir}",
+        "{options.o}"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "storybook": {
+      "command": "storybook dev",
+      "options": {
+        "cwd": "packages/react"
+      }
+    },
+    "test-storybook": {
+      "command": "test-storybook",
+      "options": {
+        "cwd": "packages/react"
+      },
+      "inputs": [
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build-storybook",
+        "staticFilePath": "packages/react/storybook-static"
+      }
+    }
+  },
+  "17605905467686537388": {
+    "build-storybook": {
+      "command": "storybook build",
+      "options": {
+        "cwd": "packages/react"
+      },
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/storybook-static",
+        "{options.output-dir}",
+        "{options.outputDir}",
+        "{options.o}"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "storybook": {
+      "command": "storybook dev",
+      "options": {
+        "cwd": "packages/react"
+      }
+    },
+    "test-storybook": {
+      "command": "test-storybook",
+      "options": {
+        "cwd": "packages/react"
+      },
+      "inputs": [
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build-storybook",
+        "staticFilePath": "packages/react/storybook-static"
+      }
+    }
+  },
+  "13109592017409952185": {
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "options": {
+        "configDir": "packages/angular/.storybook",
+        "browserTarget": "@glowing-sea-studio/erebus-angular:build-storybook",
+        "compodoc": false,
+        "outputDir": "packages/angular/storybook-static"
+      },
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/storybook-static",
+        "{options.output-dir}",
+        "{options.outputDir}",
+        "{options.o}"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/angular",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "configDir": "packages/angular/.storybook",
+        "browserTarget": "@glowing-sea-studio/erebus-angular:build-storybook",
+        "compodoc": false
+      }
+    },
+    "test-storybook": {
+      "command": "test-storybook",
+      "options": {
+        "cwd": "packages/angular"
+      },
+      "inputs": [
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build-storybook",
+        "staticFilePath": "packages/angular/storybook-static"
+      }
+    }
+  },
+  "6119780523104424894": {
+    "build-storybook": {
+      "command": "storybook build",
+      "options": {
+        "cwd": "packages/react"
+      },
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/storybook-static",
+        "{options.output-dir}",
+        "{options.outputDir}",
+        "{options.o}"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "storybook": {
+      "command": "storybook dev",
+      "options": {
+        "cwd": "packages/react"
+      }
+    },
+    "test-storybook": {
+      "command": "test-storybook",
+      "options": {
+        "cwd": "packages/react"
+      },
+      "inputs": [
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build-storybook",
+        "staticFilePath": "packages/react/storybook-static"
+      }
+    }
+  },
+  "2154039641566139383": {
+    "build-storybook": {
+      "command": "storybook build",
+      "options": {
+        "cwd": "packages/react"
+      },
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/storybook-static",
+        "{options.output-dir}",
+        "{options.outputDir}",
+        "{options.o}"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "storybook": {
+      "command": "storybook dev",
+      "options": {
+        "cwd": "packages/react"
+      }
+    },
+    "test-storybook": {
+      "command": "test-storybook",
+      "options": {
+        "cwd": "packages/react"
+      },
+      "inputs": [
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build-storybook",
+        "staticFilePath": "packages/react/storybook-static"
+      }
+    }
+  },
+  "3653271560545842154": {
+    "build-storybook": {
+      "command": "storybook build",
+      "options": {
+        "cwd": "packages/react"
+      },
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/storybook-static",
+        "{options.output-dir}",
+        "{options.outputDir}",
+        "{options.o}"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "storybook": {
+      "command": "storybook dev",
+      "options": {
+        "cwd": "packages/react"
+      }
+    },
+    "test-storybook": {
+      "command": "test-storybook",
+      "options": {
+        "cwd": "packages/react"
+      },
+      "inputs": [
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build-storybook",
+        "staticFilePath": "packages/react/storybook-static"
+      }
+    }
+  },
+  "3141937270031780369": {
+    "build-storybook": {
+      "command": "storybook build",
+      "options": {
+        "cwd": "packages/react"
+      },
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/storybook-static",
+        "{options.output-dir}",
+        "{options.outputDir}",
+        "{options.o}"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "storybook": {
+      "command": "storybook dev",
+      "options": {
+        "cwd": "packages/react"
+      }
+    },
+    "test-storybook": {
+      "command": "test-storybook",
+      "options": {
+        "cwd": "packages/react"
+      },
+      "inputs": [
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build-storybook",
+        "staticFilePath": "packages/react/storybook-static"
+      }
+    }
+  },
+  "7584003341649113942": {
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "options": {
+        "configDir": "packages/angular/.storybook",
+        "browserTarget": "@glowing-sea-studio/erebus-angular:build-storybook",
+        "compodoc": false,
+        "outputDir": "packages/angular/storybook-static"
+      },
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/storybook-static",
+        "{options.output-dir}",
+        "{options.outputDir}",
+        "{options.o}"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/angular",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "configDir": "packages/angular/.storybook",
+        "browserTarget": "@glowing-sea-studio/erebus-angular:build-storybook",
+        "compodoc": false
+      }
+    },
+    "test-storybook": {
+      "command": "test-storybook",
+      "options": {
+        "cwd": "packages/angular"
+      },
+      "inputs": [
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build-storybook",
+        "staticFilePath": "packages/angular/storybook-static"
+      }
+    }
+  },
+  "4570930168633561865": {
+    "build-storybook": {
+      "command": "storybook build",
+      "options": {
+        "cwd": "packages/react"
+      },
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/storybook-static",
+        "{options.output-dir}",
+        "{options.outputDir}",
+        "{options.o}"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "storybook": {
+      "command": "storybook dev",
+      "options": {
+        "cwd": "packages/react"
+      }
+    },
+    "test-storybook": {
+      "command": "test-storybook",
+      "options": {
+        "cwd": "packages/react"
+      },
+      "inputs": [
+        {
+          "externalDependencies": [
+            "storybook",
+            "@storybook/test-runner"
+          ]
+        }
+      ]
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build-storybook",
+        "staticFilePath": "packages/react/storybook-static"
+      }
+    }
   }
 }

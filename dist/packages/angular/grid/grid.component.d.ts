@@ -3,8 +3,8 @@ import * as i0 from "@angular/core";
 export declare class GridComponent {
     cols: import("@angular/core").InputSignal<ResponsiveValue<number>>;
     gap: import("@angular/core").InputSignal<ResponsiveValue<number>>;
-    align: import("@angular/core").InputSignal<ResponsiveValue<"start" | "end" | "center" | "stretch">>;
-    justify: import("@angular/core").InputSignal<ResponsiveValue<"start" | "end" | "center" | "stretch">>;
+    align: import("@angular/core").InputSignal<ResponsiveValue<"center" | "start" | "end" | "stretch">>;
+    justify: import("@angular/core").InputSignal<ResponsiveValue<"center" | "start" | "end" | "stretch">>;
     customStyle: import("@angular/core").Signal<{
         [x: string]: string | number;
     }>;

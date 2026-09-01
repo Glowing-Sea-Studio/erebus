@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx run-many -t build",
-    "startTime": "2026-09-01T01:21:05.696Z",
-    "endTime": "2026-09-01T01:21:15.358Z",
+    "startTime": "2026-09-01T07:51:08.014Z",
+    "endTime": "2026-09-01T07:51:11.767Z",
     "inner": false
   },
   "tasks": [
@@ -11,19 +11,8 @@
       "target": "build",
       "projectName": "@glowing-sea-studio/erebus-tokens",
       "hash": "9923235393439822801",
-      "startTime": "2026-09-01T01:21:05.710Z",
-      "endTime": "2026-09-01T01:21:08.070Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "@glowing-sea-studio/erebus-angular:build",
-      "target": "build",
-      "projectName": "@glowing-sea-studio/erebus-angular",
-      "hash": "321993843553469346",
-      "startTime": "2026-09-01T01:21:08.073Z",
-      "endTime": "2026-09-01T01:21:14.985Z",
+      "startTime": "2026-09-01T07:51:08.022Z",
+      "endTime": "2026-09-01T07:51:08.859Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -32,9 +21,20 @@
       "taskId": "@glowing-sea-studio/erebus-react:build",
       "target": "build",
       "projectName": "@glowing-sea-studio/erebus-react",
-      "hash": "13216367305397708354",
-      "startTime": "2026-09-01T01:21:08.073Z",
-      "endTime": "2026-09-01T01:21:15.358Z",
+      "hash": "13570813983505368741",
+      "startTime": "2026-09-01T07:51:08.861Z",
+      "endTime": "2026-09-01T07:51:11.423Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@glowing-sea-studio/erebus-angular:build",
+      "target": "build",
+      "projectName": "@glowing-sea-studio/erebus-angular",
+      "hash": "4570016271732041334",
+      "startTime": "2026-09-01T07:51:08.861Z",
+      "endTime": "2026-09-01T07:51:11.766Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

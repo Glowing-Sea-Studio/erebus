@@ -3,8 +3,8 @@ import * as i0 from "@angular/core";
 export declare class FlexComponent {
     direction: import("@angular/core").InputSignal<ResponsiveValue<"row" | "row-reverse" | "column" | "column-reverse">>;
     gap: import("@angular/core").InputSignal<ResponsiveValue<number>>;
-    align: import("@angular/core").InputSignal<ResponsiveValue<"start" | "end" | "center" | "stretch" | "baseline">>;
-    justify: import("@angular/core").InputSignal<ResponsiveValue<"start" | "end" | "center" | "space-between" | "space-around" | "space-evenly">>;
+    align: import("@angular/core").InputSignal<ResponsiveValue<"center" | "start" | "end" | "stretch" | "baseline">>;
+    justify: import("@angular/core").InputSignal<ResponsiveValue<"center" | "start" | "end" | "space-between" | "space-around" | "space-evenly">>;
     wrap: import("@angular/core").InputSignal<ResponsiveValue<"nowrap" | "wrap" | "wrap-reverse">>;
     customStyle: import("@angular/core").Signal<{
         [x: string]: string | number;

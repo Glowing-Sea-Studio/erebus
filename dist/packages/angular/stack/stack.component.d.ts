@@ -2,8 +2,8 @@ import { ResponsiveValue } from '../utils';
 import * as i0 from "@angular/core";
 export declare class StackComponent {
     gap: import("@angular/core").InputSignal<ResponsiveValue<number>>;
-    align: import("@angular/core").InputSignal<ResponsiveValue<"start" | "end" | "center" | "stretch" | "baseline">>;
-    justify: import("@angular/core").InputSignal<ResponsiveValue<"start" | "end" | "center" | "space-between" | "space-around" | "space-evenly">>;
+    align: import("@angular/core").InputSignal<ResponsiveValue<"center" | "start" | "end" | "stretch" | "baseline">>;
+    justify: import("@angular/core").InputSignal<ResponsiveValue<"center" | "start" | "end" | "space-between" | "space-around" | "space-evenly">>;
     customStyle: import("@angular/core").Signal<{
         [x: string]: string | number;
     }>;
