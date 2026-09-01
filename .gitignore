@@ -4,3 +4,7 @@
 **/.angular/
 
 storybook-static
+.nx/
+dist/
+coverage/
+
