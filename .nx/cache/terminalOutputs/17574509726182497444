@@ -1,0 +1,7 @@
+
+> @glowing-sea-studio/erebus-angular@0.1.0 typecheck /app/packages/angular
+> tsc --noEmit
+
+src/layer/focus-trap.directive.ts(1,67): error TS6133: 'SimpleChanges' is declared but its value is never read.
+src/layer/portal.directive.ts(1,78): error TS6133: 'effect' is declared but its value is never read.
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 2.[39m

@@ -1,5 +1,5 @@
 import * as i0 from '@angular/core';
-import { Component, input, computed, Directive, output, ViewChild } from '@angular/core';
+import { Component, input, computed, Directive, output, ViewChild, Injectable, effect } from '@angular/core';
 
 class ContainerComponent {
     static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: ContainerComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
@@ -1334,9 +1334,326 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.2.14", ngImpo
                 args: ['inputRef']
             }] } });
 
+class LayerManagerService {
+    stack = [];
+    handleKeyDownBound;
+    constructor() {
+        this.handleKeyDownBound = this.handleKeyDown.bind(this);
+        if (typeof window !== 'undefined') {
+            window.addEventListener('keydown', this.handleKeyDownBound);
+        }
+    }
+    ngOnDestroy() {
+        if (typeof window !== 'undefined') {
+            window.removeEventListener('keydown', this.handleKeyDownBound);
+        }
+    }
+    register(id, element, close) {
+        this.stack.push({ id, element, close });
+        this.updateInert();
+        this.updateZIndex(element);
+    }
+    unregister(id) {
+        this.stack = this.stack.filter(entry => entry.id !== id);
+        this.updateInert();
+    }
+    handleKeyDown(e) {
+        if (e.key === 'Escape' && this.stack.length > 0) {
+            const topLayer = this.stack[this.stack.length - 1];
+            if (topLayer) {
+                topLayer.close();
+                e.stopPropagation();
+            }
+        }
+    }
+    updateInert() {
+        if (typeof document === 'undefined')
+            return;
+        const root = document.querySelector('[data-erebus-root]') || document.body;
+        const hasLayers = this.stack.length > 0;
+        Array.from(root.children).forEach((child) => {
+            const isLayer = this.stack.some(layer => layer.element === child || layer.element.contains(child));
+            if (!isLayer && child.tagName !== 'SCRIPT' && child.tagName !== 'STYLE' && child.tagName !== 'NOSCRIPT') {
+                if (hasLayers) {
+                    child.setAttribute('inert', '');
+                }
+                else {
+                    child.removeAttribute('inert');
+                }
+            }
+        });
+    }
+    updateZIndex(element) {
+        const baseZ = 1300; // Value for --erb-z-overlay based on shared.json
+        element.style.zIndex = `calc(var(--erb-z-overlay, ${baseZ}) + ${this.stack.length})`;
+    }
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: LayerManagerService, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
+    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: LayerManagerService, providedIn: 'root' });
+}
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: LayerManagerService, decorators: [{
+            type: Injectable,
+            args: [{
+                    providedIn: 'root'
+                }]
+        }], ctorParameters: () => [] });
+
+class PortalDirective {
+    templateRef;
+    viewContainerRef;
+    targetContainer = input(undefined, { alias: 'erbPortal' });
+    viewRef;
+    constructor(templateRef, viewContainerRef) {
+        this.templateRef = templateRef;
+        this.viewContainerRef = viewContainerRef;
+    }
+    ngOnInit() {
+        if (typeof window !== 'undefined') {
+            const container = this.targetContainer() || document.body;
+            this.viewRef = this.viewContainerRef.createEmbeddedView(this.templateRef);
+            const rootNodes = this.viewRef.rootNodes;
+            for (const node of rootNodes) {
+                container.appendChild(node);
+            }
+        }
+    }
+    ngOnDestroy() {
+        if (this.viewRef) {
+            const rootNodes = this.viewRef.rootNodes;
+            for (const node of rootNodes) {
+                if (node.parentNode) {
+                    node.parentNode.removeChild(node);
+                }
+            }
+            this.viewRef.destroy();
+        }
+    }
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: PortalDirective, deps: [{ token: i0.TemplateRef }, { token: i0.ViewContainerRef }], target: i0.ɵɵFactoryTarget.Directive });
+    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "17.1.0", version: "18.2.14", type: PortalDirective, isStandalone: true, selector: "[erbPortal]", inputs: { targetContainer: { classPropertyName: "targetContainer", publicName: "erbPortal", isSignal: true, isRequired: false, transformFunction: null } }, ngImport: i0 });
+}
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: PortalDirective, decorators: [{
+            type: Directive,
+            args: [{
+                    selector: '[erbPortal]',
+                    standalone: true
+                }]
+        }], ctorParameters: () => [{ type: i0.TemplateRef }, { type: i0.ViewContainerRef }] });
+
+const FOCUSABLE_ELEMENTS = [
+    'a[href]',
+    'area[href]',
+    'input:not([disabled]):not([type="hidden"]):not([aria-hidden])',
+    'select:not([disabled]):not([aria-hidden])',
+    'textarea:not([disabled]):not([aria-hidden])',
+    'button:not([disabled]):not([aria-hidden])',
+    'iframe',
+    'object',
+    'embed',
+    '[contenteditable]',
+    '[tabindex]:not([tabindex^="-"])'
+].join(',');
+class FocusTrapDirective {
+    el;
+    active = input(true, { alias: 'erbFocusTrap' });
+    previousFocus = null;
+    handleKeyDownBound;
+    constructor(el) {
+        this.el = el;
+        this.handleKeyDownBound = this.handleKeyDown.bind(this);
+        effect(() => {
+            if (this.active()) {
+                this.activate();
+            }
+            else {
+                this.deactivate();
+            }
+        });
+    }
+    ngOnInit() {
+        if (this.active()) {
+            this.activate();
+        }
+    }
+    ngOnDestroy() {
+        this.deactivate();
+    }
+    activate() {
+        if (typeof window !== 'undefined') {
+            if (!this.previousFocus) {
+                this.previousFocus = document.activeElement;
+            }
+            // Ensure the container is focusable
+            this.el.nativeElement.tabIndex = -1;
+            // Focus first element or container
+            setTimeout(() => {
+                const focusableElements = Array.from(this.el.nativeElement.querySelectorAll(FOCUSABLE_ELEMENTS));
+                if (focusableElements.length > 0 && focusableElements[0]) {
+                    focusableElements[0].focus();
+                }
+                else {
+                    this.el.nativeElement.focus();
+                }
+            });
+            document.addEventListener('keydown', this.handleKeyDownBound);
+        }
+    }
+    deactivate() {
+        if (typeof window !== 'undefined') {
+            document.removeEventListener('keydown', this.handleKeyDownBound);
+            if (this.previousFocus) {
+                this.previousFocus.focus();
+                this.previousFocus = null;
+            }
+        }
+    }
+    handleKeyDown(e) {
+        if (e.key !== 'Tab')
+            return;
+        const container = this.el.nativeElement;
+        const focusableElements = Array.from(container.querySelectorAll(FOCUSABLE_ELEMENTS));
+        if (focusableElements.length === 0) {
+            e.preventDefault();
+            return;
+        }
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+        if (e.shiftKey) {
+            if (firstElement && document.activeElement === firstElement) {
+                e.preventDefault();
+                if (lastElement)
+                    lastElement.focus();
+            }
+        }
+        else {
+            if (lastElement && document.activeElement === lastElement) {
+                e.preventDefault();
+                if (firstElement)
+                    firstElement.focus();
+            }
+        }
+    }
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: FocusTrapDirective, deps: [{ token: i0.ElementRef }], target: i0.ɵɵFactoryTarget.Directive });
+    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "17.1.0", version: "18.2.14", type: FocusTrapDirective, isStandalone: true, selector: "[erbFocusTrap]", inputs: { active: { classPropertyName: "active", publicName: "erbFocusTrap", isSignal: true, isRequired: false, transformFunction: null } }, ngImport: i0 });
+}
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: FocusTrapDirective, decorators: [{
+            type: Directive,
+            args: [{
+                    selector: '[erbFocusTrap]',
+                    standalone: true
+                }]
+        }], ctorParameters: () => [{ type: i0.ElementRef }] });
+
+let scrollLockCount = 0;
+let originalStyle = null;
+let originalPadding = null;
+const getScrollbarWidth = () => {
+    return window.innerWidth - document.documentElement.clientWidth;
+};
+class ScrollLockDirective {
+    lock = input(true, { alias: 'erbScrollLock' });
+    locked = false;
+    constructor() {
+        effect(() => {
+            if (this.lock()) {
+                this.enableLock();
+            }
+            else {
+                this.disableLock();
+            }
+        });
+    }
+    ngOnDestroy() {
+        this.disableLock();
+    }
+    enableLock() {
+        if (this.locked || typeof window === 'undefined')
+            return;
+        if (scrollLockCount === 0) {
+            originalStyle = document.body.style.overflow;
+            originalPadding = document.body.style.paddingRight;
+            const scrollbarWidth = getScrollbarWidth();
+            document.body.style.overflow = 'hidden';
+            if (scrollbarWidth > 0) {
+                document.body.style.paddingRight = `calc(${window.getComputedStyle(document.body).paddingRight} + ${scrollbarWidth}px)`;
+            }
+        }
+        scrollLockCount++;
+        this.locked = true;
+    }
+    disableLock() {
+        if (!this.locked || typeof window === 'undefined')
+            return;
+        scrollLockCount--;
+        if (scrollLockCount === 0) {
+            if (originalStyle !== null) {
+                document.body.style.overflow = originalStyle;
+            }
+            else {
+                document.body.style.removeProperty('overflow');
+            }
+            if (originalPadding !== null) {
+                document.body.style.paddingRight = originalPadding;
+            }
+            else {
+                document.body.style.removeProperty('padding-right');
+            }
+        }
+        this.locked = false;
+    }
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: ScrollLockDirective, deps: [], target: i0.ɵɵFactoryTarget.Directive });
+    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "17.1.0", version: "18.2.14", type: ScrollLockDirective, isStandalone: true, selector: "[erbScrollLock]", inputs: { lock: { classPropertyName: "lock", publicName: "erbScrollLock", isSignal: true, isRequired: false, transformFunction: null } }, ngImport: i0 });
+}
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: ScrollLockDirective, decorators: [{
+            type: Directive,
+            args: [{
+                    selector: '[erbScrollLock]',
+                    standalone: true
+                }]
+        }], ctorParameters: () => [] });
+
+class TransitionDirective {
+    el;
+    renderer;
+    isOpen = input(false, { alias: 'erbTransition' });
+    duration = input(200);
+    timeoutId;
+    constructor(el, renderer) {
+        this.el = el;
+        this.renderer = renderer;
+        effect(() => {
+            if (typeof window !== 'undefined') {
+                if (this.timeoutId) {
+                    clearTimeout(this.timeoutId);
+                }
+                if (this.isOpen()) {
+                    this.renderer.setStyle(this.el.nativeElement, 'display', '');
+                    // Small delay to allow the element to be mounted before triggering the transition
+                    this.timeoutId = setTimeout(() => {
+                        this.renderer.setAttribute(this.el.nativeElement, 'data-state', 'open');
+                    }, 10);
+                }
+                else {
+                    this.renderer.setAttribute(this.el.nativeElement, 'data-state', 'closed');
+                    this.timeoutId = setTimeout(() => {
+                        this.renderer.setStyle(this.el.nativeElement, 'display', 'none');
+                    }, this.duration() ?? 200);
+                }
+            }
+        });
+    }
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: TransitionDirective, deps: [{ token: i0.ElementRef }, { token: i0.Renderer2 }], target: i0.ɵɵFactoryTarget.Directive });
+    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "17.1.0", version: "18.2.14", type: TransitionDirective, isStandalone: true, selector: "[erbTransition]", inputs: { isOpen: { classPropertyName: "isOpen", publicName: "erbTransition", isSignal: true, isRequired: false, transformFunction: null }, duration: { classPropertyName: "duration", publicName: "duration", isSignal: true, isRequired: false, transformFunction: null } }, ngImport: i0 });
+}
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.2.14", ngImport: i0, type: TransitionDirective, decorators: [{
+            type: Directive,
+            args: [{
+                    selector: '[erbTransition]',
+                    standalone: true
+                }]
+        }], ctorParameters: () => [{ type: i0.ElementRef }, { type: i0.Renderer2 }] });
+
 /**
  * Generated bundle index. Do not edit.
  */
 
-export { AspectRatioComponent, CenterComponent, ContainerComponent, ErbAlertComponent, ErbButtonDirective, ErbCardBodyComponent, ErbCardComponent, ErbCardDescriptionComponent, ErbCardFooterComponent, ErbCardHeaderComponent, ErbCardTitleComponent, ErbCheckboxComponent, ErbCheckboxGroupComponent, ErbFooterComponent, ErbHeaderComponent, ErbInputDirective, ErbInputWrapperComponent, ErbMenuComponent, ErbMenuItemDirective, ErbMenuSeparatorComponent, ErbModalBodyComponent, ErbModalContentComponent, ErbModalDescriptionComponent, ErbModalFooterComponent, ErbModalHeaderComponent, ErbModalOverlayComponent, ErbModalTitleComponent, ErbNumberInputComponent, ErbPanelBodyComponent, ErbPanelComponent, ErbPanelFooterComponent, ErbPanelHeaderComponent, ErbPanelOverlayComponent, ErbPanelTitleComponent, ErbRadioComponent, ErbRadioGroupComponent, ErbSearchInputComponent, ErbSelectDirective, ErbSwitchComponent, ErbTabDirective, ErbTabsComponent, ErbTabsListComponent, ErbTabsPanelComponent, ErbTextareaDirective, FlexComponent, GridComponent, GridItemComponent, InlineComponent, ScrollAreaComponent, SectionComponent, SpacerComponent, SplitComponent, StackComponent };
+export { AspectRatioComponent, CenterComponent, ContainerComponent, ErbAlertComponent, ErbButtonDirective, ErbCardBodyComponent, ErbCardComponent, ErbCardDescriptionComponent, ErbCardFooterComponent, ErbCardHeaderComponent, ErbCardTitleComponent, ErbCheckboxComponent, ErbCheckboxGroupComponent, ErbFooterComponent, ErbHeaderComponent, ErbInputDirective, ErbInputWrapperComponent, ErbMenuComponent, ErbMenuItemDirective, ErbMenuSeparatorComponent, ErbModalBodyComponent, ErbModalContentComponent, ErbModalDescriptionComponent, ErbModalFooterComponent, ErbModalHeaderComponent, ErbModalOverlayComponent, ErbModalTitleComponent, ErbNumberInputComponent, ErbPanelBodyComponent, ErbPanelComponent, ErbPanelFooterComponent, ErbPanelHeaderComponent, ErbPanelOverlayComponent, ErbPanelTitleComponent, ErbRadioComponent, ErbRadioGroupComponent, ErbSearchInputComponent, ErbSelectDirective, ErbSwitchComponent, ErbTabDirective, ErbTabsComponent, ErbTabsListComponent, ErbTabsPanelComponent, ErbTextareaDirective, FlexComponent, FocusTrapDirective, GridComponent, GridItemComponent, InlineComponent, LayerManagerService, PortalDirective, ScrollAreaComponent, ScrollLockDirective, SectionComponent, SpacerComponent, SplitComponent, StackComponent, TransitionDirective };
 //# sourceMappingURL=glowing-sea-studio-erebus-angular.mjs.map

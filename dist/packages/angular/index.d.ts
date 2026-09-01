@@ -28,3 +28,4 @@ export * from './radio-group';
 export * from './select';
 export * from './number-input';
 export * from './search-input';
+export * from './layer';

@@ -1,0 +1,3 @@
+
+> @glowing-sea-studio/erebus-angular@0.1.0 typecheck /app/packages/angular
+> tsc --noEmit

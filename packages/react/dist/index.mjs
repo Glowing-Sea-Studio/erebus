@@ -1111,6 +1111,226 @@ var SearchInput = forwardRef31(
   }
 );
 SearchInput.displayName = "SearchInput";
+
+// src/layer/LayerManager.ts
+import { useEffect as useEffect3 } from "react";
+var LayerManagerImpl = class {
+  stack = [];
+  constructor() {
+    if (typeof window !== "undefined") {
+      window.addEventListener("keydown", this.handleKeyDown);
+    }
+  }
+  register(id, element, close) {
+    this.stack.push({ id, element, close });
+    this.updateInert();
+    this.updateZIndex(element);
+  }
+  unregister(id) {
+    this.stack = this.stack.filter((entry) => entry.id !== id);
+    this.updateInert();
+  }
+  handleKeyDown = (e) => {
+    if (e.key === "Escape" && this.stack.length > 0) {
+      const topLayer = this.stack[this.stack.length - 1];
+      if (topLayer) {
+        topLayer.close();
+        e.stopPropagation();
+      }
+    }
+  };
+  updateInert() {
+    if (typeof document === "undefined") return;
+    const root = document.querySelector("[data-erebus-root]") || document.body;
+    const hasLayers = this.stack.length > 0;
+    Array.from(root.children).forEach((child) => {
+      const isLayer = this.stack.some((layer) => layer.element === child || layer.element.contains(child));
+      if (!isLayer && child.tagName !== "SCRIPT" && child.tagName !== "STYLE" && child.tagName !== "NOSCRIPT") {
+        if (hasLayers) {
+          child.setAttribute("inert", "");
+        } else {
+          child.removeAttribute("inert");
+        }
+      }
+    });
+  }
+  updateZIndex(element) {
+    const baseZ = 1300;
+    element.style.zIndex = `calc(var(--erb-z-overlay, ${baseZ}) + ${this.stack.length})`;
+  }
+};
+var LayerManager = new LayerManagerImpl();
+function useLayerEscape(isOpen, onClose, layerElement, id) {
+  useEffect3(() => {
+    if (isOpen && layerElement) {
+      LayerManager.register(id, layerElement, onClose);
+      return () => LayerManager.unregister(id);
+    }
+  }, [isOpen, onClose, layerElement, id]);
+}
+
+// src/layer/Portal.tsx
+import { useEffect as useEffect4, useState as useState6 } from "react";
+import { createPortal as createPortal3 } from "react-dom";
+function Portal({ children, container }) {
+  const [mounted, setMounted] = useState6(false);
+  useEffect4(() => {
+    setMounted(true);
+  }, []);
+  if (!mounted) {
+    return null;
+  }
+  const target = container || document.body;
+  return createPortal3(children, target);
+}
+
+// src/layer/FocusTrap.tsx
+import React, { useEffect as useEffect5, useRef as useRef3 } from "react";
+var FOCUSABLE_ELEMENTS = [
+  "a[href]",
+  "area[href]",
+  'input:not([disabled]):not([type="hidden"]):not([aria-hidden])',
+  "select:not([disabled]):not([aria-hidden])",
+  "textarea:not([disabled]):not([aria-hidden])",
+  "button:not([disabled]):not([aria-hidden])",
+  "iframe",
+  "object",
+  "embed",
+  "[contenteditable]",
+  '[tabindex]:not([tabindex^="-"])'
+].join(",");
+function FocusTrap({ children, active = true }) {
+  const containerRef = useRef3(null);
+  const previousFocusRef = useRef3(null);
+  useEffect5(() => {
+    if (active) {
+      previousFocusRef.current = document.activeElement;
+      const container = containerRef.current;
+      if (container) {
+        const focusableElements = Array.from(
+          container.querySelectorAll(FOCUSABLE_ELEMENTS)
+        );
+        if (focusableElements.length > 0 && focusableElements[0]) {
+          focusableElements[0].focus();
+        } else {
+          container.focus();
+        }
+      }
+    }
+    return () => {
+      if (active && previousFocusRef.current) {
+        previousFocusRef.current.focus();
+      }
+    };
+  }, [active]);
+  useEffect5(() => {
+    if (!active) return;
+    const handleKeyDown = (e) => {
+      if (e.key !== "Tab") return;
+      const container = containerRef.current;
+      if (!container) return;
+      const focusableElements = Array.from(
+        container.querySelectorAll(FOCUSABLE_ELEMENTS)
+      );
+      if (focusableElements.length === 0) {
+        e.preventDefault();
+        return;
+      }
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+      if (e.shiftKey) {
+        if (firstElement && document.activeElement === firstElement) {
+          e.preventDefault();
+          if (lastElement) lastElement.focus();
+        }
+      } else {
+        if (lastElement && document.activeElement === lastElement) {
+          e.preventDefault();
+          if (firstElement) firstElement.focus();
+        }
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [active]);
+  return React.cloneElement(children, {
+    ref: (node) => {
+      containerRef.current = node;
+      const { ref } = children;
+      if (typeof ref === "function") ref(node);
+      else if (ref) ref.current = node;
+    },
+    tabIndex: -1
+  });
+}
+
+// src/layer/ScrollLock.tsx
+import { useLayoutEffect } from "react";
+var scrollLockCount = 0;
+var originalStyle = null;
+var originalPadding = null;
+var getScrollbarWidth = () => {
+  return window.innerWidth - document.documentElement.clientWidth;
+};
+var useScrollLock = (lock) => {
+  useLayoutEffect(() => {
+    if (!lock) return;
+    if (scrollLockCount === 0) {
+      originalStyle = document.body.style.overflow;
+      originalPadding = document.body.style.paddingRight;
+      const scrollbarWidth = getScrollbarWidth();
+      document.body.style.overflow = "hidden";
+      if (scrollbarWidth > 0) {
+        document.body.style.paddingRight = `calc(${window.getComputedStyle(document.body).paddingRight} + ${scrollbarWidth}px)`;
+      }
+    }
+    scrollLockCount++;
+    return () => {
+      scrollLockCount--;
+      if (scrollLockCount === 0) {
+        if (originalStyle !== null) {
+          document.body.style.overflow = originalStyle;
+        } else {
+          document.body.style.removeProperty("overflow");
+        }
+        if (originalPadding !== null) {
+          document.body.style.paddingRight = originalPadding;
+        } else {
+          document.body.style.removeProperty("padding-right");
+        }
+      }
+    };
+  }, [lock]);
+};
+function ScrollLock({ lock = true }) {
+  useScrollLock(lock);
+  return null;
+}
+
+// src/layer/Transition.ts
+import { useEffect as useEffect6, useState as useState7 } from "react";
+function useLayerTransition(isOpen, duration = 200) {
+  const [shouldRender, setShouldRender] = useState7(isOpen);
+  const [state, setState] = useState7(isOpen ? "open" : "closed");
+  useEffect6(() => {
+    let timeoutId;
+    if (isOpen) {
+      setShouldRender(true);
+      timeoutId = window.setTimeout(() => {
+        setState("open");
+      }, 10);
+    } else {
+      setState("closed");
+      timeoutId = window.setTimeout(() => {
+        setShouldRender(false);
+      }, duration);
+    }
+    return () => {
+      window.clearTimeout(timeoutId);
+    };
+  }, [isOpen, duration]);
+  return { shouldRender, state };
+}
 export {
   Alert,
   AlertDescription,
@@ -1129,12 +1349,14 @@ export {
   CheckboxGroupContext,
   Container,
   Flex,
+  FocusTrap,
   Footer,
   Grid,
   GridItem,
   Header,
   Inline,
   Input,
+  LayerManager,
   Menu,
   MenuItem,
   MenuSeparator,
@@ -1153,10 +1375,12 @@ export {
   PanelHeader,
   PanelOverlay,
   PanelTitle,
+  Portal,
   Radio,
   RadioGroup,
   RadioGroupContext,
   ScrollArea,
+  ScrollLock,
   SearchInput,
   Section,
   Select,
@@ -1170,8 +1394,11 @@ export {
   TabsPanel,
   Textarea,
   useCheckboxGroup,
+  useLayerEscape,
+  useLayerTransition,
   useModal,
   useRadioGroup,
+  useScrollLock,
   useTabs
 };
 //# sourceMappingURL=index.mjs.map

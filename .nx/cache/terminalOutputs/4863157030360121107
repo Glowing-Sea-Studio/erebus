@@ -1,0 +1,59 @@
+
+> @glowing-sea-studio/erebus-angular@0.1.0 test /app/packages/angular
+> vitest run
+
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90m/app/packages/angular[39m
+
+ [32m✓[39m src/checkbox-group/checkbox-group.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 12[2mms[22m[39m
+ [32m✓[39m src/aspect-ratio/aspect-ratio.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/number-input/number-input.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 8[2mms[22m[39m
+ [32m✓[39m src/search-input/search-input.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 9[2mms[22m[39m
+ [32m✓[39m src/radio-group/radio-group.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 8[2mms[22m[39m
+ [32m✓[39m src/scroll-area/scroll-area.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/container/container.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 8[2mms[22m[39m
+ [32m✓[39m src/checkbox/checkbox.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 12[2mms[22m[39m
+ [31m❯[39m src/layer/layer.spec.ts [2m([22m[2m0 test[22m[2m)[22m
+ [32m✓[39m src/textarea/textarea.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/section/section.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 8[2mms[22m[39m
+ [32m✓[39m src/button/button.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/center/center.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 4[2mms[22m[39m
+ [32m✓[39m src/footer/footer.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/header/header.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 4[2mms[22m[39m
+ [32m✓[39m src/inline/inline.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 9[2mms[22m[39m
+ [32m✓[39m src/select/select.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/spacer/spacer.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 4[2mms[22m[39m
+ [32m✓[39m src/switch/switch.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 9[2mms[22m[39m
+ [32m✓[39m src/alert/alert.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 6[2mms[22m[39m
+ [32m✓[39m src/input/input.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 8[2mms[22m[39m
+ [32m✓[39m src/modal/modal.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 7[2mms[22m[39m
+ [32m✓[39m src/panel/panel.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 12[2mms[22m[39m
+ [32m✓[39m src/radio/radio.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 10[2mms[22m[39m
+ [32m✓[39m src/split/split.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 7[2mms[22m[39m
+ [32m✓[39m src/stack/stack.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 5[2mms[22m[39m
+ [32m✓[39m src/card/card.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 8[2mms[22m[39m
+ [32m✓[39m src/flex/flex.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 7[2mms[22m[39m
+ [32m✓[39m src/grid/grid.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 12[2mms[22m[39m
+ [32m✓[39m src/menu/menu.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 4[2mms[22m[39m
+ [32m✓[39m src/tabs/tabs.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/layer/layer.spec.ts[2m [ src/layer/layer.spec.ts ][22m
+[31m[1mSyntaxError[22m: The requested module '@angular/core' does not provide an export named 'ɵSHARED_STYLES_HOST'[39m
+[36m [2m❯[22m src/layer/layer.spec.ts:[2m4:31[22m[39m
+    [90m  2| [39m[35mimport[39m { describe[33m,[39m it[33m,[39m expect[33m,[39m beforeEach[33m,[39m afterEach } [35mfrom[39m [32m'vitest'[39m[33m;[39m
+    [90m  3| [39m[35mimport[39m { [33mComponent[39m } [35mfrom[39m [32m'@angular/core'[39m[33m;[39m
+    [90m  4| [39m[35mimport[39m { [33mComponentFixture[39m[33m,[39m [33mTestBed[39m } [35mfrom[39m [32m'@angular/core/testing'[39m[33m;[39m
+    [90m   | [39m                              [31m^[39m
+    [90m  5| [39m[35mimport[39m { [33mBrowserDynamicTestingModule[39m[33m,[39m platformBrowserDynamicTesting } …
+    [90m  6| [39m[35mimport[39m { [33mScrollLockDirective[39m } [35mfrom[39m [32m'./scroll-lock.directive'[39m[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m30 passed[39m[22m[90m (31)[39m
+[2m      Tests [22m [1m[32m30 passed[39m[22m[90m (30)[39m
+[2m   Start at [22m 01:01:58
+[2m   Duration [22m 9.12s[2m (transform 748ms, setup 0ms, collect 1.15s, tests 203ms, environment 2.37s, prepare 7.16s)[22m
+
+[41m[30m ELIFECYCLE [39m[49m [31mTest failed. See above for more details.[39m

@@ -1,0 +1,92 @@
+
+> @glowing-sea-studio/erebus-react@0.1.0 test /app/packages/react
+> vitest run
+
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90m/app/packages/react[39m
+
+ [32m✓[39m src/scroll-area/ScrollArea.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/aspect-ratio/AspectRatio.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [31m❯[39m src/layer/layer.test.tsx [2m([22m[2m3 tests[22m[2m | [22m[31m3 failed[39m[2m)[22m[90m 28[2mms[22m[39m
+[31m   [31m×[31m Layer - React[2m > [22mFocusTrap[2m > [22mtraps focus correctly[90m 16[2mms[22m[31m[39m
+[31m     → document is not defined[39m
+[31m   [31m×[31m Layer - React[2m > [22mScrollLock[2m > [22msets document.body.style.overflow to hidden[90m 1[2mms[22m[31m[39m
+[31m     → document is not defined[39m
+[31m   [31m×[31m Layer - React[2m > [22mScrollLock[2m > [22mrestores overflow when unmounted[90m 10[2mms[22m[31m[39m
+[31m     → document is not defined[39m
+ [32m✓[39m src/container/Container.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 8[2mms[22m[39m
+ [32m✓[39m src/checkbox/Checkbox.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 6[2mms[22m[39m
+ [32m✓[39m src/textarea/Textarea.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/section/Section.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/button/Button.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 5[2mms[22m[39m
+ [32m✓[39m src/center/Center.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 4[2mms[22m[39m
+ [32m✓[39m src/footer/Footer.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 4[2mms[22m[39m
+ [32m✓[39m src/header/Header.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/inline/Inline.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/spacer/Spacer.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 5[2mms[22m[39m
+ [32m✓[39m src/switch/Switch.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/alert/Alert.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/input/Input.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/modal/Modal.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 16[2mms[22m[39m
+ [32m✓[39m src/panel/Panel.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/radio/Radio.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/split/Split.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 5[2mms[22m[39m
+ [32m✓[39m src/card/Card.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/stack/Stack.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 5[2mms[22m[39m
+ [32m✓[39m src/flex/Flex.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/grid/Grid.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/menu/Menu.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 4[2mms[22m[39m
+ [32m✓[39m src/tabs/Tabs.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/checkbox-group/CheckboxGroup.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 7[2mms[22m[39m
+ [32m✓[39m src/number-input/NumberInput.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 6[2mms[22m[39m
+ [32m✓[39m src/search-input/SearchInput.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/radio-group/RadioGroup.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/select/Select.test.tsx [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 3 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/layer/layer.test.tsx[2m > [22mLayer - React[2m > [22mFocusTrap[2m > [22mtraps focus correctly
+[31m[1mReferenceError[22m: document is not defined[39m
+[90m [2m❯[22m Proxy.render ../../node_modules/.pnpm/@testing-library+react@16.3.3_@testing-library+dom@10.4.1_@types+react-dom@18.3.7_@types+reac_ak5k2ochehnsr6233e34ifi7sa/node_modules/@testing-library/react/dist/pure.js:[2m265:5[22m[39m
+[36m [2m❯[22m src/layer/layer.test.tsx:[2m10:42[22m[39m
+    [90m  8| [39m  [34mdescribe[39m([32m'FocusTrap'[39m[33m,[39m () [33m=>[39m {
+    [90m  9| [39m    [34mit[39m([32m'traps focus correctly'[39m[33m,[39m () [33m=>[39m {
+    [90m 10| [39m      [35mconst[39m { getByTestId[33m,[39m getByText } [33m=[39m [34mrender[39m(
+    [90m   | [39m                                         [31m^[39m
+    [90m 11| [39m        [33m<[39m[33mFocusTrap[39m [33mactive[39m[33m=[39m[33m{[39m[35mtrue[39m[33m}[39m[33m>[39m
+    [90m 12| [39m          [33m<[39m[33mdiv[39m [33mdata-testid[39m[33m=[39m[32m"trap"[39m[33m>[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/layer/layer.test.tsx[2m > [22mLayer - React[2m > [22mScrollLock[2m > [22msets document.body.style.overflow to hidden
+[31m[1mReferenceError[22m: document is not defined[39m
+[90m [2m❯[22m Proxy.render ../../node_modules/.pnpm/@testing-library+react@16.3.3_@testing-library+dom@10.4.1_@types+react-dom@18.3.7_@types+reac_ak5k2ochehnsr6233e34ifi7sa/node_modules/@testing-library/react/dist/pure.js:[2m265:5[22m[39m
+[36m [2m❯[22m src/layer/layer.test.tsx:[2m30:7[22m[39m
+    [90m 28| [39m  [34mdescribe[39m([32m'ScrollLock'[39m[33m,[39m () [33m=>[39m {
+    [90m 29| [39m    [34mit[39m([32m'sets document.body.style.overflow to hidden'[39m[33m,[39m () [33m=>[39m {
+    [90m 30| [39m      [34mrender[39m([33m<[39m[33mScrollLock[39m [33mlock[39m[33m=[39m[33m{[39m[35mtrue[39m[33m}[39m [33m/[39m[33m>[39m)[33m;[39m
+    [90m   | [39m      [31m^[39m
+    [90m 31| [39m      [34mexpect[39m(document[33m.[39mbody[33m.[39mstyle[33m.[39moverflow)[33m.[39m[34mtoBe[39m([32m'hidden'[39m)[33m;[39m
+    [90m 32| [39m    })[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/layer/layer.test.tsx[2m > [22mLayer - React[2m > [22mScrollLock[2m > [22mrestores overflow when unmounted
+[31m[1mReferenceError[22m: document is not defined[39m
+[90m [2m❯[22m Proxy.render ../../node_modules/.pnpm/@testing-library+react@16.3.3_@testing-library+dom@10.4.1_@types+react-dom@18.3.7_@types+reac_ak5k2ochehnsr6233e34ifi7sa/node_modules/@testing-library/react/dist/pure.js:[2m265:5[22m[39m
+[36m [2m❯[22m src/layer/layer.test.tsx:[2m35:27[22m[39m
+    [90m 33| [39m
+    [90m 34| [39m    [34mit[39m([32m'restores overflow when unmounted'[39m[33m,[39m () [33m=>[39m {
+    [90m 35| [39m      [35mconst[39m { unmount } [33m=[39m [34mrender[39m([33m<[39m[33mScrollLock[39m [33mlock[39m[33m=[39m[33m{[39m[35mtrue[39m[33m}[39m [33m/[39m[33m>[39m)[33m;[39m
+    [90m   | [39m                          [31m^[39m
+    [90m 36| [39m      [34munmount[39m()[33m;[39m
+    [90m 37| [39m      [34mexpect[39m(document[33m.[39mbody[33m.[39mstyle[33m.[39moverflow)[33m.[39m[34mtoBe[39m([32m''[39m)[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯[22m[39m
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m30 passed[39m[22m[90m (31)[39m
+[2m      Tests [22m [1m[31m3 failed[39m[22m[2m | [22m[1m[32m30 passed[39m[22m[90m (33)[39m
+[2m   Start at [22m 22:32:53
+[2m   Duration [22m 6.64s[2m (transform 565ms, setup 0ms, collect 1.56s, tests 159ms, environment 11ms, prepare 5.66s)[22m
+
+[41m[30m ELIFECYCLE [39m[49m [31mTest failed. See above for more details.[39m

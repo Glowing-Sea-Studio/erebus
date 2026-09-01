@@ -1,5 +1,5 @@
 import * as react from 'react';
-import { ComponentPropsWithRef, ElementType, ButtonHTMLAttributes, HTMLAttributes, InputHTMLAttributes, ReactNode, TextareaHTMLAttributes, FieldsetHTMLAttributes, SelectHTMLAttributes } from 'react';
+import react__default, { ComponentPropsWithRef, ElementType, ButtonHTMLAttributes, HTMLAttributes, InputHTMLAttributes, ReactNode, TextareaHTMLAttributes, FieldsetHTMLAttributes, SelectHTMLAttributes } from 'react';
 import { Placement } from '@floating-ui/react';
 
 interface ContainerProps extends ComponentPropsWithRef<'div'> {
@@ -270,4 +270,38 @@ interface SearchInputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, '
 }
 declare const SearchInput: react.ForwardRefExoticComponent<SearchInputProps & react.RefAttributes<HTMLInputElement>>;
 
-export { Alert, AlertDescription, type AlertProps, AlertTitle, AspectRatio, type AspectRatioProps, Button, type ButtonProps, Card, CardBody, CardDescription, CardFooter, CardHeader, CardTitle, Center, type CenterProps, Checkbox, CheckboxGroup, CheckboxGroupContext, type CheckboxGroupContextValue, type CheckboxGroupProps, type CheckboxProps, Container, type ContainerProps, Flex, type FlexProps, Footer, Grid, GridItem, type GridItemProps, type GridProps, Header, Inline, type InlineProps, Input, type InputProps, Menu, MenuItem, type MenuProps, MenuSeparator, Modal, ModalBody, ModalContent, ModalDescription, ModalFooter, ModalHeader, ModalOverlay, type ModalProps, ModalTitle, NumberInput, type NumberInputProps, Panel, PanelBody, PanelFooter, PanelHeader, PanelOverlay, type PanelOverlayProps, type PanelProps, PanelTitle, Radio, RadioGroup, RadioGroupContext, type RadioGroupContextValue, type RadioGroupProps, type RadioProps, ScrollArea, type ScrollAreaProps, SearchInput, type SearchInputProps, Section, type SectionProps, Select, type SelectProps, Spacer, type SpacerProps, Split, type SplitProps, Stack, type StackProps, Switch, type SwitchProps, Tab, type TabProps, Tabs, TabsList, TabsPanel, type TabsPanelProps, type TabsProps, Textarea, type TextareaProps, useCheckboxGroup, useModal, useRadioGroup, useTabs };
+declare class LayerManagerImpl {
+    private stack;
+    constructor();
+    register(id: string, element: HTMLElement, close: () => void): void;
+    unregister(id: string): void;
+    private handleKeyDown;
+    private updateInert;
+    private updateZIndex;
+}
+declare const LayerManager: LayerManagerImpl;
+declare function useLayerEscape(isOpen: boolean, onClose: () => void, layerElement: HTMLElement | null, id: string): void;
+
+interface PortalProps {
+    children: ReactNode;
+    container?: HTMLElement | null;
+}
+declare function Portal({ children, container }: PortalProps): react.ReactPortal | null;
+
+interface FocusTrapProps {
+    children: react__default.ReactElement;
+    active?: boolean;
+}
+declare function FocusTrap({ children, active }: FocusTrapProps): react__default.ReactElement<any, string | react__default.JSXElementConstructor<any>>;
+
+declare const useScrollLock: (lock: boolean) => void;
+declare function ScrollLock({ lock }: {
+    lock?: boolean;
+}): null;
+
+declare function useLayerTransition(isOpen: boolean, duration?: number): {
+    shouldRender: boolean;
+    state: "open" | "closed";
+};
+
+export { Alert, AlertDescription, type AlertProps, AlertTitle, AspectRatio, type AspectRatioProps, Button, type ButtonProps, Card, CardBody, CardDescription, CardFooter, CardHeader, CardTitle, Center, type CenterProps, Checkbox, CheckboxGroup, CheckboxGroupContext, type CheckboxGroupContextValue, type CheckboxGroupProps, type CheckboxProps, Container, type ContainerProps, Flex, type FlexProps, FocusTrap, type FocusTrapProps, Footer, Grid, GridItem, type GridItemProps, type GridProps, Header, Inline, type InlineProps, Input, type InputProps, LayerManager, Menu, MenuItem, type MenuProps, MenuSeparator, Modal, ModalBody, ModalContent, ModalDescription, ModalFooter, ModalHeader, ModalOverlay, type ModalProps, ModalTitle, NumberInput, type NumberInputProps, Panel, PanelBody, PanelFooter, PanelHeader, PanelOverlay, type PanelOverlayProps, type PanelProps, PanelTitle, Portal, type PortalProps, Radio, RadioGroup, RadioGroupContext, type RadioGroupContextValue, type RadioGroupProps, type RadioProps, ScrollArea, type ScrollAreaProps, ScrollLock, SearchInput, type SearchInputProps, Section, type SectionProps, Select, type SelectProps, Spacer, type SpacerProps, Split, type SplitProps, Stack, type StackProps, Switch, type SwitchProps, Tab, type TabProps, Tabs, TabsList, TabsPanel, type TabsPanelProps, type TabsProps, Textarea, type TextareaProps, useCheckboxGroup, useLayerEscape, useLayerTransition, useModal, useRadioGroup, useScrollLock, useTabs };

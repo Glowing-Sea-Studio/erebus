@@ -1,0 +1,67 @@
+
+> @glowing-sea-studio/erebus-angular@0.1.0 test /app/packages/angular
+> vitest run
+
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90m/app/packages/angular[39m
+
+ [32m✓[39m src/aspect-ratio/aspect-ratio.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/checkbox-group/checkbox-group.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 5[2mms[22m[39m
+ [32m✓[39m src/number-input/number-input.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/search-input/search-input.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 8[2mms[22m[39m
+ [32m✓[39m src/scroll-area/scroll-area.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 5[2mms[22m[39m
+ [32m✓[39m src/radio-group/radio-group.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 7[2mms[22m[39m
+ [32m✓[39m src/checkbox/checkbox.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 4[2mms[22m[39m
+ [32m✓[39m src/container/container.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 8[2mms[22m[39m
+ [32m✓[39m src/textarea/textarea.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 7[2mms[22m[39m
+ [32m✓[39m src/section/section.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [31m❯[39m src/layer/layer.spec.ts [2m([22m[2m2 tests[22m[2m | [22m[31m2 failed[39m[2m)[22m[90m 68[2mms[22m[39m
+[31m   [31m×[31m Layer - Angular[2m > [22mScrollLockDirective[2m > [22msets document.body.style.overflow to hidden[90m 65[2mms[22m[31m[39m
+[31m     → Need to call TestBed.initTestEnvironment() first[39m
+[31m   [31m×[31m Layer - Angular[2m > [22mScrollLockDirective[2m > [22mrestores overflow when unmounted/destroyed[90m 1[2mms[22m[31m[39m
+[31m     → Need to call TestBed.initTestEnvironment() first[39m
+ [32m✓[39m src/button/button.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/center/center.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 13[2mms[22m[39m
+ [32m✓[39m src/footer/footer.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 15[2mms[22m[39m
+ [32m✓[39m src/header/header.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+ [32m✓[39m src/inline/inline.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 4[2mms[22m[39m
+ [32m✓[39m src/select/select.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 5[2mms[22m[39m
+ [32m✓[39m src/spacer/spacer.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 10[2mms[22m[39m
+ [32m✓[39m src/switch/switch.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 16[2mms[22m[39m
+ [32m✓[39m src/alert/alert.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 22[2mms[22m[39m
+ [32m✓[39m src/input/input.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 8[2mms[22m[39m
+ [32m✓[39m src/modal/modal.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 6[2mms[22m[39m
+ [32m✓[39m src/radio/radio.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 10[2mms[22m[39m
+ [32m✓[39m src/panel/panel.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 9[2mms[22m[39m
+ [32m✓[39m src/split/split.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 10[2mms[22m[39m
+ [32m✓[39m src/flex/flex.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 9[2mms[22m[39m
+ [32m✓[39m src/stack/stack.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 13[2mms[22m[39m
+ [32m✓[39m src/card/card.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 7[2mms[22m[39m
+ [32m✓[39m src/grid/grid.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 5[2mms[22m[39m
+ [32m✓[39m src/tabs/tabs.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 10[2mms[22m[39m
+ [32m✓[39m src/menu/menu.spec.ts [2m([22m[2m1 test[22m[2m)[22m[90m 3[2mms[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 2 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/layer/layer.spec.ts[2m > [22mLayer - Angular[2m > [22mScrollLockDirective[2m > [22msets document.body.style.overflow to hidden
+[31m[1m[7m FAIL [27m[22m[39m src/layer/layer.spec.ts[2m > [22mLayer - Angular[2m > [22mScrollLockDirective[2m > [22mrestores overflow when unmounted/destroyed
+[31m[1mError[22m: Need to call TestBed.initTestEnvironment() first[39m
+[90m [2m❯[22m TestBedImpl.get compiler [as compiler] ../../node_modules/.pnpm/darwin_arm64-fastbuild-ST-2d99d9656325/bin/packages/core/testing/src/test_bed.ts:[2m713:13[22m[39m
+[90m [2m❯[22m TestBedImpl.configureTestingModule ../../node_modules/.pnpm/darwin_arm64-fastbuild-ST-2d99d9656325/bin/packages/core/testing/src/test_bed.ts:[2m565:10[22m[39m
+[90m [2m❯[22m Function.configureTestingModule ../../node_modules/.pnpm/darwin_arm64-fastbuild-ST-2d99d9656325/bin/packages/core/testing/src/test_bed.ts:[2m294:33[22m[39m
+[36m [2m❯[22m src/layer/layer.spec.ts:[2m21:19[22m[39m
+    [90m 19| [39m
+    [90m 20| [39m  [34mbeforeEach[39m([35masync[39m () [33m=>[39m {
+    [90m 21| [39m    [35mawait[39m [33mTestBed[39m[33m.[39m[34mconfigureTestingModule[39m({
+    [90m   | [39m                  [31m^[39m
+    [90m 22| [39m      imports[33m:[39m [[33mTestHostComponent[39m[33m,[39m [33mScrollLockDirective[39m]
+    [90m 23| [39m    })[33m.[39m[34mcompileComponents[39m()[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯[22m[39m
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m30 passed[39m[22m[90m (31)[39m
+[2m      Tests [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m30 passed[39m[22m[90m (32)[39m
+[2m   Start at [22m 00:54:57
+[2m   Duration [22m 9.38s[2m (transform 697ms, setup 0ms, collect 1.99s, tests 304ms, environment 2.12s, prepare 7.45s)[22m
+
+[41m[30m ELIFECYCLE [39m[49m [31mTest failed. See above for more details.[39m
