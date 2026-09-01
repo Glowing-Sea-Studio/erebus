@@ -1,0 +1,13 @@
+[data-theme="corporate"] {
+  --erb-color-primary: #004080;
+  --erb-color-primary-hover: #003060;
+  --erb-color-secondary: #4d5c6b;
+  --erb-color-background: #f4f6f8;
+  --erb-color-surface: #ffffff;
+  --erb-color-text: #1a202c;
+  --erb-color-text-muted: #4a5568;
+  --erb-color-border: #e2e8f0;
+  --erb-color-error: #e53e3e;
+  --erb-color-success: #38a169;
+  --erb-border-radius: 4px;
+}

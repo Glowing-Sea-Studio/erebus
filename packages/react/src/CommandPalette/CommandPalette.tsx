@@ -15,3 +15,4 @@ export const CommandPalette = forwardRef<HTMLDivElement, CommandPaletteProps>(
   }
 );
 CommandPalette.displayName = 'CommandPalette';
+

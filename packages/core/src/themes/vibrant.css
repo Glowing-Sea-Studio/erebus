@@ -1,0 +1,13 @@
+[data-theme="vibrant"] {
+  --erb-color-primary: #ff007f;
+  --erb-color-primary-hover: #e60073;
+  --erb-color-secondary: #7f00ff;
+  --erb-color-background: #ffffff;
+  --erb-color-surface: #f9f0ff;
+  --erb-color-text: #1a1a1a;
+  --erb-color-text-muted: #595959;
+  --erb-color-border: #ffccf2;
+  --erb-color-error: #ff3333;
+  --erb-color-success: #00cc66;
+  --erb-border-radius: 16px;
+}

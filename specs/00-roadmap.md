@@ -96,9 +96,9 @@ Prévoir un découpage en deux tâches (logique/accessibilité, puis habillage) 
 - [x] `CommandPalette`
 
 ## Lot 8 — Finition
-- [ ] Thèmes supplémentaires (`corporate`, `vibrant`, `minimal`, `high-contrast`)
-- [ ] Dictionnaires (français, anglais) et vérification RTL complète
-- [ ] Script d'audit des contrastes et script de parité (React/Angular)
-- [ ] Site de documentation
-- [ ] Guides de migration (depuis Bootstrap / Tailwind)
+- [x] Thèmes supplémentaires (`corporate`, `vibrant`, `minimal`, `high-contrast`)
+- [x] Dictionnaires (français, anglais) et vérification RTL complète
+- [x] Script d'audit des contrastes et script de parité (React/Angular)
+- [x] Site de documentation
+- [x] Guides de migration (depuis Bootstrap / Tailwind)
 

@@ -70,112 +70,136 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": "docs/i18n-rtl.md",
+        "hash": "3419584650571028983"
+      },
+      {
         "file": "create_lot7.py",
         "hash": "5080225553300619829"
-      },
-      {
-        "file": "generate.js",
-        "hash": "594916967396753585"
-      },
-      {
-        "file": "jules_response.json",
-        "hash": "6580593296038942516"
-      },
-      {
-        "file": "AGENTS.md",
-        "hash": "16952903342658093389"
-      },
-      {
-        "file": "jules-tasks/lot-4-superpositions-socle-20260831-2352.md",
-        "hash": "4714358981224981548"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": "jules-tasks/lots-2-3-20260901-1017.md",
-        "hash": "3244421341483603138"
       },
       {
         "file": "nx.json",
         "hash": "13497546736868009048"
       },
       {
-        "file": "package.json",
-        "hash": "4659196307326787815"
-      },
-      {
-        "file": "jules_response_retry.json",
-        "hash": "545784860517342293"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "3985985064516675909"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "7418268071776220994"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "1346067979362158458"
+        "file": "jules-tasks/lot-4-superpositions-socle-20260831-2352.md",
+        "hash": "4714358981224981548"
       },
       {
         "file": "specs/04-instructions-readme.md",
         "hash": "5133977881871017630"
       },
       {
-        "file": "specs/Charte_Graphique_Glowing_Sea_Studio.md",
-        "hash": "12015017107697981722"
-      },
-      {
-        "file": "specs/02-specifications-techniques.md",
-        "hash": "10764395224646981999"
-      },
-      {
-        "file": "generate.py",
-        "hash": "6221542141565332190"
-      },
-      {
-        "file": "specs/03-deploiement-github.md",
-        "hash": "12874211706838362349"
-      },
-      {
-        "file": "README.md",
-        "hash": "9686789429054710927"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "2653529739611990858"
+        "file": "jules_response_retry.json",
+        "hash": "545784860517342293"
       },
       {
         "file": "specs/00-roadmap.md",
-        "hash": "2016287911406896361"
+        "hash": "2870697171258609012"
       },
       {
-        "file": "eslint.config.js",
-        "hash": "194146092283452222"
+        "file": "docs/migration-tailwind.md",
+        "hash": "14118497793223556328"
       },
       {
         "file": "stylelint.config.js",
         "hash": "17353201888065353557"
       },
       {
-        "file": "jules_msg.json",
-        "hash": "3082920335506272569"
+        "file": "docs/migration-bootstrap.md",
+        "hash": "8209091685257225479"
+      },
+      {
+        "file": "specs/01-specifications-metier.md",
+        "hash": "17707256249961281613"
+      },
+      {
+        "file": "generate.js",
+        "hash": "594916967396753585"
+      },
+      {
+        "file": "specs/03-deploiement-github.md",
+        "hash": "12874211706838362349"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "1346067979362158458"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "194146092283452222"
+      },
+      {
+        "file": "specs/Charte_Graphique_Glowing_Sea_Studio.md",
+        "hash": "12015017107697981722"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "7418268071776220994"
       },
       {
         "file": "jules_payload.json",
         "hash": "14229674980074399362"
       },
       {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
+        "file": "jules-tasks/lots-2-3-20260901-1017.md",
+        "hash": "3244421341483603138"
       },
       {
-        "file": "specs/01-specifications-metier.md",
-        "hash": "17707256249961281613"
+        "file": "pnpm-workspace.yaml",
+        "hash": "2653529739611990858"
+      },
+      {
+        "file": "AGENTS.md",
+        "hash": "16952903342658093389"
+      },
+      {
+        "file": "README.md",
+        "hash": "9686789429054710927"
+      },
+      {
+        "file": "specs/02-specifications-techniques.md",
+        "hash": "10764395224646981999"
+      },
+      {
+        "file": "docs/README.md",
+        "hash": "12509993654206344867"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "3985985064516675909"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "generate.py",
+        "hash": "6221542141565332190"
+      },
+      {
+        "file": "scripts/audit-parity.js",
+        "hash": "9537597396230781665"
+      },
+      {
+        "file": "scripts/audit-contrast.js",
+        "hash": "11564428257103351950"
+      },
+      {
+        "file": "jules_response.json",
+        "hash": "6580593296038942516"
+      },
+      {
+        "file": "package.json",
+        "hash": "4659196307326787815"
+      },
+      {
+        "file": "jules_msg.json",
+        "hash": "3082920335506272569"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
       }
     ],
     "projectFileMap": {
@@ -504,7 +528,7 @@
         },
         {
           "file": "packages/core/src/components/faq-command-palette.css",
-          "hash": "9210867233922180944"
+          "hash": "3558703028112675026"
         },
         {
           "file": "packages/core/src/components/featuregrid.css",
@@ -753,6 +777,22 @@
         {
           "file": "packages/core/src/theme.css",
           "hash": "1759969031612716827"
+        },
+        {
+          "file": "packages/core/src/themes/corporate.css",
+          "hash": "11361681839366581313"
+        },
+        {
+          "file": "packages/core/src/themes/high-contrast.css",
+          "hash": "12364221293265618128"
+        },
+        {
+          "file": "packages/core/src/themes/minimal.css",
+          "hash": "16528635699581601604"
+        },
+        {
+          "file": "packages/core/src/themes/vibrant.css",
+          "hash": "14133640252449287000"
         }
       ],
       "@glowing-sea-studio/erebus-react": [
@@ -899,14 +939,14 @@
         },
         {
           "file": "packages/react/src/CommandPalette/CommandPalette.tsx",
-          "hash": "18348014776963723349",
+          "hash": "10883514849126730918",
           "deps": [
             "npm:react"
           ]
         },
         {
           "file": "packages/react/src/CommandPalette/index.ts",
-          "hash": "18147393656066167598"
+          "hash": "11478935126951989077"
         },
         {
           "file": "packages/react/src/DatePicker/DatePicker.stories.tsx",
@@ -1042,14 +1082,14 @@
         },
         {
           "file": "packages/react/src/FAQ/FAQ.tsx",
-          "hash": "10763187054301925464",
+          "hash": "8649140182337299680",
           "deps": [
             "npm:react"
           ]
         },
         {
           "file": "packages/react/src/FAQ/index.ts",
-          "hash": "4565533555432757730"
+          "hash": "7154278125059434540"
         },
         {
           "file": "packages/react/src/FeatureGrid/FeatureGrid.stories.tsx",
@@ -3081,14 +3121,14 @@
         },
         {
           "file": "packages/angular/src/CommandPalette/CommandPalette.component.ts",
-          "hash": "10662202118357956240",
+          "hash": "10308281702144992439",
           "deps": [
             "npm:@angular/core@19.2.25"
           ]
         },
         {
           "file": "packages/angular/src/CommandPalette/index.ts",
-          "hash": "16973841343633538859"
+          "hash": "5024414262139373289"
         },
         {
           "file": "packages/angular/src/DatePicker/datepicker.component.spec.ts",
@@ -3196,14 +3236,14 @@
         },
         {
           "file": "packages/angular/src/FAQ/FAQ.component.ts",
-          "hash": "16945371175489300549",
+          "hash": "847249507554431073",
           "deps": [
             "npm:@angular/core@19.2.25"
           ]
         },
         {
           "file": "packages/angular/src/FAQ/index.ts",
-          "hash": "9189536426795027988"
+          "hash": "9896639268521504002"
         },
         {
           "file": "packages/angular/src/FeatureGrid/featuregrid.component.spec.ts",

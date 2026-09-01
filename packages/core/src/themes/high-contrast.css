@@ -1,0 +1,13 @@
+[data-theme="high-contrast"] {
+  --erb-color-primary: #ffff00;
+  --erb-color-primary-hover: #e6e600;
+  --erb-color-secondary: #00ffff;
+  --erb-color-background: #000000;
+  --erb-color-surface: #000000;
+  --erb-color-text: #ffffff;
+  --erb-color-text-muted: #cccccc;
+  --erb-color-border: #ffffff;
+  --erb-color-error: #ff0000;
+  --erb-color-success: #00ff00;
+  --erb-border-radius: 0px;
+}

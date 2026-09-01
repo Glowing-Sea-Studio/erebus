@@ -15,3 +15,4 @@ export const FAQ = forwardRef<HTMLDivElement, FAQProps>(
   }
 );
 FAQ.displayName = 'FAQ';
+
