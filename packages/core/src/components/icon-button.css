@@ -1,0 +1,61 @@
+.erb-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.erb-icon-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.erb-icon-button[data-size="sm"] {
+  width: var(--erb-button-height-sm);
+  height: var(--erb-button-height-sm);
+  border-radius: var(--erb-button-radius);
+}
+
+.erb-icon-button[data-size="md"] {
+  width: var(--erb-button-height-md);
+  height: var(--erb-button-height-md);
+  border-radius: var(--erb-button-radius);
+}
+
+.erb-icon-button[data-size="lg"] {
+  width: var(--erb-button-height-lg);
+  height: var(--erb-button-height-lg);
+  border-radius: var(--erb-button-radius);
+}
+
+/* Variants */
+.erb-icon-button[data-variant="solid"] {
+  background-color: var(--erb-button-bg-solid);
+  color: var(--erb-button-text-solid);
+}
+.erb-icon-button[data-variant="solid"]:hover:not(:disabled) {
+  background-color: var(--erb-button-hover-solid);
+}
+
+.erb-icon-button[data-variant="outline"] {
+  background-color: transparent;
+  color: var(--erb-button-text-outline);
+  border-color: var(--erb-button-border-outline);
+}
+.erb-icon-button[data-variant="outline"]:hover:not(:disabled) {
+  background-color: var(--erb-button-hover-outline);
+}
+
+.erb-icon-button[data-variant="ghost"] {
+  background-color: transparent;
+  color: var(--erb-button-text-ghost);
+}
+.erb-icon-button[data-variant="ghost"]:hover:not(:disabled) {
+  background-color: var(--erb-button-hover-ghost);
+}
+

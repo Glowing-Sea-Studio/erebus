@@ -1,0 +1,18 @@
+.erb-label {
+  display: block;
+  font-family: var(--erb-typography-font-family-base);
+  font-size: var(--erb-label-font-size, var(--erb-typography-font-size-sm));
+  font-weight: var(--erb-label-font-weight, var(--erb-typography-font-weight-medium));
+  color: var(--erb-label-color, var(--erb-colors-neutral-900));
+  margin-bottom: var(--erb-label-margin-bottom, var(--erb-spacing-1));
+  line-height: var(--erb-typography-line-height-normal);
+}
+.erb-label--disabled {
+  color: var(--erb-label-disabled-color, var(--erb-colors-neutral-400));
+  cursor: not-allowed;
+}
+.erb-label--required::after {
+  content: "*";
+  color: var(--erb-label-required-color, var(--erb-colors-danger-500));
+  margin-left: var(--erb-spacing-1);
+}

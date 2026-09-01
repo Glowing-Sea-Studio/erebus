@@ -1,0 +1,81 @@
+.erb-divider {
+  border: none;
+  margin: 0;
+  background-color: var(--erb-color-neutral-4);
+}
+
+.erb-divider[data-orientation="horizontal"] {
+  height: 1px;
+  width: 100%;
+  margin-block: var(--erb-space-4);
+}
+
+.erb-divider[data-orientation="vertical"] {
+  width: 1px;
+  height: 100%;
+  margin-inline: var(--erb-space-4);
+}
+
+.erb-kbd {
+  font-family: var(--erb-font-mono);
+  font-size: var(--erb-text-xs-font-size);
+  padding: var(--erb-space-1) var(--erb-space-2);
+  border-radius: var(--erb-radius-sm);
+  background-color: var(--erb-color-neutral-2);
+  border: 1px solid var(--erb-color-neutral-4);
+  border-bottom-width: 2px;
+  color: var(--erb-color-neutral-11);
+}
+
+.erb-code {
+  font-family: var(--erb-font-mono);
+  font-size: 0.9em;
+  padding: 0.2em 0.4em;
+  border-radius: var(--erb-radius-sm);
+  background-color: var(--erb-color-neutral-3);
+  color: var(--erb-color-accent-11);
+}
+
+
+.erb-heading {
+  font-family: var(--erb-font-sans);
+  font-weight: 600;
+  color: var(--erb-color-neutral-12);
+  margin-block-start: 0;
+  margin-block-end: var(--erb-space-2);
+}
+.erb-heading--1 { font-size: 2.5rem; line-height: 1.2; }
+.erb-heading--2 { font-size: 2rem; line-height: 1.3; }
+.erb-heading--3 { font-size: 1.75rem; line-height: 1.4; }
+.erb-heading--4 { font-size: 1.5rem; line-height: 1.4; }
+.erb-heading--5 { font-size: 1.25rem; line-height: 1.5; }
+.erb-heading--6 { font-size: 1rem; line-height: 1.5; }
+
+.erb-text {
+  font-family: var(--erb-font-sans);
+  color: var(--erb-color-neutral-11);
+  margin-block-start: 0;
+  margin-block-end: var(--erb-space-3);
+  line-height: var(--erb-line-height-normal);
+}
+.erb-text[data-size="sm"] { font-size: var(--erb-text-sm-font-size); }
+.erb-text[data-size="md"] { font-size: var(--erb-text-md-font-size); }
+.erb-text[data-size="lg"] { font-size: var(--erb-text-lg-font-size); }
+
+.erb-text[data-muted="true"] {
+  color: var(--erb-color-neutral-9);
+}
+
+.erb-prose {
+  font-family: var(--erb-font-sans);
+  color: var(--erb-color-neutral-11);
+  line-height: 1.6;
+}
+.erb-prose p { margin-bottom: 1em; }
+.erb-prose h1, .erb-prose h2, .erb-prose h3 {
+  color: var(--erb-color-neutral-12);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+.erb-prose a { color: var(--erb-color-accent-11); text-decoration: underline; }
+.erb-prose ul, .erb-prose ol { padding-inline-start: 1.5em; margin-bottom: 1em; }

@@ -1,0 +1,11 @@
+{
+  "field": {
+    "gap": { "value": "{spacing.2}" },
+    "hint-font-size": { "value": "{typography.font-size.xs}" },
+    "hint-color": { "value": "{colors.neutral.500}" },
+    "hint-margin-top": { "value": "{spacing.1}" },
+    "error-font-size": { "value": "{typography.font-size.xs}" },
+    "error-color": { "value": "{colors.danger.500}" },
+    "error-margin-top": { "value": "{spacing.1}" }
+  }
+}

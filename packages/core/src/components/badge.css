@@ -1,0 +1,44 @@
+.erb-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--erb-badge-padding-y, 0.25rem) var(--erb-badge-padding-x, 0.5rem);
+  font-size: var(--erb-badge-font-size, 0.75rem);
+  font-weight: var(--erb-badge-font-weight, 500);
+  border-radius: var(--erb-badge-border-radius, 0.25rem);
+  white-space: nowrap;
+  vertical-align: middle;
+  line-height: 1;
+  border: 1px solid transparent;
+}
+
+.erb-badge--shape-pill {
+  border-radius: var(--erb-badge-pill-border-radius, 9999px);
+}
+
+.erb-badge--variant-solid.erb-badge--color-primary {
+  background-color: var(--erb-color-primary-500, #007bff);
+  color: #fff;
+}
+.erb-badge--variant-outline.erb-badge--color-primary {
+  border-color: var(--erb-color-primary-500, #007bff);
+  color: var(--erb-color-primary-500, #007bff);
+}
+.erb-badge--variant-soft.erb-badge--color-primary {
+  background-color: var(--erb-color-primary-100, #cce5ff);
+  color: var(--erb-color-primary-700, #0056b3);
+}
+
+/* Sizes */
+.erb-badge--size-sm {
+  font-size: 0.625rem;
+  padding: 0.125rem 0.25rem;
+}
+.erb-badge--size-md {
+  font-size: var(--erb-badge-font-size, 0.75rem);
+  padding: var(--erb-badge-padding-y, 0.25rem) var(--erb-badge-padding-x, 0.5rem);
+}
+.erb-badge--size-lg {
+  font-size: 0.875rem;
+  padding: 0.375rem 0.75rem;
+}

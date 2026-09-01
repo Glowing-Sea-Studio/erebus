@@ -70,1211 +70,243 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "dist/packages/angular/button/index.d.ts",
-        "hash": "11551908468621310145"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/grid/grid-item.component.mjs",
-        "hash": "9906908575993335987"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/flex/flex.component.mjs",
-        "hash": "17498393442127281407"
-      },
-      {
-        "file": "dist/packages/angular/container/index.d.ts",
-        "hash": "558074726338285471"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/grid/grid.component.mjs",
-        "hash": "17033699866961407779"
-      },
-      {
-        "file": "specs/02-specifications-techniques.md",
-        "hash": "10764395224646981999"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": "dist/packages/angular/utils.d.ts",
-        "hash": "15929914225246668098"
-      },
-      {
-        "file": "dist/packages/angular/scroll-area/index.d.ts",
-        "hash": "16370330693580447536"
-      },
-      {
-        "file": "dist/packages/angular/section/index.d.ts",
-        "hash": "8822797241933439163"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "7418268071776220994"
-      },
-      {
-        "file": "dist/packages/angular/fesm2022/glowing-sea-studio-erebus-angular.mjs",
-        "hash": "6372431909035243632"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/button/button.directive.mjs",
-        "hash": "9803136972850293772"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/glowing-sea-studio-erebus-angular.mjs",
-        "hash": "1702454415379572420"
-      },
-      {
-        "file": "dist/packages/angular/input/index.d.ts",
-        "hash": "691406165205812755"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/textarea/index.mjs",
-        "hash": "9055924363465293994"
-      },
-      {
-        "file": "dist/packages/angular/section/section.component.d.ts",
-        "hash": "3985485959492490857"
-      },
-      {
-        "file": "dist/packages/angular/.npmignore",
-        "hash": "5396670232953713277"
-      },
-      {
-        "file": "dist/packages/angular/button/button.directive.d.ts",
-        "hash": "4895420124065321236"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/split/index.mjs",
-        "hash": "3792507824657761286"
-      },
-      {
-        "file": "dist/packages/angular/inline/index.d.ts",
-        "hash": "2404750939680619103"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "2653529739611990858"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "1346067979362158458"
-      },
-      {
-        "file": "dist/packages/angular/spacer/spacer.component.d.ts",
-        "hash": "5822103981690114236"
-      },
-      {
-        "file": "dist/packages/angular/card/card.component.d.ts",
-        "hash": "1940421362520466794"
-      },
-      {
-        "file": "dist/packages/angular/aspect-ratio/index.d.ts",
-        "hash": "7963854807365372573"
-      },
-      {
-        "file": "dist/packages/angular/flex/flex.component.d.ts",
-        "hash": "10610802810962509218"
-      },
-      {
-        "file": "dist/packages/angular/grid/grid-item.component.d.ts",
-        "hash": "5170979846386396435"
-      },
-      {
         "file": "specs/00-roadmap.md",
-        "hash": "2846804419698462529"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/scroll-area/index.mjs",
-        "hash": "20273053595739740"
-      },
-      {
-        "file": "dist/packages/angular/grid/grid.component.d.ts",
-        "hash": "10000870670530537139"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/section/index.mjs",
-        "hash": "351867676001336262"
-      },
-      {
-        "file": "dist/packages/angular/spacer/index.d.ts",
-        "hash": "17623292704113813175"
-      },
-      {
-        "file": "dist/packages/angular/input/input.directive.d.ts",
-        "hash": "15536068390583288761"
-      },
-      {
-        "file": "dist/packages/angular/flex/index.d.ts",
-        "hash": "4355719841030374337"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/checkbox/index.mjs",
-        "hash": "3613885163952317543"
-      },
-      {
-        "file": "dist/packages/angular/grid/index.d.ts",
-        "hash": "3865652445752883203"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "3682338014613345919"
-      },
-      {
-        "file": "package.json",
-        "hash": "4659196307326787815"
-      },
-      {
-        "file": "dist/packages/angular/stack/index.d.ts",
-        "hash": "10498474418254008687"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/scroll-area/scroll-area.component.mjs",
-        "hash": "163902994571945305"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/stack/index.mjs",
-        "hash": "8557996629575172858"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/container/index.mjs",
-        "hash": "14376833611048769965"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/grid/index.mjs",
-        "hash": "9651080036123713294"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/button/index.mjs",
-        "hash": "7277697648628721613"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/input/index.mjs",
-        "hash": "1871003575375496183"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/input/input-wrapper.component.mjs",
-        "hash": "12066515475362744200"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": "stylelint.config.js",
-        "hash": "17353201888065353557"
-      },
-      {
-        "file": "eslint.config.js",
-        "hash": "194146092283452222"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/checkbox/checkbox.component.mjs",
-        "hash": "13816045584491283142"
-      },
-      {
-        "file": "dist/packages/angular/aspect-ratio/aspect-ratio.component.d.ts",
-        "hash": "3484003451330886311"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/card/index.mjs",
-        "hash": "14499919688105617603"
-      },
-      {
-        "file": "specs/01-specifications-metier.md",
-        "hash": "17707256249961281613"
-      },
-      {
-        "file": "dist/packages/angular/input/input-wrapper.component.d.ts",
-        "hash": "2873384884342267358"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/radio/index.mjs",
-        "hash": "17054611894868732950"
-      },
-      {
-        "file": "dist/packages/angular/center/center.component.d.ts",
-        "hash": "9195844700511609609"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/aspect-ratio/index.mjs",
-        "hash": "11322966052305507709"
-      },
-      {
-        "file": "dist/packages/angular/textarea/textarea.directive.d.ts",
-        "hash": "12810102178975573777"
-      },
-      {
-        "file": "dist/packages/angular/checkbox/checkbox.component.d.ts",
-        "hash": "7653258687420150162"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/inline/inline.component.mjs",
-        "hash": "6940224400274926523"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/utils.mjs",
-        "hash": "11838504262549793337"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/spacer/spacer.component.mjs",
-        "hash": "13905890576028496621"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/textarea/textarea.directive.mjs",
-        "hash": "14883649301473579712"
-      },
-      {
-        "file": "dist/packages/angular/checkbox/index.d.ts",
-        "hash": "5802415263398038748"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/section/section.component.mjs",
-        "hash": "8128371271120931053"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/card/card.component.mjs",
-        "hash": "5011036480961989450"
-      },
-      {
-        "file": "jules_response.json",
-        "hash": "7910623724561831277"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/aspect-ratio/aspect-ratio.component.mjs",
-        "hash": "18193104575160095759"
-      },
-      {
-        "file": "dist/packages/angular/package.json",
-        "hash": "4466490013156458481"
-      },
-      {
-        "file": "dist/packages/angular/textarea/index.d.ts",
-        "hash": "14917849613980624440"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/flex/index.mjs",
-        "hash": "6367774936271906123"
-      },
-      {
-        "file": "dist/packages/angular/stack/stack.component.d.ts",
-        "hash": "16414274000018194497"
-      },
-      {
-        "file": "dist/packages/angular/split/split.component.d.ts",
-        "hash": "7001679972082219198"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/center/center.component.mjs",
-        "hash": "1580226727507586521"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/input/input.directive.mjs",
-        "hash": "7888829804052395028"
-      },
-      {
-        "file": "dist/packages/angular/card/index.d.ts",
-        "hash": "15560743538288663931"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/radio/radio.component.mjs",
-        "hash": "2830155911920675842"
-      },
-      {
-        "file": "dist/packages/angular/radio/radio.component.d.ts",
-        "hash": "558423418712896007"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/split/split.component.mjs",
-        "hash": "10031203113842256026"
-      },
-      {
-        "file": "dist/packages/angular/radio/index.d.ts",
-        "hash": "12891819585971623109"
+        "hash": "12274777840650351206"
       },
       {
         "file": "specs/04-instructions-readme.md",
         "hash": "5133977881871017630"
       },
       {
-        "file": "README.md",
-        "hash": "9686789429054710927"
+        "file": "tsconfig.base.json",
+        "hash": "7418268071776220994"
       },
       {
-        "file": "dist/packages/angular/layer/index.d.ts",
-        "hash": "7464422720691234463"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/stack/stack.component.mjs",
-        "hash": "5837353462172523876"
-      },
-      {
-        "file": "dist/packages/angular/container/container.component.d.ts",
-        "hash": "16651610292483328018"
-      },
-      {
-        "file": "dist/packages/angular/index.d.ts",
-        "hash": "15712386243028748096"
-      },
-      {
-        "file": "dist/packages/angular/center/index.d.ts",
-        "hash": "3148429325539911466"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/container/container.component.mjs",
-        "hash": "814993524963682046"
-      },
-      {
-        "file": "specs/Charte_Graphique_Glowing_Sea_Studio.md",
-        "hash": "12015017107697981722"
-      },
-      {
-        "file": "jules-tasks/lot-4-superpositions-socle-20260831-2352.md",
-        "hash": "4714358981224981548"
-      },
-      {
-        "file": "specs/03-deploiement-github.md",
-        "hash": "12874211706838362349"
-      },
-      {
-        "file": "dist/packages/angular/split/index.d.ts",
-        "hash": "10972688247041133954"
-      },
-      {
-        "file": "dist/packages/angular/fesm2022/glowing-sea-studio-erebus-angular.mjs.map",
-        "hash": "6375603258729305945"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/inline/index.mjs",
-        "hash": "11292570870725397102"
-      },
-      {
-        "file": "dist/packages/angular/scroll-area/scroll-area.component.d.ts",
-        "hash": "11160928119532824296"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/spacer/index.mjs",
-        "hash": "16029336182901056061"
-      },
-      {
-        "file": "jules_payload.json",
-        "hash": "15620384564791235355"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/center/index.mjs",
-        "hash": "10452902808166038"
-      },
-      {
-        "file": "dist/packages/angular/esm2022/index.mjs",
-        "hash": "5456795163625410107"
+        "file": "jules_response_retry.json",
+        "hash": "545784860517342293"
       },
       {
         "file": "nx.json",
         "hash": "13497546736868009048"
       },
       {
-        "file": "dist/packages/angular/inline/inline.component.d.ts",
-        "hash": "3014459823383349553"
+        "file": "jules_response.json",
+        "hash": "6580593296038942516"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "3985985064516675909"
+      },
+      {
+        "file": "specs/03-deploiement-github.md",
+        "hash": "12874211706838362349"
+      },
+      {
+        "file": "README.md",
+        "hash": "9686789429054710927"
+      },
+      {
+        "file": "specs/02-specifications-techniques.md",
+        "hash": "10764395224646981999"
       },
       {
         "file": "AGENTS.md",
         "hash": "16952903342658093389"
+      },
+      {
+        "file": "specs/01-specifications-metier.md",
+        "hash": "17707256249961281613"
+      },
+      {
+        "file": "package.json",
+        "hash": "4659196307326787815"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "194146092283452222"
+      },
+      {
+        "file": "jules-tasks/lots-2-3-20260901-1017.md",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "1346067979362158458"
+      },
+      {
+        "file": "stylelint.config.js",
+        "hash": "17353201888065353557"
+      },
+      {
+        "file": "jules_msg.json",
+        "hash": "3082920335506272569"
+      },
+      {
+        "file": "specs/Charte_Graphique_Glowing_Sea_Studio.md",
+        "hash": "12015017107697981722"
+      },
+      {
+        "file": "jules_payload.json",
+        "hash": "14229674980074399362"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "2653529739611990858"
+      },
+      {
+        "file": "jules-tasks/lot-4-superpositions-socle-20260831-2352.md",
+        "hash": "4714358981224981548"
       }
     ],
     "projectFileMap": {
-      "@glowing-sea-studio/erebus-angular": [
+      "@glowing-sea-studio/erebus-tokens": [
         {
-          "file": "packages/angular/.storybook/main.ts",
-          "hash": "5767686390889070243",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
+          "file": "packages/tokens/package.json",
+          "hash": "4781000300324069859"
         },
         {
-          "file": "packages/angular/.storybook/preview.ts",
-          "hash": "10073693327558886807",
-          "deps": [
-            "npm:@storybook/angular",
-            "@glowing-sea-studio/erebus-core",
-            "@glowing-sea-studio/erebus-tokens"
-          ]
+          "file": "packages/tokens/scripts/verify-parity.mjs",
+          "hash": "1673921158040622214"
         },
         {
-          "file": "packages/angular/.storybook/tsconfig.json",
-          "hash": "14127105163656186377"
+          "file": "packages/tokens/src/component/alert.json",
+          "hash": "9929178502876039036"
         },
         {
-          "file": "packages/angular/ng-package.json",
-          "hash": "14813130291173760689"
+          "file": "packages/tokens/src/component/badge.json",
+          "hash": "9659488757762751814"
         },
         {
-          "file": "packages/angular/package.json",
-          "hash": "16023823381768536149",
-          "deps": [
-            "npm:@angular/core@19.2.25",
-            "npm:@angular/cdk",
-            "npm:vitest"
-          ]
+          "file": "packages/tokens/src/component/button.json",
+          "hash": "2217728288190738986"
         },
         {
-          "file": "packages/angular/src/alert/alert.component.ts",
-          "hash": "14978175804209757523",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
+          "file": "packages/tokens/src/component/card.json",
+          "hash": "8169410384902572122"
         },
         {
-          "file": "packages/angular/src/alert/alert.spec.ts",
-          "hash": "1846028923648408621",
-          "deps": [
-            "npm:vitest"
-          ]
+          "file": "packages/tokens/src/component/checkbox.json",
+          "hash": "17232552977103923238"
         },
         {
-          "file": "packages/angular/src/alert/alert.stories.ts",
-          "hash": "15436703713915735834",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
+          "file": "packages/tokens/src/component/field.json",
+          "hash": "10590554541482554965"
         },
         {
-          "file": "packages/angular/src/alert/index.ts",
-          "hash": "2679482020222081479"
+          "file": "packages/tokens/src/component/footer.json",
+          "hash": "13993199793246114414"
         },
         {
-          "file": "packages/angular/src/aspect-ratio/aspect-ratio.component.ts",
-          "hash": "16528226053965767645",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
+          "file": "packages/tokens/src/component/header.json",
+          "hash": "9355039220362621363"
         },
         {
-          "file": "packages/angular/src/aspect-ratio/aspect-ratio.spec.ts",
-          "hash": "4219948595255731834",
-          "deps": [
-            "npm:vitest"
-          ]
+          "file": "packages/tokens/src/component/input.json",
+          "hash": "6094819391865761606"
         },
         {
-          "file": "packages/angular/src/aspect-ratio/index.ts",
-          "hash": "16636874377077542414"
+          "file": "packages/tokens/src/component/label.json",
+          "hash": "4676404243400803641"
         },
         {
-          "file": "packages/angular/src/button/button.directive.ts",
-          "hash": "8453233382923960463",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
+          "file": "packages/tokens/src/component/menu.json",
+          "hash": "3325627528143833354"
         },
         {
-          "file": "packages/angular/src/button/button.spec.ts",
-          "hash": "12795977878726355736",
-          "deps": [
-            "npm:vitest"
-          ]
+          "file": "packages/tokens/src/component/modal.json",
+          "hash": "10594128190978279155"
         },
         {
-          "file": "packages/angular/src/button/button.stories.ts",
-          "hash": "2531780428647671864",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
+          "file": "packages/tokens/src/component/number-input.json",
+          "hash": "12053036482524831121"
         },
         {
-          "file": "packages/angular/src/button/index.ts",
-          "hash": "11551908468621310145"
+          "file": "packages/tokens/src/component/panel.json",
+          "hash": "8821292413705623826"
         },
         {
-          "file": "packages/angular/src/card/card.component.ts",
-          "hash": "8053733463031013243",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
+          "file": "packages/tokens/src/component/radio.json",
+          "hash": "696550571030629979"
         },
         {
-          "file": "packages/angular/src/card/card.spec.ts",
-          "hash": "4955093252149918936",
-          "deps": [
-            "npm:vitest"
-          ]
+          "file": "packages/tokens/src/component/search-input.json",
+          "hash": "17408517298708384448"
         },
         {
-          "file": "packages/angular/src/card/card.stories.ts",
-          "hash": "11391824557483129050",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
+          "file": "packages/tokens/src/component/select.json",
+          "hash": "5765178605657316179"
         },
         {
-          "file": "packages/angular/src/card/index.ts",
-          "hash": "15560743538288663931"
+          "file": "packages/tokens/src/component/switch.json",
+          "hash": "7021575072893578364"
         },
         {
-          "file": "packages/angular/src/center/center.component.ts",
-          "hash": "8622184944532887653",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
+          "file": "packages/tokens/src/component/tabs.json",
+          "hash": "13938063717076199833"
         },
         {
-          "file": "packages/angular/src/center/center.spec.ts",
-          "hash": "13238667491770259627",
-          "deps": [
-            "npm:vitest"
-          ]
+          "file": "packages/tokens/src/component/tag.json",
+          "hash": "17759651780970777101"
         },
         {
-          "file": "packages/angular/src/center/index.ts",
-          "hash": "17848028957681882097"
+          "file": "packages/tokens/src/component/textarea.json",
+          "hash": "15777306126749461932"
         },
         {
-          "file": "packages/angular/src/checkbox-group/checkbox-group.component.ts",
-          "hash": "12057282924160375084",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
+          "file": "packages/tokens/src/primitive/color.json",
+          "hash": "12186160541111284575"
         },
         {
-          "file": "packages/angular/src/checkbox-group/checkbox-group.spec.ts",
-          "hash": "8973931615905356618",
-          "deps": [
-            "npm:vitest"
-          ]
+          "file": "packages/tokens/src/primitive/duration.json",
+          "hash": "3104775026330025833"
         },
         {
-          "file": "packages/angular/src/checkbox-group/checkbox-group.stories.ts",
-          "hash": "8533871006835939608",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
+          "file": "packages/tokens/src/primitive/easing.json",
+          "hash": "8777822411477263901"
         },
         {
-          "file": "packages/angular/src/checkbox-group/index.ts",
-          "hash": "10601848929053491054"
+          "file": "packages/tokens/src/primitive/radius.json",
+          "hash": "4518721347119546999"
         },
         {
-          "file": "packages/angular/src/checkbox/checkbox.component.ts",
-          "hash": "3248802403048782985",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
+          "file": "packages/tokens/src/primitive/shadow.json",
+          "hash": "15447864773980140962"
         },
         {
-          "file": "packages/angular/src/checkbox/checkbox.spec.ts",
-          "hash": "12114833874372896998",
-          "deps": [
-            "npm:vitest"
-          ]
+          "file": "packages/tokens/src/primitive/size.json",
+          "hash": "1592480576616537614"
         },
         {
-          "file": "packages/angular/src/checkbox/checkbox.stories.ts",
-          "hash": "16045708567778809602",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
+          "file": "packages/tokens/src/primitive/typography.json",
+          "hash": "11541090277497120609"
         },
         {
-          "file": "packages/angular/src/checkbox/index.ts",
-          "hash": "5802415263398038748"
+          "file": "packages/tokens/src/semantic/dark.json",
+          "hash": "6908541391402206002"
         },
         {
-          "file": "packages/angular/src/container/container.component.ts",
-          "hash": "11660098764922482063",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
+          "file": "packages/tokens/src/semantic/light.json",
+          "hash": "3392984703032684786"
         },
         {
-          "file": "packages/angular/src/container/container.spec.ts",
-          "hash": "9790794568434861746",
-          "deps": [
-            "npm:vitest"
-          ]
+          "file": "packages/tokens/src/semantic/shared.json",
+          "hash": "14600949275546318902"
         },
         {
-          "file": "packages/angular/src/container/index.ts",
-          "hash": "2213968004846676852"
+          "file": "packages/tokens/src/themes/default.json",
+          "hash": "13151533111637797710"
         },
         {
-          "file": "packages/angular/src/flex/flex.component.ts",
-          "hash": "344483865621132253",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/flex/flex.spec.ts",
-          "hash": "14138364629623989040",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/flex/index.ts",
-          "hash": "12896847920338689074"
-        },
-        {
-          "file": "packages/angular/src/footer/footer.component.ts",
-          "hash": "10792150613075424861",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/footer/footer.spec.ts",
-          "hash": "10189926427150460627",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/footer/footer.stories.ts",
-          "hash": "13209080581951232778",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
-        },
-        {
-          "file": "packages/angular/src/footer/index.ts",
-          "hash": "3431716135328408191"
-        },
-        {
-          "file": "packages/angular/src/grid/grid-item.component.ts",
-          "hash": "5306310610525075537",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/grid/grid.component.ts",
-          "hash": "10521235284585082763",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/grid/grid.spec.ts",
-          "hash": "665756515420790905",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/grid/index.ts",
-          "hash": "18381583699138549509"
-        },
-        {
-          "file": "packages/angular/src/header/header.component.ts",
-          "hash": "17028341329231118144",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/header/header.spec.ts",
-          "hash": "4295332349679477441",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/header/header.stories.ts",
-          "hash": "5826228276545362506",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
-        },
-        {
-          "file": "packages/angular/src/header/index.ts",
-          "hash": "12541423769449981273"
-        },
-        {
-          "file": "packages/angular/src/index.ts",
-          "hash": "3421336506035228462"
-        },
-        {
-          "file": "packages/angular/src/inline/index.ts",
-          "hash": "636298494066888778"
-        },
-        {
-          "file": "packages/angular/src/inline/inline.component.ts",
-          "hash": "8355791841163886656",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/inline/inline.spec.ts",
-          "hash": "2360852215149730231",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/input/index.ts",
-          "hash": "691406165205812755"
-        },
-        {
-          "file": "packages/angular/src/input/input-wrapper.component.ts",
-          "hash": "14603053636952704110",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/input/input.directive.ts",
-          "hash": "17933450092540455748",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/input/input.spec.ts",
-          "hash": "758283384054655423",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/input/input.stories.ts",
-          "hash": "8424331739208503851",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
-        },
-        {
-          "file": "packages/angular/src/layer/focus-trap.directive.ts",
-          "hash": "17924224442675448328",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/layer/index.ts",
-          "hash": "11952982957618897991"
-        },
-        {
-          "file": "packages/angular/src/layer/layer-manager.service.ts",
-          "hash": "9124558824256075919",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/layer/layer.spec.ts",
-          "hash": "1183715436197494102",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/layer/portal.directive.ts",
-          "hash": "1598771218017001721",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/layer/scroll-lock.directive.ts",
-          "hash": "5503544835686887708",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/layer/transition.directive.ts",
-          "hash": "613561944507020522",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/menu/index.ts",
-          "hash": "5568868921806090104"
-        },
-        {
-          "file": "packages/angular/src/menu/menu.component.ts",
-          "hash": "12054989849263684299",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/menu/menu.spec.ts",
-          "hash": "3508979734417038517",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/menu/menu.stories.ts",
-          "hash": "5795919950249772216",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
-        },
-        {
-          "file": "packages/angular/src/modal/index.ts",
-          "hash": "11153513768988294765"
-        },
-        {
-          "file": "packages/angular/src/modal/modal.component.ts",
-          "hash": "484343151344853802",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/modal/modal.spec.ts",
-          "hash": "10816371439815760371",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/modal/modal.stories.ts",
-          "hash": "16012899908952278495",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
-        },
-        {
-          "file": "packages/angular/src/number-input/index.ts",
-          "hash": "7548483316407151303"
-        },
-        {
-          "file": "packages/angular/src/number-input/number-input.component.ts",
-          "hash": "16184965547907486702",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/number-input/number-input.spec.ts",
-          "hash": "4431309838595925308",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/number-input/number-input.stories.ts",
-          "hash": "3803857554848106626",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
-        },
-        {
-          "file": "packages/angular/src/panel/index.ts",
-          "hash": "16694088326207762710"
-        },
-        {
-          "file": "packages/angular/src/panel/panel.component.ts",
-          "hash": "1280940808570787320",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/panel/panel.spec.ts",
-          "hash": "9225789559169205486",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/panel/panel.stories.ts",
-          "hash": "10007888474020020420",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
-        },
-        {
-          "file": "packages/angular/src/radio-group/index.ts",
-          "hash": "10703327701255836631"
-        },
-        {
-          "file": "packages/angular/src/radio-group/radio-group.component.ts",
-          "hash": "15660946055938554048",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/radio-group/radio-group.spec.ts",
-          "hash": "13825675399206011571",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/radio-group/radio-group.stories.ts",
-          "hash": "10584727909526082344",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
-        },
-        {
-          "file": "packages/angular/src/radio/index.ts",
-          "hash": "12891819585971623109"
-        },
-        {
-          "file": "packages/angular/src/radio/radio.component.ts",
-          "hash": "16261062276195429583",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/radio/radio.spec.ts",
-          "hash": "11312101345066440765",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/radio/radio.stories.ts",
-          "hash": "1816054782167898705",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
-        },
-        {
-          "file": "packages/angular/src/scroll-area/index.ts",
-          "hash": "4098411142746655611"
-        },
-        {
-          "file": "packages/angular/src/scroll-area/scroll-area.component.ts",
-          "hash": "6355312170552986838",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/scroll-area/scroll-area.spec.ts",
-          "hash": "462812484630901703",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/search-input/index.ts",
-          "hash": "9765350618692579711"
-        },
-        {
-          "file": "packages/angular/src/search-input/search-input.component.ts",
-          "hash": "3732020551678293238",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/search-input/search-input.spec.ts",
-          "hash": "18439838890104344604",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/search-input/search-input.stories.ts",
-          "hash": "13372101185565837866",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
-        },
-        {
-          "file": "packages/angular/src/section/index.ts",
-          "hash": "4993777236684800675"
-        },
-        {
-          "file": "packages/angular/src/section/section.component.ts",
-          "hash": "10253780623702782833",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/section/section.spec.ts",
-          "hash": "6911768978554067230",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/select/index.ts",
-          "hash": "17444152658030996429"
-        },
-        {
-          "file": "packages/angular/src/select/select.directive.ts",
-          "hash": "3686236257254262072",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/select/select.spec.ts",
-          "hash": "17088267402251616200",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/select/select.stories.ts",
-          "hash": "15034053622447251862",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
-        },
-        {
-          "file": "packages/angular/src/spacer/index.ts",
-          "hash": "6057672140829215369"
-        },
-        {
-          "file": "packages/angular/src/spacer/spacer.component.ts",
-          "hash": "11545878758210163544",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/spacer/spacer.spec.ts",
-          "hash": "11583302491143602145",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/split/index.ts",
-          "hash": "12900845003935633773"
-        },
-        {
-          "file": "packages/angular/src/split/split.component.ts",
-          "hash": "16474347000563818154",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/split/split.spec.ts",
-          "hash": "7843626985817021281",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/stack/index.ts",
-          "hash": "1490413215284135893"
-        },
-        {
-          "file": "packages/angular/src/stack/stack.component.ts",
-          "hash": "6037971823469344256",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/stack/stack.spec.ts",
-          "hash": "3677973865794246162",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/switch/index.ts",
-          "hash": "3405159385277278207"
-        },
-        {
-          "file": "packages/angular/src/switch/switch.component.ts",
-          "hash": "5365045555557084892",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/switch/switch.spec.ts",
-          "hash": "16612424794439034306",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/switch/switch.stories.ts",
-          "hash": "11704178539027852092",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
-        },
-        {
-          "file": "packages/angular/src/tabs/index.ts",
-          "hash": "8608207449962467909"
-        },
-        {
-          "file": "packages/angular/src/tabs/tabs.component.ts",
-          "hash": "147255539146111272",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/tabs/tabs.spec.ts",
-          "hash": "16776395326104807467",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/tabs/tabs.stories.ts",
-          "hash": "4922348332184414280",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
-        },
-        {
-          "file": "packages/angular/src/textarea/index.ts",
-          "hash": "14917849613980624440"
-        },
-        {
-          "file": "packages/angular/src/textarea/textarea.directive.ts",
-          "hash": "13382645203347831469",
-          "deps": [
-            "npm:@angular/core@19.2.25"
-          ]
-        },
-        {
-          "file": "packages/angular/src/textarea/textarea.spec.ts",
-          "hash": "11458734332015222627",
-          "deps": [
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/angular/src/textarea/textarea.stories.ts",
-          "hash": "1120484984493308797",
-          "deps": [
-            "npm:@storybook/angular"
-          ]
-        },
-        {
-          "file": "packages/angular/src/utils.ts",
-          "hash": "7299671477292036198"
-        },
-        {
-          "file": "packages/angular/tsconfig.json",
-          "hash": "235355164182007645"
-        },
-        {
-          "file": "packages/angular/tsconfig.lib.json",
-          "hash": "7686874944016924608"
-        },
-        {
-          "file": "packages/angular/tsconfig.spec.json",
-          "hash": "6685020122404191677"
-        }
-      ],
-      "@glowing-sea-studio/erebus-icons": [
-        {
-          "file": "packages/icons/package.json",
-          "hash": "8932838713229377147"
+          "file": "packages/tokens/style-dictionary.config.js",
+          "hash": "3127838050232476498"
         }
       ],
       "@glowing-sea-studio/erebus-core": [
@@ -1295,8 +327,24 @@
           "hash": "7963989442627560318"
         },
         {
+          "file": "packages/core/src/components/avatar.css",
+          "hash": "8695083377505708678"
+        },
+        {
+          "file": "packages/core/src/components/badge.css",
+          "hash": "10332004179716691248"
+        },
+        {
+          "file": "packages/core/src/components/button-group.css",
+          "hash": "17421971583592550820"
+        },
+        {
           "file": "packages/core/src/components/button.css",
           "hash": "335476627998094526"
+        },
+        {
+          "file": "packages/core/src/components/callout.css",
+          "hash": "7188593285498816925"
         },
         {
           "file": "packages/core/src/components/card.css",
@@ -1315,6 +363,10 @@
           "hash": "1047757526130212711"
         },
         {
+          "file": "packages/core/src/components/field.css",
+          "hash": "3557481766844921251"
+        },
+        {
           "file": "packages/core/src/components/flex.css",
           "hash": "12940325859353764269"
         },
@@ -1331,8 +383,12 @@
           "hash": "17692722784906806163"
         },
         {
+          "file": "packages/core/src/components/icon-button.css",
+          "hash": "5844259897859618336"
+        },
+        {
           "file": "packages/core/src/components/index.css",
-          "hash": "9991988739963275763"
+          "hash": "14526562982316591583"
         },
         {
           "file": "packages/core/src/components/inline.css",
@@ -1341,6 +397,10 @@
         {
           "file": "packages/core/src/components/input.css",
           "hash": "14854950254336988445"
+        },
+        {
+          "file": "packages/core/src/components/label.css",
+          "hash": "15085050856525243596"
         },
         {
           "file": "packages/core/src/components/menu.css",
@@ -1379,8 +439,16 @@
           "hash": "18349117910569253658"
         },
         {
+          "file": "packages/core/src/components/skeleton.css",
+          "hash": "2612391525825218496"
+        },
+        {
           "file": "packages/core/src/components/spacer.css",
           "hash": "10981412854746402111"
+        },
+        {
+          "file": "packages/core/src/components/spinner.css",
+          "hash": "6145231631299112045"
         },
         {
           "file": "packages/core/src/components/split.css",
@@ -1399,8 +467,16 @@
           "hash": "8810489848859292231"
         },
         {
+          "file": "packages/core/src/components/tag.css",
+          "hash": "16620831000337214929"
+        },
+        {
           "file": "packages/core/src/components/textarea.css",
           "hash": "15934802603858503680"
+        },
+        {
+          "file": "packages/core/src/components/typography.css",
+          "hash": "8494785662289372296"
         },
         {
           "file": "packages/core/src/index.css",
@@ -1442,52 +518,6 @@
             "@glowing-sea-studio/erebus-core",
             "@glowing-sea-studio/erebus-tokens"
           ]
-        },
-        {
-          "file": "packages/react/dist/index.d.mts",
-          "hash": "17038619613073384573",
-          "deps": [
-            "npm:react",
-            "npm:@floating-ui/react"
-          ]
-        },
-        {
-          "file": "packages/react/dist/index.d.ts",
-          "hash": "17038619613073384573",
-          "deps": [
-            "npm:react",
-            "npm:@floating-ui/react"
-          ]
-        },
-        {
-          "file": "packages/react/dist/index.js",
-          "hash": "4848804357104254992",
-          "deps": [
-            "npm:react",
-            "npm:clsx",
-            "npm:tailwind-merge",
-            "npm:react-dom",
-            "npm:@floating-ui/react"
-          ]
-        },
-        {
-          "file": "packages/react/dist/index.js.map",
-          "hash": "14098853538310703212"
-        },
-        {
-          "file": "packages/react/dist/index.mjs",
-          "hash": "12788062000240001269",
-          "deps": [
-            "npm:react",
-            "npm:clsx",
-            "npm:tailwind-merge",
-            "npm:react-dom",
-            "npm:@floating-ui/react"
-          ]
-        },
-        {
-          "file": "packages/react/dist/index.mjs.map",
-          "hash": "12171823705782073808"
         },
         {
           "file": "packages/react/package.json",
@@ -1549,6 +579,58 @@
           "hash": "9872568760732870450"
         },
         {
+          "file": "packages/react/src/avatar-group/AvatarGroup.tsx",
+          "hash": "15100162709853682106",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/avatar/Avatar.tsx",
+          "hash": "15786295431527851886",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/badge/Badge.stories.tsx",
+          "hash": "994607916953738355",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/badge/Badge.test.tsx",
+          "hash": "5459110844668532328",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react",
+            "npm:@testing-library/jest-dom@6.5.0"
+          ]
+        },
+        {
+          "file": "packages/react/src/badge/Badge.tsx",
+          "hash": "2238634609719131024",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/badge/index.ts",
+          "hash": "14663468232077114161"
+        },
+        {
+          "file": "packages/react/src/button-group/ButtonGroup.tsx",
+          "hash": "10895391860023319919",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/button-group/index.ts",
+          "hash": "7121410261380552114"
+        },
+        {
           "file": "packages/react/src/button/Button.stories.tsx",
           "hash": "18214942331215244504",
           "deps": [
@@ -1572,6 +654,13 @@
         {
           "file": "packages/react/src/button/index.ts",
           "hash": "13071534322901307428"
+        },
+        {
+          "file": "packages/react/src/callout/Callout.tsx",
+          "hash": "14691342205349854317",
+          "deps": [
+            "npm:react"
+          ]
         },
         {
           "file": "packages/react/src/card/Card.stories.tsx",
@@ -1671,6 +760,13 @@
           "hash": "1410023611648128"
         },
         {
+          "file": "packages/react/src/code/Code.tsx",
+          "hash": "13653082173057128866",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
           "file": "packages/react/src/container/Container.test.tsx",
           "hash": "16574377605878484979",
           "deps": [
@@ -1687,6 +783,41 @@
         {
           "file": "packages/react/src/container/index.ts",
           "hash": "17254550608289820865"
+        },
+        {
+          "file": "packages/react/src/divider/Divider.tsx",
+          "hash": "5325544337586334756",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/field/Field.stories.tsx",
+          "hash": "17761629854256528146",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/field/Field.test.tsx",
+          "hash": "12884426821518580006",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/field/Field.tsx",
+          "hash": "3169538165841701847",
+          "deps": [
+            "npm:react",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "packages/react/src/field/index.ts",
+          "hash": "7305792391226079100"
         },
         {
           "file": "packages/react/src/flex/Flex.test.tsx",
@@ -1782,8 +913,26 @@
           "hash": "1891330823667362207"
         },
         {
+          "file": "packages/react/src/heading/Heading.tsx",
+          "hash": "9966983414345482893",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/icon-button/IconButton.tsx",
+          "hash": "695658029373181534",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/icon-button/index.ts",
+          "hash": "13371657410241450965"
+        },
+        {
           "file": "packages/react/src/index.ts",
-          "hash": "10375364090416793852"
+          "hash": "11702711863337232345"
         },
         {
           "file": "packages/react/src/inline/Inline.test.tsx",
@@ -1827,6 +976,40 @@
         {
           "file": "packages/react/src/input/index.ts",
           "hash": "18183738081151034429"
+        },
+        {
+          "file": "packages/react/src/kbd/Kbd.tsx",
+          "hash": "14855442060732349655",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/label/Label.stories.tsx",
+          "hash": "17983558772950975727",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/label/Label.test.tsx",
+          "hash": "8325995363347728635",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/label/Label.tsx",
+          "hash": "7087130200186583091",
+          "deps": [
+            "npm:react",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "packages/react/src/label/index.ts",
+          "hash": "4969268022195196181"
         },
         {
           "file": "packages/react/src/layer/FocusTrap.tsx",
@@ -1979,6 +1162,13 @@
           "hash": "14744043736947548578"
         },
         {
+          "file": "packages/react/src/prose/Prose.tsx",
+          "hash": "3761855577706589028",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
           "file": "packages/react/src/radio-group/RadioGroup.stories.tsx",
           "hash": "17887074427999667361"
         },
@@ -2113,6 +1303,32 @@
           "hash": "16348485623229369813"
         },
         {
+          "file": "packages/react/src/skeleton/Skeleton.stories.tsx",
+          "hash": "3236853297581477147",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/skeleton/Skeleton.test.tsx",
+          "hash": "3670039842531530172",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/skeleton/Skeleton.tsx",
+          "hash": "4712550305731484987",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/skeleton/index.ts",
+          "hash": "3317838026164326327"
+        },
+        {
           "file": "packages/react/src/spacer/Spacer.test.tsx",
           "hash": "12799364121867971126",
           "deps": [
@@ -2129,6 +1345,32 @@
           "deps": [
             "npm:react"
           ]
+        },
+        {
+          "file": "packages/react/src/spinner/Spinner.stories.tsx",
+          "hash": "9972045483612513446",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/spinner/Spinner.test.tsx",
+          "hash": "18077370822758364492",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/spinner/Spinner.tsx",
+          "hash": "9951277996521547567",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/spinner/index.ts",
+          "hash": "1334364908250765014"
         },
         {
           "file": "packages/react/src/split/Split.test.tsx",
@@ -2218,6 +1460,40 @@
           "hash": "556936361761431116"
         },
         {
+          "file": "packages/react/src/tag/Tag.stories.tsx",
+          "hash": "16582698112149823969",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "packages/react/src/tag/Tag.test.tsx",
+          "hash": "219781113541131998",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react",
+            "npm:@testing-library/jest-dom@6.5.0"
+          ]
+        },
+        {
+          "file": "packages/react/src/tag/Tag.tsx",
+          "hash": "9193300234917340274",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "packages/react/src/tag/index.ts",
+          "hash": "6425926686383628588"
+        },
+        {
+          "file": "packages/react/src/text/Text.tsx",
+          "hash": "9722410778311175956",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
           "file": "packages/react/src/textarea/Textarea.stories.tsx",
           "hash": "1142675705626454617",
           "deps": [
@@ -2266,142 +1542,1030 @@
           ]
         }
       ],
-      "@glowing-sea-studio/erebus-tokens": [
+      "@glowing-sea-studio/erebus-icons": [
         {
-          "file": "packages/tokens/dist/css/variables.css",
-          "hash": "11313532448237429534"
+          "file": "packages/icons/package.json",
+          "hash": "8932838713229377147"
+        }
+      ],
+      "@glowing-sea-studio/erebus-angular": [
+        {
+          "file": "packages/angular/.storybook/main.ts",
+          "hash": "5767686390889070243",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
         },
         {
-          "file": "packages/tokens/dist/js/tokens.ts",
-          "hash": "9279900962603370082"
+          "file": "packages/angular/.storybook/preview.ts",
+          "hash": "10073693327558886807",
+          "deps": [
+            "npm:@storybook/angular",
+            "@glowing-sea-studio/erebus-core",
+            "@glowing-sea-studio/erebus-tokens"
+          ]
         },
         {
-          "file": "packages/tokens/dist/json/tokens.json",
-          "hash": "6812764516309260243"
+          "file": "packages/angular/.storybook/tsconfig.json",
+          "hash": "14127105163656186377"
         },
         {
-          "file": "packages/tokens/package.json",
-          "hash": "4781000300324069859"
+          "file": "packages/angular/ng-package.json",
+          "hash": "14813130291173760689"
         },
         {
-          "file": "packages/tokens/scripts/verify-parity.mjs",
-          "hash": "1673921158040622214"
+          "file": "packages/angular/package.json",
+          "hash": "16023823381768536149",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/cdk",
+            "npm:vitest"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/alert.json",
-          "hash": "9929178502876039036"
+          "file": "packages/angular/src/alert/alert.component.ts",
+          "hash": "14978175804209757523",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/button.json",
-          "hash": "2217728288190738986"
+          "file": "packages/angular/src/alert/alert.spec.ts",
+          "hash": "1846028923648408621",
+          "deps": [
+            "npm:vitest"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/card.json",
-          "hash": "8169410384902572122"
+          "file": "packages/angular/src/alert/alert.stories.ts",
+          "hash": "15436703713915735834",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/checkbox.json",
-          "hash": "17232552977103923238"
+          "file": "packages/angular/src/alert/index.ts",
+          "hash": "2679482020222081479"
         },
         {
-          "file": "packages/tokens/src/component/footer.json",
-          "hash": "13993199793246114414"
+          "file": "packages/angular/src/aspect-ratio/aspect-ratio.component.ts",
+          "hash": "16528226053965767645",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/header.json",
-          "hash": "9355039220362621363"
+          "file": "packages/angular/src/aspect-ratio/aspect-ratio.spec.ts",
+          "hash": "4219948595255731834",
+          "deps": [
+            "npm:vitest"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/input.json",
-          "hash": "6094819391865761606"
+          "file": "packages/angular/src/aspect-ratio/index.ts",
+          "hash": "16636874377077542414"
         },
         {
-          "file": "packages/tokens/src/component/menu.json",
-          "hash": "3325627528143833354"
+          "file": "packages/angular/src/avatar-group/avatar-group.component.ts",
+          "hash": "3244421341483603138"
         },
         {
-          "file": "packages/tokens/src/component/modal.json",
-          "hash": "10594128190978279155"
+          "file": "packages/angular/src/avatar/avatar.component.ts",
+          "hash": "4601162586975803793",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/number-input.json",
-          "hash": "12053036482524831121"
+          "file": "packages/angular/src/badge/badge.component.spec.ts",
+          "hash": "8879707646138775856",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/panel.json",
-          "hash": "8821292413705623826"
+          "file": "packages/angular/src/badge/badge.component.ts",
+          "hash": "15278689184971746436",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/radio.json",
-          "hash": "696550571030629979"
+          "file": "packages/angular/src/badge/badge.stories.ts",
+          "hash": "12505152303917204903",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/search-input.json",
-          "hash": "17408517298708384448"
+          "file": "packages/angular/src/badge/index.ts",
+          "hash": "10167045822179394892"
         },
         {
-          "file": "packages/tokens/src/component/select.json",
-          "hash": "5765178605657316179"
+          "file": "packages/angular/src/button-group/button-group.component.ts",
+          "hash": "11167999464576156892",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/switch.json",
-          "hash": "7021575072893578364"
+          "file": "packages/angular/src/button-group/index.ts",
+          "hash": "16408029765444977819"
         },
         {
-          "file": "packages/tokens/src/component/tabs.json",
-          "hash": "13938063717076199833"
+          "file": "packages/angular/src/button/button.directive.ts",
+          "hash": "8453233382923960463",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
         },
         {
-          "file": "packages/tokens/src/component/textarea.json",
-          "hash": "15777306126749461932"
+          "file": "packages/angular/src/button/button.spec.ts",
+          "hash": "12795977878726355736",
+          "deps": [
+            "npm:vitest"
+          ]
         },
         {
-          "file": "packages/tokens/src/primitive/color.json",
-          "hash": "12186160541111284575"
+          "file": "packages/angular/src/button/button.stories.ts",
+          "hash": "2531780428647671864",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
         },
         {
-          "file": "packages/tokens/src/primitive/duration.json",
-          "hash": "3104775026330025833"
+          "file": "packages/angular/src/button/index.ts",
+          "hash": "11551908468621310145"
         },
         {
-          "file": "packages/tokens/src/primitive/easing.json",
-          "hash": "8777822411477263901"
+          "file": "packages/angular/src/callout/callout.component.ts",
+          "hash": "10279624962989092869",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
         },
         {
-          "file": "packages/tokens/src/primitive/radius.json",
-          "hash": "4518721347119546999"
+          "file": "packages/angular/src/card/card.component.ts",
+          "hash": "8053733463031013243",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
         },
         {
-          "file": "packages/tokens/src/primitive/shadow.json",
-          "hash": "15447864773980140962"
+          "file": "packages/angular/src/card/card.spec.ts",
+          "hash": "4955093252149918936",
+          "deps": [
+            "npm:vitest"
+          ]
         },
         {
-          "file": "packages/tokens/src/primitive/size.json",
-          "hash": "1592480576616537614"
+          "file": "packages/angular/src/card/card.stories.ts",
+          "hash": "11391824557483129050",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
         },
         {
-          "file": "packages/tokens/src/primitive/typography.json",
-          "hash": "11541090277497120609"
+          "file": "packages/angular/src/card/index.ts",
+          "hash": "15560743538288663931"
         },
         {
-          "file": "packages/tokens/src/semantic/dark.json",
-          "hash": "6908541391402206002"
+          "file": "packages/angular/src/center/center.component.ts",
+          "hash": "8622184944532887653",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
         },
         {
-          "file": "packages/tokens/src/semantic/light.json",
-          "hash": "3392984703032684786"
+          "file": "packages/angular/src/center/center.spec.ts",
+          "hash": "13238667491770259627",
+          "deps": [
+            "npm:vitest"
+          ]
         },
         {
-          "file": "packages/tokens/src/semantic/shared.json",
-          "hash": "14600949275546318902"
+          "file": "packages/angular/src/center/index.ts",
+          "hash": "17848028957681882097"
         },
         {
-          "file": "packages/tokens/src/themes/default.json",
-          "hash": "13151533111637797710"
+          "file": "packages/angular/src/checkbox-group/checkbox-group.component.ts",
+          "hash": "12057282924160375084",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
         },
         {
-          "file": "packages/tokens/style-dictionary.config.js",
-          "hash": "3127838050232476498"
+          "file": "packages/angular/src/checkbox-group/checkbox-group.spec.ts",
+          "hash": "8973931615905356618",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/checkbox-group/checkbox-group.stories.ts",
+          "hash": "8533871006835939608",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/checkbox-group/index.ts",
+          "hash": "10601848929053491054"
+        },
+        {
+          "file": "packages/angular/src/checkbox/checkbox.component.ts",
+          "hash": "3248802403048782985",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/checkbox/checkbox.spec.ts",
+          "hash": "12114833874372896998",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/checkbox/checkbox.stories.ts",
+          "hash": "16045708567778809602",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/checkbox/index.ts",
+          "hash": "5802415263398038748"
+        },
+        {
+          "file": "packages/angular/src/code/code.component.ts",
+          "hash": "17358895565190942682",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/container/container.component.ts",
+          "hash": "11660098764922482063",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/container/container.spec.ts",
+          "hash": "9790794568434861746",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/container/index.ts",
+          "hash": "2213968004846676852"
+        },
+        {
+          "file": "packages/angular/src/divider/divider.component.ts",
+          "hash": "7337266955153756938",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/field/field.component.ts",
+          "hash": "4153557947896683757",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/field/field.spec.ts",
+          "hash": "7232387073344272735",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "packages/angular/src/field/field.stories.ts",
+          "hash": "8223576933948880439",
+          "deps": [
+            "npm:@storybook/angular",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/field/index.ts",
+          "hash": "15967737640750929514"
+        },
+        {
+          "file": "packages/angular/src/flex/flex.component.ts",
+          "hash": "344483865621132253",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/flex/flex.spec.ts",
+          "hash": "14138364629623989040",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/flex/index.ts",
+          "hash": "12896847920338689074"
+        },
+        {
+          "file": "packages/angular/src/footer/footer.component.ts",
+          "hash": "10792150613075424861",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/footer/footer.spec.ts",
+          "hash": "10189926427150460627",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/footer/footer.stories.ts",
+          "hash": "13209080581951232778",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/footer/index.ts",
+          "hash": "3431716135328408191"
+        },
+        {
+          "file": "packages/angular/src/grid/grid-item.component.ts",
+          "hash": "5306310610525075537",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/grid/grid.component.ts",
+          "hash": "10521235284585082763",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/grid/grid.spec.ts",
+          "hash": "665756515420790905",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/grid/index.ts",
+          "hash": "18381583699138549509"
+        },
+        {
+          "file": "packages/angular/src/header/header.component.ts",
+          "hash": "17028341329231118144",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/header/header.spec.ts",
+          "hash": "4295332349679477441",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/header/header.stories.ts",
+          "hash": "5826228276545362506",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/header/index.ts",
+          "hash": "12541423769449981273"
+        },
+        {
+          "file": "packages/angular/src/icon-button/icon-button.directive.ts",
+          "hash": "5941724079002800928",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/icon-button/index.ts",
+          "hash": "1686619661982958035"
+        },
+        {
+          "file": "packages/angular/src/index.ts",
+          "hash": "10119695492436960388"
+        },
+        {
+          "file": "packages/angular/src/inline/index.ts",
+          "hash": "636298494066888778"
+        },
+        {
+          "file": "packages/angular/src/inline/inline.component.ts",
+          "hash": "8355791841163886656",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/inline/inline.spec.ts",
+          "hash": "2360852215149730231",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/input/index.ts",
+          "hash": "691406165205812755"
+        },
+        {
+          "file": "packages/angular/src/input/input-wrapper.component.ts",
+          "hash": "14603053636952704110",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/input/input.directive.ts",
+          "hash": "17933450092540455748",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/input/input.spec.ts",
+          "hash": "758283384054655423",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/input/input.stories.ts",
+          "hash": "8424331739208503851",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/kbd/kbd.component.ts",
+          "hash": "9615003188694298216",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/label/index.ts",
+          "hash": "16235475913685582905"
+        },
+        {
+          "file": "packages/angular/src/label/label.component.ts",
+          "hash": "15365329526981585525",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/label/label.spec.ts",
+          "hash": "16801717358198383360",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "packages/angular/src/label/label.stories.ts",
+          "hash": "1230057615612601268",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/layer/focus-trap.directive.ts",
+          "hash": "17924224442675448328",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/layer/index.ts",
+          "hash": "11952982957618897991"
+        },
+        {
+          "file": "packages/angular/src/layer/layer-manager.service.ts",
+          "hash": "9124558824256075919",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/layer/layer.spec.ts",
+          "hash": "1183715436197494102",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/layer/portal.directive.ts",
+          "hash": "1598771218017001721",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/layer/scroll-lock.directive.ts",
+          "hash": "5503544835686887708",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/layer/transition.directive.ts",
+          "hash": "613561944507020522",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/menu/index.ts",
+          "hash": "5568868921806090104"
+        },
+        {
+          "file": "packages/angular/src/menu/menu.component.ts",
+          "hash": "12054989849263684299",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/menu/menu.spec.ts",
+          "hash": "3508979734417038517",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/menu/menu.stories.ts",
+          "hash": "5795919950249772216",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/modal/index.ts",
+          "hash": "11153513768988294765"
+        },
+        {
+          "file": "packages/angular/src/modal/modal.component.ts",
+          "hash": "484343151344853802",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/modal/modal.spec.ts",
+          "hash": "10816371439815760371",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/modal/modal.stories.ts",
+          "hash": "16012899908952278495",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/number-input/index.ts",
+          "hash": "7548483316407151303"
+        },
+        {
+          "file": "packages/angular/src/number-input/number-input.component.ts",
+          "hash": "16184965547907486702",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/number-input/number-input.spec.ts",
+          "hash": "4431309838595925308",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/number-input/number-input.stories.ts",
+          "hash": "3803857554848106626",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/panel/index.ts",
+          "hash": "16694088326207762710"
+        },
+        {
+          "file": "packages/angular/src/panel/panel.component.ts",
+          "hash": "1280940808570787320",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/panel/panel.spec.ts",
+          "hash": "9225789559169205486",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/panel/panel.stories.ts",
+          "hash": "10007888474020020420",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/prose/prose.component.ts",
+          "hash": "8831369279925824886",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/radio-group/index.ts",
+          "hash": "10703327701255836631"
+        },
+        {
+          "file": "packages/angular/src/radio-group/radio-group.component.ts",
+          "hash": "15660946055938554048",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/radio-group/radio-group.spec.ts",
+          "hash": "13825675399206011571",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/radio-group/radio-group.stories.ts",
+          "hash": "10584727909526082344",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/radio/index.ts",
+          "hash": "12891819585971623109"
+        },
+        {
+          "file": "packages/angular/src/radio/radio.component.ts",
+          "hash": "16261062276195429583",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/radio/radio.spec.ts",
+          "hash": "11312101345066440765",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/radio/radio.stories.ts",
+          "hash": "1816054782167898705",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/scroll-area/index.ts",
+          "hash": "4098411142746655611"
+        },
+        {
+          "file": "packages/angular/src/scroll-area/scroll-area.component.ts",
+          "hash": "6355312170552986838",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/scroll-area/scroll-area.spec.ts",
+          "hash": "462812484630901703",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/search-input/index.ts",
+          "hash": "9765350618692579711"
+        },
+        {
+          "file": "packages/angular/src/search-input/search-input.component.ts",
+          "hash": "3732020551678293238",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/search-input/search-input.spec.ts",
+          "hash": "18439838890104344604",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/search-input/search-input.stories.ts",
+          "hash": "13372101185565837866",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/section/index.ts",
+          "hash": "4993777236684800675"
+        },
+        {
+          "file": "packages/angular/src/section/section.component.ts",
+          "hash": "10253780623702782833",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/section/section.spec.ts",
+          "hash": "6911768978554067230",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/select/index.ts",
+          "hash": "17444152658030996429"
+        },
+        {
+          "file": "packages/angular/src/select/select.directive.ts",
+          "hash": "3686236257254262072",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/select/select.spec.ts",
+          "hash": "17088267402251616200",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/select/select.stories.ts",
+          "hash": "15034053622447251862",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/skeleton/index.ts",
+          "hash": "5336009065228654379"
+        },
+        {
+          "file": "packages/angular/src/skeleton/skeleton.component.spec.ts",
+          "hash": "18108841914464328059",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/skeleton/skeleton.component.ts",
+          "hash": "6559589474982284208",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/skeleton/skeleton.stories.ts",
+          "hash": "6805706145190405481",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/spacer/index.ts",
+          "hash": "6057672140829215369"
+        },
+        {
+          "file": "packages/angular/src/spacer/spacer.component.ts",
+          "hash": "11545878758210163544",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/spacer/spacer.spec.ts",
+          "hash": "11583302491143602145",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/spinner/index.ts",
+          "hash": "17231967000602788529"
+        },
+        {
+          "file": "packages/angular/src/spinner/spinner.component.spec.ts",
+          "hash": "17441253917494801285",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/spinner/spinner.component.ts",
+          "hash": "3220181718020514205",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/spinner/spinner.stories.ts",
+          "hash": "2176734415502687945",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/split/index.ts",
+          "hash": "12900845003935633773"
+        },
+        {
+          "file": "packages/angular/src/split/split.component.ts",
+          "hash": "16474347000563818154",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/split/split.spec.ts",
+          "hash": "7843626985817021281",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/stack/index.ts",
+          "hash": "1490413215284135893"
+        },
+        {
+          "file": "packages/angular/src/stack/stack.component.ts",
+          "hash": "6037971823469344256",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/stack/stack.spec.ts",
+          "hash": "3677973865794246162",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/switch/index.ts",
+          "hash": "3405159385277278207"
+        },
+        {
+          "file": "packages/angular/src/switch/switch.component.ts",
+          "hash": "5365045555557084892",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/switch/switch.spec.ts",
+          "hash": "16612424794439034306",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/switch/switch.stories.ts",
+          "hash": "11704178539027852092",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/tabs/index.ts",
+          "hash": "8608207449962467909"
+        },
+        {
+          "file": "packages/angular/src/tabs/tabs.component.ts",
+          "hash": "147255539146111272",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/tabs/tabs.spec.ts",
+          "hash": "16776395326104807467",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/tabs/tabs.stories.ts",
+          "hash": "4922348332184414280",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/tag/index.ts",
+          "hash": "9743758310602844337"
+        },
+        {
+          "file": "packages/angular/src/tag/tag.component.spec.ts",
+          "hash": "1768014028243285809",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/tag/tag.component.ts",
+          "hash": "3478429330385132391",
+          "deps": [
+            "npm:@angular/core@19.2.25",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "packages/angular/src/tag/tag.stories.ts",
+          "hash": "17338493787101157646",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/text/text.component.ts",
+          "hash": "13270455095303362627",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/textarea/index.ts",
+          "hash": "14917849613980624440"
+        },
+        {
+          "file": "packages/angular/src/textarea/textarea.directive.ts",
+          "hash": "13382645203347831469",
+          "deps": [
+            "npm:@angular/core@19.2.25"
+          ]
+        },
+        {
+          "file": "packages/angular/src/textarea/textarea.spec.ts",
+          "hash": "11458734332015222627",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/angular/src/textarea/textarea.stories.ts",
+          "hash": "1120484984493308797",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "packages/angular/src/utils.ts",
+          "hash": "7299671477292036198"
+        },
+        {
+          "file": "packages/angular/tsconfig.json",
+          "hash": "235355164182007645"
+        },
+        {
+          "file": "packages/angular/tsconfig.lib.json",
+          "hash": "7686874944016924608"
+        },
+        {
+          "file": "packages/angular/tsconfig.spec.json",
+          "hash": "6685020122404191677"
         }
       ]
     }

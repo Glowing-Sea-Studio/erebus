@@ -14,18 +14,18 @@ Mise en place de l'infrastructure de base et des fondements CSS/Design Tokens.
 
 ## Lot 2 — Socle (Parallélisable)
 Implémentation des composants de base sur le modèle de `Button`.
-- [ ] `IconButton` & `ButtonGroup`
+- [x] `IconButton` & `ButtonGroup`
 - [x] `Card`
-- [ ] `Badge` & `Tag`
-- [ ] `Avatar` & `AvatarGroup`
-- [ ] `Spinner` & `Skeleton`
+- [x] `Badge` & `Tag`
+- [x] `Avatar` & `AvatarGroup`
+- [x] `Spinner` & `Skeleton`
 - [x] `Alert`
-- [ ] `Callout`
-- [ ] `Divider` & `Kbd` & `Code`
-- [ ] `Heading` & `Text` & `Prose`
+- [x] `Callout`
+- [x] `Divider` & `Kbd` & `Code`
+- [x] `Heading` & `Text` & `Prose`
 
 ## Lot 3 — Formulaires (Parallélisable après Field/Label)
-- [ ] `Field` & `Label` (à réaliser en premier pour le câblage d'accessibilité `aria-describedby`, etc.)
+- [x] `Field` & `Label` (à réaliser en premier pour le câblage d'accessibilité `aria-describedby`, etc.)
 - [x] `Input`
 - [x] `Textarea`
 - [x] `Checkbox` & `CheckboxGroup`

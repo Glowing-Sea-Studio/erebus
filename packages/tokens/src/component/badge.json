@@ -1,0 +1,10 @@
+{
+  "badge": {
+    "padding-x": { "value": "{spacing.2}" },
+    "padding-y": { "value": "{spacing.1}" },
+    "font-size": { "value": "{font-size.xs}" },
+    "font-weight": { "value": "{font-weight.medium}" },
+    "border-radius": { "value": "{radii.sm}" },
+    "pill-border-radius": { "value": "{radii.full}" }
+  }
+}

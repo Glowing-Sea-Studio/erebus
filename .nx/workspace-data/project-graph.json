@@ -18992,6 +18992,16 @@
         "source": "@glowing-sea-studio/erebus-angular",
         "target": "npm:vitest",
         "type": "static"
+      },
+      {
+        "source": "@glowing-sea-studio/erebus-angular",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "@glowing-sea-studio/erebus-angular",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
       }
     ],
     "@glowing-sea-studio/erebus-tokens": [],
@@ -19039,21 +19049,6 @@
       },
       {
         "source": "@glowing-sea-studio/erebus-react",
-        "target": "npm:@floating-ui/react",
-        "type": "static"
-      },
-      {
-        "source": "@glowing-sea-studio/erebus-react",
-        "target": "npm:clsx",
-        "type": "static"
-      },
-      {
-        "source": "@glowing-sea-studio/erebus-react",
-        "target": "npm:tailwind-merge",
-        "type": "static"
-      },
-      {
-        "source": "@glowing-sea-studio/erebus-react",
         "target": "npm:react-dom",
         "type": "static"
       },
@@ -19080,6 +19075,31 @@
       {
         "source": "@glowing-sea-studio/erebus-react",
         "target": "npm:@floating-ui/dom",
+        "type": "static"
+      },
+      {
+        "source": "@glowing-sea-studio/erebus-react",
+        "target": "npm:@floating-ui/react",
+        "type": "static"
+      },
+      {
+        "source": "@glowing-sea-studio/erebus-react",
+        "target": "npm:clsx",
+        "type": "static"
+      },
+      {
+        "source": "@glowing-sea-studio/erebus-react",
+        "target": "npm:tailwind-merge",
+        "type": "static"
+      },
+      {
+        "source": "@glowing-sea-studio/erebus-react",
+        "target": "npm:@testing-library/react",
+        "type": "static"
+      },
+      {
+        "source": "@glowing-sea-studio/erebus-react",
+        "target": "npm:@testing-library/jest-dom@6.5.0",
         "type": "static"
       },
       {
