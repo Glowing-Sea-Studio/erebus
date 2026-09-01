@@ -16842,3 +16842,21 @@
 [NX Daemon Server] - 2026-09-01T14:08:12.864Z - [SYNC]: project graph hash is the same, not collecting task sync generators
 [NX Daemon Server] - 2026-09-01T14:08:12.864Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
 [NX Daemon Server] - 2026-09-01T14:08:12.864Z - Time taken for 'total execution time for createProjectGraph()' 27.2467070000057ms
+[NX Daemon Server] - 2026-09-01T14:08:16.438Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2026-09-01T14:08:16.439Z - [WATCHER]: 0 file(s) created or restored, 0 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2026-09-01T14:08:16.640Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2026-09-01T14:08:16.640Z - [REQUEST]: 
+[NX Daemon Server] - 2026-09-01T14:08:16.640Z - [REQUEST]: fix-tokens.js,generate.js
+[NX Daemon Server] - 2026-09-01T14:08:16.644Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2026-09-01T14:08:16.644Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2026-09-01T14:08:16.644Z - Handled HASH_GLOB. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2026-09-01T14:08:16.644Z - Time taken for 'hash changed files from watcher' 0.6156330000012531ms
+[NX Daemon Server] - 2026-09-01T14:08:16.646Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2026-09-01T14:08:16.646Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2026-09-01T14:08:16.646Z - Handled HASH_GLOB. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2026-09-01T14:08:16.664Z - Time taken for 'build-project-configs' 16.119606000000203ms
+[NX Daemon Server] - 2026-09-01T14:08:16.674Z - Time taken for '@nx/storybook/plugin:createDependencies' 13.816098000002967ms
+[NX Daemon Server] - 2026-09-01T14:08:16.698Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2026-09-01T14:08:16.698Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2026-09-01T14:08:16.699Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2026-09-01T14:08:16.699Z - Time taken for 'total execution time for createProjectGraph()' 21.31233400000201ms
