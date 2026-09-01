@@ -1,6 +1,4 @@
 import React from 'react';
-import '@erebus/core/components/hero.css';
-
 export interface HeroProps {
   className?: string;
   children?: React.ReactNode;

@@ -1,5 +1,4 @@
 import React from 'react';
-
 export interface SkeletonProps extends React.HTMLAttributes<HTMLDivElement> {
   variant?: 'rect' | 'circle';
   width?: number | string;

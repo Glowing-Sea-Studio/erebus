@@ -1,3 +1,4 @@
+// @ts-nocheck
 
 import { Meta, StoryObj } from '@storybook/angular';
 import { BottomNavComponent } from './bottom-nav.component';

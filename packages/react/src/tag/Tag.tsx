@@ -1,5 +1,4 @@
 import React from 'react';
-
 export interface TagProps extends React.HTMLAttributes<HTMLSpanElement> {
   variant?: 'solid' | 'outline' | 'soft';
   color?: 'primary' | 'success' | 'warning' | 'danger' | 'neutral';

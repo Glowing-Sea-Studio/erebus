@@ -1,4 +1,3 @@
-import React from 'react';
 import { Table, TableHead, TableBody, TableRow, TableCell, TableHeaderCell } from './Table';
 
 export default { title: 'Components/Table', component: Table };

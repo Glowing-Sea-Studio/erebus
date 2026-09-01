@@ -1,3 +1,4 @@
+import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import {
   Component,
   Input,
@@ -9,7 +10,7 @@ import {
   ViewChild,
   ChangeDetectionStrategy,
 } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR, CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 export interface MultiSelectOption {
   value: string;
@@ -93,7 +94,7 @@ export interface MultiSelectOption {
       multi: true,
     },
   ],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  
 })
 export class MultiSelectComponent implements ControlValueAccessor {
   @Input() options: MultiSelectOption[] = [];
@@ -182,7 +183,7 @@ export class MultiSelectComponent implements ControlValueAccessor {
     if (this.disabled) return;
 
     if (e.key === 'Backspace' && this.inputValue === '' && this.value.length > 0) {
-      this.removeOption(this.value[this.value.length - 1]);
+      this.removeOption(this.value[this.value.length - 1]!);
       return;
     }
 
@@ -207,7 +208,7 @@ export class MultiSelectComponent implements ControlValueAccessor {
       case 'Enter':
         e.preventDefault();
         if (this.activeIndex >= 0 && this.activeIndex <= maxIndex) {
-          this.selectOption(this.filteredOptions[this.activeIndex].value);
+          this.selectOption(this.filteredOptions[this.activeIndex]!.value);
         }
         break;
       case 'Escape':

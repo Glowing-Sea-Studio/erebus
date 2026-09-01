@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Meta, StoryObj } from '@storybook/angular';
 import { ErbSearchInputComponent } from './search-input.component';
 

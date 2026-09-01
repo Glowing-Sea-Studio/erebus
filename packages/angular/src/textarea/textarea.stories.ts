@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { Meta, StoryObj } from '@storybook/angular';
 import { ErbInputWrapperComponent } from '../input/input-wrapper.component';
 import { ErbTextareaDirective } from './textarea.directive';

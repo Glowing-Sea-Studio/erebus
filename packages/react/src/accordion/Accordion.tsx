@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../../../core/src/components/accordion.css';
+
 
 export interface AccordionProps { title: React.ReactNode; children: React.ReactNode; defaultExpanded?: boolean; }
 

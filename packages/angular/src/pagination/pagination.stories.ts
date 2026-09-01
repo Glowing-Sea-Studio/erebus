@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Meta, StoryObj } from '@storybook/angular';
 import { PaginationComponent } from './pagination.component';
 

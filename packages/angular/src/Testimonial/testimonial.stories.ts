@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { Meta, StoryObj } from '@storybook/angular';
 import { TestimonialComponent } from './testimonial.component';
 

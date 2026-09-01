@@ -1,6 +1,6 @@
 import React, { useRef, useState, useCallback } from 'react';
 
-export interface RangeSliderProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {
+export interface RangeSliderProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange' | 'defaultValue'> {
   min?: number;
   max?: number;
   step?: number;
@@ -13,7 +13,7 @@ export interface RangeSliderProps extends Omit<React.HTMLAttributes<HTMLDivEleme
 export const RangeSlider = React.forwardRef<HTMLDivElement, RangeSliderProps>(
   ({ min = 0, max = 100, step = 1, value, defaultValue, onChange, disabled = false, className = '', ...props }, ref) => {
     const [internalValue, setInternalValue] = useState<[number, number]>(defaultValue ?? [min, max]);
-    const containerRef = useRef<HTMLDivElement>(null);
+    const containerRef = useRef<HTMLDivElement | null>(null);
     const isControlled = value !== undefined;
     const currentValue = isControlled ? value : internalValue;
     

@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { AppShell } from './AppShell';
 
 export default { title: 'Components/AppShell', component: AppShell };

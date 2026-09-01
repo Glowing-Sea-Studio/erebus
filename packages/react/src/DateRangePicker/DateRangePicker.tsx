@@ -1,5 +1,4 @@
 import React from 'react';
-
 export interface DateRangePickerProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {
   size?: 'sm' | 'md' | 'lg';
   startDate?: string;

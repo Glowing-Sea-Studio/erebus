@@ -1,4 +1,3 @@
-import React from 'react';
 import { ErrorState } from './ErrorState';
 
 export default {

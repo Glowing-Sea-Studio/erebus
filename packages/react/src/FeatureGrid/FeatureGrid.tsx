@@ -1,6 +1,4 @@
 import React from 'react';
-import '@erebus/core/components/featuregrid.css';
-
 export interface FeatureGridProps {
   className?: string;
   children?: React.ReactNode;

@@ -1,6 +1,3 @@
-import React from 'react';
-import '../../../../core/src/components/stepper.css';
-
 export interface StepperProps { currentStep: number; steps: string[]; }
 
 export const Stepper = ({ currentStep, steps }: StepperProps) => (

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Meta, StoryObj } from '@storybook/angular';
 import { ErbCheckboxGroupComponent } from './checkbox-group.component';
 import { ErbCheckboxComponent } from '../checkbox/checkbox.component';

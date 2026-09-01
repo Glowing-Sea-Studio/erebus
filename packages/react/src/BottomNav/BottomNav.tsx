@@ -1,6 +1,4 @@
-
 import React from 'react';
-import '@erebus/core/bottom-nav.css';
 
 export interface BottomNavProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;

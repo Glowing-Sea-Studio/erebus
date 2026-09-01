@@ -1,6 +1,4 @@
 import React from 'react';
-import '@erebus/core/components/testimonial.css';
-
 export interface TestimonialProps {
   className?: string;
   children?: React.ReactNode;

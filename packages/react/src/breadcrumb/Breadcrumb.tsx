@@ -1,6 +1,4 @@
 import React from 'react';
-import '../../../../core/src/components/breadcrumb.css';
-
 export interface BreadcrumbProps { children: React.ReactNode; ariaLabel?: string; }
 
 export const Breadcrumb = ({ children, ariaLabel = 'Breadcrumb' }: BreadcrumbProps) => (

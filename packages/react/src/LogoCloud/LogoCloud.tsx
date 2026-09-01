@@ -1,6 +1,4 @@
 import React from 'react';
-import '@erebus/core/components/logocloud.css';
-
 export interface LogoCloudProps {
   className?: string;
   children?: React.ReactNode;

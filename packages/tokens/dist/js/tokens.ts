@@ -3,54 +3,366 @@
  */
 
 module.exports = {
+  accordion: {
+    bg: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
+      },
+      filePath: "src/component/accordion.json",
+      isSource: true,
+      original: {
+        value: "{color.bg.canvas}",
+      },
+      name: "AccordionBg",
+      attributes: {
+        category: "accordion",
+        type: "bg",
+      },
+      path: ["accordion", "bg"],
+    },
+    color: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.28 0.03 250)",
+        },
+      },
+      filePath: "src/component/accordion.json",
+      isSource: true,
+      original: {
+        value: "{color.fg.default}",
+      },
+      name: "AccordionColor",
+      attributes: {
+        category: "accordion",
+        type: "color",
+      },
+      path: ["accordion", "color"],
+    },
+  },
+  "alert-dialog": {
+    overlay: {
+      background: {
+        $value: {
+          $type: "color",
+          $value: "rgb(0 0 0 / 0.5)",
+        },
+      },
+    },
+    content: {
+      background: {
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "#F8FBFC",
+          },
+        },
+      },
+      border: {
+        $value: {
+          default: {
+            $type: "color",
+            $value: {
+              $type: "color",
+              $value: "oklch(0.92 0.01 250)",
+            },
+          },
+          muted: {
+            $type: "color",
+            $value: {
+              $type: "color",
+              $value: "oklch(0.96 0.01 250)",
+            },
+          },
+          strong: {
+            $type: "color",
+            $value: {
+              $type: "color",
+              $value: "oklch(0.87 0.02 250)",
+            },
+          },
+          focus: {
+            $type: "color",
+            $value: {
+              $type: "color",
+              $value: "oklch(0.65 0.19 250)",
+            },
+          },
+          inverse: {
+            $type: "color",
+            $value: {
+              $type: "color",
+              $value: "oklch(0.50 0.03 250)",
+            },
+          },
+        },
+      },
+      shadow: {
+        $value: {
+          $type: "shadow",
+          $value:
+            "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+        },
+      },
+      radius: {
+        $value: {
+          $type: "dimension",
+          $value: "0.375rem",
+        },
+      },
+    },
+  },
   alert: {
     radius: {
       $type: "dimension",
-      $value: "0.375rem",
-      filePath: "src/component/alert.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "dimension",
-        $value: "{radius.md}",
+        $value: "0.375rem",
       },
-      name: "AlertRadius",
-      attributes: {
-        category: "alert",
-        type: "radius",
-      },
-      path: ["alert", "radius"],
     },
     p: {
       $type: "dimension",
       $value: "1rem",
-      filePath: "src/component/alert.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "1rem",
-      },
-      name: "AlertP",
-      attributes: {
-        category: "alert",
-        type: "p",
-      },
-      path: ["alert", "p"],
     },
     "border-width": {
       $type: "dimension",
       $value: "1px",
-      filePath: "src/component/alert.json",
+    },
+  },
+  "app-shell": {
+    bg: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
+      },
+      filePath: "src/component/app-shell.json",
       isSource: true,
       original: {
-        $type: "dimension",
-        $value: "1px",
+        value: "{color.bg.canvas}",
       },
-      name: "AlertBorderWidth",
+      name: "AppShellBg",
       attributes: {
-        category: "alert",
-        type: "border-width",
+        category: "app-shell",
+        type: "bg",
       },
-      path: ["alert", "border-width"],
+      path: ["app-shell", "bg"],
+    },
+    color: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.28 0.03 250)",
+        },
+      },
+      filePath: "src/component/app-shell.json",
+      isSource: true,
+      original: {
+        value: "{color.fg.default}",
+      },
+      name: "AppShellColor",
+      attributes: {
+        category: "app-shell",
+        type: "color",
+      },
+      path: ["app-shell", "color"],
+    },
+  },
+  badge: {
+    "padding-x": {
+      value: {
+        $type: "dimension",
+        $value: "8px",
+      },
+      filePath: "src/component/badge.json",
+      isSource: true,
+      original: {
+        value: "{space.2}",
+      },
+      name: "BadgePaddingX",
+      attributes: {
+        category: "badge",
+        type: "padding-x",
+      },
+      path: ["badge", "padding-x"],
+    },
+    "padding-y": {
+      value: {
+        $type: "dimension",
+        $value: "4px",
+      },
+      filePath: "src/component/badge.json",
+      isSource: true,
+      original: {
+        value: "{space.1}",
+      },
+      name: "BadgePaddingY",
+      attributes: {
+        category: "badge",
+        type: "padding-y",
+      },
+      path: ["badge", "padding-y"],
+    },
+    "font-size": {
+      value: {
+        $type: "dimension",
+        $value: "0.75rem",
+      },
+      filePath: "src/component/badge.json",
+      isSource: true,
+      original: {
+        value: "{text.xs.fontSize}",
+      },
+      name: "BadgeFontSize",
+      attributes: {
+        category: "badge",
+        type: "font-size",
+      },
+      path: ["badge", "font-size"],
+    },
+    "font-weight": {
+      value: {
+        $type: "fontWeight",
+        $value: "500",
+      },
+      filePath: "src/component/badge.json",
+      isSource: true,
+      original: {
+        value: "{weight.medium}",
+      },
+      name: "BadgeFontWeight",
+      attributes: {
+        category: "badge",
+        type: "font-weight",
+      },
+      path: ["badge", "font-weight"],
+    },
+    "border-radius": {
+      value: {
+        $type: "dimension",
+        $value: "0.125rem",
+      },
+      filePath: "src/component/badge.json",
+      isSource: true,
+      original: {
+        value: "{radius.sm}",
+      },
+      name: "BadgeBorderRadius",
+      attributes: {
+        category: "badge",
+        type: "border-radius",
+      },
+      path: ["badge", "border-radius"],
+    },
+    "pill-border-radius": {
+      value: {
+        $type: "dimension",
+        $value: "9999px",
+      },
+      filePath: "src/component/badge.json",
+      isSource: true,
+      original: {
+        value: "{radius.full}",
+      },
+      name: "BadgePillBorderRadius",
+      attributes: {
+        category: "badge",
+        type: "pill-border-radius",
+      },
+      path: ["badge", "pill-border-radius"],
+    },
+  },
+  "bottom-nav": {
+    bg: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
+      },
+      filePath: "src/component/bottom-nav.json",
+      isSource: true,
+      original: {
+        value: "{color.bg.canvas}",
+      },
+      name: "BottomNavBg",
+      attributes: {
+        category: "bottom-nav",
+        type: "bg",
+      },
+      path: ["bottom-nav", "bg"],
+    },
+    color: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.28 0.03 250)",
+        },
+      },
+      filePath: "src/component/bottom-nav.json",
+      isSource: true,
+      original: {
+        value: "{color.fg.default}",
+      },
+      name: "BottomNavColor",
+      attributes: {
+        category: "bottom-nav",
+        type: "color",
+      },
+      path: ["bottom-nav", "color"],
+    },
+  },
+  breadcrumb: {
+    bg: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
+      },
+      filePath: "src/component/breadcrumb.json",
+      isSource: true,
+      original: {
+        value: "{color.bg.canvas}",
+      },
+      name: "BreadcrumbBg",
+      attributes: {
+        category: "breadcrumb",
+        type: "bg",
+      },
+      path: ["breadcrumb", "bg"],
+    },
+    color: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.28 0.03 250)",
+        },
+      },
+      filePath: "src/component/breadcrumb.json",
+      isSource: true,
+      original: {
+        value: "{color.fg.default}",
+      },
+      name: "BreadcrumbColor",
+      attributes: {
+        category: "breadcrumb",
+        type: "color",
+      },
+      path: ["breadcrumb", "color"],
     },
   },
   button: {
@@ -58,257 +370,92 @@ module.exports = {
       sm: {
         $type: "dimension",
         $value: "2rem",
-        filePath: "src/component/button.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "2rem",
-        },
-        name: "ButtonHeightSm",
-        attributes: {
-          category: "button",
-          type: "height",
-          item: "sm",
-        },
-        path: ["button", "height", "sm"],
       },
       md: {
         $type: "dimension",
         $value: "2.5rem",
-        filePath: "src/component/button.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "2.5rem",
-        },
-        name: "ButtonHeightMd",
-        attributes: {
-          category: "button",
-          type: "height",
-          item: "md",
-        },
-        path: ["button", "height", "md"],
       },
       lg: {
         $type: "dimension",
         $value: "3rem",
-        filePath: "src/component/button.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "3rem",
-        },
-        name: "ButtonHeightLg",
-        attributes: {
-          category: "button",
-          type: "height",
-          item: "lg",
-        },
-        path: ["button", "height", "lg"],
       },
     },
     px: {
       sm: {
         $type: "dimension",
         $value: "0.75rem",
-        filePath: "src/component/button.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "0.75rem",
-        },
-        name: "ButtonPxSm",
-        attributes: {
-          category: "button",
-          type: "px",
-          item: "sm",
-        },
-        path: ["button", "px", "sm"],
       },
       md: {
         $type: "dimension",
         $value: "1rem",
-        filePath: "src/component/button.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "1rem",
-        },
-        name: "ButtonPxMd",
-        attributes: {
-          category: "button",
-          type: "px",
-          item: "md",
-        },
-        path: ["button", "px", "md"],
       },
       lg: {
         $type: "dimension",
         $value: "1.5rem",
-        filePath: "src/component/button.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "1.5rem",
-        },
-        name: "ButtonPxLg",
-        attributes: {
-          category: "button",
-          type: "px",
-          item: "lg",
-        },
-        path: ["button", "px", "lg"],
       },
     },
     radius: {
       $type: "dimension",
-      $value: "0.375rem",
-      filePath: "src/component/button.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "dimension",
-        $value: "{radius.md}",
+        $value: "0.375rem",
       },
-      name: "ButtonRadius",
-      attributes: {
-        category: "button",
-        type: "radius",
-      },
-      path: ["button", "radius"],
     },
     "font-weight": {
       $type: "fontWeight",
-      $value: "500",
-      filePath: "src/component/button.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "fontWeight",
-        $value: "{weight.medium}",
+        $value: "500",
       },
-      name: "ButtonFontWeight",
-      attributes: {
-        category: "button",
-        type: "font-weight",
-      },
-      path: ["button", "font-weight"],
     },
   },
   card: {
     bg: {
       $type: "color",
-      $value: "#f8fbfc",
-      filePath: "src/component/card.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.bg.surface}",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
       },
-      name: "CardBg",
-      attributes: {
-        category: "card",
-        type: "bg",
-      },
-      path: ["card", "bg"],
     },
     border: {
       $type: "color",
-      $value: "oklch(0.92 0.01 250)",
-      filePath: "src/component/card.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.border.default}",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.92 0.01 250)",
+        },
       },
-      name: "CardBorder",
-      attributes: {
-        category: "card",
-        type: "border",
-      },
-      path: ["card", "border"],
     },
     radius: {
       $type: "dimension",
-      $value: "0.5rem",
-      filePath: "src/component/card.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "dimension",
-        $value: "{radius.lg}",
+        $value: "0.5rem",
       },
-      name: "CardRadius",
-      attributes: {
-        category: "card",
-        type: "radius",
-      },
-      path: ["card", "radius"],
     },
     shadow: {
       $type: "shadow",
-      $value: "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
-      filePath: "src/component/card.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "shadow",
-        $value: "{shadow.sm}",
+        $value: "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
       },
-      name: "CardShadow",
-      attributes: {
-        category: "card",
-        type: "shadow",
-      },
-      path: ["card", "shadow"],
     },
     p: {
       sm: {
         $type: "dimension",
         $value: "1rem",
-        filePath: "src/component/card.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "1rem",
-        },
-        name: "CardPSm",
-        attributes: {
-          category: "card",
-          type: "p",
-          item: "sm",
-        },
-        path: ["card", "p", "sm"],
       },
       md: {
         $type: "dimension",
         $value: "1.5rem",
-        filePath: "src/component/card.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "1.5rem",
-        },
-        name: "CardPMd",
-        attributes: {
-          category: "card",
-          type: "p",
-          item: "md",
-        },
-        path: ["card", "p", "md"],
       },
       lg: {
         $type: "dimension",
         $value: "2rem",
-        filePath: "src/component/card.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "2rem",
-        },
-        name: "CardPLg",
-        attributes: {
-          category: "card",
-          type: "p",
-          item: "lg",
-        },
-        path: ["card", "p", "lg"],
       },
     },
   },
@@ -316,284 +463,430 @@ module.exports = {
     size: {
       sm: {
         $value: "1rem",
-        filePath: "src/component/checkbox.json",
-        isSource: true,
-        original: {
-          $value: "1rem",
-        },
-        name: "CheckboxSizeSm",
-        attributes: {
-          category: "checkbox",
-          type: "size",
-          item: "sm",
-        },
-        path: ["checkbox", "size", "sm"],
       },
       md: {
         $value: "1.25rem",
-        filePath: "src/component/checkbox.json",
-        isSource: true,
-        original: {
-          $value: "1.25rem",
-        },
-        name: "CheckboxSizeMd",
-        attributes: {
-          category: "checkbox",
-          type: "size",
-          item: "md",
-        },
-        path: ["checkbox", "size", "md"],
       },
       lg: {
         $value: "1.5rem",
-        filePath: "src/component/checkbox.json",
-        isSource: true,
-        original: {
-          $value: "1.5rem",
-        },
-        name: "CheckboxSizeLg",
-        attributes: {
-          category: "checkbox",
-          type: "size",
-          item: "lg",
-        },
-        path: ["checkbox", "size", "lg"],
       },
     },
     bg: {
-      $value: "#f8fbfc",
-      filePath: "src/component/checkbox.json",
-      isSource: true,
-      original: {
-        $value: "{color.bg.canvas}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
       },
-      name: "CheckboxBg",
-      attributes: {
-        category: "checkbox",
-        type: "bg",
-      },
-      path: ["checkbox", "bg"],
     },
     border: {
-      $value: "oklch(0.92 0.01 250)",
-      filePath: "src/component/checkbox.json",
-      isSource: true,
-      original: {
-        $value: "{color.border.default}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.92 0.01 250)",
+        },
       },
-      name: "CheckboxBorder",
-      attributes: {
-        category: "checkbox",
-        type: "border",
-      },
-      path: ["checkbox", "border"],
     },
     radius: {
-      $value: "0.125rem",
-      filePath: "src/component/checkbox.json",
-      isSource: true,
-      original: {
-        $value: "{radius.sm}",
+      $value: {
+        $type: "dimension",
+        $value: "0.125rem",
       },
-      name: "CheckboxRadius",
-      attributes: {
-        category: "checkbox",
-        type: "radius",
-      },
-      path: ["checkbox", "radius"],
     },
     checked: {
       bg: {
-        $value: "#1d70b8",
-        filePath: "src/component/checkbox.json",
-        isSource: true,
-        original: {
-          $value: "{color.accent.bg}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "#1D70B8",
+          },
         },
-        name: "CheckboxCheckedBg",
-        attributes: {
-          category: "checkbox",
-          type: "checked",
-          item: "bg",
-        },
-        path: ["checkbox", "checked", "bg"],
       },
       border: {
-        $value: "#1d70b8",
-        filePath: "src/component/checkbox.json",
-        isSource: true,
-        original: {
-          $value: "{color.accent.bg}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "#1D70B8",
+          },
         },
-        name: "CheckboxCheckedBorder",
-        attributes: {
-          category: "checkbox",
-          type: "checked",
-          item: "border",
-        },
-        path: ["checkbox", "checked", "border"],
       },
       icon: {
-        $value: "#f8fbfc",
-        filePath: "src/component/checkbox.json",
-        isSource: true,
-        original: {
-          $value: "{color.fg.on-accent}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "#F8FBFC",
+          },
         },
-        name: "CheckboxCheckedIcon",
-        attributes: {
-          category: "checkbox",
-          type: "checked",
-          item: "icon",
-        },
-        path: ["checkbox", "checked", "icon"],
       },
     },
     "focus-ring": {
-      $value: "oklch(0.65 0.19 250)",
-      filePath: "src/component/checkbox.json",
-      isSource: true,
-      original: {
-        $value: "{color.border.focus}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.65 0.19 250)",
+        },
       },
-      name: "CheckboxFocusRing",
-      attributes: {
-        category: "checkbox",
-        type: "focus-ring",
-      },
-      path: ["checkbox", "focus-ring"],
     },
     disabled: {
       bg: {
-        $value: "oklch(0.96 0.01 250)",
-        filePath: "src/component/checkbox.json",
-        isSource: true,
-        original: {
-          $value: "{color.bg.muted}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "oklch(0.96 0.01 250)",
+          },
         },
-        name: "CheckboxDisabledBg",
-        attributes: {
-          category: "checkbox",
-          type: "disabled",
-          item: "bg",
-        },
-        path: ["checkbox", "disabled", "bg"],
       },
       border: {
-        $value: "oklch(0.96 0.01 250)",
-        filePath: "src/component/checkbox.json",
-        isSource: true,
-        original: {
-          $value: "{color.border.muted}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "oklch(0.96 0.01 250)",
+          },
         },
-        name: "CheckboxDisabledBorder",
-        attributes: {
-          category: "checkbox",
-          type: "disabled",
-          item: "border",
+      },
+    },
+  },
+  "color-picker": {
+    background: {
+      $type: "color",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
         },
-        path: ["checkbox", "disabled", "border"],
+      },
+    },
+    border: {
+      $type: "color",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.92 0.01 250)",
+        },
+      },
+    },
+    "border-focus": {
+      $type: "color",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.65 0.19 250)",
+        },
+      },
+    },
+    "border-radius": {
+      $type: "dimension",
+      $value: {
+        $type: "dimension",
+        $value: "0.375rem",
+      },
+    },
+  },
+  drawer: {
+    overlay: {
+      background: {
+        $value: {
+          $type: "color",
+          $value: "rgb(0 0 0 / 0.5)",
+        },
+      },
+    },
+    content: {
+      background: {
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "#F8FBFC",
+          },
+        },
+      },
+      border: {
+        $value: {
+          default: {
+            $type: "color",
+            $value: {
+              $type: "color",
+              $value: "oklch(0.92 0.01 250)",
+            },
+          },
+          muted: {
+            $type: "color",
+            $value: {
+              $type: "color",
+              $value: "oklch(0.96 0.01 250)",
+            },
+          },
+          strong: {
+            $type: "color",
+            $value: {
+              $type: "color",
+              $value: "oklch(0.87 0.02 250)",
+            },
+          },
+          focus: {
+            $type: "color",
+            $value: {
+              $type: "color",
+              $value: "oklch(0.65 0.19 250)",
+            },
+          },
+          inverse: {
+            $type: "color",
+            $value: {
+              $type: "color",
+              $value: "oklch(0.50 0.03 250)",
+            },
+          },
+        },
+      },
+      shadow: {
+        $value: {
+          $type: "shadow",
+          $value:
+            "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+        },
+      },
+    },
+  },
+  field: {
+    gap: {
+      value: {
+        $type: "dimension",
+        $value: "8px",
+      },
+      filePath: "src/component/field.json",
+      isSource: true,
+      original: {
+        value: "{space.2}",
+      },
+      name: "FieldGap",
+      attributes: {
+        category: "field",
+        type: "gap",
+      },
+      path: ["field", "gap"],
+    },
+    "hint-font-size": {
+      value: {
+        $type: "dimension",
+        $value: "0.75rem",
+      },
+      filePath: "src/component/field.json",
+      isSource: true,
+      original: {
+        value: "{text.xs.fontSize}",
+      },
+      name: "FieldHintFontSize",
+      attributes: {
+        category: "field",
+        type: "hint-font-size",
+      },
+      path: ["field", "hint-font-size"],
+    },
+    "hint-color": {
+      value: {
+        $type: "color",
+        $value: "oklch(0.71 0.03 250)",
+      },
+      filePath: "src/component/field.json",
+      isSource: true,
+      original: {
+        value: "{color.gray.500}",
+      },
+      name: "FieldHintColor",
+      attributes: {
+        category: "field",
+        type: "hint-color",
+      },
+      path: ["field", "hint-color"],
+    },
+    "hint-margin-top": {
+      value: {
+        $type: "dimension",
+        $value: "4px",
+      },
+      filePath: "src/component/field.json",
+      isSource: true,
+      original: {
+        value: "{space.1}",
+      },
+      name: "FieldHintMarginTop",
+      attributes: {
+        category: "field",
+        type: "hint-margin-top",
+      },
+      path: ["field", "hint-margin-top"],
+    },
+    "error-font-size": {
+      value: {
+        $type: "dimension",
+        $value: "0.75rem",
+      },
+      filePath: "src/component/field.json",
+      isSource: true,
+      original: {
+        value: "{text.xs.fontSize}",
+      },
+      name: "FieldErrorFontSize",
+      attributes: {
+        category: "field",
+        type: "error-font-size",
+      },
+      path: ["field", "error-font-size"],
+    },
+    "error-color": {
+      value: {
+        $type: "color",
+        $value: "oklch(0.65 0.19 15)",
+      },
+      filePath: "src/component/field.json",
+      isSource: true,
+      original: {
+        value: "{color.red.500}",
+      },
+      name: "FieldErrorColor",
+      attributes: {
+        category: "field",
+        type: "error-color",
+      },
+      path: ["field", "error-color"],
+    },
+    "error-margin-top": {
+      value: {
+        $type: "dimension",
+        $value: "4px",
+      },
+      filePath: "src/component/field.json",
+      isSource: true,
+      original: {
+        value: "{space.1}",
+      },
+      name: "FieldErrorMarginTop",
+      attributes: {
+        category: "field",
+        type: "error-margin-top",
+      },
+      path: ["field", "error-margin-top"],
+    },
+  },
+  "file-upload": {
+    background: {
+      $type: "color",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.96 0.01 250)",
+        },
+      },
+    },
+    "background-active": {
+      $type: "color",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
+      },
+    },
+    border: {
+      $type: "color",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.92 0.01 250)",
+        },
+      },
+    },
+    "border-active": {
+      $type: "color",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.65 0.19 250)",
+        },
+      },
+    },
+    "border-radius": {
+      $type: "dimension",
+      $value: {
+        $type: "dimension",
+        $value: "0.5rem",
+      },
+    },
+    padding: {
+      $type: "dimension",
+      $value: {
+        $type: "dimension",
+        $value: "24px",
       },
     },
   },
   footer: {
     bg: {
       $type: "color",
-      $value: "oklch(0.96 0.01 250)",
-      filePath: "src/component/footer.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.bg.surface-sunken}",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.96 0.01 250)",
+        },
       },
-      name: "FooterBg",
-      attributes: {
-        category: "footer",
-        type: "bg",
-      },
-      path: ["footer", "bg"],
     },
     border: {
       $type: "color",
-      $value: "oklch(0.92 0.01 250)",
-      filePath: "src/component/footer.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.border.default}",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.92 0.01 250)",
+        },
       },
-      name: "FooterBorder",
-      attributes: {
-        category: "footer",
-        type: "border",
-      },
-      path: ["footer", "border"],
     },
     p: {
       $type: "dimension",
       $value: "2rem",
-      filePath: "src/component/footer.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "2rem",
-      },
-      name: "FooterP",
-      attributes: {
-        category: "footer",
-        type: "p",
-      },
-      path: ["footer", "p"],
     },
   },
   header: {
     bg: {
       $type: "color",
-      $value: "#f8fbfc",
-      filePath: "src/component/header.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.bg.canvas}",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
       },
-      name: "HeaderBg",
-      attributes: {
-        category: "header",
-        type: "bg",
-      },
-      path: ["header", "bg"],
     },
     border: {
       $type: "color",
-      $value: "oklch(0.92 0.01 250)",
-      filePath: "src/component/header.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.border.default}",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.92 0.01 250)",
+        },
       },
-      name: "HeaderBorder",
-      attributes: {
-        category: "header",
-        type: "border",
-      },
-      path: ["header", "border"],
     },
     height: {
       $type: "dimension",
       $value: "4rem",
-      filePath: "src/component/header.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "4rem",
-      },
-      name: "HeaderHeight",
-      attributes: {
-        category: "header",
-        type: "height",
-      },
-      path: ["header", "height"],
     },
   },
   input: {
@@ -601,1523 +894,1302 @@ module.exports = {
       sm: {
         $type: "dimension",
         $value: "2rem",
-        filePath: "src/component/input.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "2rem",
-        },
-        name: "InputHeightSm",
-        attributes: {
-          category: "input",
-          type: "height",
-          item: "sm",
-        },
-        path: ["input", "height", "sm"],
       },
       md: {
         $type: "dimension",
         $value: "2.5rem",
-        filePath: "src/component/input.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "2.5rem",
-        },
-        name: "InputHeightMd",
-        attributes: {
-          category: "input",
-          type: "height",
-          item: "md",
-        },
-        path: ["input", "height", "md"],
       },
       lg: {
         $type: "dimension",
         $value: "3rem",
-        filePath: "src/component/input.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "3rem",
-        },
-        name: "InputHeightLg",
-        attributes: {
-          category: "input",
-          type: "height",
-          item: "lg",
-        },
-        path: ["input", "height", "lg"],
       },
     },
     px: {
       sm: {
         $type: "dimension",
         $value: "0.75rem",
-        filePath: "src/component/input.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "0.75rem",
-        },
-        name: "InputPxSm",
-        attributes: {
-          category: "input",
-          type: "px",
-          item: "sm",
-        },
-        path: ["input", "px", "sm"],
       },
       md: {
         $type: "dimension",
         $value: "1rem",
-        filePath: "src/component/input.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "1rem",
-        },
-        name: "InputPxMd",
-        attributes: {
-          category: "input",
-          type: "px",
-          item: "md",
-        },
-        path: ["input", "px", "md"],
       },
       lg: {
         $type: "dimension",
         $value: "1rem",
-        filePath: "src/component/input.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "1rem",
-        },
-        name: "InputPxLg",
-        attributes: {
-          category: "input",
-          type: "px",
-          item: "lg",
-        },
-        path: ["input", "px", "lg"],
       },
     },
     radius: {
       $type: "dimension",
-      $value: "0.375rem",
-      filePath: "src/component/input.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "dimension",
-        $value: "{radius.md}",
+        $value: "0.375rem",
       },
-      name: "InputRadius",
-      attributes: {
-        category: "input",
-        type: "radius",
-      },
-      path: ["input", "radius"],
     },
     bg: {
       $type: "color",
-      $value: "#f8fbfc",
-      filePath: "src/component/input.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.bg.canvas}",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
       },
-      name: "InputBg",
-      attributes: {
-        category: "input",
-        type: "bg",
-      },
-      path: ["input", "bg"],
     },
     border: {
       $type: "color",
-      $value: "oklch(0.92 0.01 250)",
-      filePath: "src/component/input.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.border.default}",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.92 0.01 250)",
+        },
       },
-      name: "InputBorder",
-      attributes: {
-        category: "input",
-        type: "border",
-      },
-      path: ["input", "border"],
     },
     "border-focus": {
       $type: "color",
-      $value: "oklch(0.65 0.19 250)",
-      filePath: "src/component/input.json",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.65 0.19 250)",
+        },
+      },
+    },
+  },
+  label: {
+    "font-size": {
+      value: {
+        $type: "dimension",
+        $value: "0.875rem",
+      },
+      filePath: "src/component/label.json",
       isSource: true,
       original: {
-        $type: "color",
-        $value: "{color.border.focus}",
+        value: "{text.sm.fontSize}",
       },
-      name: "InputBorderFocus",
+      name: "LabelFontSize",
       attributes: {
-        category: "input",
-        type: "border-focus",
+        category: "label",
+        type: "font-size",
       },
-      path: ["input", "border-focus"],
+      path: ["label", "font-size"],
+    },
+    "font-weight": {
+      value: {
+        $type: "fontWeight",
+        $value: "500",
+      },
+      filePath: "src/component/label.json",
+      isSource: true,
+      original: {
+        value: "{weight.medium}",
+      },
+      name: "LabelFontWeight",
+      attributes: {
+        category: "label",
+        type: "font-weight",
+      },
+      path: ["label", "font-weight"],
+    },
+    color: {
+      value: {
+        $type: "color",
+        $value: "oklch(0.28 0.03 250)",
+      },
+      filePath: "src/component/label.json",
+      isSource: true,
+      original: {
+        value: "{color.gray.900}",
+      },
+      name: "LabelColor",
+      attributes: {
+        category: "label",
+        type: "color",
+      },
+      path: ["label", "color"],
+    },
+    "margin-bottom": {
+      value: {
+        $type: "dimension",
+        $value: "4px",
+      },
+      filePath: "src/component/label.json",
+      isSource: true,
+      original: {
+        value: "{space.1}",
+      },
+      name: "LabelMarginBottom",
+      attributes: {
+        category: "label",
+        type: "margin-bottom",
+      },
+      path: ["label", "margin-bottom"],
+    },
+    "disabled-color": {
+      value: {
+        $type: "color",
+        $value: "oklch(0.79 0.02 250)",
+      },
+      filePath: "src/component/label.json",
+      isSource: true,
+      original: {
+        value: "{color.gray.400}",
+      },
+      name: "LabelDisabledColor",
+      attributes: {
+        category: "label",
+        type: "disabled-color",
+      },
+      path: ["label", "disabled-color"],
+    },
+    "required-color": {
+      value: {
+        $type: "color",
+        $value: "oklch(0.65 0.19 15)",
+      },
+      filePath: "src/component/label.json",
+      isSource: true,
+      original: {
+        value: "{color.red.500}",
+      },
+      name: "LabelRequiredColor",
+      attributes: {
+        category: "label",
+        type: "required-color",
+      },
+      path: ["label", "required-color"],
     },
   },
   menu: {
     bg: {
       $type: "color",
-      $value: "#f8fbfc",
-      filePath: "src/component/menu.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.bg.surface}",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
       },
-      name: "MenuBg",
-      attributes: {
-        category: "menu",
-        type: "bg",
-      },
-      path: ["menu", "bg"],
     },
     border: {
       $type: "color",
-      $value: "oklch(0.96 0.01 250)",
-      filePath: "src/component/menu.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.border.muted}",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.96 0.01 250)",
+        },
       },
-      name: "MenuBorder",
-      attributes: {
-        category: "menu",
-        type: "border",
-      },
-      path: ["menu", "border"],
     },
     radius: {
       $type: "dimension",
-      $value: "0.375rem",
-      filePath: "src/component/menu.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "dimension",
-        $value: "{radius.md}",
+        $value: "0.375rem",
       },
-      name: "MenuRadius",
-      attributes: {
-        category: "menu",
-        type: "radius",
-      },
-      path: ["menu", "radius"],
     },
     shadow: {
       $type: "shadow",
-      $value:
-        "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
-      filePath: "src/component/menu.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "shadow",
-        $value: "{shadow.md}",
+        $value:
+          "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
       },
-      name: "MenuShadow",
-      attributes: {
-        category: "menu",
-        type: "shadow",
-      },
-      path: ["menu", "shadow"],
     },
     "item-bg-hover": {
       $type: "color",
-      $value: "oklch(0.96 0.01 250)",
-      filePath: "src/component/menu.json",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.96 0.01 250)",
+        },
+      },
+    },
+  },
+  "mobile-nav": {
+    bg: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
+      },
+      filePath: "src/component/mobile-nav.json",
       isSource: true,
       original: {
-        $type: "color",
-        $value: "{color.bg.muted}",
+        value: "{color.bg.canvas}",
       },
-      name: "MenuItemBgHover",
+      name: "MobileNavBg",
       attributes: {
-        category: "menu",
-        type: "item-bg-hover",
+        category: "mobile-nav",
+        type: "bg",
       },
-      path: ["menu", "item-bg-hover"],
+      path: ["mobile-nav", "bg"],
+    },
+    color: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.28 0.03 250)",
+        },
+      },
+      filePath: "src/component/mobile-nav.json",
+      isSource: true,
+      original: {
+        value: "{color.fg.default}",
+      },
+      name: "MobileNavColor",
+      attributes: {
+        category: "mobile-nav",
+        type: "color",
+      },
+      path: ["mobile-nav", "color"],
     },
   },
   modal: {
     "overlay-bg": {
       $type: "color",
-      $value: "#000000",
-      filePath: "src/component/modal.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.bg.overlay}",
+        $value: "rgb(0 0 0 / 0.5)",
       },
-      name: "ModalOverlayBg",
-      attributes: {
-        category: "modal",
-        type: "overlay-bg",
-      },
-      path: ["modal", "overlay-bg"],
     },
     bg: {
       $type: "color",
-      $value: "#f8fbfc",
-      filePath: "src/component/modal.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.bg.surface}",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
       },
-      name: "ModalBg",
-      attributes: {
-        category: "modal",
-        type: "bg",
-      },
-      path: ["modal", "bg"],
     },
     radius: {
       $type: "dimension",
-      $value: "0.75rem",
-      filePath: "src/component/modal.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "dimension",
-        $value: "{radius.xl}",
+        $value: "0.75rem",
       },
-      name: "ModalRadius",
-      attributes: {
-        category: "modal",
-        type: "radius",
-      },
-      path: ["modal", "radius"],
     },
     shadow: {
       $type: "shadow",
-      $value:
-        "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
-      filePath: "src/component/modal.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "shadow",
-        $value: "{shadow.xl}",
+        $value:
+          "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
       },
-      name: "ModalShadow",
-      attributes: {
-        category: "modal",
-        type: "shadow",
-      },
-      path: ["modal", "shadow"],
     },
   },
   "number-input": {
     height: {
       sm: {
-        $value: "2rem",
-        filePath: "src/component/number-input.json",
-        isSource: true,
-        original: {
-          $value: "{input.height.sm}",
+        $value: {
+          $type: "dimension",
+          $value: "2rem",
         },
-        name: "NumberInputHeightSm",
-        attributes: {
-          category: "number-input",
-          type: "height",
-          item: "sm",
-        },
-        path: ["number-input", "height", "sm"],
       },
       md: {
-        $value: "2.5rem",
-        filePath: "src/component/number-input.json",
-        isSource: true,
-        original: {
-          $value: "{input.height.md}",
+        $value: {
+          $type: "dimension",
+          $value: "2.5rem",
         },
-        name: "NumberInputHeightMd",
-        attributes: {
-          category: "number-input",
-          type: "height",
-          item: "md",
-        },
-        path: ["number-input", "height", "md"],
       },
       lg: {
-        $value: "3rem",
-        filePath: "src/component/number-input.json",
-        isSource: true,
-        original: {
-          $value: "{input.height.lg}",
+        $value: {
+          $type: "dimension",
+          $value: "3rem",
         },
-        name: "NumberInputHeightLg",
-        attributes: {
-          category: "number-input",
-          type: "height",
-          item: "lg",
-        },
-        path: ["number-input", "height", "lg"],
       },
     },
     px: {
       sm: {
-        $value: "0.75rem",
-        filePath: "src/component/number-input.json",
-        isSource: true,
-        original: {
-          $value: "{input.px.sm}",
+        $value: {
+          $type: "dimension",
+          $value: "0.75rem",
         },
-        name: "NumberInputPxSm",
-        attributes: {
-          category: "number-input",
-          type: "px",
-          item: "sm",
-        },
-        path: ["number-input", "px", "sm"],
       },
       md: {
-        $value: "1rem",
-        filePath: "src/component/number-input.json",
-        isSource: true,
-        original: {
-          $value: "{input.px.md}",
+        $value: {
+          $type: "dimension",
+          $value: "1rem",
         },
-        name: "NumberInputPxMd",
-        attributes: {
-          category: "number-input",
-          type: "px",
-          item: "md",
-        },
-        path: ["number-input", "px", "md"],
       },
       lg: {
-        $value: "1rem",
-        filePath: "src/component/number-input.json",
-        isSource: true,
-        original: {
-          $value: "{input.px.lg}",
+        $value: {
+          $type: "dimension",
+          $value: "1rem",
         },
-        name: "NumberInputPxLg",
-        attributes: {
-          category: "number-input",
-          type: "px",
-          item: "lg",
-        },
-        path: ["number-input", "px", "lg"],
       },
     },
     radius: {
-      $value: "0.375rem",
-      filePath: "src/component/number-input.json",
-      isSource: true,
-      original: {
-        $value: "{radius.md}",
+      $value: {
+        $type: "dimension",
+        $value: "0.375rem",
       },
-      name: "NumberInputRadius",
-      attributes: {
-        category: "number-input",
-        type: "radius",
-      },
-      path: ["number-input", "radius"],
     },
     bg: {
-      $value: "#f8fbfc",
-      filePath: "src/component/number-input.json",
-      isSource: true,
-      original: {
-        $value: "{color.bg.canvas}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
       },
-      name: "NumberInputBg",
-      attributes: {
-        category: "number-input",
-        type: "bg",
-      },
-      path: ["number-input", "bg"],
     },
     border: {
-      $value: "oklch(0.92 0.01 250)",
-      filePath: "src/component/number-input.json",
-      isSource: true,
-      original: {
-        $value: "{color.border.default}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.92 0.01 250)",
+        },
       },
-      name: "NumberInputBorder",
-      attributes: {
-        category: "number-input",
-        type: "border",
-      },
-      path: ["number-input", "border"],
     },
     text: {
-      $value: "oklch(0.28 0.03 250)",
-      filePath: "src/component/number-input.json",
-      isSource: true,
-      original: {
-        $value: "{color.fg.default}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.28 0.03 250)",
+        },
       },
-      name: "NumberInputText",
-      attributes: {
-        category: "number-input",
-        type: "text",
-      },
-      path: ["number-input", "text"],
     },
     "focus-ring": {
-      $value: "oklch(0.65 0.19 250)",
-      filePath: "src/component/number-input.json",
-      isSource: true,
-      original: {
-        $value: "{color.border.focus}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.65 0.19 250)",
+        },
       },
-      name: "NumberInputFocusRing",
-      attributes: {
-        category: "number-input",
-        type: "focus-ring",
-      },
-      path: ["number-input", "focus-ring"],
     },
     disabled: {
       bg: {
-        $value: "oklch(0.96 0.01 250)",
-        filePath: "src/component/number-input.json",
-        isSource: true,
-        original: {
-          $value: "{color.bg.muted}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "oklch(0.96 0.01 250)",
+          },
         },
-        name: "NumberInputDisabledBg",
-        attributes: {
-          category: "number-input",
-          type: "disabled",
-          item: "bg",
-        },
-        path: ["number-input", "disabled", "bg"],
       },
       text: {
-        $value: "oklch(0.79 0.02 250)",
-        filePath: "src/component/number-input.json",
-        isSource: true,
-        original: {
-          $value: "{color.fg.disabled}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "oklch(0.79 0.02 250)",
+          },
         },
-        name: "NumberInputDisabledText",
-        attributes: {
-          category: "number-input",
-          type: "disabled",
-          item: "text",
-        },
-        path: ["number-input", "disabled", "text"],
       },
+    },
+  },
+  pagination: {
+    bg: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
+      },
+      filePath: "src/component/pagination.json",
+      isSource: true,
+      original: {
+        value: "{color.bg.canvas}",
+      },
+      name: "PaginationBg",
+      attributes: {
+        category: "pagination",
+        type: "bg",
+      },
+      path: ["pagination", "bg"],
+    },
+    color: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.28 0.03 250)",
+        },
+      },
+      filePath: "src/component/pagination.json",
+      isSource: true,
+      original: {
+        value: "{color.fg.default}",
+      },
+      name: "PaginationColor",
+      attributes: {
+        category: "pagination",
+        type: "color",
+      },
+      path: ["pagination", "color"],
     },
   },
   panel: {
     bg: {
       $type: "color",
-      $value: "#f8fbfc",
-      filePath: "src/component/panel.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.bg.surface}",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
       },
-      name: "PanelBg",
-      attributes: {
-        category: "panel",
-        type: "bg",
-      },
-      path: ["panel", "bg"],
     },
     shadow: {
       $type: "shadow",
-      $value: "0 25px 50px -12px rgb(0 0 0 / 0.25)",
-      filePath: "src/component/panel.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "shadow",
-        $value: "{shadow.2xl}",
+        $value: "0 25px 50px -12px rgb(0 0 0 / 0.25)",
       },
-      name: "PanelShadow",
-      attributes: {
-        category: "panel",
-        type: "shadow",
-      },
-      path: ["panel", "shadow"],
     },
     width: {
       $type: "dimension",
       $value: "24rem",
-      filePath: "src/component/panel.json",
-      isSource: true,
-      original: {
+    },
+  },
+  popover: {
+    bg: {
+      $type: "color",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
+      },
+    },
+    border: {
+      $type: "color",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.96 0.01 250)",
+        },
+      },
+    },
+    radius: {
+      $type: "dimension",
+      $value: {
         $type: "dimension",
-        $value: "24rem",
+        $value: "0.375rem",
       },
-      name: "PanelWidth",
-      attributes: {
-        category: "panel",
-        type: "width",
+    },
+    shadow: {
+      $type: "shadow",
+      $value: {
+        $type: "shadow",
+        $value:
+          "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
       },
-      path: ["panel", "width"],
     },
   },
   radio: {
     size: {
       sm: {
         $value: "1rem",
-        filePath: "src/component/radio.json",
-        isSource: true,
-        original: {
-          $value: "1rem",
-        },
-        name: "RadioSizeSm",
-        attributes: {
-          category: "radio",
-          type: "size",
-          item: "sm",
-        },
-        path: ["radio", "size", "sm"],
       },
       md: {
         $value: "1.25rem",
-        filePath: "src/component/radio.json",
-        isSource: true,
-        original: {
-          $value: "1.25rem",
-        },
-        name: "RadioSizeMd",
-        attributes: {
-          category: "radio",
-          type: "size",
-          item: "md",
-        },
-        path: ["radio", "size", "md"],
       },
       lg: {
         $value: "1.5rem",
-        filePath: "src/component/radio.json",
-        isSource: true,
-        original: {
-          $value: "1.5rem",
-        },
-        name: "RadioSizeLg",
-        attributes: {
-          category: "radio",
-          type: "size",
-          item: "lg",
-        },
-        path: ["radio", "size", "lg"],
       },
     },
     bg: {
-      $value: "#f8fbfc",
-      filePath: "src/component/radio.json",
-      isSource: true,
-      original: {
-        $value: "{color.bg.canvas}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
       },
-      name: "RadioBg",
-      attributes: {
-        category: "radio",
-        type: "bg",
-      },
-      path: ["radio", "bg"],
     },
     border: {
-      $value: "oklch(0.92 0.01 250)",
-      filePath: "src/component/radio.json",
-      isSource: true,
-      original: {
-        $value: "{color.border.default}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.92 0.01 250)",
+        },
       },
-      name: "RadioBorder",
-      attributes: {
-        category: "radio",
-        type: "border",
-      },
-      path: ["radio", "border"],
     },
     checked: {
       bg: {
-        $value: "#1d70b8",
-        filePath: "src/component/radio.json",
-        isSource: true,
-        original: {
-          $value: "{color.accent.bg}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "#1D70B8",
+          },
         },
-        name: "RadioCheckedBg",
-        attributes: {
-          category: "radio",
-          type: "checked",
-          item: "bg",
-        },
-        path: ["radio", "checked", "bg"],
       },
       border: {
-        $value: "#1d70b8",
-        filePath: "src/component/radio.json",
-        isSource: true,
-        original: {
-          $value: "{color.accent.bg}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "#1D70B8",
+          },
         },
-        name: "RadioCheckedBorder",
-        attributes: {
-          category: "radio",
-          type: "checked",
-          item: "border",
-        },
-        path: ["radio", "checked", "border"],
       },
       icon: {
-        $value: "#f8fbfc",
-        filePath: "src/component/radio.json",
-        isSource: true,
-        original: {
-          $value: "{color.fg.on-accent}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "#F8FBFC",
+          },
         },
-        name: "RadioCheckedIcon",
-        attributes: {
-          category: "radio",
-          type: "checked",
-          item: "icon",
-        },
-        path: ["radio", "checked", "icon"],
       },
     },
     "focus-ring": {
-      $value: "oklch(0.65 0.19 250)",
-      filePath: "src/component/radio.json",
-      isSource: true,
-      original: {
-        $value: "{color.border.focus}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.65 0.19 250)",
+        },
       },
-      name: "RadioFocusRing",
-      attributes: {
-        category: "radio",
-        type: "focus-ring",
-      },
-      path: ["radio", "focus-ring"],
     },
     disabled: {
       bg: {
-        $value: "oklch(0.96 0.01 250)",
-        filePath: "src/component/radio.json",
-        isSource: true,
-        original: {
-          $value: "{color.bg.muted}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "oklch(0.96 0.01 250)",
+          },
         },
-        name: "RadioDisabledBg",
-        attributes: {
-          category: "radio",
-          type: "disabled",
-          item: "bg",
-        },
-        path: ["radio", "disabled", "bg"],
       },
       border: {
-        $value: "oklch(0.96 0.01 250)",
-        filePath: "src/component/radio.json",
-        isSource: true,
-        original: {
-          $value: "{color.border.muted}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "oklch(0.96 0.01 250)",
+          },
         },
-        name: "RadioDisabledBorder",
-        attributes: {
-          category: "radio",
-          type: "disabled",
-          item: "border",
-        },
-        path: ["radio", "disabled", "border"],
       },
     },
   },
   "search-input": {
     height: {
       sm: {
-        $value: "2rem",
-        filePath: "src/component/search-input.json",
-        isSource: true,
-        original: {
-          $value: "{input.height.sm}",
+        $value: {
+          $type: "dimension",
+          $value: "2rem",
         },
-        name: "SearchInputHeightSm",
-        attributes: {
-          category: "search-input",
-          type: "height",
-          item: "sm",
-        },
-        path: ["search-input", "height", "sm"],
       },
       md: {
-        $value: "2.5rem",
-        filePath: "src/component/search-input.json",
-        isSource: true,
-        original: {
-          $value: "{input.height.md}",
+        $value: {
+          $type: "dimension",
+          $value: "2.5rem",
         },
-        name: "SearchInputHeightMd",
-        attributes: {
-          category: "search-input",
-          type: "height",
-          item: "md",
-        },
-        path: ["search-input", "height", "md"],
       },
       lg: {
-        $value: "3rem",
-        filePath: "src/component/search-input.json",
-        isSource: true,
-        original: {
-          $value: "{input.height.lg}",
+        $value: {
+          $type: "dimension",
+          $value: "3rem",
         },
-        name: "SearchInputHeightLg",
-        attributes: {
-          category: "search-input",
-          type: "height",
-          item: "lg",
-        },
-        path: ["search-input", "height", "lg"],
       },
     },
     px: {
       sm: {
-        $value: "0.75rem",
-        filePath: "src/component/search-input.json",
-        isSource: true,
-        original: {
-          $value: "{input.px.sm}",
+        $value: {
+          $type: "dimension",
+          $value: "0.75rem",
         },
-        name: "SearchInputPxSm",
-        attributes: {
-          category: "search-input",
-          type: "px",
-          item: "sm",
-        },
-        path: ["search-input", "px", "sm"],
       },
       md: {
-        $value: "1rem",
-        filePath: "src/component/search-input.json",
-        isSource: true,
-        original: {
-          $value: "{input.px.md}",
+        $value: {
+          $type: "dimension",
+          $value: "1rem",
         },
-        name: "SearchInputPxMd",
-        attributes: {
-          category: "search-input",
-          type: "px",
-          item: "md",
-        },
-        path: ["search-input", "px", "md"],
       },
       lg: {
-        $value: "1rem",
-        filePath: "src/component/search-input.json",
-        isSource: true,
-        original: {
-          $value: "{input.px.lg}",
+        $value: {
+          $type: "dimension",
+          $value: "1rem",
         },
-        name: "SearchInputPxLg",
-        attributes: {
-          category: "search-input",
-          type: "px",
-          item: "lg",
-        },
-        path: ["search-input", "px", "lg"],
       },
     },
     radius: {
-      $value: "0.375rem",
-      filePath: "src/component/search-input.json",
-      isSource: true,
-      original: {
-        $value: "{radius.md}",
+      $value: {
+        $type: "dimension",
+        $value: "0.375rem",
       },
-      name: "SearchInputRadius",
-      attributes: {
-        category: "search-input",
-        type: "radius",
-      },
-      path: ["search-input", "radius"],
     },
     bg: {
-      $value: "#f8fbfc",
-      filePath: "src/component/search-input.json",
-      isSource: true,
-      original: {
-        $value: "{color.bg.canvas}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
       },
-      name: "SearchInputBg",
-      attributes: {
-        category: "search-input",
-        type: "bg",
-      },
-      path: ["search-input", "bg"],
     },
     border: {
-      $value: "oklch(0.92 0.01 250)",
-      filePath: "src/component/search-input.json",
-      isSource: true,
-      original: {
-        $value: "{color.border.default}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.92 0.01 250)",
+        },
       },
-      name: "SearchInputBorder",
-      attributes: {
-        category: "search-input",
-        type: "border",
-      },
-      path: ["search-input", "border"],
     },
     text: {
-      $value: "oklch(0.28 0.03 250)",
-      filePath: "src/component/search-input.json",
-      isSource: true,
-      original: {
-        $value: "{color.fg.default}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.28 0.03 250)",
+        },
       },
-      name: "SearchInputText",
-      attributes: {
-        category: "search-input",
-        type: "text",
-      },
-      path: ["search-input", "text"],
     },
     "focus-ring": {
-      $value: "oklch(0.65 0.19 250)",
-      filePath: "src/component/search-input.json",
-      isSource: true,
-      original: {
-        $value: "{color.border.focus}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.65 0.19 250)",
+        },
       },
-      name: "SearchInputFocusRing",
-      attributes: {
-        category: "search-input",
-        type: "focus-ring",
-      },
-      path: ["search-input", "focus-ring"],
     },
     disabled: {
       bg: {
-        $value: "oklch(0.96 0.01 250)",
-        filePath: "src/component/search-input.json",
-        isSource: true,
-        original: {
-          $value: "{color.bg.muted}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "oklch(0.96 0.01 250)",
+          },
         },
-        name: "SearchInputDisabledBg",
-        attributes: {
-          category: "search-input",
-          type: "disabled",
-          item: "bg",
-        },
-        path: ["search-input", "disabled", "bg"],
       },
       text: {
-        $value: "oklch(0.79 0.02 250)",
-        filePath: "src/component/search-input.json",
-        isSource: true,
-        original: {
-          $value: "{color.fg.disabled}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "oklch(0.79 0.02 250)",
+          },
         },
-        name: "SearchInputDisabledText",
-        attributes: {
-          category: "search-input",
-          type: "disabled",
-          item: "text",
-        },
-        path: ["search-input", "disabled", "text"],
       },
     },
   },
   select: {
     height: {
       sm: {
-        $value: "2rem",
-        filePath: "src/component/select.json",
-        isSource: true,
-        original: {
-          $value: "{input.height.sm}",
+        $value: {
+          $type: "dimension",
+          $value: "2rem",
         },
-        name: "SelectHeightSm",
-        attributes: {
-          category: "select",
-          type: "height",
-          item: "sm",
-        },
-        path: ["select", "height", "sm"],
       },
       md: {
-        $value: "2.5rem",
-        filePath: "src/component/select.json",
-        isSource: true,
-        original: {
-          $value: "{input.height.md}",
+        $value: {
+          $type: "dimension",
+          $value: "2.5rem",
         },
-        name: "SelectHeightMd",
-        attributes: {
-          category: "select",
-          type: "height",
-          item: "md",
-        },
-        path: ["select", "height", "md"],
       },
       lg: {
-        $value: "3rem",
-        filePath: "src/component/select.json",
-        isSource: true,
-        original: {
-          $value: "{input.height.lg}",
+        $value: {
+          $type: "dimension",
+          $value: "3rem",
         },
-        name: "SelectHeightLg",
-        attributes: {
-          category: "select",
-          type: "height",
-          item: "lg",
-        },
-        path: ["select", "height", "lg"],
       },
     },
     px: {
       sm: {
-        $value: "0.75rem",
-        filePath: "src/component/select.json",
-        isSource: true,
-        original: {
-          $value: "{input.px.sm}",
+        $value: {
+          $type: "dimension",
+          $value: "0.75rem",
         },
-        name: "SelectPxSm",
-        attributes: {
-          category: "select",
-          type: "px",
-          item: "sm",
-        },
-        path: ["select", "px", "sm"],
       },
       md: {
-        $value: "1rem",
-        filePath: "src/component/select.json",
-        isSource: true,
-        original: {
-          $value: "{input.px.md}",
+        $value: {
+          $type: "dimension",
+          $value: "1rem",
         },
-        name: "SelectPxMd",
-        attributes: {
-          category: "select",
-          type: "px",
-          item: "md",
-        },
-        path: ["select", "px", "md"],
       },
       lg: {
-        $value: "1rem",
-        filePath: "src/component/select.json",
-        isSource: true,
-        original: {
-          $value: "{input.px.lg}",
+        $value: {
+          $type: "dimension",
+          $value: "1rem",
         },
-        name: "SelectPxLg",
-        attributes: {
-          category: "select",
-          type: "px",
-          item: "lg",
-        },
-        path: ["select", "px", "lg"],
       },
     },
     radius: {
-      $value: "0.375rem",
-      filePath: "src/component/select.json",
-      isSource: true,
-      original: {
-        $value: "{radius.md}",
+      $value: {
+        $type: "dimension",
+        $value: "0.375rem",
       },
-      name: "SelectRadius",
-      attributes: {
-        category: "select",
-        type: "radius",
-      },
-      path: ["select", "radius"],
     },
     bg: {
-      $value: "#f8fbfc",
-      filePath: "src/component/select.json",
-      isSource: true,
-      original: {
-        $value: "{color.bg.canvas}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
       },
-      name: "SelectBg",
-      attributes: {
-        category: "select",
-        type: "bg",
-      },
-      path: ["select", "bg"],
     },
     border: {
-      $value: "oklch(0.92 0.01 250)",
-      filePath: "src/component/select.json",
-      isSource: true,
-      original: {
-        $value: "{color.border.default}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.92 0.01 250)",
+        },
       },
-      name: "SelectBorder",
-      attributes: {
-        category: "select",
-        type: "border",
-      },
-      path: ["select", "border"],
     },
     text: {
-      $value: "oklch(0.28 0.03 250)",
-      filePath: "src/component/select.json",
-      isSource: true,
-      original: {
-        $value: "{color.fg.default}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.28 0.03 250)",
+        },
       },
-      name: "SelectText",
-      attributes: {
-        category: "select",
-        type: "text",
-      },
-      path: ["select", "text"],
     },
     "focus-ring": {
-      $value: "oklch(0.65 0.19 250)",
-      filePath: "src/component/select.json",
-      isSource: true,
-      original: {
-        $value: "{color.border.focus}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.65 0.19 250)",
+        },
       },
-      name: "SelectFocusRing",
-      attributes: {
-        category: "select",
-        type: "focus-ring",
-      },
-      path: ["select", "focus-ring"],
     },
     disabled: {
       bg: {
-        $value: "oklch(0.96 0.01 250)",
-        filePath: "src/component/select.json",
-        isSource: true,
-        original: {
-          $value: "{color.bg.muted}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "oklch(0.96 0.01 250)",
+          },
         },
-        name: "SelectDisabledBg",
-        attributes: {
-          category: "select",
-          type: "disabled",
-          item: "bg",
-        },
-        path: ["select", "disabled", "bg"],
       },
       text: {
-        $value: "oklch(0.79 0.02 250)",
-        filePath: "src/component/select.json",
-        isSource: true,
-        original: {
-          $value: "{color.fg.disabled}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "oklch(0.79 0.02 250)",
+          },
         },
-        name: "SelectDisabledText",
-        attributes: {
-          category: "select",
-          type: "disabled",
-          item: "text",
-        },
-        path: ["select", "disabled", "text"],
       },
+    },
+  },
+  sidebar: {
+    bg: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
+      },
+      filePath: "src/component/sidebar.json",
+      isSource: true,
+      original: {
+        value: "{color.bg.canvas}",
+      },
+      name: "SidebarBg",
+      attributes: {
+        category: "sidebar",
+        type: "bg",
+      },
+      path: ["sidebar", "bg"],
+    },
+    color: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.28 0.03 250)",
+        },
+      },
+      filePath: "src/component/sidebar.json",
+      isSource: true,
+      original: {
+        value: "{color.fg.default}",
+      },
+      name: "SidebarColor",
+      attributes: {
+        category: "sidebar",
+        type: "color",
+      },
+      path: ["sidebar", "color"],
+    },
+  },
+  "skip-link": {
+    bg: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
+      },
+      filePath: "src/component/skip-link.json",
+      isSource: true,
+      original: {
+        value: "{color.bg.canvas}",
+      },
+      name: "SkipLinkBg",
+      attributes: {
+        category: "skip-link",
+        type: "bg",
+      },
+      path: ["skip-link", "bg"],
+    },
+    color: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.28 0.03 250)",
+        },
+      },
+      filePath: "src/component/skip-link.json",
+      isSource: true,
+      original: {
+        value: "{color.fg.default}",
+      },
+      name: "SkipLinkColor",
+      attributes: {
+        category: "skip-link",
+        type: "color",
+      },
+      path: ["skip-link", "color"],
+    },
+  },
+  slider: {
+    track: {
+      bg: {
+        $value: {
+          $type: "color",
+          $value: "oklch(0.87 0.02 250)",
+        },
+        $type: "color",
+      },
+      height: {
+        $value: "4px",
+        $type: "dimension",
+      },
+      radius: {
+        $value: {
+          $type: "dimension",
+          $value: "9999px",
+        },
+        $type: "dimension",
+      },
+    },
+    fill: {
+      bg: {
+        $value: {
+          $type: "color",
+          $value: "oklch(0.65 0.19 250)",
+        },
+        $type: "color",
+      },
+    },
+    thumb: {
+      bg: {
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
+        $type: "color",
+      },
+      border: {
+        $value: {
+          $type: "color",
+          $value: "oklch(0.65 0.19 250)",
+        },
+        $type: "color",
+      },
+      size: {
+        $value: "20px",
+        $type: "dimension",
+      },
+      shadow: {
+        $value: {
+          $type: "shadow",
+          $value:
+            "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+        },
+        $type: "shadow",
+      },
+      focus: {
+        ring: {
+          $value: {
+            $type: "color",
+            $value: "oklch(0.89 0.07 250)",
+          },
+          $type: "color",
+        },
+      },
+    },
+  },
+  stepper: {
+    bg: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
+      },
+      filePath: "src/component/stepper.json",
+      isSource: true,
+      original: {
+        value: "{color.bg.canvas}",
+      },
+      name: "StepperBg",
+      attributes: {
+        category: "stepper",
+        type: "bg",
+      },
+      path: ["stepper", "bg"],
+    },
+    color: {
+      value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.28 0.03 250)",
+        },
+      },
+      filePath: "src/component/stepper.json",
+      isSource: true,
+      original: {
+        value: "{color.fg.default}",
+      },
+      name: "StepperColor",
+      attributes: {
+        category: "stepper",
+        type: "color",
+      },
+      path: ["stepper", "color"],
     },
   },
   switch: {
     width: {
       sm: {
         $value: "1.75rem",
-        filePath: "src/component/switch.json",
-        isSource: true,
-        original: {
-          $value: "1.75rem",
-        },
-        name: "SwitchWidthSm",
-        attributes: {
-          category: "switch",
-          type: "width",
-          item: "sm",
-        },
-        path: ["switch", "width", "sm"],
       },
       md: {
         $value: "2.25rem",
-        filePath: "src/component/switch.json",
-        isSource: true,
-        original: {
-          $value: "2.25rem",
-        },
-        name: "SwitchWidthMd",
-        attributes: {
-          category: "switch",
-          type: "width",
-          item: "md",
-        },
-        path: ["switch", "width", "md"],
       },
       lg: {
         $value: "2.75rem",
-        filePath: "src/component/switch.json",
-        isSource: true,
-        original: {
-          $value: "2.75rem",
-        },
-        name: "SwitchWidthLg",
-        attributes: {
-          category: "switch",
-          type: "width",
-          item: "lg",
-        },
-        path: ["switch", "width", "lg"],
       },
     },
     height: {
       sm: {
         $value: "1rem",
-        filePath: "src/component/switch.json",
-        isSource: true,
-        original: {
-          $value: "1rem",
-        },
-        name: "SwitchHeightSm",
-        attributes: {
-          category: "switch",
-          type: "height",
-          item: "sm",
-        },
-        path: ["switch", "height", "sm"],
       },
       md: {
         $value: "1.25rem",
-        filePath: "src/component/switch.json",
-        isSource: true,
-        original: {
-          $value: "1.25rem",
-        },
-        name: "SwitchHeightMd",
-        attributes: {
-          category: "switch",
-          type: "height",
-          item: "md",
-        },
-        path: ["switch", "height", "md"],
       },
       lg: {
         $value: "1.5rem",
-        filePath: "src/component/switch.json",
-        isSource: true,
-        original: {
-          $value: "1.5rem",
-        },
-        name: "SwitchHeightLg",
-        attributes: {
-          category: "switch",
-          type: "height",
-          item: "lg",
-        },
-        path: ["switch", "height", "lg"],
       },
     },
     "thumb-size": {
       sm: {
         $value: "0.75rem",
-        filePath: "src/component/switch.json",
-        isSource: true,
-        original: {
-          $value: "0.75rem",
-        },
-        name: "SwitchThumbSizeSm",
-        attributes: {
-          category: "switch",
-          type: "thumb-size",
-          item: "sm",
-        },
-        path: ["switch", "thumb-size", "sm"],
       },
       md: {
         $value: "1rem",
-        filePath: "src/component/switch.json",
-        isSource: true,
-        original: {
-          $value: "1rem",
-        },
-        name: "SwitchThumbSizeMd",
-        attributes: {
-          category: "switch",
-          type: "thumb-size",
-          item: "md",
-        },
-        path: ["switch", "thumb-size", "md"],
       },
       lg: {
         $value: "1.25rem",
-        filePath: "src/component/switch.json",
-        isSource: true,
-        original: {
-          $value: "1.25rem",
-        },
-        name: "SwitchThumbSizeLg",
-        attributes: {
-          category: "switch",
-          type: "thumb-size",
-          item: "lg",
-        },
-        path: ["switch", "thumb-size", "lg"],
       },
     },
     bg: {
-      $value: "oklch(0.96 0.01 250)",
-      filePath: "src/component/switch.json",
-      isSource: true,
-      original: {
-        $value: "{color.bg.muted}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.96 0.01 250)",
+        },
       },
-      name: "SwitchBg",
-      attributes: {
-        category: "switch",
-        type: "bg",
-      },
-      path: ["switch", "bg"],
     },
     checked: {
       bg: {
-        $value: "#1d70b8",
-        filePath: "src/component/switch.json",
-        isSource: true,
-        original: {
-          $value: "{color.accent.bg}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "#1D70B8",
+          },
         },
-        name: "SwitchCheckedBg",
-        attributes: {
-          category: "switch",
-          type: "checked",
-          item: "bg",
-        },
-        path: ["switch", "checked", "bg"],
       },
     },
     "thumb-bg": {
-      $value: "#f8fbfc",
-      filePath: "src/component/switch.json",
-      isSource: true,
-      original: {
-        $value: "{color.bg.canvas}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
       },
-      name: "SwitchThumbBg",
-      attributes: {
-        category: "switch",
-        type: "thumb-bg",
-      },
-      path: ["switch", "thumb-bg"],
     },
     "focus-ring": {
-      $value: "oklch(0.65 0.19 250)",
-      filePath: "src/component/switch.json",
-      isSource: true,
-      original: {
-        $value: "{color.border.focus}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.65 0.19 250)",
+        },
       },
-      name: "SwitchFocusRing",
-      attributes: {
-        category: "switch",
-        type: "focus-ring",
-      },
-      path: ["switch", "focus-ring"],
     },
     disabled: {
       bg: {
-        $value: "oklch(0.96 0.01 250)",
-        filePath: "src/component/switch.json",
-        isSource: true,
-        original: {
-          $value: "{color.bg.muted}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "oklch(0.96 0.01 250)",
+          },
         },
-        name: "SwitchDisabledBg",
-        attributes: {
-          category: "switch",
-          type: "disabled",
-          item: "bg",
-        },
-        path: ["switch", "disabled", "bg"],
       },
     },
   },
   tabs: {
     border: {
       $type: "color",
-      $value: "oklch(0.92 0.01 250)",
-      filePath: "src/component/tabs.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.border.default}",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.92 0.01 250)",
+        },
       },
-      name: "TabsBorder",
-      attributes: {
-        category: "tabs",
-        type: "border",
-      },
-      path: ["tabs", "border"],
     },
     "active-border": {
       $type: "color",
-      $value: "#1d70b8",
-      filePath: "src/component/tabs.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.accent.bg}",
+        $value: {
+          $type: "color",
+          $value: "#1D70B8",
+        },
       },
-      name: "TabsActiveBorder",
-      attributes: {
-        category: "tabs",
-        type: "active-border",
-      },
-      path: ["tabs", "active-border"],
     },
     "active-color": {
       $type: "color",
-      $value: "#1d70b8",
-      filePath: "src/component/tabs.json",
-      isSource: true,
-      original: {
+      $value: {
         $type: "color",
-        $value: "{color.accent.bg}",
+        $value: {
+          $type: "color",
+          $value: "#1D70B8",
+        },
       },
-      name: "TabsActiveColor",
-      attributes: {
-        category: "tabs",
-        type: "active-color",
-      },
-      path: ["tabs", "active-color"],
     },
     "inactive-color": {
       $type: "color",
-      $value: "oklch(0.60 0.03 250)",
-      filePath: "src/component/tabs.json",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.60 0.03 250)",
+        },
+      },
+    },
+  },
+  tag: {
+    "padding-x": {
+      value: {
+        $type: "dimension",
+        $value: "12px",
+      },
+      filePath: "src/component/tag.json",
       isSource: true,
       original: {
-        $type: "color",
-        $value: "{color.fg.muted}",
+        value: "{space.3}",
       },
-      name: "TabsInactiveColor",
+      name: "TagPaddingX",
       attributes: {
-        category: "tabs",
-        type: "inactive-color",
+        category: "tag",
+        type: "padding-x",
       },
-      path: ["tabs", "inactive-color"],
+      path: ["tag", "padding-x"],
+    },
+    "padding-y": {
+      value: {
+        $type: "dimension",
+        $value: "4px",
+      },
+      filePath: "src/component/tag.json",
+      isSource: true,
+      original: {
+        value: "{space.1}",
+      },
+      name: "TagPaddingY",
+      attributes: {
+        category: "tag",
+        type: "padding-y",
+      },
+      path: ["tag", "padding-y"],
+    },
+    "font-size": {
+      value: {
+        $type: "dimension",
+        $value: "0.875rem",
+      },
+      filePath: "src/component/tag.json",
+      isSource: true,
+      original: {
+        value: "{text.sm.fontSize}",
+      },
+      name: "TagFontSize",
+      attributes: {
+        category: "tag",
+        type: "font-size",
+      },
+      path: ["tag", "font-size"],
+    },
+    "font-weight": {
+      value: {
+        $type: "fontWeight",
+        $value: "400",
+      },
+      filePath: "src/component/tag.json",
+      isSource: true,
+      original: {
+        value: "{weight.normal}",
+      },
+      name: "TagFontWeight",
+      attributes: {
+        category: "tag",
+        type: "font-weight",
+      },
+      path: ["tag", "font-weight"],
+    },
+    "border-radius": {
+      value: {
+        $type: "dimension",
+        $value: "0.375rem",
+      },
+      filePath: "src/component/tag.json",
+      isSource: true,
+      original: {
+        value: "{radius.md}",
+      },
+      name: "TagBorderRadius",
+      attributes: {
+        category: "tag",
+        type: "border-radius",
+      },
+      path: ["tag", "border-radius"],
     },
   },
   textarea: {
     bg: {
-      $value: "#f8fbfc",
-      filePath: "src/component/textarea.json",
-      isSource: true,
-      original: {
-        $value: "{color.bg.canvas}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
       },
-      name: "TextareaBg",
-      attributes: {
-        category: "textarea",
-        type: "bg",
-      },
-      path: ["textarea", "bg"],
     },
     border: {
-      $value: "oklch(0.92 0.01 250)",
-      filePath: "src/component/textarea.json",
-      isSource: true,
-      original: {
-        $value: "{color.border.default}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.92 0.01 250)",
+        },
       },
-      name: "TextareaBorder",
-      attributes: {
-        category: "textarea",
-        type: "border",
-      },
-      path: ["textarea", "border"],
     },
     text: {
-      $value: "oklch(0.28 0.03 250)",
-      filePath: "src/component/textarea.json",
-      isSource: true,
-      original: {
-        $value: "{color.fg.default}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.28 0.03 250)",
+        },
       },
-      name: "TextareaText",
-      attributes: {
-        category: "textarea",
-        type: "text",
-      },
-      path: ["textarea", "text"],
     },
     radius: {
-      $value: "0.375rem",
-      filePath: "src/component/textarea.json",
-      isSource: true,
-      original: {
-        $value: "{radius.md}",
+      $value: {
+        $type: "dimension",
+        $value: "0.375rem",
       },
-      name: "TextareaRadius",
-      attributes: {
-        category: "textarea",
-        type: "radius",
-      },
-      path: ["textarea", "radius"],
     },
     "focus-ring": {
-      $value: "oklch(0.65 0.19 250)",
-      filePath: "src/component/textarea.json",
-      isSource: true,
-      original: {
-        $value: "{color.border.focus}",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.65 0.19 250)",
+        },
       },
-      name: "TextareaFocusRing",
-      attributes: {
-        category: "textarea",
-        type: "focus-ring",
-      },
-      path: ["textarea", "focus-ring"],
     },
     disabled: {
       bg: {
-        $value: "oklch(0.96 0.01 250)",
-        filePath: "src/component/textarea.json",
-        isSource: true,
-        original: {
-          $value: "{color.bg.muted}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "oklch(0.96 0.01 250)",
+          },
         },
-        name: "TextareaDisabledBg",
-        attributes: {
-          category: "textarea",
-          type: "disabled",
-          item: "bg",
-        },
-        path: ["textarea", "disabled", "bg"],
       },
       text: {
-        $value: "oklch(0.79 0.02 250)",
-        filePath: "src/component/textarea.json",
-        isSource: true,
-        original: {
-          $value: "{color.fg.disabled}",
+        $value: {
+          $type: "color",
+          $value: {
+            $type: "color",
+            $value: "oklch(0.79 0.02 250)",
+          },
         },
-        name: "TextareaDisabledText",
-        attributes: {
-          category: "textarea",
-          type: "disabled",
-          item: "text",
+      },
+    },
+  },
+  tooltip: {
+    bg: {
+      $type: "color",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "oklch(0.28 0.03 250)",
         },
-        path: ["textarea", "disabled", "text"],
+      },
+    },
+    text: {
+      $type: "color",
+      $value: {
+        $type: "color",
+        $value: {
+          $type: "color",
+          $value: "#F8FBFC",
+        },
+      },
+    },
+    radius: {
+      $type: "dimension",
+      $value: {
+        $type: "dimension",
+        $value: "0.125rem",
+      },
+    },
+    shadow: {
+      $type: "shadow",
+      $value: {
+        $type: "shadow",
+        $value: "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
       },
     },
   },
@@ -2125,3324 +2197,1016 @@ module.exports = {
     gray: {
       50: {
         $type: "color",
-        $value: "#f8fbfc",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "#F8FBFC",
-        },
-        name: "ColorGray50",
-        attributes: {
-          category: "color",
-          type: "gray",
-          item: "50",
-        },
-        path: ["color", "gray", "50"],
+        $value: "#F8FBFC",
       },
       100: {
         $type: "color",
         $value: "oklch(0.96 0.01 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.96 0.01 250)",
-        },
-        name: "ColorGray100",
-        attributes: {
-          category: "color",
-          type: "gray",
-          item: "100",
-        },
-        path: ["color", "gray", "100"],
       },
       200: {
         $type: "color",
         $value: "oklch(0.92 0.01 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.92 0.01 250)",
-        },
-        name: "ColorGray200",
-        attributes: {
-          category: "color",
-          type: "gray",
-          item: "200",
-        },
-        path: ["color", "gray", "200"],
       },
       300: {
         $type: "color",
         $value: "oklch(0.87 0.02 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.87 0.02 250)",
-        },
-        name: "ColorGray300",
-        attributes: {
-          category: "color",
-          type: "gray",
-          item: "300",
-        },
-        path: ["color", "gray", "300"],
       },
       400: {
         $type: "color",
         $value: "oklch(0.79 0.02 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.79 0.02 250)",
-        },
-        name: "ColorGray400",
-        attributes: {
-          category: "color",
-          type: "gray",
-          item: "400",
-        },
-        path: ["color", "gray", "400"],
       },
       500: {
         $type: "color",
         $value: "oklch(0.71 0.03 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.71 0.03 250)",
-        },
-        name: "ColorGray500",
-        attributes: {
-          category: "color",
-          type: "gray",
-          item: "500",
-        },
-        path: ["color", "gray", "500"],
       },
       600: {
         $type: "color",
         $value: "oklch(0.60 0.03 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.60 0.03 250)",
-        },
-        name: "ColorGray600",
-        attributes: {
-          category: "color",
-          type: "gray",
-          item: "600",
-        },
-        path: ["color", "gray", "600"],
       },
       700: {
         $type: "color",
         $value: "oklch(0.50 0.03 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.50 0.03 250)",
-        },
-        name: "ColorGray700",
-        attributes: {
-          category: "color",
-          type: "gray",
-          item: "700",
-        },
-        path: ["color", "gray", "700"],
       },
       800: {
         $type: "color",
         $value: "oklch(0.39 0.03 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.39 0.03 250)",
-        },
-        name: "ColorGray800",
-        attributes: {
-          category: "color",
-          type: "gray",
-          item: "800",
-        },
-        path: ["color", "gray", "800"],
       },
       900: {
         $type: "color",
         $value: "oklch(0.28 0.03 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.28 0.03 250)",
-        },
-        name: "ColorGray900",
-        attributes: {
-          category: "color",
-          type: "gray",
-          item: "900",
-        },
-        path: ["color", "gray", "900"],
       },
       950: {
         $type: "color",
-        $value: "#0b131f",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "#0B131F",
-        },
-        name: "ColorGray950",
-        attributes: {
-          category: "color",
-          type: "gray",
-          item: "950",
-        },
-        path: ["color", "gray", "950"],
+        $value: "#0B131F",
       },
     },
     blue: {
       50: {
         $type: "color",
         $value: "oklch(0.97 0.02 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.97 0.02 250)",
-        },
-        name: "ColorBlue50",
-        attributes: {
-          category: "color",
-          type: "blue",
-          item: "50",
-        },
-        path: ["color", "blue", "50"],
       },
       100: {
         $type: "color",
         $value: "oklch(0.94 0.04 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.94 0.04 250)",
-        },
-        name: "ColorBlue100",
-        attributes: {
-          category: "color",
-          type: "blue",
-          item: "100",
-        },
-        path: ["color", "blue", "100"],
       },
       200: {
         $type: "color",
         $value: "oklch(0.89 0.07 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.89 0.07 250)",
-        },
-        name: "ColorBlue200",
-        attributes: {
-          category: "color",
-          type: "blue",
-          item: "200",
-        },
-        path: ["color", "blue", "200"],
       },
       300: {
         $type: "color",
         $value: "oklch(0.82 0.12 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.82 0.12 250)",
-        },
-        name: "ColorBlue300",
-        attributes: {
-          category: "color",
-          type: "blue",
-          item: "300",
-        },
-        path: ["color", "blue", "300"],
       },
       400: {
         $type: "color",
         $value: "oklch(0.74 0.16 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.74 0.16 250)",
-        },
-        name: "ColorBlue400",
-        attributes: {
-          category: "color",
-          type: "blue",
-          item: "400",
-        },
-        path: ["color", "blue", "400"],
       },
       500: {
         $type: "color",
         $value: "oklch(0.65 0.19 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.65 0.19 250)",
-        },
-        name: "ColorBlue500",
-        attributes: {
-          category: "color",
-          type: "blue",
-          item: "500",
-        },
-        path: ["color", "blue", "500"],
       },
       600: {
         $type: "color",
         $value: "oklch(0.56 0.19 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.56 0.19 250)",
-        },
-        name: "ColorBlue600",
-        attributes: {
-          category: "color",
-          type: "blue",
-          item: "600",
-        },
-        path: ["color", "blue", "600"],
       },
       700: {
         $type: "color",
         $value: "oklch(0.48 0.18 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.48 0.18 250)",
-        },
-        name: "ColorBlue700",
-        attributes: {
-          category: "color",
-          type: "blue",
-          item: "700",
-        },
-        path: ["color", "blue", "700"],
       },
       800: {
         $type: "color",
         $value: "oklch(0.40 0.15 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.40 0.15 250)",
-        },
-        name: "ColorBlue800",
-        attributes: {
-          category: "color",
-          type: "blue",
-          item: "800",
-        },
-        path: ["color", "blue", "800"],
       },
       900: {
         $type: "color",
         $value: "oklch(0.32 0.11 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.32 0.11 250)",
-        },
-        name: "ColorBlue900",
-        attributes: {
-          category: "color",
-          type: "blue",
-          item: "900",
-        },
-        path: ["color", "blue", "900"],
       },
       950: {
         $type: "color",
         $value: "oklch(0.22 0.08 250)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.22 0.08 250)",
-        },
-        name: "ColorBlue950",
-        attributes: {
-          category: "color",
-          type: "blue",
-          item: "950",
-        },
-        path: ["color", "blue", "950"],
       },
     },
     indigo: {
       50: {
         $type: "color",
         $value: "oklch(0.97 0.02 270)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.97 0.02 270)",
-        },
-        name: "ColorIndigo50",
-        attributes: {
-          category: "color",
-          type: "indigo",
-          item: "50",
-        },
-        path: ["color", "indigo", "50"],
       },
       100: {
         $type: "color",
         $value: "oklch(0.94 0.04 270)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.94 0.04 270)",
-        },
-        name: "ColorIndigo100",
-        attributes: {
-          category: "color",
-          type: "indigo",
-          item: "100",
-        },
-        path: ["color", "indigo", "100"],
       },
       200: {
         $type: "color",
         $value: "oklch(0.89 0.07 270)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.89 0.07 270)",
-        },
-        name: "ColorIndigo200",
-        attributes: {
-          category: "color",
-          type: "indigo",
-          item: "200",
-        },
-        path: ["color", "indigo", "200"],
       },
       300: {
         $type: "color",
         $value: "oklch(0.82 0.12 270)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.82 0.12 270)",
-        },
-        name: "ColorIndigo300",
-        attributes: {
-          category: "color",
-          type: "indigo",
-          item: "300",
-        },
-        path: ["color", "indigo", "300"],
       },
       400: {
         $type: "color",
         $value: "oklch(0.74 0.16 270)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.74 0.16 270)",
-        },
-        name: "ColorIndigo400",
-        attributes: {
-          category: "color",
-          type: "indigo",
-          item: "400",
-        },
-        path: ["color", "indigo", "400"],
       },
       500: {
         $type: "color",
         $value: "oklch(0.65 0.19 270)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.65 0.19 270)",
-        },
-        name: "ColorIndigo500",
-        attributes: {
-          category: "color",
-          type: "indigo",
-          item: "500",
-        },
-        path: ["color", "indigo", "500"],
       },
       600: {
         $type: "color",
         $value: "oklch(0.56 0.19 270)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.56 0.19 270)",
-        },
-        name: "ColorIndigo600",
-        attributes: {
-          category: "color",
-          type: "indigo",
-          item: "600",
-        },
-        path: ["color", "indigo", "600"],
       },
       700: {
         $type: "color",
         $value: "oklch(0.48 0.18 270)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.48 0.18 270)",
-        },
-        name: "ColorIndigo700",
-        attributes: {
-          category: "color",
-          type: "indigo",
-          item: "700",
-        },
-        path: ["color", "indigo", "700"],
       },
       800: {
         $type: "color",
         $value: "oklch(0.40 0.15 270)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.40 0.15 270)",
-        },
-        name: "ColorIndigo800",
-        attributes: {
-          category: "color",
-          type: "indigo",
-          item: "800",
-        },
-        path: ["color", "indigo", "800"],
       },
       900: {
         $type: "color",
         $value: "oklch(0.32 0.11 270)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.32 0.11 270)",
-        },
-        name: "ColorIndigo900",
-        attributes: {
-          category: "color",
-          type: "indigo",
-          item: "900",
-        },
-        path: ["color", "indigo", "900"],
       },
       950: {
         $type: "color",
         $value: "oklch(0.22 0.08 270)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.22 0.08 270)",
-        },
-        name: "ColorIndigo950",
-        attributes: {
-          category: "color",
-          type: "indigo",
-          item: "950",
-        },
-        path: ["color", "indigo", "950"],
       },
     },
     violet: {
       50: {
         $type: "color",
         $value: "oklch(0.97 0.02 290)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.97 0.02 290)",
-        },
-        name: "ColorViolet50",
-        attributes: {
-          category: "color",
-          type: "violet",
-          item: "50",
-        },
-        path: ["color", "violet", "50"],
       },
       100: {
         $type: "color",
         $value: "oklch(0.94 0.04 290)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.94 0.04 290)",
-        },
-        name: "ColorViolet100",
-        attributes: {
-          category: "color",
-          type: "violet",
-          item: "100",
-        },
-        path: ["color", "violet", "100"],
       },
       200: {
         $type: "color",
         $value: "oklch(0.89 0.07 290)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.89 0.07 290)",
-        },
-        name: "ColorViolet200",
-        attributes: {
-          category: "color",
-          type: "violet",
-          item: "200",
-        },
-        path: ["color", "violet", "200"],
       },
       300: {
         $type: "color",
         $value: "oklch(0.82 0.12 290)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.82 0.12 290)",
-        },
-        name: "ColorViolet300",
-        attributes: {
-          category: "color",
-          type: "violet",
-          item: "300",
-        },
-        path: ["color", "violet", "300"],
       },
       400: {
         $type: "color",
         $value: "oklch(0.74 0.16 290)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.74 0.16 290)",
-        },
-        name: "ColorViolet400",
-        attributes: {
-          category: "color",
-          type: "violet",
-          item: "400",
-        },
-        path: ["color", "violet", "400"],
       },
       500: {
         $type: "color",
         $value: "oklch(0.65 0.19 290)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.65 0.19 290)",
-        },
-        name: "ColorViolet500",
-        attributes: {
-          category: "color",
-          type: "violet",
-          item: "500",
-        },
-        path: ["color", "violet", "500"],
       },
       600: {
         $type: "color",
         $value: "oklch(0.56 0.19 290)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.56 0.19 290)",
-        },
-        name: "ColorViolet600",
-        attributes: {
-          category: "color",
-          type: "violet",
-          item: "600",
-        },
-        path: ["color", "violet", "600"],
       },
       700: {
         $type: "color",
         $value: "oklch(0.48 0.18 290)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.48 0.18 290)",
-        },
-        name: "ColorViolet700",
-        attributes: {
-          category: "color",
-          type: "violet",
-          item: "700",
-        },
-        path: ["color", "violet", "700"],
       },
       800: {
         $type: "color",
         $value: "oklch(0.40 0.15 290)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.40 0.15 290)",
-        },
-        name: "ColorViolet800",
-        attributes: {
-          category: "color",
-          type: "violet",
-          item: "800",
-        },
-        path: ["color", "violet", "800"],
       },
       900: {
         $type: "color",
         $value: "oklch(0.32 0.11 290)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.32 0.11 290)",
-        },
-        name: "ColorViolet900",
-        attributes: {
-          category: "color",
-          type: "violet",
-          item: "900",
-        },
-        path: ["color", "violet", "900"],
       },
       950: {
         $type: "color",
         $value: "oklch(0.22 0.08 290)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.22 0.08 290)",
-        },
-        name: "ColorViolet950",
-        attributes: {
-          category: "color",
-          type: "violet",
-          item: "950",
-        },
-        path: ["color", "violet", "950"],
       },
     },
     pink: {
       50: {
         $type: "color",
         $value: "oklch(0.97 0.02 330)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.97 0.02 330)",
-        },
-        name: "ColorPink50",
-        attributes: {
-          category: "color",
-          type: "pink",
-          item: "50",
-        },
-        path: ["color", "pink", "50"],
       },
       100: {
         $type: "color",
         $value: "oklch(0.94 0.04 330)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.94 0.04 330)",
-        },
-        name: "ColorPink100",
-        attributes: {
-          category: "color",
-          type: "pink",
-          item: "100",
-        },
-        path: ["color", "pink", "100"],
       },
       200: {
         $type: "color",
         $value: "oklch(0.89 0.07 330)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.89 0.07 330)",
-        },
-        name: "ColorPink200",
-        attributes: {
-          category: "color",
-          type: "pink",
-          item: "200",
-        },
-        path: ["color", "pink", "200"],
       },
       300: {
         $type: "color",
         $value: "oklch(0.82 0.12 330)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.82 0.12 330)",
-        },
-        name: "ColorPink300",
-        attributes: {
-          category: "color",
-          type: "pink",
-          item: "300",
-        },
-        path: ["color", "pink", "300"],
       },
       400: {
         $type: "color",
         $value: "oklch(0.74 0.16 330)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.74 0.16 330)",
-        },
-        name: "ColorPink400",
-        attributes: {
-          category: "color",
-          type: "pink",
-          item: "400",
-        },
-        path: ["color", "pink", "400"],
       },
       500: {
         $type: "color",
         $value: "oklch(0.65 0.19 330)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.65 0.19 330)",
-        },
-        name: "ColorPink500",
-        attributes: {
-          category: "color",
-          type: "pink",
-          item: "500",
-        },
-        path: ["color", "pink", "500"],
       },
       600: {
         $type: "color",
         $value: "oklch(0.56 0.19 330)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.56 0.19 330)",
-        },
-        name: "ColorPink600",
-        attributes: {
-          category: "color",
-          type: "pink",
-          item: "600",
-        },
-        path: ["color", "pink", "600"],
       },
       700: {
         $type: "color",
         $value: "oklch(0.48 0.18 330)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.48 0.18 330)",
-        },
-        name: "ColorPink700",
-        attributes: {
-          category: "color",
-          type: "pink",
-          item: "700",
-        },
-        path: ["color", "pink", "700"],
       },
       800: {
         $type: "color",
         $value: "oklch(0.40 0.15 330)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.40 0.15 330)",
-        },
-        name: "ColorPink800",
-        attributes: {
-          category: "color",
-          type: "pink",
-          item: "800",
-        },
-        path: ["color", "pink", "800"],
       },
       900: {
         $type: "color",
         $value: "oklch(0.32 0.11 330)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.32 0.11 330)",
-        },
-        name: "ColorPink900",
-        attributes: {
-          category: "color",
-          type: "pink",
-          item: "900",
-        },
-        path: ["color", "pink", "900"],
       },
       950: {
         $type: "color",
         $value: "oklch(0.22 0.08 330)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.22 0.08 330)",
-        },
-        name: "ColorPink950",
-        attributes: {
-          category: "color",
-          type: "pink",
-          item: "950",
-        },
-        path: ["color", "pink", "950"],
       },
     },
     red: {
       50: {
         $type: "color",
         $value: "oklch(0.97 0.02 15)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.97 0.02 15)",
-        },
-        name: "ColorRed50",
-        attributes: {
-          category: "color",
-          type: "red",
-          item: "50",
-        },
-        path: ["color", "red", "50"],
       },
       100: {
         $type: "color",
         $value: "oklch(0.94 0.04 15)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.94 0.04 15)",
-        },
-        name: "ColorRed100",
-        attributes: {
-          category: "color",
-          type: "red",
-          item: "100",
-        },
-        path: ["color", "red", "100"],
       },
       200: {
         $type: "color",
         $value: "oklch(0.89 0.07 15)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.89 0.07 15)",
-        },
-        name: "ColorRed200",
-        attributes: {
-          category: "color",
-          type: "red",
-          item: "200",
-        },
-        path: ["color", "red", "200"],
       },
       300: {
         $type: "color",
         $value: "oklch(0.82 0.12 15)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.82 0.12 15)",
-        },
-        name: "ColorRed300",
-        attributes: {
-          category: "color",
-          type: "red",
-          item: "300",
-        },
-        path: ["color", "red", "300"],
       },
       400: {
         $type: "color",
         $value: "oklch(0.74 0.16 15)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.74 0.16 15)",
-        },
-        name: "ColorRed400",
-        attributes: {
-          category: "color",
-          type: "red",
-          item: "400",
-        },
-        path: ["color", "red", "400"],
       },
       500: {
         $type: "color",
         $value: "oklch(0.65 0.19 15)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.65 0.19 15)",
-        },
-        name: "ColorRed500",
-        attributes: {
-          category: "color",
-          type: "red",
-          item: "500",
-        },
-        path: ["color", "red", "500"],
       },
       600: {
         $type: "color",
         $value: "oklch(0.56 0.19 15)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.56 0.19 15)",
-        },
-        name: "ColorRed600",
-        attributes: {
-          category: "color",
-          type: "red",
-          item: "600",
-        },
-        path: ["color", "red", "600"],
       },
       700: {
         $type: "color",
         $value: "oklch(0.48 0.18 15)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.48 0.18 15)",
-        },
-        name: "ColorRed700",
-        attributes: {
-          category: "color",
-          type: "red",
-          item: "700",
-        },
-        path: ["color", "red", "700"],
       },
       800: {
         $type: "color",
         $value: "oklch(0.40 0.15 15)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.40 0.15 15)",
-        },
-        name: "ColorRed800",
-        attributes: {
-          category: "color",
-          type: "red",
-          item: "800",
-        },
-        path: ["color", "red", "800"],
       },
       900: {
         $type: "color",
         $value: "oklch(0.32 0.11 15)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.32 0.11 15)",
-        },
-        name: "ColorRed900",
-        attributes: {
-          category: "color",
-          type: "red",
-          item: "900",
-        },
-        path: ["color", "red", "900"],
       },
       950: {
         $type: "color",
         $value: "oklch(0.22 0.08 15)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.22 0.08 15)",
-        },
-        name: "ColorRed950",
-        attributes: {
-          category: "color",
-          type: "red",
-          item: "950",
-        },
-        path: ["color", "red", "950"],
       },
     },
     orange: {
       50: {
         $type: "color",
         $value: "oklch(0.97 0.02 45)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.97 0.02 45)",
-        },
-        name: "ColorOrange50",
-        attributes: {
-          category: "color",
-          type: "orange",
-          item: "50",
-        },
-        path: ["color", "orange", "50"],
       },
       100: {
         $type: "color",
         $value: "oklch(0.94 0.04 45)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.94 0.04 45)",
-        },
-        name: "ColorOrange100",
-        attributes: {
-          category: "color",
-          type: "orange",
-          item: "100",
-        },
-        path: ["color", "orange", "100"],
       },
       200: {
         $type: "color",
         $value: "oklch(0.89 0.07 45)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.89 0.07 45)",
-        },
-        name: "ColorOrange200",
-        attributes: {
-          category: "color",
-          type: "orange",
-          item: "200",
-        },
-        path: ["color", "orange", "200"],
       },
       300: {
         $type: "color",
         $value: "oklch(0.82 0.12 45)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.82 0.12 45)",
-        },
-        name: "ColorOrange300",
-        attributes: {
-          category: "color",
-          type: "orange",
-          item: "300",
-        },
-        path: ["color", "orange", "300"],
       },
       400: {
         $type: "color",
         $value: "oklch(0.74 0.16 45)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.74 0.16 45)",
-        },
-        name: "ColorOrange400",
-        attributes: {
-          category: "color",
-          type: "orange",
-          item: "400",
-        },
-        path: ["color", "orange", "400"],
       },
       500: {
         $type: "color",
         $value: "oklch(0.65 0.19 45)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.65 0.19 45)",
-        },
-        name: "ColorOrange500",
-        attributes: {
-          category: "color",
-          type: "orange",
-          item: "500",
-        },
-        path: ["color", "orange", "500"],
       },
       600: {
         $type: "color",
         $value: "oklch(0.56 0.19 45)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.56 0.19 45)",
-        },
-        name: "ColorOrange600",
-        attributes: {
-          category: "color",
-          type: "orange",
-          item: "600",
-        },
-        path: ["color", "orange", "600"],
       },
       700: {
         $type: "color",
         $value: "oklch(0.48 0.18 45)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.48 0.18 45)",
-        },
-        name: "ColorOrange700",
-        attributes: {
-          category: "color",
-          type: "orange",
-          item: "700",
-        },
-        path: ["color", "orange", "700"],
       },
       800: {
         $type: "color",
         $value: "oklch(0.40 0.15 45)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.40 0.15 45)",
-        },
-        name: "ColorOrange800",
-        attributes: {
-          category: "color",
-          type: "orange",
-          item: "800",
-        },
-        path: ["color", "orange", "800"],
       },
       900: {
         $type: "color",
         $value: "oklch(0.32 0.11 45)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.32 0.11 45)",
-        },
-        name: "ColorOrange900",
-        attributes: {
-          category: "color",
-          type: "orange",
-          item: "900",
-        },
-        path: ["color", "orange", "900"],
       },
       950: {
         $type: "color",
         $value: "oklch(0.22 0.08 45)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.22 0.08 45)",
-        },
-        name: "ColorOrange950",
-        attributes: {
-          category: "color",
-          type: "orange",
-          item: "950",
-        },
-        path: ["color", "orange", "950"],
       },
     },
     amber: {
       50: {
         $type: "color",
         $value: "oklch(0.97 0.02 70)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.97 0.02 70)",
-        },
-        name: "ColorAmber50",
-        attributes: {
-          category: "color",
-          type: "amber",
-          item: "50",
-        },
-        path: ["color", "amber", "50"],
       },
       100: {
         $type: "color",
         $value: "oklch(0.94 0.04 70)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.94 0.04 70)",
-        },
-        name: "ColorAmber100",
-        attributes: {
-          category: "color",
-          type: "amber",
-          item: "100",
-        },
-        path: ["color", "amber", "100"],
       },
       200: {
         $type: "color",
         $value: "oklch(0.89 0.07 70)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.89 0.07 70)",
-        },
-        name: "ColorAmber200",
-        attributes: {
-          category: "color",
-          type: "amber",
-          item: "200",
-        },
-        path: ["color", "amber", "200"],
       },
       300: {
         $type: "color",
         $value: "oklch(0.82 0.12 70)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.82 0.12 70)",
-        },
-        name: "ColorAmber300",
-        attributes: {
-          category: "color",
-          type: "amber",
-          item: "300",
-        },
-        path: ["color", "amber", "300"],
       },
       400: {
         $type: "color",
         $value: "oklch(0.74 0.16 70)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.74 0.16 70)",
-        },
-        name: "ColorAmber400",
-        attributes: {
-          category: "color",
-          type: "amber",
-          item: "400",
-        },
-        path: ["color", "amber", "400"],
       },
       500: {
         $type: "color",
         $value: "oklch(0.65 0.19 70)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.65 0.19 70)",
-        },
-        name: "ColorAmber500",
-        attributes: {
-          category: "color",
-          type: "amber",
-          item: "500",
-        },
-        path: ["color", "amber", "500"],
       },
       600: {
         $type: "color",
         $value: "oklch(0.56 0.19 70)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.56 0.19 70)",
-        },
-        name: "ColorAmber600",
-        attributes: {
-          category: "color",
-          type: "amber",
-          item: "600",
-        },
-        path: ["color", "amber", "600"],
       },
       700: {
         $type: "color",
         $value: "oklch(0.48 0.18 70)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.48 0.18 70)",
-        },
-        name: "ColorAmber700",
-        attributes: {
-          category: "color",
-          type: "amber",
-          item: "700",
-        },
-        path: ["color", "amber", "700"],
       },
       800: {
         $type: "color",
         $value: "oklch(0.40 0.15 70)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.40 0.15 70)",
-        },
-        name: "ColorAmber800",
-        attributes: {
-          category: "color",
-          type: "amber",
-          item: "800",
-        },
-        path: ["color", "amber", "800"],
       },
       900: {
         $type: "color",
         $value: "oklch(0.32 0.11 70)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.32 0.11 70)",
-        },
-        name: "ColorAmber900",
-        attributes: {
-          category: "color",
-          type: "amber",
-          item: "900",
-        },
-        path: ["color", "amber", "900"],
       },
       950: {
         $type: "color",
         $value: "oklch(0.22 0.08 70)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.22 0.08 70)",
-        },
-        name: "ColorAmber950",
-        attributes: {
-          category: "color",
-          type: "amber",
-          item: "950",
-        },
-        path: ["color", "amber", "950"],
       },
     },
     green: {
       50: {
         $type: "color",
         $value: "oklch(0.97 0.02 140)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.97 0.02 140)",
-        },
-        name: "ColorGreen50",
-        attributes: {
-          category: "color",
-          type: "green",
-          item: "50",
-        },
-        path: ["color", "green", "50"],
       },
       100: {
         $type: "color",
         $value: "oklch(0.94 0.04 140)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.94 0.04 140)",
-        },
-        name: "ColorGreen100",
-        attributes: {
-          category: "color",
-          type: "green",
-          item: "100",
-        },
-        path: ["color", "green", "100"],
       },
       200: {
         $type: "color",
         $value: "oklch(0.89 0.07 140)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.89 0.07 140)",
-        },
-        name: "ColorGreen200",
-        attributes: {
-          category: "color",
-          type: "green",
-          item: "200",
-        },
-        path: ["color", "green", "200"],
       },
       300: {
         $type: "color",
         $value: "oklch(0.82 0.12 140)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.82 0.12 140)",
-        },
-        name: "ColorGreen300",
-        attributes: {
-          category: "color",
-          type: "green",
-          item: "300",
-        },
-        path: ["color", "green", "300"],
       },
       400: {
         $type: "color",
         $value: "oklch(0.74 0.16 140)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.74 0.16 140)",
-        },
-        name: "ColorGreen400",
-        attributes: {
-          category: "color",
-          type: "green",
-          item: "400",
-        },
-        path: ["color", "green", "400"],
       },
       500: {
         $type: "color",
         $value: "oklch(0.65 0.19 140)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.65 0.19 140)",
-        },
-        name: "ColorGreen500",
-        attributes: {
-          category: "color",
-          type: "green",
-          item: "500",
-        },
-        path: ["color", "green", "500"],
       },
       600: {
         $type: "color",
         $value: "oklch(0.56 0.19 140)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.56 0.19 140)",
-        },
-        name: "ColorGreen600",
-        attributes: {
-          category: "color",
-          type: "green",
-          item: "600",
-        },
-        path: ["color", "green", "600"],
       },
       700: {
         $type: "color",
         $value: "oklch(0.48 0.18 140)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.48 0.18 140)",
-        },
-        name: "ColorGreen700",
-        attributes: {
-          category: "color",
-          type: "green",
-          item: "700",
-        },
-        path: ["color", "green", "700"],
       },
       800: {
         $type: "color",
         $value: "oklch(0.40 0.15 140)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.40 0.15 140)",
-        },
-        name: "ColorGreen800",
-        attributes: {
-          category: "color",
-          type: "green",
-          item: "800",
-        },
-        path: ["color", "green", "800"],
       },
       900: {
         $type: "color",
         $value: "oklch(0.32 0.11 140)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.32 0.11 140)",
-        },
-        name: "ColorGreen900",
-        attributes: {
-          category: "color",
-          type: "green",
-          item: "900",
-        },
-        path: ["color", "green", "900"],
       },
       950: {
         $type: "color",
         $value: "oklch(0.22 0.08 140)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.22 0.08 140)",
-        },
-        name: "ColorGreen950",
-        attributes: {
-          category: "color",
-          type: "green",
-          item: "950",
-        },
-        path: ["color", "green", "950"],
       },
     },
     teal: {
       50: {
         $type: "color",
         $value: "oklch(0.97 0.02 170)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.97 0.02 170)",
-        },
-        name: "ColorTeal50",
-        attributes: {
-          category: "color",
-          type: "teal",
-          item: "50",
-        },
-        path: ["color", "teal", "50"],
       },
       100: {
         $type: "color",
         $value: "oklch(0.94 0.04 170)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.94 0.04 170)",
-        },
-        name: "ColorTeal100",
-        attributes: {
-          category: "color",
-          type: "teal",
-          item: "100",
-        },
-        path: ["color", "teal", "100"],
       },
       200: {
         $type: "color",
         $value: "oklch(0.89 0.07 170)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.89 0.07 170)",
-        },
-        name: "ColorTeal200",
-        attributes: {
-          category: "color",
-          type: "teal",
-          item: "200",
-        },
-        path: ["color", "teal", "200"],
       },
       300: {
         $type: "color",
         $value: "oklch(0.82 0.12 170)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.82 0.12 170)",
-        },
-        name: "ColorTeal300",
-        attributes: {
-          category: "color",
-          type: "teal",
-          item: "300",
-        },
-        path: ["color", "teal", "300"],
       },
       400: {
         $type: "color",
         $value: "oklch(0.74 0.16 170)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.74 0.16 170)",
-        },
-        name: "ColorTeal400",
-        attributes: {
-          category: "color",
-          type: "teal",
-          item: "400",
-        },
-        path: ["color", "teal", "400"],
       },
       500: {
         $type: "color",
         $value: "oklch(0.65 0.19 170)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.65 0.19 170)",
-        },
-        name: "ColorTeal500",
-        attributes: {
-          category: "color",
-          type: "teal",
-          item: "500",
-        },
-        path: ["color", "teal", "500"],
       },
       600: {
         $type: "color",
         $value: "oklch(0.56 0.19 170)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.56 0.19 170)",
-        },
-        name: "ColorTeal600",
-        attributes: {
-          category: "color",
-          type: "teal",
-          item: "600",
-        },
-        path: ["color", "teal", "600"],
       },
       700: {
         $type: "color",
         $value: "oklch(0.48 0.18 170)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.48 0.18 170)",
-        },
-        name: "ColorTeal700",
-        attributes: {
-          category: "color",
-          type: "teal",
-          item: "700",
-        },
-        path: ["color", "teal", "700"],
       },
       800: {
         $type: "color",
         $value: "oklch(0.40 0.15 170)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.40 0.15 170)",
-        },
-        name: "ColorTeal800",
-        attributes: {
-          category: "color",
-          type: "teal",
-          item: "800",
-        },
-        path: ["color", "teal", "800"],
       },
       900: {
         $type: "color",
         $value: "oklch(0.32 0.11 170)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.32 0.11 170)",
-        },
-        name: "ColorTeal900",
-        attributes: {
-          category: "color",
-          type: "teal",
-          item: "900",
-        },
-        path: ["color", "teal", "900"],
       },
       950: {
         $type: "color",
         $value: "oklch(0.22 0.08 170)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.22 0.08 170)",
-        },
-        name: "ColorTeal950",
-        attributes: {
-          category: "color",
-          type: "teal",
-          item: "950",
-        },
-        path: ["color", "teal", "950"],
       },
     },
     cyan: {
       50: {
         $type: "color",
         $value: "oklch(0.97 0.02 210)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.97 0.02 210)",
-        },
-        name: "ColorCyan50",
-        attributes: {
-          category: "color",
-          type: "cyan",
-          item: "50",
-        },
-        path: ["color", "cyan", "50"],
       },
       100: {
         $type: "color",
         $value: "oklch(0.94 0.04 210)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.94 0.04 210)",
-        },
-        name: "ColorCyan100",
-        attributes: {
-          category: "color",
-          type: "cyan",
-          item: "100",
-        },
-        path: ["color", "cyan", "100"],
       },
       200: {
         $type: "color",
         $value: "oklch(0.89 0.07 210)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.89 0.07 210)",
-        },
-        name: "ColorCyan200",
-        attributes: {
-          category: "color",
-          type: "cyan",
-          item: "200",
-        },
-        path: ["color", "cyan", "200"],
       },
       300: {
         $type: "color",
         $value: "oklch(0.82 0.12 210)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.82 0.12 210)",
-        },
-        name: "ColorCyan300",
-        attributes: {
-          category: "color",
-          type: "cyan",
-          item: "300",
-        },
-        path: ["color", "cyan", "300"],
       },
       400: {
         $type: "color",
         $value: "oklch(0.74 0.16 210)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.74 0.16 210)",
-        },
-        name: "ColorCyan400",
-        attributes: {
-          category: "color",
-          type: "cyan",
-          item: "400",
-        },
-        path: ["color", "cyan", "400"],
       },
       500: {
         $type: "color",
         $value: "oklch(0.65 0.19 210)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.65 0.19 210)",
-        },
-        name: "ColorCyan500",
-        attributes: {
-          category: "color",
-          type: "cyan",
-          item: "500",
-        },
-        path: ["color", "cyan", "500"],
       },
       600: {
         $type: "color",
         $value: "oklch(0.56 0.19 210)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.56 0.19 210)",
-        },
-        name: "ColorCyan600",
-        attributes: {
-          category: "color",
-          type: "cyan",
-          item: "600",
-        },
-        path: ["color", "cyan", "600"],
       },
       700: {
         $type: "color",
         $value: "oklch(0.48 0.18 210)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.48 0.18 210)",
-        },
-        name: "ColorCyan700",
-        attributes: {
-          category: "color",
-          type: "cyan",
-          item: "700",
-        },
-        path: ["color", "cyan", "700"],
       },
       800: {
         $type: "color",
         $value: "oklch(0.40 0.15 210)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.40 0.15 210)",
-        },
-        name: "ColorCyan800",
-        attributes: {
-          category: "color",
-          type: "cyan",
-          item: "800",
-        },
-        path: ["color", "cyan", "800"],
       },
       900: {
         $type: "color",
         $value: "oklch(0.32 0.11 210)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.32 0.11 210)",
-        },
-        name: "ColorCyan900",
-        attributes: {
-          category: "color",
-          type: "cyan",
-          item: "900",
-        },
-        path: ["color", "cyan", "900"],
       },
       950: {
         $type: "color",
         $value: "oklch(0.22 0.08 210)",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "oklch(0.22 0.08 210)",
-        },
-        name: "ColorCyan950",
-        attributes: {
-          category: "color",
-          type: "cyan",
-          item: "950",
-        },
-        path: ["color", "cyan", "950"],
       },
     },
     brand: {
       ocean: {
         $type: "color",
-        $value: "#1d70b8",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "#1D70B8",
-        },
-        name: "ColorBrandOcean",
-        attributes: {
-          category: "color",
-          type: "brand",
-          item: "ocean",
-        },
-        path: ["color", "brand", "ocean"],
+        $value: "#1D70B8",
       },
       luminescent: {
         $type: "color",
-        $value: "#5cade2",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "#5CADE2",
-        },
-        name: "ColorBrandLuminescent",
-        attributes: {
-          category: "color",
-          type: "brand",
-          item: "luminescent",
-        },
-        path: ["color", "brand", "luminescent"],
+        $value: "#5CADE2",
       },
       abysse: {
         $type: "color",
-        $value: "#0b131f",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "#0B131F",
-        },
-        name: "ColorBrandAbysse",
-        attributes: {
-          category: "color",
-          type: "brand",
-          item: "abysse",
-        },
-        path: ["color", "brand", "abysse"],
+        $value: "#0B131F",
       },
       ecume: {
         $type: "color",
-        $value: "#f8fbfc",
-        filePath: "src/primitive/color.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "#F8FBFC",
-        },
-        name: "ColorBrandEcume",
-        attributes: {
-          category: "color",
-          type: "brand",
-          item: "ecume",
-        },
-        path: ["color", "brand", "ecume"],
+        $value: "#F8FBFC",
       },
     },
     bg: {
       canvas: {
         $type: "color",
-        $value: "#f8fbfc",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.brand.ecume}",
+          $value: "#F8FBFC",
         },
-        name: "ColorBgCanvas",
-        attributes: {
-          category: "color",
-          type: "bg",
-          item: "canvas",
-        },
-        path: ["color", "bg", "canvas"],
       },
       surface: {
         $type: "color",
-        $value: "#f8fbfc",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.brand.ecume}",
+          $value: "#F8FBFC",
         },
-        name: "ColorBgSurface",
-        attributes: {
-          category: "color",
-          type: "bg",
-          item: "surface",
-        },
-        path: ["color", "bg", "surface"],
       },
       "surface-raised": {
         $type: "color",
-        $value: "#f8fbfc",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.50}",
+          $value: "#F8FBFC",
         },
-        name: "ColorBgSurfaceRaised",
-        attributes: {
-          category: "color",
-          type: "bg",
-          item: "surface-raised",
-        },
-        path: ["color", "bg", "surface-raised"],
       },
       "surface-sunken": {
         $type: "color",
-        $value: "oklch(0.96 0.01 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.100}",
+          $value: "oklch(0.96 0.01 250)",
         },
-        name: "ColorBgSurfaceSunken",
-        attributes: {
-          category: "color",
-          type: "bg",
-          item: "surface-sunken",
-        },
-        path: ["color", "bg", "surface-sunken"],
       },
       overlay: {
         $type: "color",
-        $value: "#000000",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
-          $type: "color",
-          $value: "rgb(0 0 0 / 0.5)",
-        },
-        name: "ColorBgOverlay",
-        attributes: {
-          category: "color",
-          type: "bg",
-          item: "overlay",
-        },
-        path: ["color", "bg", "overlay"],
+        $value: "rgb(0 0 0 / 0.5)",
       },
       muted: {
         $type: "color",
-        $value: "oklch(0.96 0.01 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.100}",
+          $value: "oklch(0.96 0.01 250)",
         },
-        name: "ColorBgMuted",
-        attributes: {
-          category: "color",
-          type: "bg",
-          item: "muted",
-        },
-        path: ["color", "bg", "muted"],
       },
       inverse: {
         $type: "color",
-        $value: "oklch(0.28 0.03 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.900}",
+          $value: "oklch(0.28 0.03 250)",
         },
-        name: "ColorBgInverse",
-        attributes: {
-          category: "color",
-          type: "bg",
-          item: "inverse",
-        },
-        path: ["color", "bg", "inverse"],
       },
     },
     fg: {
       default: {
         $type: "color",
-        $value: "oklch(0.28 0.03 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.900}",
+          $value: "oklch(0.28 0.03 250)",
         },
-        name: "ColorFgDefault",
-        attributes: {
-          category: "color",
-          type: "fg",
-          item: "default",
-        },
-        path: ["color", "fg", "default"],
       },
       muted: {
         $type: "color",
-        $value: "oklch(0.60 0.03 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.600}",
+          $value: "oklch(0.60 0.03 250)",
         },
-        name: "ColorFgMuted",
-        attributes: {
-          category: "color",
-          type: "fg",
-          item: "muted",
-        },
-        path: ["color", "fg", "muted"],
       },
       subtle: {
         $type: "color",
-        $value: "oklch(0.71 0.03 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.500}",
+          $value: "oklch(0.71 0.03 250)",
         },
-        name: "ColorFgSubtle",
-        attributes: {
-          category: "color",
-          type: "fg",
-          item: "subtle",
-        },
-        path: ["color", "fg", "subtle"],
       },
       "on-accent": {
         $type: "color",
-        $value: "#f8fbfc",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.50}",
+          $value: "#F8FBFC",
         },
-        name: "ColorFgOnAccent",
-        attributes: {
-          category: "color",
-          type: "fg",
-          item: "on-accent",
-        },
-        path: ["color", "fg", "on-accent"],
       },
       "on-inverse": {
         $type: "color",
-        $value: "#f8fbfc",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.50}",
+          $value: "#F8FBFC",
         },
-        name: "ColorFgOnInverse",
-        attributes: {
-          category: "color",
-          type: "fg",
-          item: "on-inverse",
-        },
-        path: ["color", "fg", "on-inverse"],
       },
       disabled: {
         $type: "color",
-        $value: "oklch(0.79 0.02 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.400}",
+          $value: "oklch(0.79 0.02 250)",
         },
-        name: "ColorFgDisabled",
-        attributes: {
-          category: "color",
-          type: "fg",
-          item: "disabled",
-        },
-        path: ["color", "fg", "disabled"],
       },
       link: {
         $type: "color",
-        $value: "oklch(0.56 0.19 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.600}",
+          $value: "oklch(0.56 0.19 250)",
         },
-        name: "ColorFgLink",
-        attributes: {
-          category: "color",
-          type: "fg",
-          item: "link",
-        },
-        path: ["color", "fg", "link"],
       },
       "link-hover": {
         $type: "color",
-        $value: "oklch(0.48 0.18 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.700}",
+          $value: "oklch(0.48 0.18 250)",
         },
-        name: "ColorFgLinkHover",
-        attributes: {
-          category: "color",
-          type: "fg",
-          item: "link-hover",
-        },
-        path: ["color", "fg", "link-hover"],
       },
     },
     border: {
       default: {
         $type: "color",
-        $value: "oklch(0.92 0.01 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.200}",
+          $value: "oklch(0.92 0.01 250)",
         },
-        name: "ColorBorderDefault",
-        attributes: {
-          category: "color",
-          type: "border",
-          item: "default",
-        },
-        path: ["color", "border", "default"],
       },
       muted: {
         $type: "color",
-        $value: "oklch(0.96 0.01 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.100}",
+          $value: "oklch(0.96 0.01 250)",
         },
-        name: "ColorBorderMuted",
-        attributes: {
-          category: "color",
-          type: "border",
-          item: "muted",
-        },
-        path: ["color", "border", "muted"],
       },
       strong: {
         $type: "color",
-        $value: "oklch(0.87 0.02 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.300}",
+          $value: "oklch(0.87 0.02 250)",
         },
-        name: "ColorBorderStrong",
-        attributes: {
-          category: "color",
-          type: "border",
-          item: "strong",
-        },
-        path: ["color", "border", "strong"],
       },
       focus: {
         $type: "color",
-        $value: "oklch(0.65 0.19 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.500}",
+          $value: "oklch(0.65 0.19 250)",
         },
-        name: "ColorBorderFocus",
-        attributes: {
-          category: "color",
-          type: "border",
-          item: "focus",
-        },
-        path: ["color", "border", "focus"],
       },
       inverse: {
         $type: "color",
-        $value: "oklch(0.50 0.03 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.700}",
+          $value: "oklch(0.50 0.03 250)",
         },
-        name: "ColorBorderInverse",
-        attributes: {
-          category: "color",
-          type: "border",
-          item: "inverse",
-        },
-        path: ["color", "border", "inverse"],
       },
     },
     accent: {
       bg: {
         $type: "color",
-        $value: "#1d70b8",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.brand.ocean}",
+          $value: "#1D70B8",
         },
-        name: "ColorAccentBg",
-        attributes: {
-          category: "color",
-          type: "accent",
-          item: "bg",
-        },
-        path: ["color", "accent", "bg"],
       },
       "bg-hover": {
         $type: "color",
-        $value: "#5cade2",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.brand.luminescent}",
+          $value: "#5CADE2",
         },
-        name: "ColorAccentBgHover",
-        attributes: {
-          category: "color",
-          type: "accent",
-          item: "bg-hover",
-        },
-        path: ["color", "accent", "bg-hover"],
       },
       "bg-active": {
         $type: "color",
-        $value: "oklch(0.40 0.15 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.800}",
+          $value: "oklch(0.40 0.15 250)",
         },
-        name: "ColorAccentBgActive",
-        attributes: {
-          category: "color",
-          type: "accent",
-          item: "bg-active",
-        },
-        path: ["color", "accent", "bg-active"],
       },
       "bg-subtle": {
         $type: "color",
-        $value: "oklch(0.97 0.02 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.50}",
+          $value: "oklch(0.97 0.02 250)",
         },
-        name: "ColorAccentBgSubtle",
-        attributes: {
-          category: "color",
-          type: "accent",
-          item: "bg-subtle",
-        },
-        path: ["color", "accent", "bg-subtle"],
       },
       "bg-subtle-hover": {
         $type: "color",
-        $value: "oklch(0.94 0.04 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.100}",
+          $value: "oklch(0.94 0.04 250)",
         },
-        name: "ColorAccentBgSubtleHover",
-        attributes: {
-          category: "color",
-          type: "accent",
-          item: "bg-subtle-hover",
-        },
-        path: ["color", "accent", "bg-subtle-hover"],
       },
       fg: {
         $type: "color",
-        $value: "#1d70b8",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.brand.ocean}",
+          $value: "#1D70B8",
         },
-        name: "ColorAccentFg",
-        attributes: {
-          category: "color",
-          type: "accent",
-          item: "fg",
-        },
-        path: ["color", "accent", "fg"],
       },
       "fg-on-bg": {
         $type: "color",
-        $value: "oklch(0.97 0.02 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.50}",
+          $value: "oklch(0.97 0.02 250)",
         },
-        name: "ColorAccentFgOnBg",
-        attributes: {
-          category: "color",
-          type: "accent",
-          item: "fg-on-bg",
-        },
-        path: ["color", "accent", "fg-on-bg"],
       },
       border: {
         $type: "color",
-        $value: "oklch(0.89 0.07 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.200}",
+          $value: "oklch(0.89 0.07 250)",
         },
-        name: "ColorAccentBorder",
-        attributes: {
-          category: "color",
-          type: "accent",
-          item: "border",
-        },
-        path: ["color", "accent", "border"],
       },
     },
     neutral: {
       bg: {
         $type: "color",
-        $value: "oklch(0.39 0.03 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.800}",
+          $value: "oklch(0.39 0.03 250)",
         },
-        name: "ColorNeutralBg",
-        attributes: {
-          category: "color",
-          type: "neutral",
-          item: "bg",
-        },
-        path: ["color", "neutral", "bg"],
       },
       "bg-hover": {
         $type: "color",
-        $value: "oklch(0.28 0.03 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.900}",
+          $value: "oklch(0.28 0.03 250)",
         },
-        name: "ColorNeutralBgHover",
-        attributes: {
-          category: "color",
-          type: "neutral",
-          item: "bg-hover",
-        },
-        path: ["color", "neutral", "bg-hover"],
       },
       "bg-active": {
         $type: "color",
-        $value: "#0b131f",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.950}",
+          $value: "#0B131F",
         },
-        name: "ColorNeutralBgActive",
-        attributes: {
-          category: "color",
-          type: "neutral",
-          item: "bg-active",
-        },
-        path: ["color", "neutral", "bg-active"],
       },
       "bg-subtle": {
         $type: "color",
-        $value: "oklch(0.96 0.01 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.100}",
+          $value: "oklch(0.96 0.01 250)",
         },
-        name: "ColorNeutralBgSubtle",
-        attributes: {
-          category: "color",
-          type: "neutral",
-          item: "bg-subtle",
-        },
-        path: ["color", "neutral", "bg-subtle"],
       },
       "bg-subtle-hover": {
         $type: "color",
-        $value: "oklch(0.92 0.01 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.200}",
+          $value: "oklch(0.92 0.01 250)",
         },
-        name: "ColorNeutralBgSubtleHover",
-        attributes: {
-          category: "color",
-          type: "neutral",
-          item: "bg-subtle-hover",
-        },
-        path: ["color", "neutral", "bg-subtle-hover"],
       },
       fg: {
         $type: "color",
-        $value: "oklch(0.50 0.03 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.700}",
+          $value: "oklch(0.50 0.03 250)",
         },
-        name: "ColorNeutralFg",
-        attributes: {
-          category: "color",
-          type: "neutral",
-          item: "fg",
-        },
-        path: ["color", "neutral", "fg"],
       },
       "fg-on-bg": {
         $type: "color",
-        $value: "#f8fbfc",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.50}",
+          $value: "#F8FBFC",
         },
-        name: "ColorNeutralFgOnBg",
-        attributes: {
-          category: "color",
-          type: "neutral",
-          item: "fg-on-bg",
-        },
-        path: ["color", "neutral", "fg-on-bg"],
       },
       border: {
         $type: "color",
-        $value: "oklch(0.87 0.02 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.gray.300}",
+          $value: "oklch(0.87 0.02 250)",
         },
-        name: "ColorNeutralBorder",
-        attributes: {
-          category: "color",
-          type: "neutral",
-          item: "border",
-        },
-        path: ["color", "neutral", "border"],
       },
     },
     success: {
       bg: {
         $type: "color",
-        $value: "oklch(0.56 0.19 140)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.green.600}",
+          $value: "oklch(0.56 0.19 140)",
         },
-        name: "ColorSuccessBg",
-        attributes: {
-          category: "color",
-          type: "success",
-          item: "bg",
-        },
-        path: ["color", "success", "bg"],
       },
       "bg-hover": {
         $type: "color",
-        $value: "oklch(0.48 0.18 140)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.green.700}",
+          $value: "oklch(0.48 0.18 140)",
         },
-        name: "ColorSuccessBgHover",
-        attributes: {
-          category: "color",
-          type: "success",
-          item: "bg-hover",
-        },
-        path: ["color", "success", "bg-hover"],
       },
       "bg-active": {
         $type: "color",
-        $value: "oklch(0.40 0.15 140)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.green.800}",
+          $value: "oklch(0.40 0.15 140)",
         },
-        name: "ColorSuccessBgActive",
-        attributes: {
-          category: "color",
-          type: "success",
-          item: "bg-active",
-        },
-        path: ["color", "success", "bg-active"],
       },
       "bg-subtle": {
         $type: "color",
-        $value: "oklch(0.97 0.02 140)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.green.50}",
+          $value: "oklch(0.97 0.02 140)",
         },
-        name: "ColorSuccessBgSubtle",
-        attributes: {
-          category: "color",
-          type: "success",
-          item: "bg-subtle",
-        },
-        path: ["color", "success", "bg-subtle"],
       },
       "bg-subtle-hover": {
         $type: "color",
-        $value: "oklch(0.94 0.04 140)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.green.100}",
+          $value: "oklch(0.94 0.04 140)",
         },
-        name: "ColorSuccessBgSubtleHover",
-        attributes: {
-          category: "color",
-          type: "success",
-          item: "bg-subtle-hover",
-        },
-        path: ["color", "success", "bg-subtle-hover"],
       },
       fg: {
         $type: "color",
-        $value: "oklch(0.48 0.18 140)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.green.700}",
+          $value: "oklch(0.48 0.18 140)",
         },
-        name: "ColorSuccessFg",
-        attributes: {
-          category: "color",
-          type: "success",
-          item: "fg",
-        },
-        path: ["color", "success", "fg"],
       },
       "fg-on-bg": {
         $type: "color",
-        $value: "oklch(0.97 0.02 140)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.green.50}",
+          $value: "oklch(0.97 0.02 140)",
         },
-        name: "ColorSuccessFgOnBg",
-        attributes: {
-          category: "color",
-          type: "success",
-          item: "fg-on-bg",
-        },
-        path: ["color", "success", "fg-on-bg"],
       },
       border: {
         $type: "color",
-        $value: "oklch(0.89 0.07 140)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.green.200}",
+          $value: "oklch(0.89 0.07 140)",
         },
-        name: "ColorSuccessBorder",
-        attributes: {
-          category: "color",
-          type: "success",
-          item: "border",
-        },
-        path: ["color", "success", "border"],
       },
     },
     warning: {
       bg: {
         $type: "color",
-        $value: "oklch(0.65 0.19 70)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.amber.500}",
+          $value: "oklch(0.65 0.19 70)",
         },
-        name: "ColorWarningBg",
-        attributes: {
-          category: "color",
-          type: "warning",
-          item: "bg",
-        },
-        path: ["color", "warning", "bg"],
       },
       "bg-hover": {
         $type: "color",
-        $value: "oklch(0.56 0.19 70)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.amber.600}",
+          $value: "oklch(0.56 0.19 70)",
         },
-        name: "ColorWarningBgHover",
-        attributes: {
-          category: "color",
-          type: "warning",
-          item: "bg-hover",
-        },
-        path: ["color", "warning", "bg-hover"],
       },
       "bg-active": {
         $type: "color",
-        $value: "oklch(0.48 0.18 70)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.amber.700}",
+          $value: "oklch(0.48 0.18 70)",
         },
-        name: "ColorWarningBgActive",
-        attributes: {
-          category: "color",
-          type: "warning",
-          item: "bg-active",
-        },
-        path: ["color", "warning", "bg-active"],
       },
       "bg-subtle": {
         $type: "color",
-        $value: "oklch(0.97 0.02 70)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.amber.50}",
+          $value: "oklch(0.97 0.02 70)",
         },
-        name: "ColorWarningBgSubtle",
-        attributes: {
-          category: "color",
-          type: "warning",
-          item: "bg-subtle",
-        },
-        path: ["color", "warning", "bg-subtle"],
       },
       "bg-subtle-hover": {
         $type: "color",
-        $value: "oklch(0.94 0.04 70)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.amber.100}",
+          $value: "oklch(0.94 0.04 70)",
         },
-        name: "ColorWarningBgSubtleHover",
-        attributes: {
-          category: "color",
-          type: "warning",
-          item: "bg-subtle-hover",
-        },
-        path: ["color", "warning", "bg-subtle-hover"],
       },
       fg: {
         $type: "color",
-        $value: "oklch(0.40 0.15 70)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.amber.800}",
+          $value: "oklch(0.40 0.15 70)",
         },
-        name: "ColorWarningFg",
-        attributes: {
-          category: "color",
-          type: "warning",
-          item: "fg",
-        },
-        path: ["color", "warning", "fg"],
       },
       "fg-on-bg": {
         $type: "color",
-        $value: "oklch(0.97 0.02 70)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.amber.50}",
+          $value: "oklch(0.97 0.02 70)",
         },
-        name: "ColorWarningFgOnBg",
-        attributes: {
-          category: "color",
-          type: "warning",
-          item: "fg-on-bg",
-        },
-        path: ["color", "warning", "fg-on-bg"],
       },
       border: {
         $type: "color",
-        $value: "oklch(0.89 0.07 70)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.amber.200}",
+          $value: "oklch(0.89 0.07 70)",
         },
-        name: "ColorWarningBorder",
-        attributes: {
-          category: "color",
-          type: "warning",
-          item: "border",
-        },
-        path: ["color", "warning", "border"],
       },
     },
     danger: {
       bg: {
         $type: "color",
-        $value: "oklch(0.56 0.19 15)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.red.600}",
+          $value: "oklch(0.56 0.19 15)",
         },
-        name: "ColorDangerBg",
-        attributes: {
-          category: "color",
-          type: "danger",
-          item: "bg",
-        },
-        path: ["color", "danger", "bg"],
       },
       "bg-hover": {
         $type: "color",
-        $value: "oklch(0.48 0.18 15)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.red.700}",
+          $value: "oklch(0.48 0.18 15)",
         },
-        name: "ColorDangerBgHover",
-        attributes: {
-          category: "color",
-          type: "danger",
-          item: "bg-hover",
-        },
-        path: ["color", "danger", "bg-hover"],
       },
       "bg-active": {
         $type: "color",
-        $value: "oklch(0.40 0.15 15)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.red.800}",
+          $value: "oklch(0.40 0.15 15)",
         },
-        name: "ColorDangerBgActive",
-        attributes: {
-          category: "color",
-          type: "danger",
-          item: "bg-active",
-        },
-        path: ["color", "danger", "bg-active"],
       },
       "bg-subtle": {
         $type: "color",
-        $value: "oklch(0.97 0.02 15)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.red.50}",
+          $value: "oklch(0.97 0.02 15)",
         },
-        name: "ColorDangerBgSubtle",
-        attributes: {
-          category: "color",
-          type: "danger",
-          item: "bg-subtle",
-        },
-        path: ["color", "danger", "bg-subtle"],
       },
       "bg-subtle-hover": {
         $type: "color",
-        $value: "oklch(0.94 0.04 15)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.red.100}",
+          $value: "oklch(0.94 0.04 15)",
         },
-        name: "ColorDangerBgSubtleHover",
-        attributes: {
-          category: "color",
-          type: "danger",
-          item: "bg-subtle-hover",
-        },
-        path: ["color", "danger", "bg-subtle-hover"],
       },
       fg: {
         $type: "color",
-        $value: "oklch(0.56 0.19 15)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.red.600}",
+          $value: "oklch(0.56 0.19 15)",
         },
-        name: "ColorDangerFg",
-        attributes: {
-          category: "color",
-          type: "danger",
-          item: "fg",
-        },
-        path: ["color", "danger", "fg"],
       },
       "fg-on-bg": {
         $type: "color",
-        $value: "oklch(0.97 0.02 15)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.red.50}",
+          $value: "oklch(0.97 0.02 15)",
         },
-        name: "ColorDangerFgOnBg",
-        attributes: {
-          category: "color",
-          type: "danger",
-          item: "fg-on-bg",
-        },
-        path: ["color", "danger", "fg-on-bg"],
       },
       border: {
         $type: "color",
-        $value: "oklch(0.89 0.07 15)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.red.200}",
+          $value: "oklch(0.89 0.07 15)",
         },
-        name: "ColorDangerBorder",
-        attributes: {
-          category: "color",
-          type: "danger",
-          item: "border",
-        },
-        path: ["color", "danger", "border"],
       },
     },
     info: {
       bg: {
         $type: "color",
-        $value: "oklch(0.56 0.19 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.600}",
+          $value: "oklch(0.56 0.19 250)",
         },
-        name: "ColorInfoBg",
-        attributes: {
-          category: "color",
-          type: "info",
-          item: "bg",
-        },
-        path: ["color", "info", "bg"],
       },
       "bg-hover": {
         $type: "color",
-        $value: "oklch(0.48 0.18 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.700}",
+          $value: "oklch(0.48 0.18 250)",
         },
-        name: "ColorInfoBgHover",
-        attributes: {
-          category: "color",
-          type: "info",
-          item: "bg-hover",
-        },
-        path: ["color", "info", "bg-hover"],
       },
       "bg-active": {
         $type: "color",
-        $value: "oklch(0.40 0.15 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.800}",
+          $value: "oklch(0.40 0.15 250)",
         },
-        name: "ColorInfoBgActive",
-        attributes: {
-          category: "color",
-          type: "info",
-          item: "bg-active",
-        },
-        path: ["color", "info", "bg-active"],
       },
       "bg-subtle": {
         $type: "color",
-        $value: "oklch(0.97 0.02 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.50}",
+          $value: "oklch(0.97 0.02 250)",
         },
-        name: "ColorInfoBgSubtle",
-        attributes: {
-          category: "color",
-          type: "info",
-          item: "bg-subtle",
-        },
-        path: ["color", "info", "bg-subtle"],
       },
       "bg-subtle-hover": {
         $type: "color",
-        $value: "oklch(0.94 0.04 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.100}",
+          $value: "oklch(0.94 0.04 250)",
         },
-        name: "ColorInfoBgSubtleHover",
-        attributes: {
-          category: "color",
-          type: "info",
-          item: "bg-subtle-hover",
-        },
-        path: ["color", "info", "bg-subtle-hover"],
       },
       fg: {
         $type: "color",
-        $value: "oklch(0.48 0.18 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.700}",
+          $value: "oklch(0.48 0.18 250)",
         },
-        name: "ColorInfoFg",
-        attributes: {
-          category: "color",
-          type: "info",
-          item: "fg",
-        },
-        path: ["color", "info", "fg"],
       },
       "fg-on-bg": {
         $type: "color",
-        $value: "oklch(0.97 0.02 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.50}",
+          $value: "oklch(0.97 0.02 250)",
         },
-        name: "ColorInfoFgOnBg",
-        attributes: {
-          category: "color",
-          type: "info",
-          item: "fg-on-bg",
-        },
-        path: ["color", "info", "fg-on-bg"],
       },
       border: {
         $type: "color",
-        $value: "oklch(0.89 0.07 250)",
-        filePath: "src/semantic/light.json",
-        isSource: true,
-        original: {
+        $value: {
           $type: "color",
-          $value: "{color.blue.200}",
+          $value: "oklch(0.89 0.07 250)",
         },
-        name: "ColorInfoBorder",
-        attributes: {
-          category: "color",
-          type: "info",
-          item: "border",
-        },
-        path: ["color", "info", "border"],
       },
     },
   },
@@ -5450,801 +3214,209 @@ module.exports = {
     instant: {
       $type: "duration",
       $value: "0ms",
-      filePath: "src/primitive/duration.json",
-      isSource: true,
-      original: {
-        $type: "duration",
-        $value: "0ms",
-      },
-      name: "DurationInstant",
-      attributes: {
-        category: "duration",
-        type: "instant",
-      },
-      path: ["duration", "instant"],
     },
     fast: {
       $type: "duration",
       $value: "100ms",
-      filePath: "src/primitive/duration.json",
-      isSource: true,
-      original: {
-        $type: "duration",
-        $value: "100ms",
-      },
-      name: "DurationFast",
-      attributes: {
-        category: "duration",
-        type: "fast",
-      },
-      path: ["duration", "fast"],
     },
     normal: {
       $type: "duration",
       $value: "200ms",
-      filePath: "src/primitive/duration.json",
-      isSource: true,
-      original: {
-        $type: "duration",
-        $value: "200ms",
-      },
-      name: "DurationNormal",
-      attributes: {
-        category: "duration",
-        type: "normal",
-      },
-      path: ["duration", "normal"],
     },
     slow: {
       $type: "duration",
       $value: "300ms",
-      filePath: "src/primitive/duration.json",
-      isSource: true,
-      original: {
-        $type: "duration",
-        $value: "300ms",
-      },
-      name: "DurationSlow",
-      attributes: {
-        category: "duration",
-        type: "slow",
-      },
-      path: ["duration", "slow"],
     },
     slower: {
       $type: "duration",
       $value: "500ms",
-      filePath: "src/primitive/duration.json",
-      isSource: true,
-      original: {
-        $type: "duration",
-        $value: "500ms",
-      },
-      name: "DurationSlower",
-      attributes: {
-        category: "duration",
-        type: "slower",
-      },
-      path: ["duration", "slower"],
     },
   },
   easing: {
     standard: {
       $type: "cubicBezier",
       $value: "cubic-bezier(0.4, 0, 0.2, 1)",
-      filePath: "src/primitive/easing.json",
-      isSource: true,
-      original: {
-        $type: "cubicBezier",
-        $value: "cubic-bezier(0.4, 0, 0.2, 1)",
-      },
-      name: "EasingStandard",
-      attributes: {
-        category: "easing",
-        type: "standard",
-      },
-      path: ["easing", "standard"],
     },
     decelerate: {
       $type: "cubicBezier",
       $value: "cubic-bezier(0, 0, 0.2, 1)",
-      filePath: "src/primitive/easing.json",
-      isSource: true,
-      original: {
-        $type: "cubicBezier",
-        $value: "cubic-bezier(0, 0, 0.2, 1)",
-      },
-      name: "EasingDecelerate",
-      attributes: {
-        category: "easing",
-        type: "decelerate",
-      },
-      path: ["easing", "decelerate"],
     },
     accelerate: {
       $type: "cubicBezier",
       $value: "cubic-bezier(0.4, 0, 1, 1)",
-      filePath: "src/primitive/easing.json",
-      isSource: true,
-      original: {
-        $type: "cubicBezier",
-        $value: "cubic-bezier(0.4, 0, 1, 1)",
-      },
-      name: "EasingAccelerate",
-      attributes: {
-        category: "easing",
-        type: "accelerate",
-      },
-      path: ["easing", "accelerate"],
     },
     spring: {
       $type: "cubicBezier",
       $value: "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
-      filePath: "src/primitive/easing.json",
-      isSource: true,
-      original: {
-        $type: "cubicBezier",
-        $value: "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
-      },
-      name: "EasingSpring",
-      attributes: {
-        category: "easing",
-        type: "spring",
-      },
-      path: ["easing", "spring"],
     },
   },
   radius: {
     none: {
       $type: "dimension",
       $value: "0px",
-      filePath: "src/primitive/radius.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "0px",
-      },
-      name: "RadiusNone",
-      attributes: {
-        category: "radius",
-        type: "none",
-      },
-      path: ["radius", "none"],
     },
     sm: {
       $type: "dimension",
       $value: "0.125rem",
-      filePath: "src/primitive/radius.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "0.125rem",
-      },
-      name: "RadiusSm",
-      attributes: {
-        category: "radius",
-        type: "sm",
-      },
-      path: ["radius", "sm"],
     },
     md: {
       $type: "dimension",
       $value: "0.375rem",
-      filePath: "src/primitive/radius.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "0.375rem",
-      },
-      name: "RadiusMd",
-      attributes: {
-        category: "radius",
-        type: "md",
-      },
-      path: ["radius", "md"],
     },
     lg: {
       $type: "dimension",
       $value: "0.5rem",
-      filePath: "src/primitive/radius.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "0.5rem",
-      },
-      name: "RadiusLg",
-      attributes: {
-        category: "radius",
-        type: "lg",
-      },
-      path: ["radius", "lg"],
     },
     xl: {
       $type: "dimension",
       $value: "0.75rem",
-      filePath: "src/primitive/radius.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "0.75rem",
-      },
-      name: "RadiusXl",
-      attributes: {
-        category: "radius",
-        type: "xl",
-      },
-      path: ["radius", "xl"],
     },
     "2xl": {
       $type: "dimension",
       $value: "1rem",
-      filePath: "src/primitive/radius.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "1rem",
-      },
-      name: "Radius2xl",
-      attributes: {
-        category: "radius",
-        type: "2xl",
-      },
-      path: ["radius", "2xl"],
     },
     full: {
       $type: "dimension",
       $value: "9999px",
-      filePath: "src/primitive/radius.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "9999px",
-      },
-      name: "RadiusFull",
-      attributes: {
-        category: "radius",
-        type: "full",
-      },
-      path: ["radius", "full"],
     },
   },
   shadow: {
     xs: {
       $type: "shadow",
       $value: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
-      filePath: "src/primitive/shadow.json",
-      isSource: true,
-      original: {
-        $type: "shadow",
-        $value: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
-      },
-      name: "ShadowXs",
-      attributes: {
-        category: "shadow",
-        type: "xs",
-      },
-      path: ["shadow", "xs"],
     },
     sm: {
       $type: "shadow",
       $value: "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
-      filePath: "src/primitive/shadow.json",
-      isSource: true,
-      original: {
-        $type: "shadow",
-        $value: "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
-      },
-      name: "ShadowSm",
-      attributes: {
-        category: "shadow",
-        type: "sm",
-      },
-      path: ["shadow", "sm"],
     },
     md: {
       $type: "shadow",
       $value:
         "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
-      filePath: "src/primitive/shadow.json",
-      isSource: true,
-      original: {
-        $type: "shadow",
-        $value:
-          "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
-      },
-      name: "ShadowMd",
-      attributes: {
-        category: "shadow",
-        type: "md",
-      },
-      path: ["shadow", "md"],
     },
     lg: {
       $type: "shadow",
       $value:
         "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
-      filePath: "src/primitive/shadow.json",
-      isSource: true,
-      original: {
-        $type: "shadow",
-        $value:
-          "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
-      },
-      name: "ShadowLg",
-      attributes: {
-        category: "shadow",
-        type: "lg",
-      },
-      path: ["shadow", "lg"],
     },
     xl: {
       $type: "shadow",
       $value:
         "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
-      filePath: "src/primitive/shadow.json",
-      isSource: true,
-      original: {
-        $type: "shadow",
-        $value:
-          "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
-      },
-      name: "ShadowXl",
-      attributes: {
-        category: "shadow",
-        type: "xl",
-      },
-      path: ["shadow", "xl"],
     },
     "2xl": {
       $type: "shadow",
       $value: "0 25px 50px -12px rgb(0 0 0 / 0.25)",
-      filePath: "src/primitive/shadow.json",
-      isSource: true,
-      original: {
-        $type: "shadow",
-        $value: "0 25px 50px -12px rgb(0 0 0 / 0.25)",
-      },
-      name: "Shadow2xl",
-      attributes: {
-        category: "shadow",
-        type: "2xl",
-      },
-      path: ["shadow", "2xl"],
     },
     inner: {
       $type: "shadow",
       $value: "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
-      filePath: "src/primitive/shadow.json",
-      isSource: true,
-      original: {
-        $type: "shadow",
-        $value: "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
-      },
-      name: "ShadowInner",
-      attributes: {
-        category: "shadow",
-        type: "inner",
-      },
-      path: ["shadow", "inner"],
     },
     focus: {
       $type: "shadow",
       $value: "0 0 0 2px oklch(0.98 0.01 250), 0 0 0 4px oklch(0.65 0.19 250)",
-      filePath: "src/primitive/shadow.json",
-      isSource: true,
-      original: {
-        $type: "shadow",
-        $value:
-          "0 0 0 2px oklch(0.98 0.01 250), 0 0 0 4px oklch(0.65 0.19 250)",
-      },
-      name: "ShadowFocus",
-      attributes: {
-        category: "shadow",
-        type: "focus",
-      },
-      path: ["shadow", "focus"],
     },
   },
   space: {
     0: {
       $type: "dimension",
       $value: "0px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "0px",
-      },
-      name: "Space0",
-      attributes: {
-        category: "space",
-        type: "0",
-      },
-      path: ["space", "0"],
     },
     1: {
       $type: "dimension",
       $value: "4px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "4px",
-      },
-      name: "Space1",
-      attributes: {
-        category: "space",
-        type: "1",
-      },
-      path: ["space", "1"],
     },
     2: {
       $type: "dimension",
       $value: "8px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "8px",
-      },
-      name: "Space2",
-      attributes: {
-        category: "space",
-        type: "2",
-      },
-      path: ["space", "2"],
     },
     3: {
       $type: "dimension",
       $value: "12px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "12px",
-      },
-      name: "Space3",
-      attributes: {
-        category: "space",
-        type: "3",
-      },
-      path: ["space", "3"],
     },
     4: {
       $type: "dimension",
       $value: "16px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "16px",
-      },
-      name: "Space4",
-      attributes: {
-        category: "space",
-        type: "4",
-      },
-      path: ["space", "4"],
     },
     5: {
       $type: "dimension",
       $value: "20px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "20px",
-      },
-      name: "Space5",
-      attributes: {
-        category: "space",
-        type: "5",
-      },
-      path: ["space", "5"],
     },
     6: {
       $type: "dimension",
       $value: "24px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "24px",
-      },
-      name: "Space6",
-      attributes: {
-        category: "space",
-        type: "6",
-      },
-      path: ["space", "6"],
     },
     7: {
       $type: "dimension",
       $value: "28px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "28px",
-      },
-      name: "Space7",
-      attributes: {
-        category: "space",
-        type: "7",
-      },
-      path: ["space", "7"],
     },
     8: {
       $type: "dimension",
       $value: "32px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "32px",
-      },
-      name: "Space8",
-      attributes: {
-        category: "space",
-        type: "8",
-      },
-      path: ["space", "8"],
     },
     9: {
       $type: "dimension",
       $value: "36px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "36px",
-      },
-      name: "Space9",
-      attributes: {
-        category: "space",
-        type: "9",
-      },
-      path: ["space", "9"],
     },
     10: {
       $type: "dimension",
       $value: "40px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "40px",
-      },
-      name: "Space10",
-      attributes: {
-        category: "space",
-        type: "10",
-      },
-      path: ["space", "10"],
     },
     12: {
       $type: "dimension",
       $value: "48px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "48px",
-      },
-      name: "Space12",
-      attributes: {
-        category: "space",
-        type: "12",
-      },
-      path: ["space", "12"],
     },
     16: {
       $type: "dimension",
       $value: "64px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "64px",
-      },
-      name: "Space16",
-      attributes: {
-        category: "space",
-        type: "16",
-      },
-      path: ["space", "16"],
     },
     20: {
       $type: "dimension",
       $value: "80px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "80px",
-      },
-      name: "Space20",
-      attributes: {
-        category: "space",
-        type: "20",
-      },
-      path: ["space", "20"],
     },
     24: {
       $type: "dimension",
       $value: "96px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "96px",
-      },
-      name: "Space24",
-      attributes: {
-        category: "space",
-        type: "24",
-      },
-      path: ["space", "24"],
     },
     32: {
       $type: "dimension",
       $value: "128px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "128px",
-      },
-      name: "Space32",
-      attributes: {
-        category: "space",
-        type: "32",
-      },
-      path: ["space", "32"],
     },
     40: {
       $type: "dimension",
       $value: "160px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "160px",
-      },
-      name: "Space40",
-      attributes: {
-        category: "space",
-        type: "40",
-      },
-      path: ["space", "40"],
     },
     48: {
       $type: "dimension",
       $value: "192px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "192px",
-      },
-      name: "Space48",
-      attributes: {
-        category: "space",
-        type: "48",
-      },
-      path: ["space", "48"],
     },
     64: {
       $type: "dimension",
       $value: "256px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "256px",
-      },
-      name: "Space64",
-      attributes: {
-        category: "space",
-        type: "64",
-      },
-      path: ["space", "64"],
     },
     80: {
       $type: "dimension",
       $value: "320px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "320px",
-      },
-      name: "Space80",
-      attributes: {
-        category: "space",
-        type: "80",
-      },
-      path: ["space", "80"],
     },
     96: {
       $type: "dimension",
       $value: "384px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "384px",
-      },
-      name: "Space96",
-      attributes: {
-        category: "space",
-        type: "96",
-      },
-      path: ["space", "96"],
     },
     0.5: {
       $type: "dimension",
       $value: "2px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "2px",
-      },
-      name: "Space05",
-      attributes: {
-        category: "space",
-        type: "0.5",
-      },
-      path: ["space", "0.5"],
     },
     1.5: {
       $type: "dimension",
       $value: "6px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "6px",
-      },
-      name: "Space15",
-      attributes: {
-        category: "space",
-        type: "1.5",
-      },
-      path: ["space", "1.5"],
     },
     2.5: {
       $type: "dimension",
       $value: "10px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "10px",
-      },
-      name: "Space25",
-      attributes: {
-        category: "space",
-        type: "2.5",
-      },
-      path: ["space", "2.5"],
     },
     3.5: {
       $type: "dimension",
       $value: "14px",
-      filePath: "src/primitive/size.json",
-      isSource: true,
-      original: {
-        $type: "dimension",
-        $value: "14px",
-      },
-      name: "Space35",
-      attributes: {
-        category: "space",
-        type: "3.5",
-      },
-      path: ["space", "3.5"],
     },
   },
   size: {
@@ -6252,87 +3424,22 @@ module.exports = {
       xs: {
         $type: "dimension",
         $value: "24px",
-        filePath: "src/primitive/size.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "24px",
-        },
-        name: "SizeControlXs",
-        attributes: {
-          category: "size",
-          type: "control",
-          item: "xs",
-        },
-        path: ["size", "control", "xs"],
       },
       sm: {
         $type: "dimension",
         $value: "32px",
-        filePath: "src/primitive/size.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "32px",
-        },
-        name: "SizeControlSm",
-        attributes: {
-          category: "size",
-          type: "control",
-          item: "sm",
-        },
-        path: ["size", "control", "sm"],
       },
       md: {
         $type: "dimension",
         $value: "40px",
-        filePath: "src/primitive/size.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "40px",
-        },
-        name: "SizeControlMd",
-        attributes: {
-          category: "size",
-          type: "control",
-          item: "md",
-        },
-        path: ["size", "control", "md"],
       },
       lg: {
         $type: "dimension",
         $value: "48px",
-        filePath: "src/primitive/size.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "48px",
-        },
-        name: "SizeControlLg",
-        attributes: {
-          category: "size",
-          type: "control",
-          item: "lg",
-        },
-        path: ["size", "control", "lg"],
       },
       xl: {
         $type: "dimension",
         $value: "56px",
-        filePath: "src/primitive/size.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "56px",
-        },
-        name: "SizeControlXl",
-        attributes: {
-          category: "size",
-          type: "control",
-          item: "xl",
-        },
-        path: ["size", "control", "xl"],
       },
     },
   },
@@ -6340,68 +3447,19 @@ module.exports = {
     sans: {
       $type: "fontFamily",
       $value: "'Inter', ui-sans-serif, system-ui, sans-serif",
-      filePath: "src/primitive/typography.json",
-      isSource: true,
-      original: {
-        $type: "fontFamily",
-        $value: "'Inter', ui-sans-serif, system-ui, sans-serif",
-      },
-      name: "FontSans",
-      attributes: {
-        category: "font",
-        type: "sans",
-      },
-      path: ["font", "sans"],
     },
     heading: {
       $type: "fontFamily",
       $value: "'Montserrat', ui-sans-serif, system-ui, sans-serif",
-      filePath: "src/primitive/typography.json",
-      isSource: true,
-      original: {
-        $type: "fontFamily",
-        $value: "'Montserrat', ui-sans-serif, system-ui, sans-serif",
-      },
-      name: "FontHeading",
-      attributes: {
-        category: "font",
-        type: "heading",
-      },
-      path: ["font", "heading"],
     },
     serif: {
       $type: "fontFamily",
       $value: "ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif",
-      filePath: "src/primitive/typography.json",
-      isSource: true,
-      original: {
-        $type: "fontFamily",
-        $value: "ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif",
-      },
-      name: "FontSerif",
-      attributes: {
-        category: "font",
-        type: "serif",
-      },
-      path: ["font", "serif"],
     },
     mono: {
       $type: "fontFamily",
       $value:
         "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-      filePath: "src/primitive/typography.json",
-      isSource: true,
-      original: {
-        $type: "fontFamily",
-        $value:
-          "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-      },
-      name: "FontMono",
-      attributes: {
-        category: "font",
-        type: "mono",
-      },
-      path: ["font", "mono"],
     },
   },
   text: {
@@ -6409,288 +3467,80 @@ module.exports = {
       fontSize: {
         $type: "dimension",
         $value: "0.75rem",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "0.75rem",
-        },
-        name: "TextXsFontSize",
-        attributes: {
-          category: "text",
-          type: "xs",
-          item: "fontSize",
-        },
-        path: ["text", "xs", "fontSize"],
       },
       lineHeight: {
         $type: "number",
         $value: "1.5",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "number",
-          $value: "1.5",
-        },
-        name: "TextXsLineHeight",
-        attributes: {
-          category: "text",
-          type: "xs",
-          item: "lineHeight",
-        },
-        path: ["text", "xs", "lineHeight"],
       },
     },
     sm: {
       fontSize: {
         $type: "dimension",
         $value: "0.875rem",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "0.875rem",
-        },
-        name: "TextSmFontSize",
-        attributes: {
-          category: "text",
-          type: "sm",
-          item: "fontSize",
-        },
-        path: ["text", "sm", "fontSize"],
       },
       lineHeight: {
         $type: "number",
         $value: "1.5",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "number",
-          $value: "1.5",
-        },
-        name: "TextSmLineHeight",
-        attributes: {
-          category: "text",
-          type: "sm",
-          item: "lineHeight",
-        },
-        path: ["text", "sm", "lineHeight"],
       },
     },
     base: {
       fontSize: {
         $type: "dimension",
         $value: "1rem",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "1rem",
-        },
-        name: "TextBaseFontSize",
-        attributes: {
-          category: "text",
-          type: "base",
-          item: "fontSize",
-        },
-        path: ["text", "base", "fontSize"],
       },
       lineHeight: {
         $type: "number",
         $value: "1.5",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "number",
-          $value: "1.5",
-        },
-        name: "TextBaseLineHeight",
-        attributes: {
-          category: "text",
-          type: "base",
-          item: "lineHeight",
-        },
-        path: ["text", "base", "lineHeight"],
       },
     },
     lg: {
       fontSize: {
         $type: "dimension",
         $value: "1.125rem",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "1.125rem",
-        },
-        name: "TextLgFontSize",
-        attributes: {
-          category: "text",
-          type: "lg",
-          item: "fontSize",
-        },
-        path: ["text", "lg", "fontSize"],
       },
       lineHeight: {
         $type: "number",
         $value: "1.5",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "number",
-          $value: "1.5",
-        },
-        name: "TextLgLineHeight",
-        attributes: {
-          category: "text",
-          type: "lg",
-          item: "lineHeight",
-        },
-        path: ["text", "lg", "lineHeight"],
       },
     },
     xl: {
       fontSize: {
         $type: "dimension",
         $value: "1.25rem",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "1.25rem",
-        },
-        name: "TextXlFontSize",
-        attributes: {
-          category: "text",
-          type: "xl",
-          item: "fontSize",
-        },
-        path: ["text", "xl", "fontSize"],
       },
       lineHeight: {
         $type: "number",
         $value: "1.5",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "number",
-          $value: "1.5",
-        },
-        name: "TextXlLineHeight",
-        attributes: {
-          category: "text",
-          type: "xl",
-          item: "lineHeight",
-        },
-        path: ["text", "xl", "lineHeight"],
       },
     },
     "2xl": {
       fontSize: {
         $type: "dimension",
         $value: "1.5rem",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "1.5rem",
-        },
-        name: "Text2xlFontSize",
-        attributes: {
-          category: "text",
-          type: "2xl",
-          item: "fontSize",
-        },
-        path: ["text", "2xl", "fontSize"],
       },
       lineHeight: {
         $type: "number",
         $value: "1.25",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "number",
-          $value: "1.25",
-        },
-        name: "Text2xlLineHeight",
-        attributes: {
-          category: "text",
-          type: "2xl",
-          item: "lineHeight",
-        },
-        path: ["text", "2xl", "lineHeight"],
       },
     },
     "3xl": {
       fontSize: {
         $type: "dimension",
         $value: "1.875rem",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "1.875rem",
-        },
-        name: "Text3xlFontSize",
-        attributes: {
-          category: "text",
-          type: "3xl",
-          item: "fontSize",
-        },
-        path: ["text", "3xl", "fontSize"],
       },
       lineHeight: {
         $type: "number",
         $value: "1.25",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "number",
-          $value: "1.25",
-        },
-        name: "Text3xlLineHeight",
-        attributes: {
-          category: "text",
-          type: "3xl",
-          item: "lineHeight",
-        },
-        path: ["text", "3xl", "lineHeight"],
       },
     },
     "4xl": {
       fontSize: {
         $type: "dimension",
         $value: "2.25rem",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "dimension",
-          $value: "2.25rem",
-        },
-        name: "Text4xlFontSize",
-        attributes: {
-          category: "text",
-          type: "4xl",
-          item: "fontSize",
-        },
-        path: ["text", "4xl", "fontSize"],
       },
       lineHeight: {
         $type: "number",
         $value: "1.2",
-        filePath: "src/primitive/typography.json",
-        isSource: true,
-        original: {
-          $type: "number",
-          $value: "1.2",
-        },
-        name: "Text4xlLineHeight",
-        attributes: {
-          category: "text",
-          type: "4xl",
-          item: "lineHeight",
-        },
-        path: ["text", "4xl", "lineHeight"],
       },
     },
   },
@@ -6698,308 +3548,80 @@ module.exports = {
     light: {
       $type: "fontWeight",
       $value: "300",
-      filePath: "src/primitive/typography.json",
-      isSource: true,
-      original: {
-        $type: "fontWeight",
-        $value: "300",
-      },
-      name: "WeightLight",
-      attributes: {
-        category: "weight",
-        type: "light",
-      },
-      path: ["weight", "light"],
     },
     normal: {
       $type: "fontWeight",
       $value: "400",
-      filePath: "src/primitive/typography.json",
-      isSource: true,
-      original: {
-        $type: "fontWeight",
-        $value: "400",
-      },
-      name: "WeightNormal",
-      attributes: {
-        category: "weight",
-        type: "normal",
-      },
-      path: ["weight", "normal"],
     },
     medium: {
       $type: "fontWeight",
       $value: "500",
-      filePath: "src/primitive/typography.json",
-      isSource: true,
-      original: {
-        $type: "fontWeight",
-        $value: "500",
-      },
-      name: "WeightMedium",
-      attributes: {
-        category: "weight",
-        type: "medium",
-      },
-      path: ["weight", "medium"],
     },
     semibold: {
       $type: "fontWeight",
       $value: "600",
-      filePath: "src/primitive/typography.json",
-      isSource: true,
-      original: {
-        $type: "fontWeight",
-        $value: "600",
-      },
-      name: "WeightSemibold",
-      attributes: {
-        category: "weight",
-        type: "semibold",
-      },
-      path: ["weight", "semibold"],
     },
     bold: {
       $type: "fontWeight",
       $value: "700",
-      filePath: "src/primitive/typography.json",
-      isSource: true,
-      original: {
-        $type: "fontWeight",
-        $value: "700",
-      },
-      name: "WeightBold",
-      attributes: {
-        category: "weight",
-        type: "bold",
-      },
-      path: ["weight", "bold"],
     },
     extrabold: {
       $type: "fontWeight",
       $value: "800",
-      filePath: "src/primitive/typography.json",
-      isSource: true,
-      original: {
-        $type: "fontWeight",
-        $value: "800",
-      },
-      name: "WeightExtrabold",
-      attributes: {
-        category: "weight",
-        type: "extrabold",
-      },
-      path: ["weight", "extrabold"],
     },
     black: {
       $type: "fontWeight",
       $value: "900",
-      filePath: "src/primitive/typography.json",
-      isSource: true,
-      original: {
-        $type: "fontWeight",
-        $value: "900",
-      },
-      name: "WeightBlack",
-      attributes: {
-        category: "weight",
-        type: "black",
-      },
-      path: ["weight", "black"],
     },
   },
   z: {
     hide: {
       $type: "number",
       $value: "-1",
-      filePath: "src/semantic/shared.json",
-      isSource: true,
-      original: {
-        $type: "number",
-        $value: "-1",
-      },
-      name: "ZHide",
-      attributes: {
-        category: "z",
-        type: "hide",
-      },
-      path: ["z", "hide"],
     },
     base: {
       $type: "number",
       $value: "0",
-      filePath: "src/semantic/shared.json",
-      isSource: true,
-      original: {
-        $type: "number",
-        $value: "0",
-      },
-      name: "ZBase",
-      attributes: {
-        category: "z",
-        type: "base",
-      },
-      path: ["z", "base"],
     },
     docked: {
       $type: "number",
       $value: "10",
-      filePath: "src/semantic/shared.json",
-      isSource: true,
-      original: {
-        $type: "number",
-        $value: "10",
-      },
-      name: "ZDocked",
-      attributes: {
-        category: "z",
-        type: "docked",
-      },
-      path: ["z", "docked"],
     },
     dropdown: {
       $type: "number",
       $value: "1000",
-      filePath: "src/semantic/shared.json",
-      isSource: true,
-      original: {
-        $type: "number",
-        $value: "1000",
-      },
-      name: "ZDropdown",
-      attributes: {
-        category: "z",
-        type: "dropdown",
-      },
-      path: ["z", "dropdown"],
     },
     sticky: {
       $type: "number",
       $value: "1100",
-      filePath: "src/semantic/shared.json",
-      isSource: true,
-      original: {
-        $type: "number",
-        $value: "1100",
-      },
-      name: "ZSticky",
-      attributes: {
-        category: "z",
-        type: "sticky",
-      },
-      path: ["z", "sticky"],
     },
     banner: {
       $type: "number",
       $value: "1200",
-      filePath: "src/semantic/shared.json",
-      isSource: true,
-      original: {
-        $type: "number",
-        $value: "1200",
-      },
-      name: "ZBanner",
-      attributes: {
-        category: "z",
-        type: "banner",
-      },
-      path: ["z", "banner"],
     },
     overlay: {
       $type: "number",
       $value: "1300",
-      filePath: "src/semantic/shared.json",
-      isSource: true,
-      original: {
-        $type: "number",
-        $value: "1300",
-      },
-      name: "ZOverlay",
-      attributes: {
-        category: "z",
-        type: "overlay",
-      },
-      path: ["z", "overlay"],
     },
     modal: {
       $type: "number",
       $value: "1400",
-      filePath: "src/semantic/shared.json",
-      isSource: true,
-      original: {
-        $type: "number",
-        $value: "1400",
-      },
-      name: "ZModal",
-      attributes: {
-        category: "z",
-        type: "modal",
-      },
-      path: ["z", "modal"],
     },
     popover: {
       $type: "number",
       $value: "1500",
-      filePath: "src/semantic/shared.json",
-      isSource: true,
-      original: {
-        $type: "number",
-        $value: "1500",
-      },
-      name: "ZPopover",
-      attributes: {
-        category: "z",
-        type: "popover",
-      },
-      path: ["z", "popover"],
     },
     skipLink: {
       $type: "number",
       $value: "1600",
-      filePath: "src/semantic/shared.json",
-      isSource: true,
-      original: {
-        $type: "number",
-        $value: "1600",
-      },
-      name: "ZSkipLink",
-      attributes: {
-        category: "z",
-        type: "skipLink",
-      },
-      path: ["z", "skipLink"],
     },
     toast: {
       $type: "number",
       $value: "1700",
-      filePath: "src/semantic/shared.json",
-      isSource: true,
-      original: {
-        $type: "number",
-        $value: "1700",
-      },
-      name: "ZToast",
-      attributes: {
-        category: "z",
-        type: "toast",
-      },
-      path: ["z", "toast"],
     },
     tooltip: {
       $type: "number",
       $value: "1800",
-      filePath: "src/semantic/shared.json",
-      isSource: true,
-      original: {
-        $type: "number",
-        $value: "1800",
-      },
-      name: "ZTooltip",
-      attributes: {
-        category: "z",
-        type: "tooltip",
-      },
-      path: ["z", "tooltip"],
     },
   },
   theme: "default",

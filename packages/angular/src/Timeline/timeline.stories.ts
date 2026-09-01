@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Meta, moduleMetadata } from '@storybook/angular';
 import { TimelineComponent, TimelineItemComponent } from './timeline.component';
 

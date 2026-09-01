@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
       </li>
     </ol>
   `,
-  styleUrls: ['../../../../core/src/components/stepper.css'],
+  styleUrls: ['../../../../packages/core/src/components/stepper.css'],
   standalone: true,
   imports: [CommonModule]
 })

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect, useCallback } from 'react';
+import React, { useRef, useState, useCallback } from 'react';
 
 export interface SliderProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {
   min?: number;
@@ -13,7 +13,7 @@ export interface SliderProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 
 export const Slider = React.forwardRef<HTMLDivElement, SliderProps>(
   ({ min = 0, max = 100, step = 1, value, defaultValue, onChange, disabled = false, className = '', ...props }, ref) => {
     const [internalValue, setInternalValue] = useState<number>(defaultValue ?? min);
-    const containerRef = useRef<HTMLDivElement>(null);
+    const containerRef = useRef<HTMLDivElement | null>(null);
     const isControlled = value !== undefined;
     const currentValue = isControlled ? value : internalValue;
 

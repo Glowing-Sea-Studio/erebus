@@ -1,7 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Field } from './Field';
-import React from 'react';
-
 const meta = {
   title: 'Components/Field',
   component: Field,

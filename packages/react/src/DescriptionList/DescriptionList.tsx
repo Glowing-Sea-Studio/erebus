@@ -1,6 +1,4 @@
 import React from 'react';
-import '@erebus/core/description-list.css';
-
 export interface DescriptionListProps extends React.HTMLAttributes<HTMLDListElement> {}
 export const DescriptionList = React.forwardRef<HTMLDListElement, DescriptionListProps>((props, ref) => {
   const { className = '', ...rest } = props;

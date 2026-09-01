@@ -21,10 +21,10 @@ echo -e "${BLUE}(Appuyez sur Ctrl+C pour arrêter les serveurs)${NC}\n"
 
 # On lance les deux serveurs en parallèle
 # Note: Storybook se lance par défaut sur le port 6006. On force le port 6007 pour Angular.
-npx nx storybook @glowing-sea-studio/erebus-react -p 6006 &
+npx nx storybook @glowing-sea-studio/erebus-react --port=6006 &
 REACT_PID=$!
 
-npx nx storybook @glowing-sea-studio/erebus-angular -p 6007 &
+npx nx storybook @glowing-sea-studio/erebus-angular --port=6007 &
 ANGULAR_PID=$!
 
 # On attend que l'utilisateur coupe le script

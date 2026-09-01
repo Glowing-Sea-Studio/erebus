@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
       </div>
     </div>
   `,
-  styleUrls: ['../../../../core/src/components/accordion.css'],
+  styleUrls: ['../../../../packages/core/src/components/accordion.css'],
   standalone: true,
   imports: [CommonModule]
 })

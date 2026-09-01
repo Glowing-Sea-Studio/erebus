@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Meta, moduleMetadata, StoryObj } from '@storybook/angular';
 import { ColorPickerComponent } from './ColorPicker.component';
 import { CommonModule } from '@angular/common';

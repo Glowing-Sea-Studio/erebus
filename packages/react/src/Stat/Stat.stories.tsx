@@ -1,4 +1,3 @@
-import React from 'react';
 import { Stat } from './Stat';
 
 export default { title: 'Components/Stat', component: Stat };

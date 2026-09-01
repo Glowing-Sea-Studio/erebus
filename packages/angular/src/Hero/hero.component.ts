@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `<div class="erb-hero {{className}}"><ng-content></ng-content></div>`,
-  styleUrls: ['../../../../core/src/components/hero.css']
+  styleUrls: ['../../../../packages/core/src/components/hero.css']
 })
 export class HeroComponent {
   @Input() className = '';

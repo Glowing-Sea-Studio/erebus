@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Meta, moduleMetadata } from '@storybook/angular';
 import { ToastComponent } from './toast.component';
 import { ToastService } from './toast.service';

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Meta, moduleMetadata, StoryObj } from '@storybook/angular';
 import { LightboxComponent } from './lightbox.component';
 

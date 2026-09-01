@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { MobileNav } from './MobileNav';
 
 export default { title: 'Components/MobileNav', component: MobileNav };

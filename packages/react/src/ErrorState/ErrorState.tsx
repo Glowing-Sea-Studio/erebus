@@ -1,5 +1,4 @@
 import React from 'react';
-
 export interface ErrorStateProps {
   title: string;
   description?: string;

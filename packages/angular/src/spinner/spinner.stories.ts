@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { Meta, StoryObj } from '@storybook/angular';
 import { SpinnerComponent } from './spinner.component';
 

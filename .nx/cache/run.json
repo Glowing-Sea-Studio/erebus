@@ -1,29 +1,18 @@
 {
   "run": {
-    "command": "nx run-many -t typecheck",
-    "startTime": "2026-09-01T13:19:13.524Z",
-    "endTime": "2026-09-01T13:19:16.604Z",
+    "command": "nx storybook @glowing-sea-studio/erebus-angular --port=6007",
+    "startTime": "2026-09-01T14:07:47.078Z",
+    "endTime": "2026-09-01T14:07:56.230Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "@glowing-sea-studio/erebus-angular:typecheck",
-      "target": "typecheck",
+      "taskId": "@glowing-sea-studio/erebus-angular:storybook",
+      "target": "storybook",
       "projectName": "@glowing-sea-studio/erebus-angular",
-      "hash": "2685477306688205278",
-      "startTime": "2026-09-01T13:19:13.535Z",
-      "endTime": "2026-09-01T13:19:15.192Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 1
-    },
-    {
-      "taskId": "@glowing-sea-studio/erebus-react:typecheck",
-      "target": "typecheck",
-      "projectName": "@glowing-sea-studio/erebus-react",
-      "hash": "18326676670585992276",
-      "startTime": "2026-09-01T13:19:13.535Z",
-      "endTime": "2026-09-01T13:19:16.602Z",
+      "hash": "18124196220768834485",
+      "startTime": "2026-09-01T14:07:47.087Z",
+      "endTime": "2026-09-01T14:07:56.230Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1

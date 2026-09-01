@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
     <div class="erb-stat-value">{{ value }}</div>
     <div *ngIf="helpText" class="erb-stat-help-text">{{ helpText }}</div>
   `,
-  styleUrls: ['../../../../core/src/components/stat.css']
+  styleUrls: ['../../../../packages/core/src/components/stat.css']
 })
 export class ErbStatComponent {
   @Input() label: string = '';

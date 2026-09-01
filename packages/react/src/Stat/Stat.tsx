@@ -1,6 +1,4 @@
 import React from 'react';
-import '@erebus/core/stat.css';
-
 export interface StatProps extends React.HTMLAttributes<HTMLDivElement> {
   label: React.ReactNode;
   value: React.ReactNode;

@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core';
       </ol>
     </nav>
   `,
-  styleUrls: ['../../../../core/src/components/breadcrumb.css'],
+  styleUrls: ['../../../../packages/core/src/components/breadcrumb.css'],
   standalone: true
 })
 export class BreadcrumbComponent {

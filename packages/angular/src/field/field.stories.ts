@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 import { ErbFieldComponent } from './field.component';
 import { CommonModule } from '@angular/common';

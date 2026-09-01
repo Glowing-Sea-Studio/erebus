@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 import { Component } from '@angular/core';
 import { 

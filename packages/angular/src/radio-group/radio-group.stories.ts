@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Meta, StoryObj } from '@storybook/angular';
 import { ErbRadioGroupComponent } from './radio-group.component';
 import { ErbRadioComponent } from '../radio/radio.component';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { DescriptionList, DescriptionTerm, DescriptionDetails } from './DescriptionList';
 
 export default { title: 'Components/DescriptionList', component: DescriptionList };

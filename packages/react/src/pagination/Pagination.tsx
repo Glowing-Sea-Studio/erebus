@@ -1,6 +1,3 @@
-import React from 'react';
-import '../../../../core/src/components/pagination.css';
-
 export interface PaginationProps { currentPage: number; totalPages: number; onPageChange: (page: number) => void; }
 
 export const Pagination = ({ currentPage, totalPages, onPageChange }: PaginationProps) => (

@@ -1,4 +1,3 @@
-import React from 'react';
 import { List, ListItem } from './List';
 
 export default { title: 'Components/List', component: List };

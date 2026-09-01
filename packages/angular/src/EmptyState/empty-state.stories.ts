@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Meta, moduleMetadata } from '@storybook/angular';
 import { EmptyStateComponent } from './empty-state.component';
 

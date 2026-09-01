@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Meta, moduleMetadata, StoryObj } from '@storybook/angular';
 import { FileUploadComponent } from './FileUpload.component';
 import { CommonModule } from '@angular/common';

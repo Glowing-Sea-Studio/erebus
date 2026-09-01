@@ -1,5 +1,4 @@
 import React from 'react';
-
 export interface TimePickerProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
   size?: 'sm' | 'md' | 'lg';
 }

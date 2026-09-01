@@ -1331,35 +1331,1813 @@ function useLayerTransition(isOpen, duration = 200) {
   }, [isOpen, duration]);
   return { shouldRender, state };
 }
+
+// src/badge/Badge.tsx
+import React2 from "react";
+import { jsx as jsx32 } from "react/jsx-runtime";
+var Badge = React2.forwardRef(
+  ({ className = "", variant = "solid", color = "primary", size = "md", shape = "rounded", children, ...props }, ref) => {
+    const classNames = [
+      "erb-badge",
+      `erb-badge--variant-${variant}`,
+      `erb-badge--color-${color}`,
+      `erb-badge--size-${size}`,
+      `erb-badge--shape-${shape}`,
+      className
+    ].filter(Boolean).join(" ");
+    return /* @__PURE__ */ jsx32("span", { ref, className: classNames, ...props, children });
+  }
+);
+Badge.displayName = "Badge";
+
+// src/tag/Tag.tsx
+import React3 from "react";
+import { jsx as jsx33, jsxs as jsxs12 } from "react/jsx-runtime";
+var Tag = React3.forwardRef(
+  ({ className = "", variant = "solid", color = "primary", size = "md", closable, onClose, children, ...props }, ref) => {
+    const classNames = [
+      "erb-tag",
+      `erb-tag--variant-${variant}`,
+      `erb-tag--color-${color}`,
+      `erb-tag--size-${size}`,
+      className
+    ].filter(Boolean).join(" ");
+    return /* @__PURE__ */ jsxs12("span", { ref, className: classNames, ...props, children: [
+      children,
+      closable && /* @__PURE__ */ jsx33("button", { type: "button", className: "erb-tag__close", "aria-label": "Close", onClick: onClose, children: "\xD7" })
+    ] });
+  }
+);
+Tag.displayName = "Tag";
+
+// src/spinner/Spinner.tsx
+import React4 from "react";
+import { jsx as jsx34 } from "react/jsx-runtime";
+var Spinner = React4.forwardRef(
+  ({ size, className = "", style, ...props }, ref) => {
+    return /* @__PURE__ */ jsx34(
+      "div",
+      {
+        ref,
+        className: `erb-spinner ${className}`.trim(),
+        style: {
+          ...style,
+          "--erb-spinner-size": typeof size === "number" ? `${size}px` : size
+        },
+        ...props
+      }
+    );
+  }
+);
+Spinner.displayName = "Spinner";
+
+// src/skeleton/Skeleton.tsx
+import React5 from "react";
+import { jsx as jsx35 } from "react/jsx-runtime";
+var Skeleton = React5.forwardRef(
+  ({ variant = "rect", width, height, className = "", style, ...props }, ref) => {
+    return /* @__PURE__ */ jsx35(
+      "div",
+      {
+        ref,
+        className: `erb-skeleton ${variant === "circle" ? "erb-skeleton--circle" : ""} ${className}`.trim(),
+        style: {
+          ...style,
+          width: typeof width === "number" ? `${width}px` : width,
+          height: typeof height === "number" ? `${height}px` : height
+        },
+        ...props
+      }
+    );
+  }
+);
+Skeleton.displayName = "Skeleton";
+
+// src/field/Field.tsx
+import { forwardRef as forwardRef33 } from "react";
+import { clsx as clsx3 } from "clsx";
+
+// src/label/Label.tsx
+import { forwardRef as forwardRef32 } from "react";
+import { clsx as clsx2 } from "clsx";
+import { jsx as jsx36 } from "react/jsx-runtime";
+var Label = forwardRef32(
+  ({ children, className, disabled, required, ...props }, ref) => {
+    return /* @__PURE__ */ jsx36(
+      "label",
+      {
+        ref,
+        className: clsx2(
+          "erb-label",
+          {
+            "erb-label--disabled": disabled,
+            "erb-label--required": required
+          },
+          className
+        ),
+        ...props,
+        children
+      }
+    );
+  }
+);
+Label.displayName = "Label";
+
+// src/field/Field.tsx
+import { jsx as jsx37, jsxs as jsxs13 } from "react/jsx-runtime";
+var Field = forwardRef33(
+  ({ children, className, label, hint, error, horizontal, required, disabled, ...props }, ref) => {
+    return /* @__PURE__ */ jsxs13(
+      "div",
+      {
+        ref,
+        className: clsx3(
+          "erb-field",
+          {
+            "erb-field--horizontal": horizontal
+          },
+          className
+        ),
+        ...props,
+        children: [
+          label && /* @__PURE__ */ jsx37(Label, { required: !!required, disabled: !!disabled, children: label }),
+          /* @__PURE__ */ jsxs13("div", { className: "erb-field__content", children: [
+            children,
+            error ? /* @__PURE__ */ jsx37("div", { className: "erb-field__error", children: error }) : hint ? /* @__PURE__ */ jsx37("div", { className: "erb-field__hint", children: hint }) : null
+          ] })
+        ]
+      }
+    );
+  }
+);
+Field.displayName = "Field";
+
+// src/icon-button/IconButton.tsx
+import { forwardRef as forwardRef34 } from "react";
+import { jsx as jsx38 } from "react/jsx-runtime";
+var IconButton = forwardRef34(
+  ({ className, size = "md", variant = "solid", "aria-label": ariaLabel, ...props }, ref) => {
+    return /* @__PURE__ */ jsx38(
+      "button",
+      {
+        ref,
+        className: cn("erb-icon-button", className),
+        "data-size": size,
+        "data-variant": variant,
+        "aria-label": ariaLabel,
+        ...props
+      }
+    );
+  }
+);
+IconButton.displayName = "IconButton";
+
+// src/button-group/ButtonGroup.tsx
+import { forwardRef as forwardRef35 } from "react";
+import { jsx as jsx39 } from "react/jsx-runtime";
+var ButtonGroup = forwardRef35(
+  ({ className, orientation = "horizontal", ...props }, ref) => {
+    return /* @__PURE__ */ jsx39(
+      "div",
+      {
+        ref,
+        className: cn("erb-button-group", className),
+        "data-orientation": orientation,
+        role: "group",
+        ...props
+      }
+    );
+  }
+);
+ButtonGroup.displayName = "ButtonGroup";
+
+// src/avatar/Avatar.tsx
+import { forwardRef as forwardRef36 } from "react";
+import { jsx as jsx40 } from "react/jsx-runtime";
+var Avatar = forwardRef36(
+  ({ className, src, name, size = "md", ...props }, ref) => {
+    return /* @__PURE__ */ jsx40(
+      "div",
+      {
+        ref,
+        className: cn("erb-avatar", className),
+        "data-size": size,
+        role: "img",
+        "aria-label": name,
+        ...props,
+        children: src ? /* @__PURE__ */ jsx40("img", { src, alt: name, className: "erb-avatar__image" }) : /* @__PURE__ */ jsx40("span", { className: "erb-avatar__initials", children: name ? name.charAt(0).toUpperCase() : "?" })
+      }
+    );
+  }
+);
+Avatar.displayName = "Avatar";
+
+// src/avatar-group/AvatarGroup.tsx
+import { forwardRef as forwardRef37 } from "react";
+import { jsx as jsx41 } from "react/jsx-runtime";
+var AvatarGroup = forwardRef37(
+  ({ className, max, children, ...props }, ref) => {
+    return /* @__PURE__ */ jsx41(
+      "div",
+      {
+        ref,
+        className: cn("erb-avatar-group", className),
+        ...props,
+        children
+      }
+    );
+  }
+);
+AvatarGroup.displayName = "AvatarGroup";
+
+// src/divider/Divider.tsx
+import { forwardRef as forwardRef38 } from "react";
+import { jsx as jsx42 } from "react/jsx-runtime";
+var Divider = forwardRef38(
+  ({ className, orientation = "horizontal", ...props }, ref) => {
+    return /* @__PURE__ */ jsx42(
+      "hr",
+      {
+        ref,
+        className: cn("erb-divider", className),
+        "data-orientation": orientation,
+        role: "separator",
+        "aria-orientation": orientation,
+        ...props
+      }
+    );
+  }
+);
+Divider.displayName = "Divider";
+
+// src/kbd/Kbd.tsx
+import { forwardRef as forwardRef39 } from "react";
+import { jsx as jsx43 } from "react/jsx-runtime";
+var Kbd = forwardRef39(
+  ({ className, ...props }, ref) => {
+    return /* @__PURE__ */ jsx43(
+      "kbd",
+      {
+        ref,
+        className: cn("erb-kbd", className),
+        ...props
+      }
+    );
+  }
+);
+Kbd.displayName = "Kbd";
+
+// src/code/Code.tsx
+import { forwardRef as forwardRef40 } from "react";
+import { jsx as jsx44 } from "react/jsx-runtime";
+var Code = forwardRef40(
+  ({ className, ...props }, ref) => {
+    return /* @__PURE__ */ jsx44(
+      "code",
+      {
+        ref,
+        className: cn("erb-code", className),
+        ...props
+      }
+    );
+  }
+);
+Code.displayName = "Code";
+
+// src/callout/Callout.tsx
+import { forwardRef as forwardRef41 } from "react";
+import { jsx as jsx45 } from "react/jsx-runtime";
+var Callout = forwardRef41(
+  ({ className, intent = "neutral", children, ...props }, ref) => /* @__PURE__ */ jsx45(
+    "div",
+    {
+      ref,
+      className: cn("erb-callout", className),
+      "data-intent": intent,
+      ...props,
+      children
+    }
+  )
+);
+Callout.displayName = "Callout";
+
+// src/heading/Heading.tsx
+import { forwardRef as forwardRef42 } from "react";
+import { jsx as jsx46 } from "react/jsx-runtime";
+var Heading = forwardRef42(
+  ({ className, level = 2, ...props }, ref) => {
+    const Component = `h${level}`;
+    return /* @__PURE__ */ jsx46(
+      Component,
+      {
+        ref,
+        className: cn(`erb-heading erb-heading--${level}`, className),
+        ...props
+      }
+    );
+  }
+);
+Heading.displayName = "Heading";
+
+// src/text/Text.tsx
+import { forwardRef as forwardRef43 } from "react";
+import { jsx as jsx47 } from "react/jsx-runtime";
+var Text = forwardRef43(
+  ({ className, size = "md", muted = false, ...props }, ref) => {
+    return /* @__PURE__ */ jsx47(
+      "p",
+      {
+        ref,
+        className: cn("erb-text", className),
+        "data-size": size,
+        "data-muted": muted,
+        ...props
+      }
+    );
+  }
+);
+Text.displayName = "Text";
+
+// src/prose/Prose.tsx
+import { forwardRef as forwardRef44 } from "react";
+import { jsx as jsx48 } from "react/jsx-runtime";
+var Prose = forwardRef44(
+  ({ className, ...props }, ref) => {
+    return /* @__PURE__ */ jsx48(
+      "div",
+      {
+        ref,
+        className: cn("erb-prose", className),
+        ...props
+      }
+    );
+  }
+);
+Prose.displayName = "Prose";
+
+// src/alert-dialog/AlertDialog.tsx
+import { forwardRef as forwardRef45 } from "react";
+import { jsx as jsx49 } from "react/jsx-runtime";
+var AlertDialog = Modal;
+var AlertDialogOverlay = forwardRef45(
+  ({ className, onClick, ...props }, ref) => /* @__PURE__ */ jsx49(
+    ModalOverlay,
+    {
+      ref,
+      className: cn("erb-alert-dialog-overlay", className),
+      onClick: (e) => {
+        e.stopPropagation();
+        onClick?.(e);
+      },
+      ...props
+    }
+  )
+);
+AlertDialogOverlay.displayName = "AlertDialogOverlay";
+var AlertDialogContent = forwardRef45(
+  ({ className, ...props }, ref) => /* @__PURE__ */ jsx49(
+    ModalContent,
+    {
+      ref,
+      role: "alertdialog",
+      className: cn("erb-alert-dialog-content", className),
+      ...props
+    }
+  )
+);
+AlertDialogContent.displayName = "AlertDialogContent";
+var AlertDialogHeader = forwardRef45(
+  ({ className, ...props }, ref) => /* @__PURE__ */ jsx49(ModalHeader, { ref, className: cn("erb-alert-dialog-header", className), ...props })
+);
+AlertDialogHeader.displayName = "AlertDialogHeader";
+var AlertDialogTitle = forwardRef45(
+  ({ className, ...props }, ref) => /* @__PURE__ */ jsx49(ModalTitle, { ref, className: cn("erb-alert-dialog-title", className), ...props })
+);
+AlertDialogTitle.displayName = "AlertDialogTitle";
+var AlertDialogDescription = forwardRef45(
+  ({ className, ...props }, ref) => /* @__PURE__ */ jsx49(ModalDescription, { ref, className: cn("erb-alert-dialog-description", className), ...props })
+);
+AlertDialogDescription.displayName = "AlertDialogDescription";
+var AlertDialogBody = forwardRef45(
+  ({ className, ...props }, ref) => /* @__PURE__ */ jsx49(ModalBody, { ref, className: cn("erb-alert-dialog-body", className), ...props })
+);
+AlertDialogBody.displayName = "AlertDialogBody";
+var AlertDialogFooter = forwardRef45(
+  ({ className, ...props }, ref) => /* @__PURE__ */ jsx49(ModalFooter, { ref, className: cn("erb-alert-dialog-footer", className), ...props })
+);
+AlertDialogFooter.displayName = "AlertDialogFooter";
+
+// src/drawer/Drawer.tsx
+import { forwardRef as forwardRef46 } from "react";
+import { jsx as jsx50 } from "react/jsx-runtime";
+var Drawer = Modal;
+var DrawerOverlay = forwardRef46(
+  ({ className, ...props }, ref) => /* @__PURE__ */ jsx50(ModalOverlay, { ref, className: cn("erb-drawer-overlay", className), ...props })
+);
+DrawerOverlay.displayName = "DrawerOverlay";
+var DrawerContent = forwardRef46(
+  ({ className, ...props }, ref) => /* @__PURE__ */ jsx50(
+    ModalContent,
+    {
+      ref,
+      role: "dialog",
+      className: cn("erb-drawer-content", className),
+      ...props
+    }
+  )
+);
+DrawerContent.displayName = "DrawerContent";
+var DrawerHeader = forwardRef46(
+  ({ className, ...props }, ref) => /* @__PURE__ */ jsx50(ModalHeader, { ref, className: cn("erb-drawer-header", className), ...props })
+);
+DrawerHeader.displayName = "DrawerHeader";
+var DrawerTitle = forwardRef46(
+  ({ className, ...props }, ref) => /* @__PURE__ */ jsx50(ModalTitle, { ref, className: cn("erb-drawer-title", className), ...props })
+);
+DrawerTitle.displayName = "DrawerTitle";
+var DrawerDescription = forwardRef46(
+  ({ className, ...props }, ref) => /* @__PURE__ */ jsx50(ModalDescription, { ref, className: cn("erb-drawer-description", className), ...props })
+);
+DrawerDescription.displayName = "DrawerDescription";
+var DrawerBody = forwardRef46(
+  ({ className, ...props }, ref) => /* @__PURE__ */ jsx50(ModalBody, { ref, className: cn("erb-drawer-body", className), ...props })
+);
+DrawerBody.displayName = "DrawerBody";
+var DrawerFooter = forwardRef46(
+  ({ className, ...props }, ref) => /* @__PURE__ */ jsx50(ModalFooter, { ref, className: cn("erb-drawer-footer", className), ...props })
+);
+DrawerFooter.displayName = "DrawerFooter";
+
+// src/popover/Popover.tsx
+import { useState as useState8, cloneElement as cloneElement2, isValidElement as isValidElement2 } from "react";
+import {
+  useFloating as useFloating2,
+  autoUpdate as autoUpdate2,
+  offset as offset2,
+  flip as flip2,
+  shift as shift2,
+  useClick as useClick2,
+  useDismiss as useDismiss2,
+  useRole as useRole2,
+  useInteractions as useInteractions2,
+  FloatingPortal as FloatingPortal2,
+  FloatingFocusManager as FloatingFocusManager2
+} from "@floating-ui/react";
+import { Fragment as Fragment2, jsx as jsx51, jsxs as jsxs14 } from "react/jsx-runtime";
+function Popover({ trigger, children, placement = "bottom", open: controlledOpen, onOpenChange, className }) {
+  const [uncontrolledOpen, setUncontrolledOpen] = useState8(false);
+  const open = controlledOpen !== void 0 ? controlledOpen : uncontrolledOpen;
+  const setOpen = (open2) => {
+    setUncontrolledOpen(open2);
+    onOpenChange?.(open2);
+  };
+  const { refs, floatingStyles, context } = useFloating2({
+    open,
+    onOpenChange: setOpen,
+    placement,
+    whileElementsMounted: autoUpdate2,
+    middleware: [offset2(4), flip2(), shift2()]
+  });
+  const click = useClick2(context);
+  const dismiss = useDismiss2(context);
+  const role = useRole2(context);
+  const { getReferenceProps, getFloatingProps } = useInteractions2([
+    click,
+    dismiss,
+    role
+  ]);
+  return /* @__PURE__ */ jsxs14(Fragment2, { children: [
+    isValidElement2(trigger) && cloneElement2(trigger, {
+      ref: refs.setReference,
+      ...getReferenceProps(trigger.props || {})
+    }),
+    open && /* @__PURE__ */ jsx51(FloatingPortal2, { children: /* @__PURE__ */ jsx51(FloatingFocusManager2, { context, modal: false, children: /* @__PURE__ */ jsx51(
+      "div",
+      {
+        ref: refs.setFloating,
+        style: floatingStyles,
+        className: cn("erb-popover", className),
+        ...getFloatingProps(),
+        children
+      }
+    ) }) })
+  ] });
+}
+
+// src/tooltip/Tooltip.tsx
+import { useState as useState9, cloneElement as cloneElement3, isValidElement as isValidElement3 } from "react";
+import {
+  useFloating as useFloating3,
+  autoUpdate as autoUpdate3,
+  offset as offset3,
+  flip as flip3,
+  shift as shift3,
+  useHover,
+  useFocus,
+  useDismiss as useDismiss3,
+  useRole as useRole3,
+  useInteractions as useInteractions3,
+  FloatingPortal as FloatingPortal3
+} from "@floating-ui/react";
+import { Fragment as Fragment3, jsx as jsx52, jsxs as jsxs15 } from "react/jsx-runtime";
+function Tooltip({ trigger, content, placement = "top", open: controlledOpen, onOpenChange, className }) {
+  const [uncontrolledOpen, setUncontrolledOpen] = useState9(false);
+  const open = controlledOpen !== void 0 ? controlledOpen : uncontrolledOpen;
+  const setOpen = (open2) => {
+    setUncontrolledOpen(open2);
+    onOpenChange?.(open2);
+  };
+  const { refs, floatingStyles, context } = useFloating3({
+    open,
+    onOpenChange: setOpen,
+    placement,
+    whileElementsMounted: autoUpdate3,
+    middleware: [offset3(4), flip3(), shift3()]
+  });
+  const hover = useHover(context, { move: false });
+  const focus = useFocus(context);
+  const dismiss = useDismiss3(context);
+  const role = useRole3(context, { role: "tooltip" });
+  const { getReferenceProps, getFloatingProps } = useInteractions3([
+    hover,
+    focus,
+    dismiss,
+    role
+  ]);
+  return /* @__PURE__ */ jsxs15(Fragment3, { children: [
+    isValidElement3(trigger) && cloneElement3(trigger, {
+      ref: refs.setReference,
+      ...getReferenceProps(trigger.props || {})
+    }),
+    open && /* @__PURE__ */ jsx52(FloatingPortal3, { children: /* @__PURE__ */ jsx52(
+      "div",
+      {
+        ref: refs.setFloating,
+        style: floatingStyles,
+        className: cn("erb-tooltip", className),
+        ...getFloatingProps(),
+        children: content
+      }
+    ) })
+  ] });
+}
+
+// src/Sidebar/Sidebar.tsx
+import { jsx as jsx53 } from "react/jsx-runtime";
+var Sidebar = ({ children, className = "", ...props }) => /* @__PURE__ */ jsx53("div", { className: `erb-sidebar ${className}`, ...props, children });
+
+// src/AppShell/AppShell.tsx
+import { jsx as jsx54 } from "react/jsx-runtime";
+var AppShell = ({ children, className = "", ...props }) => /* @__PURE__ */ jsx54("div", { className: `erb-app-shell ${className}`, ...props, children });
+
+// src/MobileNav/MobileNav.tsx
+import { jsx as jsx55 } from "react/jsx-runtime";
+var MobileNav = ({ children, className = "", ...props }) => /* @__PURE__ */ jsx55("div", { className: `erb-mobile-nav ${className}`, ...props, children });
+
+// src/BottomNav/BottomNav.tsx
+import { jsx as jsx56 } from "react/jsx-runtime";
+var BottomNav = ({ children, className = "", ...props }) => /* @__PURE__ */ jsx56("div", { className: `erb-bottom-nav ${className}`, ...props, children });
+
+// src/breadcrumb/Breadcrumb.tsx
+import React8 from "react";
+import { jsx as jsx57, jsxs as jsxs16 } from "react/jsx-runtime";
+var Breadcrumb = ({ children, ariaLabel = "Breadcrumb" }) => /* @__PURE__ */ jsx57("nav", { "aria-label": ariaLabel, className: "erb-breadcrumb", children: /* @__PURE__ */ jsx57("ol", { className: "erb-breadcrumb__list", children: React8.Children.map(children, (child, i) => /* @__PURE__ */ jsxs16("li", { className: "erb-breadcrumb__item", children: [
+  child,
+  i < React8.Children.count(children) - 1 && /* @__PURE__ */ jsx57("span", { className: "erb-breadcrumb__separator", "aria-hidden": "true", children: "/" })
+] })) }) });
+
+// src/pagination/Pagination.tsx
+import { jsx as jsx58 } from "react/jsx-runtime";
+var Pagination = ({ currentPage, totalPages, onPageChange }) => /* @__PURE__ */ jsx58("nav", { "aria-label": "Pagination", children: /* @__PURE__ */ jsx58("ul", { className: "erb-pagination", children: Array.from({ length: totalPages }).map((_, i) => /* @__PURE__ */ jsx58("li", { className: "erb-pagination__item", children: /* @__PURE__ */ jsx58("button", { "aria-current": currentPage === i + 1 ? "page" : void 0, onClick: () => onPageChange(i + 1), children: i + 1 }) }, i)) }) });
+
+// src/stepper/Stepper.tsx
+import { jsx as jsx59, jsxs as jsxs17 } from "react/jsx-runtime";
+var Stepper = ({ currentStep, steps }) => /* @__PURE__ */ jsx59("ol", { className: "erb-stepper", children: steps.map((step, i) => /* @__PURE__ */ jsxs17("li", { className: "erb-stepper__step", "aria-current": currentStep === i ? "step" : void 0, children: [
+  /* @__PURE__ */ jsx59("span", { children: i + 1 }),
+  " ",
+  /* @__PURE__ */ jsx59("span", { children: step })
+] }, i)) });
+
+// src/accordion/Accordion.tsx
+import { useState as useState10 } from "react";
+import { jsx as jsx60, jsxs as jsxs18 } from "react/jsx-runtime";
+var Accordion = ({ title, children, defaultExpanded = false }) => {
+  const [expanded, setExpanded] = useState10(defaultExpanded);
+  return /* @__PURE__ */ jsxs18("div", { className: "erb-accordion", children: [
+    /* @__PURE__ */ jsx60("h3", { className: "erb-accordion__header", children: /* @__PURE__ */ jsx60("button", { "aria-expanded": expanded, className: "erb-accordion__button", onClick: () => setExpanded(!expanded), children: title }) }),
+    /* @__PURE__ */ jsx60("div", { className: "erb-accordion__panel", hidden: !expanded, children })
+  ] });
+};
+
+// src/skip-link/SkipLink.tsx
+import React10 from "react";
+import { jsx as jsx61 } from "react/jsx-runtime";
+var SkipLink = React10.forwardRef(({ href, children, className = "", ...props }, ref) => /* @__PURE__ */ jsx61("a", { ref, href, className: `erb-skip-link ${className}`, ...props, children }));
+SkipLink.displayName = "SkipLink";
+
+// src/combobox/Combobox.tsx
+import { forwardRef as forwardRef47, useState as useState11, useRef as useRef4, useEffect as useEffect7, useId as useId9 } from "react";
+import { jsx as jsx62, jsxs as jsxs19 } from "react/jsx-runtime";
+var Combobox = forwardRef47(
+  ({ className, options, value = "", onChange, label, error, id, disabled, placeholder, ...props }, ref) => {
+    const generatedId = useId9();
+    const comboboxId = id ?? generatedId;
+    const errorId = `${comboboxId}-error`;
+    const listboxId = `${comboboxId}-listbox`;
+    const [isOpen, setIsOpen] = useState11(false);
+    const [inputValue, setInputValue] = useState11("");
+    const [activeIndex, setActiveIndex] = useState11(-1);
+    const wrapperRef = useRef4(null);
+    const inputRef = useRef4(null);
+    useEffect7(() => {
+      const selectedOption = options.find((opt) => opt.value === value);
+      setInputValue(selectedOption ? selectedOption.label : "");
+    }, [value, options]);
+    const filteredOptions = options.filter(
+      (opt) => opt.label.toLowerCase().includes(inputValue.toLowerCase())
+    );
+    useEffect7(() => {
+      const handleClickOutside = (event) => {
+        if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+          setIsOpen(false);
+        }
+      };
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
+    const handleInputChange = (e) => {
+      setInputValue(e.target.value);
+      setIsOpen(true);
+      setActiveIndex(-1);
+    };
+    const handleSelect = (selectedValue) => {
+      const selectedOption = options.find((opt) => opt.value === selectedValue);
+      if (selectedOption) {
+        setInputValue(selectedOption.label);
+        onChange?.(selectedValue);
+      }
+      setIsOpen(false);
+      inputRef.current?.focus();
+    };
+    const handleKeyDown = (e) => {
+      if (!isOpen || !options) {
+        if (e.key === "ArrowDown" || e.key === "ArrowUp" || e.key === "Enter") {
+          setIsOpen(true);
+        }
+        return;
+      }
+      switch (e.key) {
+        case "ArrowDown":
+          e.preventDefault();
+          setActiveIndex((prev) => prev < filteredOptions.length - 1 ? prev + 1 : prev);
+          break;
+        case "ArrowUp":
+          e.preventDefault();
+          setActiveIndex((prev) => prev > 0 ? prev - 1 : 0);
+          break;
+        case "Enter":
+          e.preventDefault();
+          if (activeIndex >= 0 && activeIndex < filteredOptions.length) {
+            handleSelect(filteredOptions[activeIndex].value);
+          }
+          break;
+        case "Escape":
+          setIsOpen(false);
+          break;
+      }
+    };
+    return /* @__PURE__ */ jsxs19("div", { className: "erb-combobox-wrapper", ref: wrapperRef, children: [
+      label && /* @__PURE__ */ jsx62("label", { htmlFor: comboboxId, className: "erb-label", children: label }),
+      /* @__PURE__ */ jsx62("div", { className: "erb-combobox", children: /* @__PURE__ */ jsx62(
+        "input",
+        {
+          ref: (node) => {
+            inputRef.current = node;
+            if (typeof ref === "function") ref(node);
+            else if (ref) ref.current = node;
+          },
+          id: comboboxId,
+          type: "text",
+          role: "combobox",
+          "aria-expanded": isOpen,
+          "aria-controls": listboxId,
+          "aria-activedescendant": isOpen && activeIndex >= 0 ? `${listboxId}-option-${activeIndex}` : void 0,
+          "aria-invalid": !!error,
+          "aria-describedby": error ? errorId : void 0,
+          className: cn("erb-combobox-input", className),
+          value: inputValue,
+          onChange: handleInputChange,
+          onKeyDown: handleKeyDown,
+          onFocus: () => setIsOpen(true),
+          disabled,
+          placeholder,
+          ...props
+        }
+      ) }),
+      /* @__PURE__ */ jsx62(
+        "ul",
+        {
+          id: listboxId,
+          className: "erb-combobox-listbox",
+          "data-open": isOpen && filteredOptions.length > 0,
+          role: "listbox",
+          children: filteredOptions.map((opt, index) => /* @__PURE__ */ jsx62(
+            "li",
+            {
+              id: `${listboxId}-option-${index}`,
+              className: "erb-combobox-option",
+              role: "option",
+              "aria-selected": opt.value === value,
+              onClick: () => handleSelect(opt.value),
+              onMouseEnter: () => setActiveIndex(index),
+              style: activeIndex === index ? { backgroundColor: "var(--erb-color-bg-subtle)" } : {},
+              children: opt.label
+            },
+            opt.value
+          ))
+        }
+      ),
+      error && /* @__PURE__ */ jsx62("span", { id: errorId, className: "erb-error-message", children: error })
+    ] });
+  }
+);
+Combobox.displayName = "Combobox";
+
+// src/multi-select/MultiSelect.tsx
+import { forwardRef as forwardRef48, useState as useState12, useRef as useRef5, useEffect as useEffect8, useId as useId10 } from "react";
+import { jsx as jsx63, jsxs as jsxs20 } from "react/jsx-runtime";
+var MultiSelect = forwardRef48(
+  ({ className, options, value = [], onChange, label, error, id, disabled, placeholder, ...props }, ref) => {
+    const generatedId = useId10();
+    const selectId = id ?? generatedId;
+    const errorId = `${selectId}-error`;
+    const listboxId = `${selectId}-listbox`;
+    const [isOpen, setIsOpen] = useState12(false);
+    const [inputValue, setInputValue] = useState12("");
+    const [activeIndex, setActiveIndex] = useState12(-1);
+    const wrapperRef = useRef5(null);
+    const inputRef = useRef5(null);
+    const selectedOptions = options.filter((opt) => value.includes(opt.value));
+    const unselectedOptions = options.filter((opt) => !value.includes(opt.value));
+    const filteredOptions = unselectedOptions.filter(
+      (opt) => opt.label.toLowerCase().includes(inputValue.toLowerCase())
+    );
+    useEffect8(() => {
+      const handleClickOutside = (event) => {
+        if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+          setIsOpen(false);
+        }
+      };
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
+    const handleRemove = (valueToRemove, e) => {
+      e?.stopPropagation();
+      if (disabled) return;
+      const newValue = value.filter((v) => v !== valueToRemove);
+      onChange?.(newValue);
+    };
+    const handleSelect = (selectedValue) => {
+      if (disabled) return;
+      const newValue = [...value, selectedValue];
+      onChange?.(newValue);
+      setInputValue("");
+      setIsOpen(false);
+      inputRef.current?.focus();
+    };
+    const handleKeyDown = (e) => {
+      if (disabled) return;
+      if (e.key === "Backspace" && inputValue === "" && value.length > 0) {
+        handleRemove(value[value.length - 1]);
+        return;
+      }
+      if (!isOpen || !options) {
+        if (e.key === "ArrowDown" || e.key === "ArrowUp" || e.key === "Enter") {
+          setIsOpen(true);
+        }
+        return;
+      }
+      switch (e.key) {
+        case "ArrowDown":
+          e.preventDefault();
+          setActiveIndex((prev) => prev < filteredOptions.length - 1 ? prev + 1 : prev);
+          break;
+        case "ArrowUp":
+          e.preventDefault();
+          setActiveIndex((prev) => prev > 0 ? prev - 1 : 0);
+          break;
+        case "Enter":
+          e.preventDefault();
+          if (activeIndex >= 0 && activeIndex < filteredOptions.length) {
+            handleSelect(filteredOptions[activeIndex].value);
+          }
+          break;
+        case "Escape":
+          setIsOpen(false);
+          break;
+      }
+    };
+    return /* @__PURE__ */ jsxs20("div", { className: "erb-multi-select-wrapper", ref: wrapperRef, children: [
+      label && /* @__PURE__ */ jsx63("label", { htmlFor: selectId, className: "erb-label", children: label }),
+      /* @__PURE__ */ jsxs20(
+        "div",
+        {
+          className: cn("erb-multi-select-trigger", className),
+          onClick: () => {
+            if (!disabled) {
+              setIsOpen(true);
+              inputRef.current?.focus();
+            }
+          },
+          "aria-invalid": !!error,
+          "aria-disabled": disabled,
+          children: [
+            selectedOptions.map((opt) => /* @__PURE__ */ jsxs20("span", { className: "erb-multi-select-tag", children: [
+              opt.label,
+              /* @__PURE__ */ jsx63(
+                "button",
+                {
+                  type: "button",
+                  className: "erb-multi-select-tag-remove",
+                  onClick: (e) => handleRemove(opt.value, e),
+                  disabled,
+                  "aria-label": `Remove ${opt.label}`,
+                  children: "\xD7"
+                }
+              )
+            ] }, opt.value)),
+            /* @__PURE__ */ jsx63(
+              "input",
+              {
+                ref: (node) => {
+                  inputRef.current = node;
+                  if (typeof ref === "function") ref(node);
+                  else if (ref) ref.current = node;
+                },
+                id: selectId,
+                type: "text",
+                className: "erb-multi-select-input",
+                role: "combobox",
+                "aria-expanded": isOpen,
+                "aria-controls": listboxId,
+                "aria-activedescendant": isOpen && activeIndex >= 0 ? `${listboxId}-option-${activeIndex}` : void 0,
+                "aria-describedby": error ? errorId : void 0,
+                value: inputValue,
+                onChange: (e) => {
+                  setInputValue(e.target.value);
+                  setIsOpen(true);
+                  setActiveIndex(-1);
+                },
+                onKeyDown: handleKeyDown,
+                disabled,
+                placeholder: value.length === 0 ? placeholder : "",
+                ...props
+              }
+            )
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsx63(
+        "ul",
+        {
+          id: listboxId,
+          className: "erb-multi-select-listbox",
+          "data-open": isOpen && filteredOptions.length > 0,
+          role: "listbox",
+          "aria-multiselectable": "true",
+          children: filteredOptions.map((opt, index) => /* @__PURE__ */ jsx63(
+            "li",
+            {
+              id: `${listboxId}-option-${index}`,
+              className: "erb-multi-select-option",
+              role: "option",
+              "aria-selected": "false",
+              onClick: () => handleSelect(opt.value),
+              onMouseEnter: () => setActiveIndex(index),
+              "data-focused": activeIndex === index,
+              children: opt.label
+            },
+            opt.value
+          ))
+        }
+      ),
+      error && /* @__PURE__ */ jsx63("span", { id: errorId, className: "erb-error-message", children: error })
+    ] });
+  }
+);
+MultiSelect.displayName = "MultiSelect";
+
+// src/slider/Slider.tsx
+import React13, { useRef as useRef6, useState as useState13, useCallback } from "react";
+import { jsx as jsx64, jsxs as jsxs21 } from "react/jsx-runtime";
+var Slider = React13.forwardRef(
+  ({ min = 0, max = 100, step = 1, value, defaultValue, onChange, disabled = false, className = "", ...props }, ref) => {
+    const [internalValue, setInternalValue] = useState13(defaultValue ?? min);
+    const containerRef = useRef6(null);
+    const isControlled = value !== void 0;
+    const currentValue = isControlled ? value : internalValue;
+    const clamp = (val) => Math.min(Math.max(val, min), max);
+    const updateValue = useCallback((newValue) => {
+      const clampedValue = clamp(newValue);
+      const steppedValue = Math.round((clampedValue - min) / step) * step + min;
+      const finalValue = clamp(steppedValue);
+      if (!isControlled) {
+        setInternalValue(finalValue);
+      }
+      if (onChange && currentValue !== finalValue) {
+        onChange(finalValue);
+      }
+    }, [min, max, step, isControlled, currentValue, onChange]);
+    const handlePointerDown = (e) => {
+      if (disabled || !containerRef.current) return;
+      e.currentTarget.setPointerCapture(e.pointerId);
+      const rect = containerRef.current.getBoundingClientRect();
+      const percent = (e.clientX - rect.left) / rect.width;
+      updateValue(min + percent * (max - min));
+    };
+    const handlePointerMove = (e) => {
+      if (disabled || !containerRef.current || !e.currentTarget.hasPointerCapture(e.pointerId)) return;
+      const rect = containerRef.current.getBoundingClientRect();
+      const percent = (e.clientX - rect.left) / rect.width;
+      updateValue(min + percent * (max - min));
+    };
+    const handleKeyDown = (e) => {
+      if (disabled) return;
+      let newValue = currentValue;
+      switch (e.key) {
+        case "ArrowRight":
+        case "ArrowUp":
+          newValue += step;
+          break;
+        case "ArrowLeft":
+        case "ArrowDown":
+          newValue -= step;
+          break;
+        case "Home":
+          newValue = min;
+          break;
+        case "End":
+          newValue = max;
+          break;
+        default:
+          return;
+      }
+      e.preventDefault();
+      updateValue(newValue);
+    };
+    const percentage = (currentValue - min) / (max - min) * 100;
+    return /* @__PURE__ */ jsxs21(
+      "div",
+      {
+        ref: (node) => {
+          containerRef.current = node;
+          if (typeof ref === "function") ref(node);
+          else if (ref) ref.current = node;
+        },
+        className: `erb-slider-container ${disabled ? "erb-slider-container--disabled" : ""} ${className}`,
+        onPointerDown: handlePointerDown,
+        onPointerMove: handlePointerMove,
+        onPointerUp: (e) => e.currentTarget.releasePointerCapture(e.pointerId),
+        ...props,
+        children: [
+          /* @__PURE__ */ jsx64("div", { className: "erb-slider-track" }),
+          /* @__PURE__ */ jsx64("div", { className: "erb-slider-fill", style: { width: `${percentage}%`, left: 0 } }),
+          /* @__PURE__ */ jsx64(
+            "div",
+            {
+              className: "erb-slider-thumb",
+              style: { left: `${percentage}%` },
+              role: "slider",
+              tabIndex: disabled ? -1 : 0,
+              "aria-valuemin": min,
+              "aria-valuemax": max,
+              "aria-valuenow": currentValue,
+              "aria-disabled": disabled,
+              onKeyDown: handleKeyDown
+            }
+          )
+        ]
+      }
+    );
+  }
+);
+Slider.displayName = "Slider";
+
+// src/slider/RangeSlider.tsx
+import React14, { useRef as useRef7, useState as useState14, useCallback as useCallback2 } from "react";
+import { jsx as jsx65, jsxs as jsxs22 } from "react/jsx-runtime";
+var RangeSlider = React14.forwardRef(
+  ({ min = 0, max = 100, step = 1, value, defaultValue, onChange, disabled = false, className = "", ...props }, ref) => {
+    const [internalValue, setInternalValue] = useState14(defaultValue ?? [min, max]);
+    const containerRef = useRef7(null);
+    const isControlled = value !== void 0;
+    const currentValue = isControlled ? value : internalValue;
+    const [activeThumb, setActiveThumb] = useState14(null);
+    const clamp = (val) => Math.min(Math.max(val, min), max);
+    const updateValue = useCallback2((index, newValue) => {
+      const clampedValue = clamp(newValue);
+      const steppedValue = Math.round((clampedValue - min) / step) * step + min;
+      let finalValue = clamp(steppedValue);
+      const newValues = [...currentValue];
+      newValues[index] = finalValue;
+      if (index === 0 && newValues[0] > newValues[1]) {
+        newValues[0] = newValues[1];
+      } else if (index === 1 && newValues[1] < newValues[0]) {
+        newValues[1] = newValues[0];
+      }
+      if (!isControlled) {
+        setInternalValue(newValues);
+      }
+      if (onChange && (currentValue[0] !== newValues[0] || currentValue[1] !== newValues[1])) {
+        onChange(newValues);
+      }
+    }, [min, max, step, isControlled, currentValue, onChange]);
+    const getClosestThumb = (val) => {
+      const d0 = Math.abs(currentValue[0] - val);
+      const d1 = Math.abs(currentValue[1] - val);
+      return d0 < d1 ? 0 : 1;
+    };
+    const handlePointerDown = (e) => {
+      if (disabled || !containerRef.current) return;
+      e.currentTarget.setPointerCapture(e.pointerId);
+      const rect = containerRef.current.getBoundingClientRect();
+      const percent = (e.clientX - rect.left) / rect.width;
+      const val = min + percent * (max - min);
+      const thumb = getClosestThumb(val);
+      setActiveThumb(thumb);
+      updateValue(thumb, val);
+    };
+    const handlePointerMove = (e) => {
+      if (disabled || !containerRef.current || !e.currentTarget.hasPointerCapture(e.pointerId) || activeThumb === null) return;
+      const rect = containerRef.current.getBoundingClientRect();
+      const percent = (e.clientX - rect.left) / rect.width;
+      const val = min + percent * (max - min);
+      updateValue(activeThumb, val);
+    };
+    const handleKeyDown = (index) => (e) => {
+      if (disabled) return;
+      let val = currentValue[index];
+      switch (e.key) {
+        case "ArrowRight":
+        case "ArrowUp":
+          val += step;
+          break;
+        case "ArrowLeft":
+        case "ArrowDown":
+          val -= step;
+          break;
+        case "Home":
+          val = index === 0 ? min : currentValue[0];
+          break;
+        case "End":
+          val = index === 1 ? max : currentValue[1];
+          break;
+        default:
+          return;
+      }
+      e.preventDefault();
+      updateValue(index, val);
+    };
+    const p0 = (currentValue[0] - min) / (max - min) * 100;
+    const p1 = (currentValue[1] - min) / (max - min) * 100;
+    return /* @__PURE__ */ jsxs22(
+      "div",
+      {
+        ref: (node) => {
+          containerRef.current = node;
+          if (typeof ref === "function") ref(node);
+          else if (ref) ref.current = node;
+        },
+        className: `erb-slider-container ${disabled ? "erb-slider-container--disabled" : ""} ${className}`,
+        onPointerDown: handlePointerDown,
+        onPointerMove: handlePointerMove,
+        onPointerUp: (e) => {
+          e.currentTarget.releasePointerCapture(e.pointerId);
+          setActiveThumb(null);
+        },
+        ...props,
+        children: [
+          /* @__PURE__ */ jsx65("div", { className: "erb-slider-track" }),
+          /* @__PURE__ */ jsx65("div", { className: "erb-slider-fill", style: { left: `${p0}%`, width: `${p1 - p0}%` } }),
+          /* @__PURE__ */ jsx65(
+            "div",
+            {
+              className: "erb-slider-thumb",
+              style: { left: `${p0}%` },
+              role: "slider",
+              tabIndex: disabled ? -1 : 0,
+              "aria-valuemin": min,
+              "aria-valuemax": currentValue[1],
+              "aria-valuenow": currentValue[0],
+              "aria-disabled": disabled,
+              onKeyDown: handleKeyDown(0)
+            }
+          ),
+          /* @__PURE__ */ jsx65(
+            "div",
+            {
+              className: "erb-slider-thumb",
+              style: { left: `${p1}%` },
+              role: "slider",
+              tabIndex: disabled ? -1 : 0,
+              "aria-valuemin": currentValue[0],
+              "aria-valuemax": max,
+              "aria-valuenow": currentValue[1],
+              "aria-disabled": disabled,
+              onKeyDown: handleKeyDown(1)
+            }
+          )
+        ]
+      }
+    );
+  }
+);
+RangeSlider.displayName = "RangeSlider";
+
+// src/DatePicker/DatePicker.tsx
+import React15 from "react";
+import { jsx as jsx66 } from "react/jsx-runtime";
+var DatePicker = React15.forwardRef(
+  ({ className = "", size = "md", ...props }, ref) => {
+    return /* @__PURE__ */ jsx66(
+      "input",
+      {
+        ref,
+        type: "date",
+        className: `erb-datepicker ${className}`,
+        "data-size": size,
+        ...props
+      }
+    );
+  }
+);
+DatePicker.displayName = "DatePicker";
+
+// src/DateRangePicker/DateRangePicker.tsx
+import React16 from "react";
+import { jsx as jsx67, jsxs as jsxs23 } from "react/jsx-runtime";
+var DateRangePicker = React16.forwardRef(
+  ({ className = "", size = "md", startDate, endDate, onStartDateChange, onEndDateChange, ...props }, ref) => {
+    return /* @__PURE__ */ jsxs23("div", { ref, className: `erb-daterangepicker ${className}`, "data-size": size, ...props, children: [
+      /* @__PURE__ */ jsx67(
+        "input",
+        {
+          type: "date",
+          className: "erb-daterangepicker-start",
+          value: startDate || "",
+          onChange: (e) => onStartDateChange?.(e.target.value)
+        }
+      ),
+      /* @__PURE__ */ jsx67("span", { className: "erb-daterangepicker-separator", children: "-" }),
+      /* @__PURE__ */ jsx67(
+        "input",
+        {
+          type: "date",
+          className: "erb-daterangepicker-end",
+          value: endDate || "",
+          onChange: (e) => onEndDateChange?.(e.target.value)
+        }
+      )
+    ] });
+  }
+);
+DateRangePicker.displayName = "DateRangePicker";
+
+// src/TimePicker/TimePicker.tsx
+import React17 from "react";
+import { jsx as jsx68 } from "react/jsx-runtime";
+var TimePicker = React17.forwardRef(
+  ({ className = "", size = "md", ...props }, ref) => {
+    return /* @__PURE__ */ jsx68(
+      "input",
+      {
+        ref,
+        type: "time",
+        className: `erb-timepicker ${className}`,
+        "data-size": size,
+        ...props
+      }
+    );
+  }
+);
+TimePicker.displayName = "TimePicker";
+
+// src/ColorPicker/ColorPicker.tsx
+import { jsx as jsx69 } from "react/jsx-runtime";
+var ColorPicker = ({
+  value = "#000000",
+  onChange,
+  className = "",
+  ...props
+}) => {
+  const handleChange = (e) => {
+    onChange?.(e.target.value);
+  };
+  return /* @__PURE__ */ jsx69("div", { className: `erb-color-picker ${className}`.trim(), children: /* @__PURE__ */ jsx69(
+    "input",
+    {
+      type: "color",
+      className: "erb-color-picker-input",
+      value,
+      onChange: handleChange,
+      ...props
+    }
+  ) });
+};
+
+// src/FileUpload/FileUpload.tsx
+import { useState as useState15, useRef as useRef8 } from "react";
+import { jsx as jsx70, jsxs as jsxs24 } from "react/jsx-runtime";
+var FileUpload = ({
+  onFileSelect,
+  className = "",
+  children,
+  ...props
+}) => {
+  const [isDragActive, setIsDragActive] = useState15(false);
+  const fileInputRef = useRef8(null);
+  const handleDragEnter = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragActive(true);
+  };
+  const handleDragLeave = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragActive(false);
+  };
+  const handleDragOver = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+  };
+  const handleDrop = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragActive(false);
+    if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+      onFileSelect?.(e.dataTransfer.files);
+    }
+  };
+  const handleChange = (e) => {
+    onFileSelect?.(e.target.files);
+  };
+  const handleClick = () => {
+    fileInputRef.current?.click();
+  };
+  return /* @__PURE__ */ jsxs24(
+    "div",
+    {
+      className: `erb-file-upload ${className}`.trim(),
+      "data-drag-active": isDragActive,
+      onDragEnter: handleDragEnter,
+      onDragLeave: handleDragLeave,
+      onDragOver: handleDragOver,
+      onDrop: handleDrop,
+      onClick: handleClick,
+      children: [
+        /* @__PURE__ */ jsx70(
+          "input",
+          {
+            type: "file",
+            ref: fileInputRef,
+            className: "erb-file-upload-input",
+            onChange: handleChange,
+            ...props
+          }
+        ),
+        children || /* @__PURE__ */ jsx70("span", { children: "Drag & Drop files here or click to browse" })
+      ]
+    }
+  );
+};
+
+// src/pin-input/PinInput.tsx
+import { useRef as useRef9, forwardRef as forwardRef49 } from "react";
+import { jsx as jsx71 } from "react/jsx-runtime";
+var PinInput = forwardRef49(({ length = 4, value = "", onChange, disabled = false }, ref) => {
+  const inputsRef = useRef9([]);
+  const handleChange = (e, index) => {
+    const val = e.target.value;
+    const char = val.slice(-1);
+    if (char && !/^[0-9]$/.test(char)) return;
+    const newValue = value.split("");
+    newValue[index] = char;
+    const finalValue = newValue.join("");
+    onChange?.(finalValue.slice(0, length));
+    if (char && index < length - 1) {
+      inputsRef.current[index + 1]?.focus();
+    }
+  };
+  const handleKeyDown = (e, index) => {
+    if (e.key === "Backspace") {
+      if (!value[index] && index > 0) {
+        inputsRef.current[index - 1]?.focus();
+      } else {
+        const newValue = value.split("");
+        newValue[index] = "";
+        onChange?.(newValue.join(""));
+      }
+    } else if (e.key === "ArrowLeft" && index > 0) {
+      inputsRef.current[index - 1]?.focus();
+    } else if (e.key === "ArrowRight" && index < length - 1) {
+      inputsRef.current[index + 1]?.focus();
+    }
+  };
+  const handlePaste = (e) => {
+    e.preventDefault();
+    const pastedData = e.clipboardData.getData("text/plain").replace(/\D/g, "").slice(0, length);
+    if (pastedData) {
+      onChange?.(pastedData);
+      const nextFocus = Math.min(pastedData.length, length - 1);
+      inputsRef.current[nextFocus]?.focus();
+    }
+  };
+  return /* @__PURE__ */ jsx71("div", { className: "erb-pin-input", ref, children: Array.from({ length }).map((_, index) => /* @__PURE__ */ jsx71(
+    "input",
+    {
+      ref: (el) => inputsRef.current[index] = el,
+      className: "erb-pin-input__field",
+      type: "text",
+      inputMode: "numeric",
+      maxLength: 1,
+      value: value[index] || "",
+      onChange: (e) => handleChange(e, index),
+      onKeyDown: (e) => handleKeyDown(e, index),
+      onPaste: handlePaste,
+      disabled
+    },
+    index
+  )) });
+});
+PinInput.displayName = "PinInput";
+
+// src/tags-input/TagsInput.tsx
+import { useState as useState16, forwardRef as forwardRef50 } from "react";
+import { jsx as jsx72, jsxs as jsxs25 } from "react/jsx-runtime";
+var TagsInput = forwardRef50(({ tags = [], onChange, disabled = false, placeholder }, ref) => {
+  const [inputValue, setInputValue] = useState16("");
+  const handleKeyDown = (e) => {
+    if (disabled) return;
+    if (e.key === "Enter" && inputValue.trim()) {
+      e.preventDefault();
+      if (!tags.includes(inputValue.trim())) {
+        onChange?.([...tags, inputValue.trim()]);
+      }
+      setInputValue("");
+    } else if (e.key === "Backspace" && !inputValue && tags.length > 0) {
+      onChange?.(tags.slice(0, -1));
+    }
+  };
+  const removeTag = (tagToRemove) => {
+    if (disabled) return;
+    onChange?.(tags.filter((tag) => tag !== tagToRemove));
+  };
+  return /* @__PURE__ */ jsxs25("div", { className: `erb-tags-input ${disabled ? "erb-tags-input--disabled" : ""}`, ref, children: [
+    tags.map((tag) => /* @__PURE__ */ jsxs25("span", { className: "erb-tags-input__tag", children: [
+      tag,
+      !disabled && /* @__PURE__ */ jsx72(
+        "button",
+        {
+          type: "button",
+          className: "erb-tags-input__tag-remove",
+          onClick: () => removeTag(tag),
+          "aria-label": `Remove ${tag}`,
+          children: "\xD7"
+        }
+      )
+    ] }, tag)),
+    /* @__PURE__ */ jsx72(
+      "input",
+      {
+        type: "text",
+        className: "erb-tags-input__input",
+        value: inputValue,
+        onChange: (e) => setInputValue(e.target.value),
+        onKeyDown: handleKeyDown,
+        disabled,
+        placeholder: tags.length === 0 ? placeholder : ""
+      }
+    )
+  ] });
+});
+TagsInput.displayName = "TagsInput";
+
+// src/rating/Rating.tsx
+import { useState as useState17, forwardRef as forwardRef51 } from "react";
+import { jsx as jsx73 } from "react/jsx-runtime";
+var Rating = forwardRef51(({ max = 5, value = 0, onChange, disabled = false }, ref) => {
+  const [hoverValue, setHoverValue] = useState17(null);
+  const handleKeyDown = (e) => {
+    if (disabled) return;
+    let newValue = value;
+    if (e.key === "ArrowRight" || e.key === "ArrowUp") {
+      newValue = Math.min(value + 1, max);
+    } else if (e.key === "ArrowLeft" || e.key === "ArrowDown") {
+      newValue = Math.max(value - 1, 1);
+    }
+    if (newValue !== value) {
+      e.preventDefault();
+      onChange?.(newValue);
+    }
+  };
+  return /* @__PURE__ */ jsx73(
+    "div",
+    {
+      ref,
+      className: "erb-rating",
+      role: "slider",
+      "aria-valuemin": 1,
+      "aria-valuemax": max,
+      "aria-valuenow": value,
+      "aria-disabled": disabled,
+      tabIndex: disabled ? -1 : 0,
+      onKeyDown: handleKeyDown,
+      onMouseLeave: () => setHoverValue(null),
+      children: Array.from({ length: max }).map((_, index) => {
+        const starValue = index + 1;
+        const isActive = starValue <= (hoverValue ?? value);
+        return /* @__PURE__ */ jsx73(
+          "span",
+          {
+            className: `erb-rating__item ${isActive ? "erb-rating__item--active" : ""}`,
+            onClick: () => !disabled && onChange?.(starValue),
+            onMouseEnter: () => !disabled && setHoverValue(starValue),
+            "aria-hidden": "true",
+            children: "\u2605"
+          },
+          starValue
+        );
+      })
+    }
+  );
+});
+Rating.displayName = "Rating";
+
+// src/Table/Table.tsx
+import React20 from "react";
+import { jsx as jsx74 } from "react/jsx-runtime";
+var Table = React20.forwardRef((props, ref) => {
+  const { className = "", ...rest } = props;
+  return /* @__PURE__ */ jsx74("table", { ref, className: `erb-table ${className}`, ...rest });
+});
+Table.displayName = "Table";
+var TableHead = React20.forwardRef((props, ref) => /* @__PURE__ */ jsx74("thead", { ref, ...props }));
+TableHead.displayName = "TableHead";
+var TableBody = React20.forwardRef((props, ref) => /* @__PURE__ */ jsx74("tbody", { ref, ...props }));
+TableBody.displayName = "TableBody";
+var TableRow = React20.forwardRef((props, ref) => /* @__PURE__ */ jsx74("tr", { ref, ...props }));
+TableRow.displayName = "TableRow";
+var TableCell = React20.forwardRef((props, ref) => /* @__PURE__ */ jsx74("td", { ref, ...props }));
+TableCell.displayName = "TableCell";
+var TableHeaderCell = React20.forwardRef((props, ref) => /* @__PURE__ */ jsx74("th", { ref, ...props }));
+TableHeaderCell.displayName = "TableHeaderCell";
+
+// src/List/List.tsx
+import React21 from "react";
+import { jsx as jsx75 } from "react/jsx-runtime";
+var List = React21.forwardRef((props, ref) => {
+  const { as: Component = "ul", className = "", ...rest } = props;
+  const listClass = Component === "ol" ? "erb-list--ordered" : "erb-list--unordered";
+  return React21.createElement(Component, { ref, className: `erb-list ${listClass} ${className}`.trim(), ...rest });
+});
+List.displayName = "List";
+var ListItem = React21.forwardRef((props, ref) => {
+  const { className = "", ...rest } = props;
+  return /* @__PURE__ */ jsx75("li", { ref, className: `erb-list-item ${className}`.trim(), ...rest });
+});
+ListItem.displayName = "ListItem";
+
+// src/DescriptionList/DescriptionList.tsx
+import React22 from "react";
+import { jsx as jsx76 } from "react/jsx-runtime";
+var DescriptionList = React22.forwardRef((props, ref) => {
+  const { className = "", ...rest } = props;
+  return /* @__PURE__ */ jsx76("dl", { ref, className: `erb-description-list ${className}`.trim(), ...rest });
+});
+DescriptionList.displayName = "DescriptionList";
+var DescriptionTerm = React22.forwardRef((props, ref) => {
+  const { className = "", ...rest } = props;
+  return /* @__PURE__ */ jsx76("dt", { ref, className: `erb-description-list-term ${className}`.trim(), ...rest });
+});
+DescriptionTerm.displayName = "DescriptionTerm";
+var DescriptionDetails = React22.forwardRef((props, ref) => {
+  const { className = "", ...rest } = props;
+  return /* @__PURE__ */ jsx76("dd", { ref, className: `erb-description-list-details ${className}`.trim(), ...rest });
+});
+DescriptionDetails.displayName = "DescriptionDetails";
+
+// src/Stat/Stat.tsx
+import React23 from "react";
+import { jsx as jsx77, jsxs as jsxs26 } from "react/jsx-runtime";
+var Stat = React23.forwardRef((props, ref) => {
+  const { label, value, helpText, className = "", ...rest } = props;
+  return /* @__PURE__ */ jsxs26("div", { ref, className: `erb-stat ${className}`.trim(), ...rest, children: [
+    /* @__PURE__ */ jsx77("div", { className: "erb-stat-label", children: label }),
+    /* @__PURE__ */ jsx77("div", { className: "erb-stat-value", children: value }),
+    helpText && /* @__PURE__ */ jsx77("div", { className: "erb-stat-help-text", children: helpText })
+  ] });
+});
+Stat.displayName = "Stat";
+
+// src/Timeline/Timeline.tsx
+import { jsx as jsx78, jsxs as jsxs27 } from "react/jsx-runtime";
+var TimelineItem = ({ title, description, isLast }) => /* @__PURE__ */ jsxs27("li", { className: "erb-timeline-item", children: [
+  /* @__PURE__ */ jsxs27("div", { className: "erb-timeline-indicator", children: [
+    /* @__PURE__ */ jsx78("div", { className: "erb-timeline-dot" }),
+    !isLast && /* @__PURE__ */ jsx78("div", { className: "erb-timeline-line" })
+  ] }),
+  /* @__PURE__ */ jsxs27("div", { className: "erb-timeline-content", children: [
+    /* @__PURE__ */ jsx78("div", { className: "erb-timeline-title", children: title }),
+    description && /* @__PURE__ */ jsx78("div", { className: "erb-timeline-description", children: description })
+  ] })
+] });
+var Timeline = ({ children, className = "" }) => /* @__PURE__ */ jsx78("ul", { className: `erb-timeline ${className}`, children });
+
+// src/EmptyState/EmptyState.tsx
+import { jsx as jsx79, jsxs as jsxs28 } from "react/jsx-runtime";
+var EmptyState = ({ title, description, icon, children, className = "" }) => /* @__PURE__ */ jsxs28("div", { className: `erb-empty-state ${className}`, children: [
+  icon && /* @__PURE__ */ jsx79("div", { className: "erb-empty-state-icon", children: icon }),
+  /* @__PURE__ */ jsx79("div", { className: "erb-empty-state-title", children: title }),
+  description && /* @__PURE__ */ jsx79("div", { className: "erb-empty-state-description", children: description }),
+  children && /* @__PURE__ */ jsx79("div", { className: "erb-empty-state-actions", children })
+] });
+
+// src/ErrorState/ErrorState.tsx
+import { jsx as jsx80, jsxs as jsxs29 } from "react/jsx-runtime";
+var ErrorState = ({ title, description, className = "", onRetry }) => /* @__PURE__ */ jsxs29("div", { className: `erb-error-state ${className}`, children: [
+  /* @__PURE__ */ jsx80("div", { className: "erb-error-state-title", children: title }),
+  description && /* @__PURE__ */ jsx80("div", { className: "erb-error-state-description", children: description }),
+  onRetry && /* @__PURE__ */ jsx80("button", { className: "erb-error-state-retry", onClick: onRetry, children: "Retry" })
+] });
+
+// src/Toast/Toast.tsx
+import { createContext as createContext5, useContext as useContext5, useState as useState18, useCallback as useCallback3 } from "react";
+import { jsx as jsx81, jsxs as jsxs30 } from "react/jsx-runtime";
+var Toast = ({ message, onClose }) => /* @__PURE__ */ jsxs30("div", { className: "erb-toast", children: [
+  /* @__PURE__ */ jsx81("div", { className: "erb-toast-message", children: message }),
+  /* @__PURE__ */ jsx81("button", { className: "erb-toast-close", onClick: onClose, children: "\xD7" })
+] });
+var ToastContext = createContext5(void 0);
+var ToastProvider = ({ children }) => {
+  const [toasts, setToasts] = useState18([]);
+  const addToast = useCallback3((message) => {
+    const id = Math.random().toString(36).substring(7);
+    setToasts((prev) => [...prev, { id, message }]);
+    setTimeout(() => {
+      setToasts((prev) => prev.filter((t) => t.id !== id));
+    }, 3e3);
+  }, []);
+  const removeToast = useCallback3((id) => {
+    setToasts((prev) => prev.filter((t) => t.id !== id));
+  }, []);
+  return /* @__PURE__ */ jsxs30(ToastContext.Provider, { value: { addToast }, children: [
+    children,
+    /* @__PURE__ */ jsx81("div", { className: "erb-toast-container", children: toasts.map((toast) => /* @__PURE__ */ jsx81(Toast, { id: toast.id, message: toast.message, onClose: () => removeToast(toast.id) }, toast.id)) })
+  ] });
+};
+var useToast = () => {
+  const context = useContext5(ToastContext);
+  if (!context) throw new Error("useToast must be used within a ToastProvider");
+  return context;
+};
+
+// src/banner/banner.tsx
+import React25 from "react";
+import { jsx as jsx82 } from "react/jsx-runtime";
+var Banner = React25.forwardRef(({ variant = "info", className = "", children, ...props }, ref) => {
+  return /* @__PURE__ */ jsx82("div", { ref, className: `erb-banner erb-banner--${variant} ${className}`, role: "alert", ...props, children });
+});
+Banner.displayName = "Banner";
+
+// src/progress/progress.tsx
+import React26 from "react";
+import { jsx as jsx83 } from "react/jsx-runtime";
+var Progress = React26.forwardRef(({ value, max = 100, className = "", ...props }, ref) => {
+  const percentage = Math.min(100, Math.max(0, value / max * 100));
+  return /* @__PURE__ */ jsx83("div", { ref, className: `erb-progress ${className}`, role: "progressbar", "aria-valuenow": value, "aria-valuemin": 0, "aria-valuemax": max, ...props, children: /* @__PURE__ */ jsx83("div", { className: "erb-progress__bar", style: { width: `${percentage}%` } }) });
+});
+Progress.displayName = "Progress";
+
+// src/loading-overlay/loading-overlay.tsx
+import React27 from "react";
+import { jsx as jsx84 } from "react/jsx-runtime";
+var LoadingOverlay = React27.forwardRef(({ active = true, className = "", ...props }, ref) => {
+  if (!active) return null;
+  return /* @__PURE__ */ jsx84("div", { ref, className: `erb-loading-overlay ${className}`, ...props, children: /* @__PURE__ */ jsx84("div", { className: "erb-loading-overlay__spinner", "aria-label": "Loading" }) });
+});
+LoadingOverlay.displayName = "LoadingOverlay";
+
+// src/image/image.tsx
+import React28, { useState as useState19 } from "react";
+import { jsx as jsx85 } from "react/jsx-runtime";
+var Image = React28.forwardRef(({ lazy = false, fallbackText = "Image not available", src, alt, className = "", ...props }, ref) => {
+  const [error, setError] = useState19(false);
+  if (error || !src) {
+    return /* @__PURE__ */ jsx85("div", { className: `erb-image-wrapper erb-image--fallback ${className}`, style: { width: props.width || "100%", height: props.height || "100px" }, children: fallbackText });
+  }
+  return /* @__PURE__ */ jsx85("div", { className: `erb-image-wrapper ${className}`, children: /* @__PURE__ */ jsx85("img", { ref, src, alt, className: "erb-image", loading: lazy ? "lazy" : "eager", onError: () => setError(true), ...props }) });
+});
+Image.displayName = "Image";
+
+// src/gallery/Gallery.tsx
+import { jsx as jsx86 } from "react/jsx-runtime";
+var Gallery = ({ images, onImageClick }) => {
+  return /* @__PURE__ */ jsx86("div", { className: "erb-gallery", children: images.map((img, idx) => /* @__PURE__ */ jsx86("div", { className: "erb-gallery-item", onClick: () => onImageClick?.(idx), children: /* @__PURE__ */ jsx86("img", { src: img.src, alt: img.alt, className: "erb-gallery-img" }) }, idx)) });
+};
+
+// src/lightbox/Lightbox.tsx
+import { useEffect as useEffect9 } from "react";
+import { jsx as jsx87, jsxs as jsxs31 } from "react/jsx-runtime";
+var Lightbox = ({ isOpen, onClose, imageSrc, imageAlt }) => {
+  useEffect9(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") onClose();
+    };
+    if (isOpen) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, onClose]);
+  if (!isOpen || !imageSrc) return null;
+  return /* @__PURE__ */ jsx87("div", { className: "erb-lightbox", onClick: onClose, role: "dialog", "aria-modal": "true", children: /* @__PURE__ */ jsxs31("div", { className: "erb-lightbox-content", onClick: (e) => e.stopPropagation(), children: [
+    /* @__PURE__ */ jsx87("button", { className: "erb-lightbox-close", onClick: onClose, "aria-label": "Close", children: "\xD7" }),
+    /* @__PURE__ */ jsx87("img", { src: imageSrc, alt: imageAlt, className: "erb-lightbox-img" })
+  ] }) });
+};
+
+// src/carousel/Carousel.tsx
+import { useState as useState20 } from "react";
+import { jsx as jsx88, jsxs as jsxs32 } from "react/jsx-runtime";
+var Carousel = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState20(0);
+  if (!images || images.length === 0) return null;
+  const next = () => setCurrentIndex((i) => (i + 1) % images.length);
+  const prev = () => setCurrentIndex((i) => (i - 1 + images.length) % images.length);
+  return /* @__PURE__ */ jsxs32("div", { className: "erb-carousel", children: [
+    /* @__PURE__ */ jsx88(
+      "div",
+      {
+        className: "erb-carousel-track",
+        style: { transform: `translateX(-${currentIndex * 100}%)` },
+        children: images.map((img, i) => /* @__PURE__ */ jsx88("div", { className: "erb-carousel-item", children: /* @__PURE__ */ jsx88("img", { src: img.src, alt: img.alt, className: "erb-gallery-img", style: { width: "100%", display: "block" } }) }, i))
+      }
+    ),
+    /* @__PURE__ */ jsxs32("div", { className: "erb-carousel-controls", children: [
+      /* @__PURE__ */ jsx88("button", { className: "erb-carousel-btn", onClick: prev, "aria-label": "Previous", children: "<" }),
+      /* @__PURE__ */ jsx88("button", { className: "erb-carousel-btn", onClick: next, "aria-label": "Next", children: ">" })
+    ] })
+  ] });
+};
+
+// src/Hero/Hero.tsx
+import { jsx as jsx89 } from "react/jsx-runtime";
+var Hero = ({ className = "", children, ...props }) => {
+  return /* @__PURE__ */ jsx89("div", { className: `erb-hero ${className}`, ...props, children });
+};
+
+// src/FeatureGrid/FeatureGrid.tsx
+import { jsx as jsx90 } from "react/jsx-runtime";
+var FeatureGrid = ({ className = "", children, ...props }) => {
+  return /* @__PURE__ */ jsx90("div", { className: `erb-featuregrid ${className}`, ...props, children });
+};
+
+// src/CTA/CTA.tsx
+import { jsx as jsx91 } from "react/jsx-runtime";
+var CTA = ({ className = "", children, ...props }) => {
+  return /* @__PURE__ */ jsx91("div", { className: `erb-cta ${className}`, ...props, children });
+};
+
+// src/Testimonial/Testimonial.tsx
+import { jsx as jsx92 } from "react/jsx-runtime";
+var Testimonial = ({ className = "", children, ...props }) => {
+  return /* @__PURE__ */ jsx92("div", { className: `erb-testimonial ${className}`, ...props, children });
+};
+
+// src/LogoCloud/LogoCloud.tsx
+import { jsx as jsx93 } from "react/jsx-runtime";
+var LogoCloud = ({ className = "", children, ...props }) => {
+  return /* @__PURE__ */ jsx93("div", { className: `erb-logocloud ${className}`, ...props, children });
+};
+
+// src/FAQ/FAQ.tsx
+import { forwardRef as forwardRef52 } from "react";
+import { jsx as jsx94 } from "react/jsx-runtime";
+var FAQ = forwardRef52(
+  ({ className, ...props }, ref) => {
+    return /* @__PURE__ */ jsx94(
+      "div",
+      {
+        ref,
+        className: cn("erb-faq", className),
+        ...props
+      }
+    );
+  }
+);
+FAQ.displayName = "FAQ";
+
+// src/CommandPalette/CommandPalette.tsx
+import { forwardRef as forwardRef53 } from "react";
+import { jsx as jsx95 } from "react/jsx-runtime";
+var CommandPalette = forwardRef53(
+  ({ className, ...props }, ref) => {
+    return /* @__PURE__ */ jsx95(
+      "div",
+      {
+        ref,
+        className: cn("erb-command-palette", className),
+        ...props
+      }
+    );
+  }
+);
+CommandPalette.displayName = "CommandPalette";
 export {
+  Accordion,
   Alert,
   AlertDescription,
+  AlertDialog,
+  AlertDialogBody,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogOverlay,
+  AlertDialogTitle,
   AlertTitle,
+  AppShell,
   AspectRatio,
+  Avatar,
+  AvatarGroup,
+  Badge,
+  Banner,
+  BottomNav,
+  Breadcrumb,
   Button,
+  ButtonGroup,
+  CTA,
+  Callout,
   Card,
   CardBody,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
+  Carousel,
   Center,
   Checkbox,
   CheckboxGroup,
   CheckboxGroupContext,
+  Code,
+  ColorPicker,
+  Combobox,
+  CommandPalette,
   Container,
+  DatePicker,
+  DateRangePicker,
+  DescriptionDetails,
+  DescriptionList,
+  DescriptionTerm,
+  Divider,
+  Drawer,
+  DrawerBody,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerTitle,
+  EmptyState,
+  ErrorState,
+  FAQ,
+  FeatureGrid,
+  Field,
+  FileUpload,
   Flex,
   FocusTrap,
   Footer,
+  Gallery,
   Grid,
   GridItem,
   Header,
+  Heading,
+  Hero,
+  IconButton,
+  Image,
   Inline,
   Input,
+  Kbd,
+  Label,
   LayerManager,
+  Lightbox,
+  List,
+  ListItem,
+  LoadingOverlay,
+  LogoCloud,
   Menu,
   MenuItem,
   MenuSeparator,
+  MobileNav,
   Modal,
   ModalBody,
   ModalContent,
@@ -1368,37 +3146,69 @@ export {
   ModalHeader,
   ModalOverlay,
   ModalTitle,
+  MultiSelect,
   NumberInput,
+  Pagination,
   Panel,
   PanelBody,
   PanelFooter,
   PanelHeader,
   PanelOverlay,
   PanelTitle,
+  PinInput,
+  Popover,
   Portal,
+  Progress,
+  Prose,
   Radio,
   RadioGroup,
   RadioGroupContext,
+  RangeSlider,
+  Rating,
   ScrollArea,
   ScrollLock,
   SearchInput,
   Section,
   Select,
+  Sidebar,
+  Skeleton,
+  SkipLink,
+  Slider,
   Spacer,
+  Spinner,
   Split,
   Stack,
+  Stat,
+  Stepper,
   Switch,
   Tab,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeaderCell,
+  TableRow,
   Tabs,
   TabsList,
   TabsPanel,
+  Tag,
+  TagsInput,
+  Testimonial,
+  Text,
   Textarea,
+  TimePicker,
+  Timeline,
+  TimelineItem,
+  Toast,
+  ToastProvider,
+  Tooltip,
   useCheckboxGroup,
   useLayerEscape,
   useLayerTransition,
   useModal,
   useRadioGroup,
   useScrollLock,
-  useTabs
+  useTabs,
+  useToast
 };
 //# sourceMappingURL=index.mjs.map

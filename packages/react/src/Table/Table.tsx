@@ -1,6 +1,4 @@
 import React from 'react';
-import '@erebus/core/table.css';
-
 export interface TableProps extends React.TableHTMLAttributes<HTMLTableElement> {}
 export const Table = React.forwardRef<HTMLTableElement, TableProps>((props, ref) => {
   const { className = '', ...rest } = props;

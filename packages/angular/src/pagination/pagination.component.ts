@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
       </ul>
     </nav>
   `,
-  styleUrls: ['../../../../core/src/components/pagination.css'],
+  styleUrls: ['../../../../packages/core/src/components/pagination.css'],
   standalone: true,
   imports: [CommonModule]
 })

@@ -1,3 +1,4 @@
+import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import {
   Component,
   Input,
@@ -9,7 +10,7 @@ import {
   ViewChild,
   ChangeDetectionStrategy,
 } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR, CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 export interface ComboboxOption {
   value: string;
@@ -77,7 +78,7 @@ export interface ComboboxOption {
       multi: true,
     },
   ],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  
 })
 export class ComboboxComponent implements ControlValueAccessor {
   @Input() options: ComboboxOption[] = [];
@@ -166,7 +167,7 @@ export class ComboboxComponent implements ControlValueAccessor {
       case 'Enter':
         e.preventDefault();
         if (this.activeIndex >= 0 && this.activeIndex <= maxIndex) {
-          this.selectOption(this.filteredOptions[this.activeIndex].value);
+          this.selectOption(this.filteredOptions[this.activeIndex]!.value);
         }
         break;
       case 'Escape':

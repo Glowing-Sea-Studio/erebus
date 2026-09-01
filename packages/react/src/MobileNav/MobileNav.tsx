@@ -1,6 +1,4 @@
-
 import React from 'react';
-import '@erebus/core/mobile-nav.css';
 
 export interface MobileNavProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;

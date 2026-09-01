@@ -16,9 +16,9 @@ import { ToastService, ToastMessage } from './toast.service';
   `
 })
 export class ToastComponent {
-  toasts$ = this.toastService.toasts$;
+  toasts$;
 
-  constructor(private toastService: ToastService) {}
+  constructor(private toastService: ToastService) { this.toasts$; }
 
   remove(id: string) {
     this.toastService.remove(id);

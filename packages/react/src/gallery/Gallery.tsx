@@ -1,5 +1,4 @@
 import React from 'react';
-
 export interface GalleryProps {
   images: { src: string; alt: string }[];
   onImageClick?: (index: number) => void;

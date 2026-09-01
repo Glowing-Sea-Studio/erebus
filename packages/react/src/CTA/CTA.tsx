@@ -1,6 +1,4 @@
 import React from 'react';
-import '@erebus/core/components/cta.css';
-
 export interface CTAProps {
   className?: string;
   children?: React.ReactNode;

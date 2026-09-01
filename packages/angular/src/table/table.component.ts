@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `<ng-content></ng-content>`,
-  styleUrls: ['../../../../core/src/components/table.css']
+  styleUrls: ['../../../../packages/core/src/components/table.css']
 })
 export class ErbTableComponent {
   @HostBinding('class.erb-table') get isTable() { return true; }

@@ -26,7 +26,7 @@ export const Field = forwardRef<HTMLDivElement, FieldProps>(
         {...props}
       >
         {label && (
-          <Label required={required} disabled={disabled}>
+          <Label required={!!required} disabled={!!disabled}>
             {label}
           </Label>
         )}

@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { BottomNav } from './BottomNav';
 
 export default { title: 'Components/BottomNav', component: BottomNav };

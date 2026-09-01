@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `<div class="erb-featuregrid {{className}}"><ng-content></ng-content></div>`,
-  styleUrls: ['../../../../core/src/components/featuregrid.css']
+  styleUrls: ['../../../../packages/core/src/components/featuregrid.css']
 })
 export class FeatureGridComponent {
   @Input() className = '';

@@ -1,6 +1,4 @@
 import React from 'react';
-import '@erebus/core/list.css';
-
 export interface ListProps extends React.HTMLAttributes<HTMLUListElement | HTMLOListElement> {
   as?: 'ul' | 'ol';
 }

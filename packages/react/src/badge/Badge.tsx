@@ -1,5 +1,4 @@
 import React from 'react';
-
 export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
   variant?: 'solid' | 'outline' | 'soft';
   color?: 'primary' | 'success' | 'warning' | 'danger' | 'neutral';

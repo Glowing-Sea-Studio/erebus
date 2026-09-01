@@ -25,8 +25,8 @@ export const Combobox = forwardRef<HTMLInputElement, ComboboxProps>(
     const [inputValue, setInputValue] = useState('');
     const [activeIndex, setActiveIndex] = useState(-1);
 
-    const wrapperRef = useRef<HTMLDivElement>(null);
-    const inputRef = useRef<HTMLInputElement>(null);
+    const wrapperRef = useRef<HTMLDivElement | null>(null);
+    const inputRef = useRef<HTMLInputElement | null>(null);
 
     // Sync input value with selected prop value if options change or value changes externally
     useEffect(() => {
@@ -65,7 +65,7 @@ export const Combobox = forwardRef<HTMLInputElement, ComboboxProps>(
     };
 
     const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
-      if (!isOpen) {
+      if (!isOpen || !options) {
         if (e.key === 'ArrowDown' || e.key === 'ArrowUp' || e.key === 'Enter') {
           setIsOpen(true);
         }
@@ -84,7 +84,7 @@ export const Combobox = forwardRef<HTMLInputElement, ComboboxProps>(
         case 'Enter':
           e.preventDefault();
           if (activeIndex >= 0 && activeIndex < filteredOptions.length) {
-            handleSelect(filteredOptions[activeIndex].value);
+            handleSelect(filteredOptions[activeIndex]!.value);
           }
           break;
         case 'Escape':
@@ -105,7 +105,7 @@ export const Combobox = forwardRef<HTMLInputElement, ComboboxProps>(
             ref={(node) => {
               inputRef.current = node;
               if (typeof ref === 'function') ref(node);
-              else if (ref) ref.current = node;
+              else if (ref) (ref as any).current = node;
             }}
             id={comboboxId}
             type="text"

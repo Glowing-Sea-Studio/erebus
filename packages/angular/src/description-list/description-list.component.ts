@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `<ng-content></ng-content>`,
-  styleUrls: ['../../../../core/src/components/description-list.css']
+  styleUrls: ['../../../../packages/core/src/components/description-list.css']
 })
 export class ErbDescriptionListComponent {
   @HostBinding('class.erb-description-list') get isDl() { return true; }

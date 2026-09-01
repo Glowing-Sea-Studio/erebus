@@ -1,4 +1,3 @@
-import React from 'react';
 import { SkipLink } from './SkipLink';
 
 export default { title: 'Components/SkipLink', component: SkipLink };

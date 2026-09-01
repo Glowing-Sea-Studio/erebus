@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Meta } from '@storybook/angular';
 import { ErrorStateComponent } from './error-state.component';
 

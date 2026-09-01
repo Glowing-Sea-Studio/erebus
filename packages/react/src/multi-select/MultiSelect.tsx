@@ -25,8 +25,8 @@ export const MultiSelect = forwardRef<HTMLInputElement, MultiSelectProps>(
     const [inputValue, setInputValue] = useState('');
     const [activeIndex, setActiveIndex] = useState(-1);
 
-    const wrapperRef = useRef<HTMLDivElement>(null);
-    const inputRef = useRef<HTMLInputElement>(null);
+    const wrapperRef = useRef<HTMLDivElement | null>(null);
+    const inputRef = useRef<HTMLInputElement | null>(null);
 
     const selectedOptions = options.filter(opt => value.includes(opt.value));
     const unselectedOptions = options.filter(opt => !value.includes(opt.value));
@@ -64,11 +64,11 @@ export const MultiSelect = forwardRef<HTMLInputElement, MultiSelectProps>(
       if (disabled) return;
       
       if (e.key === 'Backspace' && inputValue === '' && value.length > 0) {
-        handleRemove(value[value.length - 1]);
+        handleRemove(value[value.length - 1]!);
         return;
       }
 
-      if (!isOpen) {
+      if (!isOpen || !options) {
         if (e.key === 'ArrowDown' || e.key === 'ArrowUp' || e.key === 'Enter') {
           setIsOpen(true);
         }
@@ -87,7 +87,7 @@ export const MultiSelect = forwardRef<HTMLInputElement, MultiSelectProps>(
         case 'Enter':
           e.preventDefault();
           if (activeIndex >= 0 && activeIndex < filteredOptions.length) {
-            handleSelect(filteredOptions[activeIndex].value);
+            handleSelect(filteredOptions[activeIndex]!.value);
           }
           break;
         case 'Escape':
@@ -127,7 +127,7 @@ export const MultiSelect = forwardRef<HTMLInputElement, MultiSelectProps>(
             ref={(node) => {
               inputRef.current = node;
               if (typeof ref === 'function') ref(node);
-              else if (ref) ref.current = node;
+              else if (ref) (ref as any).current = node;
             }}
             id={selectId}
             type="text"

@@ -3,7 +3,7 @@ import * as i0 from "@angular/core";
 export declare class SplitComponent {
     gap: import("@angular/core").InputSignal<ResponsiveValue<number>>;
     fraction: import("@angular/core").InputSignal<"1/2" | "1/3" | "2/3" | "1/4" | "3/4" | "auto-start" | "auto-end">;
-    align: import("@angular/core").InputSignal<ResponsiveValue<"center" | "start" | "end" | "stretch">>;
+    align: import("@angular/core").InputSignal<ResponsiveValue<"start" | "end" | "center" | "stretch">>;
     customStyle: import("@angular/core").Signal<{
         [x: string]: string | number;
     }>;

@@ -1,4 +1,4 @@
-import React, { useState, KeyboardEvent, forwardRef, Ref } from 'react';
+import { useState, KeyboardEvent, forwardRef, Ref } from 'react';
 
 export interface TagsInputProps {
   tags?: string[];
