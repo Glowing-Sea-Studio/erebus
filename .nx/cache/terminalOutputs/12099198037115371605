@@ -1,8 +1,0 @@
-
-> @glowing-sea-studio/erebus-angular@0.1.0 lint /media/thibault/SSD_DATA/DEV/workspaces/Glowing Sea Studio/APPS/erebus/packages/angular
-> eslint "src/**/*.ts" --no-error-on-unmatched-pattern
-
-(node:29892) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///media/thibault/SSD_DATA/DEV/workspaces/Glowing%20Sea%20Studio/APPS/erebus/eslint.config.js?mtime=1788166232000 is not specified and it doesn't parse as CommonJS.
-Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
-To eliminate this warning, add "type": "module" to /media/thibault/SSD_DATA/DEV/workspaces/Glowing Sea Studio/APPS/erebus/package.json.
-(Use `node --trace-warnings ...` to show where the warning was created)

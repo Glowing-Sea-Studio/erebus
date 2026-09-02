@@ -1,7 +1,0 @@
-
-> @glowing-sea-studio/erebus-angular@0.1.0 typecheck /app/packages/angular
-> tsc --noEmit "--filter" "@glowing-sea-studio/erebus-react"
-
-error TS5023: Unknown compiler option '--filter'.
-error TS5083: Cannot read file 'glowing-sea-studio/erebus-react'.
-[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
