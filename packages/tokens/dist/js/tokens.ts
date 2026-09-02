@@ -8226,6 +8226,4 @@ module.exports = {
       path: ["z", "tooltip"],
     },
   },
-  theme: "default",
-  name: "Default Theme",
 };
