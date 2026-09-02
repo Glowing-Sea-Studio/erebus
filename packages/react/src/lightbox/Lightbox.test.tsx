@@ -13,7 +13,7 @@ describe('Lightbox', () => {
   });
 
   it('calls onClose when close button clicked', () => {
-    const onClose = jest.fn();
+    const onClose = vi.fn();
     render(<Lightbox isOpen={true} onClose={onClose} imageSrc="test.jpg" />);
     fireEvent.click(screen.getByLabelText('Close'));
     expect(onClose).toHaveBeenCalled();

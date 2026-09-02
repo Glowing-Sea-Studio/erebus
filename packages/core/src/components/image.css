@@ -8,7 +8,7 @@
   display: block;
 }
 .erb-image--fallback {
-  background-color: var(--erb-color-neutral-200);
+  background-color: var(--erb-color-border-default);
   display: flex;
   align-items: center;
   justify-content: center;

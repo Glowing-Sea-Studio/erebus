@@ -9,7 +9,7 @@ describe('TagsInput', () => {
   });
 
   it('adds and removes tags', () => {
-    const handleChange = jest.fn();
+    const handleChange = vi.fn();
     render(<TagsInput tags={['React']} onChange={handleChange} />);
     
     const input = screen.getByRole('textbox');

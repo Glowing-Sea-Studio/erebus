@@ -1,0 +1,442 @@
+--erb-alert-border-width
+--erb-alert-p
+--erb-alert-radius
+--erb-button-bg-solid
+--erb-button-border-outline
+--erb-button-font-weight
+--erb-button-height-lg
+--erb-button-height-md
+--erb-button-height-sm
+--erb-button-hover-ghost
+--erb-button-hover-outline
+--erb-button-hover-solid
+--erb-button-px-lg
+--erb-button-px-md
+--erb-button-px-sm
+--erb-button-radius
+--erb-button-text-ghost
+--erb-button-text-outline
+--erb-button-text-solid
+--erb-card-bg
+--erb-card-border
+--erb-card-p-md
+--erb-card-radius
+--erb-card-shadow
+--erb-checkbox-bg
+--erb-checkbox-border
+--erb-checkbox-checked-bg
+--erb-checkbox-checked-border
+--erb-checkbox-checked-icon
+--erb-checkbox-disabled-bg
+--erb-checkbox-disabled-border
+--erb-checkbox-radius
+--erb-checkbox-size-lg
+--erb-checkbox-size-md
+--erb-checkbox-size-sm
+--erb-color-accent-11
+--erb-color-accent-bg
+--erb-color-accent-bg-active
+--erb-color-accent-bg-hover
+--erb-color-accent-bg-subtle
+--erb-color-accent-bg-subtle-hover
+--erb-color-accent-border
+--erb-color-accent-fg
+--erb-color-accent-fg-on-bg
+--erb-color-bg
+--erb-color-bg-default
+--erb-color-bg-inverse
+--erb-color-bg-muted
+--erb-color-bg-overlay
+--erb-color-bg-subtle
+--erb-color-bg-surface
+--erb-color-bg-surface-raised
+--erb-color-border-default
+--erb-color-border-default-default
+--erb-color-border-default-muted
+--erb-color-border-focus
+--erb-color-danger-11
+--erb-color-danger-3
+--erb-color-danger-50
+--erb-color-danger-6
+--erb-color-danger-700
+--erb-color-danger-bg-subtle
+--erb-color-danger-border
+--erb-color-danger-fg
+--erb-color-danger-main
+--erb-color-error
+--erb-color-error-900
+--erb-color-fg-default
+--erb-color-fg-default-default
+--erb-color-fg-default-inverse
+--erb-color-fg-muted
+--erb-color-fg-subtle
+--erb-color-focus-ring
+--erb-color-gray-50
+--erb-color-info-11
+--erb-color-info-3
+--erb-color-info-6
+--erb-color-info-bg-subtle
+--erb-color-info-border
+--erb-color-info-fg
+--erb-color-neutral-11
+--erb-color-neutral-12
+--erb-color-neutral-2
+--erb-color-neutral-3
+--erb-color-neutral-4
+--erb-color-neutral-50
+--erb-color-neutral-500
+--erb-color-neutral-6
+--erb-color-neutral-600
+--erb-color-neutral-9
+--erb-color-neutral-900
+--erb-color-neutral-bg-subtle
+--erb-color-neutral-bg-subtle-hover
+--erb-color-picker-background
+--erb-color-picker-border
+--erb-color-picker-border-focus
+--erb-color-picker-border-radius
+--erb-color-primary-900
+--erb-color-primary-alpha-10
+--erb-color-primary-dark
+--erb-color-success-11
+--erb-color-success-3
+--erb-color-success-6
+--erb-color-success-900
+--erb-color-success-bg-subtle
+--erb-color-success-border
+--erb-color-success-fg
+--erb-color-warning-11
+--erb-color-warning-3
+--erb-color-warning-6
+--erb-color-warning-900
+--erb-color-warning-bg
+--erb-color-warning-bg-subtle
+--erb-color-warning-border
+--erb-color-warning-fg
+--erb-colors-background
+--erb-colors-danger-500
+--erb-colors-neutral-400
+--erb-colors-neutral-500
+--erb-colors-neutral-900
+--erb-colors-text
+--erb-container-max-width
+--erb-container-padding-inline
+--erb-file-upload-background
+--erb-file-upload-background-active
+--erb-file-upload-border
+--erb-file-upload-border-active
+--erb-file-upload-border-radius
+--erb-file-upload-padding
+--erb-font-family-heading
+--erb-font-heading
+--erb-font-mono
+--erb-font-sans
+--erb-font-size-base
+--erb-font-size-lg
+--erb-font-size-md
+--erb-font-size-sm
+--erb-font-size-xl
+--erb-font-weight-bold
+--erb-font-weight-medium
+--erb-footer-bg
+--erb-footer-border
+--erb-footer-p
+--erb-header-bg
+--erb-header-border
+--erb-header-height
+--erb-input-bg
+--erb-input-border
+--erb-input-height-lg
+--erb-input-height-md
+--erb-input-height-sm
+--erb-input-px-lg
+--erb-input-px-md
+--erb-input-px-sm
+--erb-input-radius
+--erb-line-height-normal
+--erb-menu-bg
+--erb-menu-border
+--erb-menu-item-bg-hover
+--erb-menu-radius
+--erb-menu-shadow
+--erb-modal-bg
+--erb-modal-overlay-bg
+--erb-modal-radius
+--erb-modal-shadow
+--erb-number-input-bg
+--erb-number-input-border
+--erb-number-input-disabled-bg
+--erb-number-input-disabled-text
+--erb-number-input-px-lg
+--erb-number-input-px-md
+--erb-number-input-px-sm
+--erb-number-input-radius
+--erb-number-input-text
+--erb-panel-bg
+--erb-panel-shadow
+--erb-panel-width
+--erb-radio-bg
+--erb-radio-border
+--erb-radio-checked-bg
+--erb-radio-checked-border
+--erb-radio-checked-icon
+--erb-radio-disabled-bg
+--erb-radio-disabled-border
+--erb-radio-size-lg
+--erb-radio-size-md
+--erb-radio-size-sm
+--erb-radius-full
+--erb-radius-md
+--erb-radius-sm
+--erb-search-input-bg
+--erb-search-input-border
+--erb-search-input-disabled-bg
+--erb-search-input-disabled-text
+--erb-search-input-height-lg
+--erb-search-input-height-md
+--erb-search-input-height-sm
+--erb-search-input-radius
+--erb-search-input-text
+--erb-select-bg
+--erb-select-border
+--erb-select-disabled-bg
+--erb-select-disabled-text
+--erb-select-px-lg
+--erb-select-px-md
+--erb-select-px-sm
+--erb-select-radius
+--erb-select-text
+--erb-shadow-lg
+--erb-shadow-md
+--erb-shadow-sm
+--erb-size-1
+--erb-size-2
+--erb-size-3
+--erb-space-16
+--erb-space-2
+--erb-space-24
+--erb-space-3
+--erb-space-4
+--erb-space-6
+--erb-space-8
+--erb-spacing-1
+--erb-spacing-2
+--erb-spacing-3
+--erb-spacing-4
+--erb-spacing-8
+--erb-switch-bg
+--erb-switch-checked-bg
+--erb-switch-disabled-bg
+--erb-switch-height-lg
+--erb-switch-height-md
+--erb-switch-height-sm
+--erb-switch-thumb-bg
+--erb-switch-thumb-size-lg
+--erb-switch-thumb-size-md
+--erb-switch-thumb-size-sm
+--erb-tabs-active-border
+--erb-tabs-active-color
+--erb-tabs-border
+--erb-tabs-inactive-color
+--erb-text-base-font-size
+--erb-text-lg-font-size
+--erb-text-md-font-size
+--erb-text-sm-font-size
+--erb-text-xs-font-size
+--erb-textarea-bg
+--erb-textarea-border
+--erb-textarea-disabled-bg
+--erb-textarea-disabled-text
+--erb-textarea-radius
+--erb-textarea-text
+--erb-transition-fast
+--erb-typography-font-family-base
+--erb-typography-font-size-sm
+--erb-typography-font-size-xs
+--erb-typography-font-weight-medium
+--erb-typography-line-height-normal
+--erb-weight-medium
+--erb-weight-semibold
+--erb-z-index-dropdown
+packages/core/src/components/accordion.css:  background: var(--erb-accordion-bg, transparent);
+packages/core/src/components/accordion.css:  padding: var(--erb-accordion-padding, 16px);
+packages/core/src/components/alert-dialog.css:  border-radius: var(--erb-radius-md, 0.5rem);
+packages/core/src/components/alert-dialog.css:  font-size: var(--erb-font-size-base, 1rem);
+packages/core/src/components/alert-dialog.css:  font-size: var(--erb-font-size-lg, 1.125rem);
+packages/core/src/components/alert-dialog.css:  font-size: var(--erb-font-size-sm, 0.875rem);
+packages/core/src/components/aspect-ratio.css:    padding-bottom: calc(100% / var(--erb-aspect-ratio, 1));
+packages/core/src/components/badge.css:  border-radius: var(--erb-badge-border-radius, 0.25rem);
+packages/core/src/components/badge.css:  border-radius: var(--erb-badge-pill-border-radius, 9999px);
+packages/core/src/components/badge.css:  font-size: var(--erb-badge-font-size, 0.75rem);
+packages/core/src/components/badge.css:  font-weight: var(--erb-badge-font-weight, 500);
+packages/core/src/components/badge.css:  padding: var(--erb-badge-padding-y, 0.25rem) var(--erb-badge-padding-x, 0.5rem);
+packages/core/src/components/breadcrumb.css:  margin: 0 var(--erb-breadcrumb-gap, 8px);
+packages/core/src/components/carousel.css:  padding: 0 var(--erb-spacing-2, 8px);
+packages/core/src/components/carousel.css:  transition: transform var(--erb-transition-duration-normal, 0.3s) ease-in-out;
+packages/core/src/components/color-picker.css:  gap: var(--erb-spacing-sm, 8px);
+packages/core/src/components/cta.css:    padding: var(--erb-spacing-8, 2rem);
+packages/core/src/components/cta.css:  gap: var(--erb-spacing-4, 1rem);
+packages/core/src/components/cta.css:  padding: var(--erb-spacing-6, 1.5rem);
+packages/core/src/components/daterangepicker.css:  gap: var(--erb-size-1, 0.25rem);
+packages/core/src/components/description-list.css:  font-family: var(--erb-typography-font-family-base, sans-serif);
+packages/core/src/components/description-list.css:  font-weight: var(--erb-typography-font-weight-semibold, 600);
+packages/core/src/components/description-list.css:  gap: var(--erb-spacing-2, 0.5rem) var(--erb-spacing-4, 1rem);
+packages/core/src/components/description-list.css:  margin: var(--erb-spacing-0, 0);
+packages/core/src/components/drawer.css:  font-size: var(--erb-font-size-base, 1rem);
+packages/core/src/components/drawer.css:  font-size: var(--erb-font-size-lg, 1.125rem);
+packages/core/src/components/drawer.css:  font-size: var(--erb-font-size-sm, 0.875rem);
+packages/core/src/components/featuregrid.css:    padding: var(--erb-spacing-8, 2rem);
+packages/core/src/components/featuregrid.css:  gap: var(--erb-spacing-4, 1rem);
+packages/core/src/components/featuregrid.css:  padding: var(--erb-spacing-6, 1.5rem);
+packages/core/src/components/flex.css:      align-items: var(--erb-flex-align-2xl, var(--erb-flex-align-xl, var(--erb-flex-align-lg, var(--erb-flex-align-md, var(--erb-flex-align-sm, var(--erb-flex-align, stretch))))));
+packages/core/src/components/flex.css:      align-items: var(--erb-flex-align-lg, var(--erb-flex-align-md, var(--erb-flex-align-sm, var(--erb-flex-align, stretch))));
+packages/core/src/components/flex.css:      align-items: var(--erb-flex-align-md, var(--erb-flex-align-sm, var(--erb-flex-align, stretch)));
+packages/core/src/components/flex.css:      align-items: var(--erb-flex-align-sm, var(--erb-flex-align, stretch));
+packages/core/src/components/flex.css:      align-items: var(--erb-flex-align-xl, var(--erb-flex-align-lg, var(--erb-flex-align-md, var(--erb-flex-align-sm, var(--erb-flex-align, stretch)))));
+packages/core/src/components/flex.css:      flex-direction: var(--erb-flex-direction-2xl, var(--erb-flex-direction-xl, var(--erb-flex-direction-lg, var(--erb-flex-direction-md, var(--erb-flex-direction-sm, var(--erb-flex-direction, row))))));
+packages/core/src/components/flex.css:      flex-direction: var(--erb-flex-direction-lg, var(--erb-flex-direction-md, var(--erb-flex-direction-sm, var(--erb-flex-direction, row))));
+packages/core/src/components/flex.css:      flex-direction: var(--erb-flex-direction-md, var(--erb-flex-direction-sm, var(--erb-flex-direction, row)));
+packages/core/src/components/flex.css:      flex-direction: var(--erb-flex-direction-sm, var(--erb-flex-direction, row));
+packages/core/src/components/flex.css:      flex-direction: var(--erb-flex-direction-xl, var(--erb-flex-direction-lg, var(--erb-flex-direction-md, var(--erb-flex-direction-sm, var(--erb-flex-direction, row)))));
+packages/core/src/components/flex.css:      flex-wrap: var(--erb-flex-wrap-2xl, var(--erb-flex-wrap-xl, var(--erb-flex-wrap-lg, var(--erb-flex-wrap-md, var(--erb-flex-wrap-sm, var(--erb-flex-wrap, nowrap))))));
+packages/core/src/components/flex.css:      flex-wrap: var(--erb-flex-wrap-lg, var(--erb-flex-wrap-md, var(--erb-flex-wrap-sm, var(--erb-flex-wrap, nowrap))));
+packages/core/src/components/flex.css:      flex-wrap: var(--erb-flex-wrap-md, var(--erb-flex-wrap-sm, var(--erb-flex-wrap, nowrap)));
+packages/core/src/components/flex.css:      flex-wrap: var(--erb-flex-wrap-sm, var(--erb-flex-wrap, nowrap));
+packages/core/src/components/flex.css:      flex-wrap: var(--erb-flex-wrap-xl, var(--erb-flex-wrap-lg, var(--erb-flex-wrap-md, var(--erb-flex-wrap-sm, var(--erb-flex-wrap, nowrap)))));
+packages/core/src/components/flex.css:      gap: var(--erb-flex-gap-2xl, var(--erb-flex-gap-xl, var(--erb-flex-gap-lg, var(--erb-flex-gap-md, var(--erb-flex-gap-sm, var(--erb-flex-gap, 0))))));
+packages/core/src/components/flex.css:      gap: var(--erb-flex-gap-lg, var(--erb-flex-gap-md, var(--erb-flex-gap-sm, var(--erb-flex-gap, 0))));
+packages/core/src/components/flex.css:      gap: var(--erb-flex-gap-md, var(--erb-flex-gap-sm, var(--erb-flex-gap, 0)));
+packages/core/src/components/flex.css:      gap: var(--erb-flex-gap-sm, var(--erb-flex-gap, 0));
+packages/core/src/components/flex.css:      gap: var(--erb-flex-gap-xl, var(--erb-flex-gap-lg, var(--erb-flex-gap-md, var(--erb-flex-gap-sm, var(--erb-flex-gap, 0)))));
+packages/core/src/components/flex.css:      justify-content: var(--erb-flex-justify-2xl, var(--erb-flex-justify-xl, var(--erb-flex-justify-lg, var(--erb-flex-justify-md, var(--erb-flex-justify-sm, var(--erb-flex-justify, flex-start))))));
+packages/core/src/components/flex.css:      justify-content: var(--erb-flex-justify-lg, var(--erb-flex-justify-md, var(--erb-flex-justify-sm, var(--erb-flex-justify, flex-start))));
+packages/core/src/components/flex.css:      justify-content: var(--erb-flex-justify-md, var(--erb-flex-justify-sm, var(--erb-flex-justify, flex-start)));
+packages/core/src/components/flex.css:      justify-content: var(--erb-flex-justify-sm, var(--erb-flex-justify, flex-start));
+packages/core/src/components/flex.css:      justify-content: var(--erb-flex-justify-xl, var(--erb-flex-justify-lg, var(--erb-flex-justify-md, var(--erb-flex-justify-sm, var(--erb-flex-justify, flex-start)))));
+packages/core/src/components/flex.css:    align-items: var(--erb-flex-align, stretch);
+packages/core/src/components/flex.css:    flex-direction: var(--erb-flex-direction, row);
+packages/core/src/components/flex.css:    flex-wrap: var(--erb-flex-wrap, nowrap);
+packages/core/src/components/flex.css:    gap: var(--erb-flex-gap, 0);
+packages/core/src/components/flex.css:    justify-content: var(--erb-flex-justify, flex-start);
+packages/core/src/components/gallery.css:  aspect-ratio: var(--erb-gallery-item-aspect-ratio, 1 / 1);
+packages/core/src/components/gallery.css:  border-radius: var(--erb-radius-md, 8px);
+packages/core/src/components/gallery.css:  gap: var(--erb-spacing-4, 16px);
+packages/core/src/components/gallery.css:  grid-template-columns: repeat(auto-fill, minmax(var(--erb-gallery-item-min-width, 200px), 1fr));
+packages/core/src/components/gallery.css:  transition: transform var(--erb-transition-duration-normal, 0.2s) ease;
+packages/core/src/components/grid.css:      align-items: var(--erb-grid-align-2xl, var(--erb-grid-align-xl, var(--erb-grid-align-lg, var(--erb-grid-align-md, var(--erb-grid-align-sm, var(--erb-grid-align, stretch))))));
+packages/core/src/components/grid.css:      align-items: var(--erb-grid-align-lg, var(--erb-grid-align-md, var(--erb-grid-align-sm, var(--erb-grid-align, stretch))));
+packages/core/src/components/grid.css:      align-items: var(--erb-grid-align-md, var(--erb-grid-align-sm, var(--erb-grid-align, stretch)));
+packages/core/src/components/grid.css:      align-items: var(--erb-grid-align-sm, var(--erb-grid-align, stretch));
+packages/core/src/components/grid.css:      align-items: var(--erb-grid-align-xl, var(--erb-grid-align-lg, var(--erb-grid-align-md, var(--erb-grid-align-sm, var(--erb-grid-align, stretch)))));
+packages/core/src/components/grid.css:      grid-column: span var(--erb-grid-item-col-span-2xl, var(--erb-grid-item-col-span-xl, var(--erb-grid-item-col-span-lg, var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1)))))) / span var(--erb-grid-item-col-span-2xl, var(--erb-grid-item-col-span-xl, var(--erb-grid-item-col-span-lg, var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1))))));
+packages/core/src/components/grid.css:      grid-column: span var(--erb-grid-item-col-span-lg, var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1)))) / span var(--erb-grid-item-col-span-lg, var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1))));
+packages/core/src/components/grid.css:      grid-column: span var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1))) / span var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1)));
+packages/core/src/components/grid.css:      grid-column: span var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1)) / span var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1));
+packages/core/src/components/grid.css:      grid-column: span var(--erb-grid-item-col-span-xl, var(--erb-grid-item-col-span-lg, var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1))))) / span var(--erb-grid-item-col-span-xl, var(--erb-grid-item-col-span-lg, var(--erb-grid-item-col-span-md, var(--erb-grid-item-col-span-sm, var(--erb-grid-item-col-span, 1)))));
+packages/core/src/components/grid.css:      grid-row: span var(--erb-grid-item-row-span-2xl, var(--erb-grid-item-row-span-xl, var(--erb-grid-item-row-span-lg, var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1)))))) / span var(--erb-grid-item-row-span-2xl, var(--erb-grid-item-row-span-xl, var(--erb-grid-item-row-span-lg, var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1))))));
+packages/core/src/components/grid.css:      grid-row: span var(--erb-grid-item-row-span-lg, var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1)))) / span var(--erb-grid-item-row-span-lg, var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1))));
+packages/core/src/components/grid.css:      grid-row: span var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1))) / span var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1)));
+packages/core/src/components/grid.css:      grid-row: span var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1)) / span var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1));
+packages/core/src/components/grid.css:      grid-row: span var(--erb-grid-item-row-span-xl, var(--erb-grid-item-row-span-lg, var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1))))) / span var(--erb-grid-item-row-span-xl, var(--erb-grid-item-row-span-lg, var(--erb-grid-item-row-span-md, var(--erb-grid-item-row-span-sm, var(--erb-grid-item-row-span, 1)))));
+packages/core/src/components/grid.css:      grid-template-columns: var(--erb-grid-cols-2xl, var(--erb-grid-cols-xl, var(--erb-grid-cols-lg, var(--erb-grid-cols-md, var(--erb-grid-cols-sm, var(--erb-grid-cols, repeat(1, minmax(0, 1fr))))))));
+packages/core/src/components/grid.css:      grid-template-columns: var(--erb-grid-cols-lg, var(--erb-grid-cols-md, var(--erb-grid-cols-sm, var(--erb-grid-cols, repeat(1, minmax(0, 1fr))))));
+packages/core/src/components/grid.css:      grid-template-columns: var(--erb-grid-cols-md, var(--erb-grid-cols-sm, var(--erb-grid-cols, repeat(1, minmax(0, 1fr)))));
+packages/core/src/components/grid.css:      grid-template-columns: var(--erb-grid-cols-sm, var(--erb-grid-cols, repeat(1, minmax(0, 1fr))));
+packages/core/src/components/grid.css:      grid-template-columns: var(--erb-grid-cols-xl, var(--erb-grid-cols-lg, var(--erb-grid-cols-md, var(--erb-grid-cols-sm, var(--erb-grid-cols, repeat(1, minmax(0, 1fr)))))));
+packages/core/src/components/grid.css:      justify-items: var(--erb-grid-justify-2xl, var(--erb-grid-justify-xl, var(--erb-grid-justify-lg, var(--erb-grid-justify-md, var(--erb-grid-justify-sm, var(--erb-grid-justify, stretch))))));
+packages/core/src/components/grid.css:      justify-items: var(--erb-grid-justify-lg, var(--erb-grid-justify-md, var(--erb-grid-justify-sm, var(--erb-grid-justify, stretch))));
+packages/core/src/components/grid.css:      justify-items: var(--erb-grid-justify-md, var(--erb-grid-justify-sm, var(--erb-grid-justify, stretch)));
+packages/core/src/components/grid.css:      justify-items: var(--erb-grid-justify-sm, var(--erb-grid-justify, stretch));
+packages/core/src/components/grid.css:      justify-items: var(--erb-grid-justify-xl, var(--erb-grid-justify-lg, var(--erb-grid-justify-md, var(--erb-grid-justify-sm, var(--erb-grid-justify, stretch)))));
+packages/core/src/components/grid.css:    align-items: var(--erb-grid-align, stretch);
+packages/core/src/components/grid.css:    grid-column: span var(--erb-grid-item-col-span, 1) / span var(--erb-grid-item-col-span, 1);
+packages/core/src/components/grid.css:    grid-row: span var(--erb-grid-item-row-span, 1) / span var(--erb-grid-item-row-span, 1);
+packages/core/src/components/grid.css:    grid-template-columns: var(--erb-grid-cols, repeat(1, minmax(0, 1fr)));
+packages/core/src/components/grid.css:    justify-items: var(--erb-grid-justify, stretch);
+packages/core/src/components/hero.css:    padding: var(--erb-spacing-8, 2rem);
+packages/core/src/components/hero.css:  gap: var(--erb-spacing-4, 1rem);
+packages/core/src/components/hero.css:  padding: var(--erb-spacing-6, 1.5rem);
+packages/core/src/components/inline.css:      align-items: var(--erb-inline-align-2xl, var(--erb-inline-align-xl, var(--erb-inline-align-lg, var(--erb-inline-align-md, var(--erb-inline-align-sm, var(--erb-inline-align, center))))));
+packages/core/src/components/inline.css:      align-items: var(--erb-inline-align-lg, var(--erb-inline-align-md, var(--erb-inline-align-sm, var(--erb-inline-align, center))));
+packages/core/src/components/inline.css:      align-items: var(--erb-inline-align-md, var(--erb-inline-align-sm, var(--erb-inline-align, center)));
+packages/core/src/components/inline.css:      align-items: var(--erb-inline-align-sm, var(--erb-inline-align, center));
+packages/core/src/components/inline.css:      align-items: var(--erb-inline-align-xl, var(--erb-inline-align-lg, var(--erb-inline-align-md, var(--erb-inline-align-sm, var(--erb-inline-align, center)))));
+packages/core/src/components/inline.css:      justify-content: var(--erb-inline-justify-2xl, var(--erb-inline-justify-xl, var(--erb-inline-justify-lg, var(--erb-inline-justify-md, var(--erb-inline-justify-sm, var(--erb-inline-justify, flex-start))))));
+packages/core/src/components/inline.css:      justify-content: var(--erb-inline-justify-lg, var(--erb-inline-justify-md, var(--erb-inline-justify-sm, var(--erb-inline-justify, flex-start))));
+packages/core/src/components/inline.css:      justify-content: var(--erb-inline-justify-md, var(--erb-inline-justify-sm, var(--erb-inline-justify, flex-start)));
+packages/core/src/components/inline.css:      justify-content: var(--erb-inline-justify-sm, var(--erb-inline-justify, flex-start));
+packages/core/src/components/inline.css:      justify-content: var(--erb-inline-justify-xl, var(--erb-inline-justify-lg, var(--erb-inline-justify-md, var(--erb-inline-justify-sm, var(--erb-inline-justify, flex-start)))));
+packages/core/src/components/inline.css:    align-items: var(--erb-inline-align, center);
+packages/core/src/components/inline.css:    justify-content: var(--erb-inline-justify, flex-start);
+packages/core/src/components/lightbox.css:  right: var(--erb-spacing-2, 8px);
+packages/core/src/components/lightbox.css:  top: var(--erb-spacing-2, 8px);
+packages/core/src/components/lightbox.css:  z-index: var(--erb-z-index-modal, 1000);
+packages/core/src/components/list.css:  font-family: var(--erb-typography-font-family-base, sans-serif);
+packages/core/src/components/list.css:  margin-bottom: var(--erb-spacing-1, 0.25rem);
+packages/core/src/components/list.css:  margin: var(--erb-spacing-0, 0);
+packages/core/src/components/list.css:  padding-left: var(--erb-spacing-4, 1rem);
+packages/core/src/components/loading-overlay.css:  z-index: var(--erb-z-index-overlay, 1000);
+packages/core/src/components/logocloud.css:    padding: var(--erb-spacing-8, 2rem);
+packages/core/src/components/logocloud.css:  gap: var(--erb-spacing-4, 1rem);
+packages/core/src/components/logocloud.css:  padding: var(--erb-spacing-6, 1.5rem);
+packages/core/src/components/pagination.css:  gap: var(--erb-pagination-gap, 4px);
+packages/core/src/components/pagination.css:  padding: var(--erb-pagination-padding, 8px 12px);
+packages/core/src/components/pin-input.css:  border-radius: var(--erb-radius-md, 6px);
+packages/core/src/components/pin-input.css:  font-size: var(--erb-font-size-lg, 18px);
+packages/core/src/components/pin-input.css:  gap: var(--erb-spacing-sm, 8px);
+packages/core/src/components/pin-input.css:  height: var(--erb-size-10, 40px);
+packages/core/src/components/pin-input.css:  transition: border-color var(--erb-transition-fast, 0.2s);
+packages/core/src/components/pin-input.css:  width: var(--erb-size-10, 40px);
+packages/core/src/components/rating.css:  border-radius: var(--erb-radius-sm, 4px);
+packages/core/src/components/rating.css:  gap: var(--erb-spacing-xs, 4px);
+packages/core/src/components/rating.css:  transition: color var(--erb-transition-fast, 0.2s);
+packages/core/src/components/scroll-area.css:    max-height: var(--erb-scroll-area-max-height, 100%);
+packages/core/src/components/skeleton.css:  border-radius: var(--erb-radius-md, 4px);
+packages/core/src/components/skip-link.css:  padding: var(--erb-skip-link-padding, 8px);
+packages/core/src/components/slider.css:  border-radius: var(--erb-slider-track-radius, 9999px);
+packages/core/src/components/slider.css:  height: var(--erb-slider-thumb-size, 20px);
+packages/core/src/components/slider.css:  height: var(--erb-slider-track-height, 4px);
+packages/core/src/components/slider.css:  width: var(--erb-slider-thumb-size, 20px);
+packages/core/src/components/spinner.css:  height: var(--erb-spinner-size, 24px);
+packages/core/src/components/spinner.css:  width: var(--erb-spinner-size, 24px);
+packages/core/src/components/split.css:      align-items: var(--erb-split-align, stretch);
+packages/core/src/components/stack.css:      align-items: var(--erb-stack-align-2xl, var(--erb-stack-align-xl, var(--erb-stack-align-lg, var(--erb-stack-align-md, var(--erb-stack-align-sm, var(--erb-stack-align, stretch))))));
+packages/core/src/components/stack.css:      align-items: var(--erb-stack-align-lg, var(--erb-stack-align-md, var(--erb-stack-align-sm, var(--erb-stack-align, stretch))));
+packages/core/src/components/stack.css:      align-items: var(--erb-stack-align-md, var(--erb-stack-align-sm, var(--erb-stack-align, stretch)));
+packages/core/src/components/stack.css:      align-items: var(--erb-stack-align-sm, var(--erb-stack-align, stretch));
+packages/core/src/components/stack.css:      align-items: var(--erb-stack-align-xl, var(--erb-stack-align-lg, var(--erb-stack-align-md, var(--erb-stack-align-sm, var(--erb-stack-align, stretch)))));
+packages/core/src/components/stack.css:      justify-content: var(--erb-stack-justify-2xl, var(--erb-stack-justify-xl, var(--erb-stack-justify-lg, var(--erb-stack-justify-md, var(--erb-stack-justify-sm, var(--erb-stack-justify, flex-start))))));
+packages/core/src/components/stack.css:      justify-content: var(--erb-stack-justify-lg, var(--erb-stack-justify-md, var(--erb-stack-justify-sm, var(--erb-stack-justify, flex-start))));
+packages/core/src/components/stack.css:      justify-content: var(--erb-stack-justify-md, var(--erb-stack-justify-sm, var(--erb-stack-justify, flex-start)));
+packages/core/src/components/stack.css:      justify-content: var(--erb-stack-justify-sm, var(--erb-stack-justify, flex-start));
+packages/core/src/components/stack.css:      justify-content: var(--erb-stack-justify-xl, var(--erb-stack-justify-lg, var(--erb-stack-justify-md, var(--erb-stack-justify-sm, var(--erb-stack-justify, flex-start)))));
+packages/core/src/components/stack.css:    align-items: var(--erb-stack-align, stretch);
+packages/core/src/components/stack.css:    justify-content: var(--erb-stack-justify, flex-start);
+packages/core/src/components/stat.css:  border-radius: var(--erb-radius-md, 0.375rem);
+packages/core/src/components/stat.css:  font-family: var(--erb-typography-font-family-base, sans-serif);
+packages/core/src/components/stat.css:  font-size: var(--erb-typography-size-2xl, 1.5rem);
+packages/core/src/components/stat.css:  font-size: var(--erb-typography-size-sm, 0.875rem);
+packages/core/src/components/stat.css:  font-weight: var(--erb-typography-font-weight-bold, 700);
+packages/core/src/components/stat.css:  margin-bottom: var(--erb-spacing-1, 0.25rem);
+packages/core/src/components/stat.css:  margin-top: var(--erb-spacing-1, 0.25rem);
+packages/core/src/components/stat.css:  padding: var(--erb-spacing-4, 1rem);
+packages/core/src/components/stepper.css:  gap: var(--erb-stepper-gap, 16px);
+packages/core/src/components/stepper.css:  gap: var(--erb-stepper-step-gap, 8px);
+packages/core/src/components/table.css:  font-family: var(--erb-typography-font-family-base, sans-serif);
+packages/core/src/components/table.css:  font-weight: var(--erb-typography-font-weight-semibold, 600);
+packages/core/src/components/table.css:  padding: var(--erb-spacing-3, 0.75rem);
+packages/core/src/components/tag.css:  border-radius: var(--erb-tag-border-radius, 0.375rem);
+packages/core/src/components/tag.css:  font-size: var(--erb-tag-font-size, 0.875rem);
+packages/core/src/components/tag.css:  font-weight: var(--erb-tag-font-weight, 400);
+packages/core/src/components/tag.css:  padding: var(--erb-tag-padding-y, 0.25rem) var(--erb-tag-padding-x, 0.75rem);
+packages/core/src/components/tags-input.css:  border-radius: var(--erb-radius-md, 6px);
+packages/core/src/components/tags-input.css:  border-radius: var(--erb-radius-sm, 4px);
+packages/core/src/components/tags-input.css:  font-size: var(--erb-font-size-md, 16px);
+packages/core/src/components/tags-input.css:  font-size: var(--erb-font-size-sm, 14px);
+packages/core/src/components/tags-input.css:  gap: var(--erb-spacing-xs, 4px);
+packages/core/src/components/tags-input.css:  min-height: var(--erb-size-10, 40px);
+packages/core/src/components/tags-input.css:  padding: var(--erb-spacing-xs, 4px);
+packages/core/src/components/tags-input.css:  padding: var(--erb-spacing-xxs, 2px) var(--erb-spacing-sm, 8px);
+packages/core/src/components/testimonial.css:    padding: var(--erb-spacing-8, 2rem);
+packages/core/src/components/testimonial.css:  gap: var(--erb-spacing-4, 1rem);
+packages/core/src/components/testimonial.css:  padding: var(--erb-spacing-6, 1.5rem);

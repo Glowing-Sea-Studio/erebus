@@ -10,7 +10,7 @@ describe('Rating', () => {
   });
 
   it('handles keyboard navigation', () => {
-    const handleChange = jest.fn();
+    const handleChange = vi.fn();
     render(<Rating value={3} max={5} onChange={handleChange} />);
     
     const slider = screen.getByRole('slider');

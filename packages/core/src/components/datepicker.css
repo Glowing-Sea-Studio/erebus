@@ -12,8 +12,8 @@
 .erb-datepicker:focus,
 .erb-datepicker:focus-within {
   outline: none;
-  border-color: var(--erb-input-border-focus);
-  box-shadow: 0 0 0 1px var(--erb-input-border-focus);
+  border-color: var(--erb-color-border-focus);
+  box-shadow: 0 0 0 1px var(--erb-color-border-focus);
 }
 
 .erb-datepicker:disabled {

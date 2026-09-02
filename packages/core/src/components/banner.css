@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   padding: var(--erb-spacing-4);
-  background-color: var(--erb-color-primary-100);
+  background-color: var(--erb-color-accent-bg-subtle);
   color: var(--erb-color-primary-900);
   border-radius: var(--erb-radius-md);
   margin-bottom: var(--erb-spacing-4);

@@ -8,7 +8,7 @@ const TestComponent = () => {
 
 describe('Toast', () => {
   it('shows and hides toast', () => {
-    jest.useFakeTimers();
+    vi.useFakeTimers();
     const { getByText, queryByText } = render(
       <ToastProvider>
         <TestComponent />
@@ -19,10 +19,10 @@ describe('Toast', () => {
     expect(getByText('Test toast')).toBeInTheDocument();
 
     act(() => {
-      jest.advanceTimersByTime(3000);
+      vi.advanceTimersByTime(3000);
     });
 
     expect(queryByText('Test toast')).not.toBeInTheDocument();
-    jest.useRealTimers();
+    vi.useRealTimers();
   });
 });

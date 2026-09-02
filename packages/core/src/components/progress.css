@@ -1,12 +1,12 @@
 .erb-progress {
   width: 100%;
   height: var(--erb-spacing-2);
-  background-color: var(--erb-color-neutral-200);
+  background-color: var(--erb-color-border-default);
   border-radius: var(--erb-radius-full);
   overflow: hidden;
 }
 .erb-progress__bar {
   height: 100%;
-  background-color: var(--erb-color-primary-500);
+  background-color: var(--erb-color-accent-bg);
   transition: width 0.3s ease;
 }

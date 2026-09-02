@@ -7,7 +7,7 @@
   text-align: center;
   color: var(--erb-color-danger-700);
   background-color: var(--erb-color-danger-50);
-  border-radius: var(--erb-border-radius-md);
+  border-radius: var(--erb-radius-md);
 }
 .erb-error-state-title {
   font-size: var(--erb-font-size-lg);

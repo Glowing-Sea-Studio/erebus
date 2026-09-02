@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--erb-backdrop-bg, rgba(0, 0, 0, 0.8));
+  background-color: var(--erb-color-bg-overlay, var(--erb-color-bg-overlay));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,8 +27,8 @@
   position: absolute;
   top: var(--erb-spacing-2, 8px);
   right: var(--erb-spacing-2, 8px);
-  background: var(--erb-color-neutral-800, #333);
-  color: var(--erb-color-neutral-100, #fff);
+  background: var(--erb-color-bg-surface-raised, var(--erb-color-fg-default));
+  color: var(--erb-color-fg-default, var(--erb-color-gray-50));
   border: none;
   border-radius: 50%;
   width: 32px;

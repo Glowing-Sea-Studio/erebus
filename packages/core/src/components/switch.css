@@ -57,7 +57,7 @@
 
 .erb-switch:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--erb-switch-focus-ring);
+  box-shadow: 0 0 0 2px var(--erb-color-focus-ring);
 }
 
 .erb-switch:disabled {
@@ -67,5 +67,5 @@
 
 .erb-switch-label {
   font-size: 1rem;
-  color: var(--erb-color-text-primary);
+  color: var(--erb-color-fg-default);
 }

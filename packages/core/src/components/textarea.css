@@ -17,8 +17,8 @@
 
 .erb-textarea:focus {
   outline: none;
-  border-color: var(--erb-textarea-focus-ring);
-  box-shadow: 0 0 0 2px var(--erb-textarea-focus-ring);
+  border-color: var(--erb-color-focus-ring);
+  box-shadow: 0 0 0 2px var(--erb-color-focus-ring);
 }
 
 .erb-textarea:disabled {

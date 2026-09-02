@@ -8,10 +8,10 @@
 
 .erb-description-list-term {
   font-weight: var(--erb-typography-font-weight-semibold, 600);
-  color: var(--erb-color-text-primary, #111827);
+  color: var(--erb-color-fg-default, var(--erb-color-fg-default));
 }
 
 .erb-description-list-details {
   margin: 0;
-  color: var(--erb-color-text-secondary, #4b5563);
+  color: var(--erb-color-fg-subtle, var(--erb-color-fg-subtle));
 }

@@ -5,14 +5,14 @@
 }
 .erb-rating__item {
   cursor: pointer;
-  color: var(--erb-color-neutral-300, #ccc);
+  color: var(--erb-color-border-muted, var(--erb-color-border-default-default));
   transition: color var(--erb-transition-fast, 0.2s);
 }
 .erb-rating__item--active {
-  color: var(--erb-color-primary, #ffb400);
+  color: var(--erb-color-accent-bg, var(--erb-color-warning-bg));
 }
 .erb-rating__item:focus-visible {
-  outline: 2px solid var(--erb-color-focus, #005fcc);
+  outline: 2px solid var(--erb-color-focus-ring, var(--erb-color-accent-bg));
   outline-offset: 2px;
   border-radius: var(--erb-radius-sm, 4px);
 }

@@ -47,7 +47,7 @@
 
 .erb-radio:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--erb-radio-focus-ring);
+  box-shadow: 0 0 0 2px var(--erb-color-focus-ring);
 }
 
 .erb-radio:disabled {
@@ -58,5 +58,5 @@
 
 .erb-radio-label {
   font-size: 1rem;
-  color: var(--erb-color-text-primary);
+  color: var(--erb-color-fg-default);
 }

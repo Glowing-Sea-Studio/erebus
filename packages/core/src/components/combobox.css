@@ -14,19 +14,19 @@
 .erb-combobox-input {
   width: 100%;
   padding: var(--erb-spacing-2) var(--erb-spacing-3);
-  border: 1px solid var(--erb-color-border-default);
+  border: 1px solid var(--erb-color-border-default-default);
   border-radius: var(--erb-radius-md);
   font-family: var(--erb-font-sans);
   font-size: var(--erb-font-size-base);
-  color: var(--erb-color-text-default);
+  color: var(--erb-color-fg-default-default);
   background-color: var(--erb-color-bg-default);
   transition: border-color var(--erb-transition-fast), box-shadow var(--erb-transition-fast);
 }
 
 .erb-combobox-input:focus {
   outline: none;
-  border-color: var(--erb-color-primary);
-  box-shadow: 0 0 0 2px var(--erb-color-primary-alpha-20);
+  border-color: var(--erb-color-accent-bg);
+  box-shadow: 0 0 0 2px var(--erb-color-focus-ring);
 }
 
 .erb-combobox-input[aria-invalid="true"] {
@@ -35,7 +35,7 @@
 
 .erb-combobox-input:disabled {
   background-color: var(--erb-color-bg-subtle);
-  color: var(--erb-color-text-muted);
+  color: var(--erb-color-fg-muted);
   cursor: not-allowed;
 }
 
@@ -47,7 +47,7 @@
   margin-top: var(--erb-spacing-1);
   padding: var(--erb-spacing-1) 0;
   background-color: var(--erb-color-bg-default);
-  border: 1px solid var(--erb-color-border-default);
+  border: 1px solid var(--erb-color-border-default-default);
   border-radius: var(--erb-radius-md);
   box-shadow: var(--erb-shadow-md);
   max-height: 250px;
@@ -65,7 +65,7 @@
   cursor: pointer;
   font-family: var(--erb-font-sans);
   font-size: var(--erb-font-size-base);
-  color: var(--erb-color-text-default);
+  color: var(--erb-color-fg-default-default);
 }
 
 .erb-combobox-option:hover,
@@ -75,5 +75,5 @@
 
 .erb-combobox-option[aria-selected="true"] {
   font-weight: var(--erb-font-weight-medium);
-  color: var(--erb-color-primary);
+  color: var(--erb-color-accent-bg);
 }
