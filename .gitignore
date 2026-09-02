@@ -2,9 +2,16 @@
 **/.pnpm
 
 **/.angular/
+**/.angular
+**/.nx/
+**/.nx
+**/.cache/
+**/.cache
 
 storybook-static
-.nx/
 dist/
 coverage/
+
+!packages/tokens/dist/
+!packages/tokens/dist/**
 
