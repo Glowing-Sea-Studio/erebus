@@ -1,4 +1,4 @@
-import { ToastProvider, useToast, Button } from '@glowing-sea-studio/erebus-react'
+import { ToastProvider, useToast, Button, AppShell, Header, Footer, Sidebar } from '@glowing-sea-studio/erebus-react'
 import { KitchenSink } from './KitchenSink'
 import '@glowing-sea-studio/erebus-tokens/dist/css/variables.css'
 import '@glowing-sea-studio/erebus-core/src/components/index.css'
@@ -26,9 +26,29 @@ function DemoContent() {
 function App() {
   return (
     <ToastProvider>
-      <div style={{ minHeight: '100vh', backgroundColor: 'var(--erb-color-bg-canvas-subtle)', padding: '3rem', fontFamily: 'var(--erb-font-sans)' }}>
-        <DemoContent />
-      </div>
+      <AppShell style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundColor: 'var(--erb-color-bg-canvas-subtle)', fontFamily: 'var(--erb-font-sans)' }}>
+        <Header style={{ padding: '1rem', borderBottom: '1px solid var(--erb-color-border-default)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div style={{ fontWeight: 'bold', fontSize: '1.5rem', color: 'var(--erb-color-neutral-fg)' }}>Erebus React</div>
+          <nav>
+            <a href="#" style={{ color: 'var(--erb-color-fg-muted)', textDecoration: 'none', marginRight: '1rem' }}>Docs</a>
+            <a href="#" style={{ color: 'var(--erb-color-fg-muted)', textDecoration: 'none' }}>GitHub</a>
+          </nav>
+        </Header>
+        <div style={{ display: 'flex', flex: 1 }}>
+          <Sidebar style={{ width: '250px', borderRight: '1px solid var(--erb-color-border-default)', padding: '1rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div style={{ fontWeight: 'bold', color: 'var(--erb-color-neutral-fg)' }}>Components</div>
+            <a href="#" style={{ color: 'var(--erb-color-primary-base)', textDecoration: 'none' }}>Kitchen Sink</a>
+            <a href="#" style={{ color: 'var(--erb-color-fg-muted)', textDecoration: 'none' }}>Buttons</a>
+            <a href="#" style={{ color: 'var(--erb-color-fg-muted)', textDecoration: 'none' }}>Forms</a>
+          </Sidebar>
+          <main style={{ flex: 1, padding: '3rem', overflowY: 'auto' }}>
+            <DemoContent />
+          </main>
+        </div>
+        <Footer style={{ padding: '2rem', borderTop: '1px solid var(--erb-color-border-default)', textAlign: 'center', color: 'var(--erb-color-fg-muted)' }}>
+          <p>© {new Date().getFullYear()} Glowing Sea Studio. All rights reserved.</p>
+        </Footer>
+      </AppShell>
     </ToastProvider>
   )
 }
