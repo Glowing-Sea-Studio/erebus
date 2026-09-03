@@ -22,15 +22,20 @@ Bring the component library and its demo/Storybook system to a fully working, vi
 
 ## Acceptance Criteria
 
-- [ ] For every component under `packages/angular/src/*` and `packages/react/src/*` that has a corresponding Storybook story, the story exists, renders without runtime/console errors, and exercises the component's primary interactive states.
-- [ ] `packages/tokens` builds successfully from source JSON, and `packages/tokens/dist/{css/variables.css,js/tokens.ts,json/tokens.json}` are regenerated (not hand-edited) and committed in sync with `packages/tokens/src/**`.
-- [ ] No component file references a token name/CSS variable that does not exist in the compiled token output (grep for `var(--` / token identifiers in component styles and cross-check against `packages/tokens/dist/css/variables.css`).
-- [ ] No component has hardcoded hex/rgb color values where a semantic/component token should be used instead (aside from truly one-off cases already using a documented escape hatch, if any).
-- [ ] Angular Storybook (`nx run angular:storybook` or the equivalent script in `packages/angular/package.json`) builds successfully with no errors.
-- [ ] React's demo/build pipeline (check `packages/react/package.json` for the relevant script) builds successfully with no errors.
-- [ ] `nx build` (or the relevant per-package build targets) succeeds for `angular`, `react`, `tokens`, `core`, and `icons`.
-- [ ] Existing unit tests pass; add/update unit tests where a fix changes component logic in a way worth covering.
-- [ ] A real branch exists on the remote with incremental pushed commits (see constraint 3 below), and a PR description lists every component touched and, for each, what was wrong (missing token, wrong token, missing story, broken story, dead import, etc.) and how it was verified.
+- [ ] For every component under `packages/angular/src/*` and `packages/react/src/*` that has a corresponding Storybook story, the story exists, renders without runtime/console errors, and exercises the component's primary interactive states. **Unverified** — not checked in this pass.
+- [x] `packages/tokens` builds successfully from source JSON, and `packages/tokens/dist/{css/variables.css,js/tokens.ts,json/tokens.json}` are regenerated (not hand-edited) and committed in sync with `packages/tokens/src/**`. Verified 2026-09-03: `node packages/tokens/build.mjs` reproduces the committed `dist/**` byte-for-byte (`git status` clean after rebuild), via the light/dark two-pass `build.mjs` from commit `5e4858c`.
+- [ ] No component file references a token name/CSS variable that does not exist in the compiled token output. **Still broken** — verified 2026-09-03 by diffing every `--erb-*` referenced under `packages/{core,angular,react}/src` against `packages/tokens/dist/css/variables.css`: ~70 dangling *design*-token refs remain (the flex/grid/stack `--erb-*-gap`/`-align`/`-justify`/etc. custom props are component-local runtime values with CSS fallbacks and are fine — not tokens). Confirmed real breakage example: `packages/core/src/components/callout.css:30` does `background-color: var(--erb-color-danger-3);` with no fallback and `--erb-color-danger-3` is not defined anywhere in `dist/css/variables.css`, so the rule silently no-ops. Other dangling names of the same class: `--erb-color-{danger,success,warning,info,neutral,primary}-*`, `--erb-color-{bg,fg,border,text,surface}-*`, `--erb-typography-*`, `--erb-spacing-*`, `--erb-font-{size,weight,family}-*`, `--erb-z-index-*`, `--erb-container-*`, `--erb-transition-*`. The `671401d` "fully map design tokens" PR reduced but did not eliminate this class of bug from goal item 5 / `881a1b9`.
+- [ ] No component has hardcoded hex/rgb color values where a semantic/component token should be used instead. **Unverified** — `671401d` claims this is done; not re-audited in this pass beyond the dangling-var check above.
+- [ ] Angular Storybook builds successfully with no errors. **Unverified** — not run in this pass.
+- [ ] React's demo/build pipeline builds successfully with no errors. **Unverified** — not run in this pass.
+- [ ] `nx build` succeeds for `angular`, `react`, `tokens`, `core`, and `icons`. **Unverified** — not run in this pass (tokens build alone was verified above).
+- [ ] Existing unit tests pass. **Blocked, not verified** — `671401d` claims "all 107 tests pass" but running `npx vitest run` in `packages/react` here fails with 82 collection errors, 0 tests executed: `TypeError: webidl.util.markAsUncloneable is not a function` from `undici@8.10.1` (pulled in by `jsdom@30.0.1`, added in `671401d`). `undici@8.10.1`'s own `package.json` declares `"engines": {"node": ">=22.19.0"}`, while this repo's root `package.json` still declares `"engines": {"node": ">=20.0.0"}` and the local dev Node is `v20.19.5` — the merged PR raised the real Node requirement without updating `engines`/CI, so the claimed passing run could only have happened on a newer Node than this repo advertises it supports.
+- [x] A real branch exists on the remote with incremental pushed commits, and a PR description lists every component touched. Satisfied by PR #2 (`671401d` → merged as `e29296e`), now on `main`.
+
+### New findings from this verification pass (2026-09-03)
+
+- `used_tokens.txt` (442 lines, a scratch grep-output file) was committed at the repo root by `671401d` / PR #2 — dead debug artifact, not source, should be deleted.
+- Node engines mismatch above should be resolved one way or the other: either bump `engines.node` to `>=22.19.0` (and CI's Node version) to match what `jsdom@30`/`undici@8` actually require, or pin `jsdom`/`undici` to versions compatible with Node 20.
 
 ## Constraints
 
