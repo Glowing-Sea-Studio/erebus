@@ -11,11 +11,11 @@
   gap: var(--erb-spacing-1);
   min-height: 40px;
   padding: var(--erb-spacing-1) var(--erb-spacing-3);
-  border: 1px solid var(--erb-color-border-default);
+  border: 1px solid var(--erb-color-border-default-default);
   border-radius: var(--erb-radius-md);
   font-family: var(--erb-font-sans);
   font-size: var(--erb-font-size-base);
-  color: var(--erb-color-text-default);
+  color: var(--erb-color-fg-default-default);
   background-color: var(--erb-color-bg-default);
   cursor: pointer;
   align-items: center;
@@ -23,8 +23,8 @@
 
 .erb-multi-select-trigger:focus-within {
   outline: none;
-  border-color: var(--erb-color-primary);
-  box-shadow: 0 0 0 2px var(--erb-color-primary-alpha-20);
+  border-color: var(--erb-color-accent-bg);
+  box-shadow: 0 0 0 2px var(--erb-color-focus-ring);
 }
 
 .erb-multi-select-trigger[aria-invalid="true"] {
@@ -33,7 +33,7 @@
 
 .erb-multi-select-trigger[aria-disabled="true"] {
   background-color: var(--erb-color-bg-subtle);
-  color: var(--erb-color-text-muted);
+  color: var(--erb-color-fg-muted);
   cursor: not-allowed;
 }
 
@@ -43,7 +43,7 @@
   gap: var(--erb-spacing-1);
   padding: 2px var(--erb-spacing-2);
   background-color: var(--erb-color-primary-alpha-10);
-  color: var(--erb-color-primary);
+  color: var(--erb-color-accent-bg);
   border-radius: var(--erb-radius-sm);
   font-size: var(--erb-font-size-sm);
 }
@@ -53,7 +53,7 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  color: var(--erb-color-primary);
+  color: var(--erb-color-accent-bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +83,7 @@
   margin-top: var(--erb-spacing-1);
   padding: var(--erb-spacing-1) 0;
   background-color: var(--erb-color-bg-default);
-  border: 1px solid var(--erb-color-border-default);
+  border: 1px solid var(--erb-color-border-default-default);
   border-radius: var(--erb-radius-md);
   box-shadow: var(--erb-shadow-md);
   max-height: 250px;
@@ -104,7 +104,7 @@
   cursor: pointer;
   font-family: var(--erb-font-sans);
   font-size: var(--erb-font-size-base);
-  color: var(--erb-color-text-default);
+  color: var(--erb-color-fg-default-default);
 }
 
 .erb-multi-select-option:hover,

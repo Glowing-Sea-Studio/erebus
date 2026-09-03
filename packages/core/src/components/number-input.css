@@ -25,8 +25,8 @@
 
 .erb-number-input:focus {
   outline: none;
-  border-color: var(--erb-number-input-focus-ring);
-  box-shadow: 0 0 0 2px var(--erb-number-input-focus-ring);
+  border-color: var(--erb-color-focus-ring);
+  box-shadow: 0 0 0 2px var(--erb-color-focus-ring);
 }
 
 .erb-number-input:disabled {

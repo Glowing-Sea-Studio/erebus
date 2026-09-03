@@ -28,8 +28,8 @@
 
 .erb-carousel-btn {
   pointer-events: auto;
-  background: var(--erb-color-neutral-800, rgba(0, 0, 0, 0.5));
-  color: var(--erb-color-neutral-100, #fff);
+  background: var(--erb-color-bg-surface-raised, var(--erb-color-bg-overlay));
+  color: var(--erb-color-fg-default, var(--erb-color-gray-50));
   border: none;
   border-radius: 50%;
   width: 40px;

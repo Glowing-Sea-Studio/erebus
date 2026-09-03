@@ -19,7 +19,7 @@ const meta: Meta<ErbFieldComponent> = {
     },
     template: `
       <erb-field [label]="label" [hint]="hint" [error]="error" [required]="required" [horizontal]="horizontal">
-        <input type="text" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;" />
+        <input type="text" style="padding: 8px; border: 1px solid var(--erb-color-border-default); border-radius: 4px;" />
       </erb-field>
     `,
   }),

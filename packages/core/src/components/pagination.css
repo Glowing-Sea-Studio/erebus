@@ -7,11 +7,11 @@
 }
 .erb-pagination__item button {
   padding: var(--erb-pagination-padding, 8px 12px);
-  background: var(--erb-pagination-bg, #eee);
-  border: 1px solid var(--erb-pagination-border, #ccc);
+  background: var(--erb-color-bg-surface-raised, var(--erb-color-bg-surface-raised));
+  border: 1px solid var(--erb-color-border-default, var(--erb-color-border-default-default));
   cursor: pointer;
 }
 .erb-pagination__item button[aria-current="page"] {
-  background: var(--erb-pagination-active-bg, #007bff);
-  color: var(--erb-pagination-active-color, #fff);
+  background: var(--erb-color-accent-bg, var(--erb-color-accent-bg));
+  color: var(--erb-color-accent-fg-on-bg, var(--erb-color-gray-50));
 }

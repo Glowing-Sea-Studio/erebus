@@ -10,7 +10,7 @@ describe('Tag', () => {
   });
 
   it('renders close button when closable', () => {
-    const onClose = jest.fn();
+    const onClose = vi.fn();
     render(<Tag closable onClose={onClose}>Test Tag</Tag>);
     const closeBtn = screen.getByLabelText('Close');
     expect(closeBtn).toBeInTheDocument();

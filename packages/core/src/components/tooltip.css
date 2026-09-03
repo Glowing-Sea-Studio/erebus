@@ -1,6 +1,6 @@
 .erb-tooltip {
   background-color: var(--erb-tooltip-bg, var(--erb-color-bg-inverse));
-  color: var(--erb-tooltip-text, var(--erb-color-text-inverse));
+  color: var(--erb-tooltip-text, var(--erb-color-fg-default-inverse));
   border-radius: var(--erb-tooltip-radius, var(--erb-radius-sm));
   box-shadow: var(--erb-tooltip-shadow, var(--erb-shadow-sm));
   padding: var(--erb-spacing-1) var(--erb-spacing-2);

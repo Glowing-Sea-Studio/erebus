@@ -1,6 +1,6 @@
 .erb-popover {
   background-color: var(--erb-popover-bg, var(--erb-color-bg-surface));
-  border: 1px solid var(--erb-popover-border, var(--erb-color-border-muted));
+  border: 1px solid var(--erb-popover-border, var(--erb-color-border-default-muted));
   border-radius: var(--erb-popover-radius, var(--erb-radius-md));
   box-shadow: var(--erb-popover-shadow, var(--erb-shadow-md));
   padding: var(--erb-spacing-4);

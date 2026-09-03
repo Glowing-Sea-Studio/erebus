@@ -1,15 +1,15 @@
 .erb-loading-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: var(--erb-color-bg-overlay);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: var(--erb-z-index-overlay, 1000);
 }
 .erb-loading-overlay__spinner {
-  border: 4px solid var(--erb-color-neutral-200);
-  border-top: 4px solid var(--erb-color-primary-500);
+  border: 4px solid var(--erb-color-border-default);
+  border-top: 4px solid var(--erb-color-accent-bg);
   border-radius: 50%;
   width: 40px;
   height: 40px;

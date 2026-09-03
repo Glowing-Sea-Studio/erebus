@@ -16,7 +16,7 @@ export const Default: Story = {
   args: {
     label: 'Username',
     hint: 'Enter your username',
-    children: <input type="text" style={{ padding: '8px', border: '1px solid #ccc', borderRadius: '4px' }} />,
+    children: <input type="text" style={{ padding: '8px', border: '1px solid var(--erb-color-border-default)', borderRadius: '4px' }} />,
   },
 };
 
@@ -24,7 +24,7 @@ export const Required: Story = {
   args: {
     label: 'Email',
     required: true,
-    children: <input type="email" style={{ padding: '8px', border: '1px solid #ccc', borderRadius: '4px' }} />,
+    children: <input type="email" style={{ padding: '8px', border: '1px solid var(--erb-color-border-default)', borderRadius: '4px' }} />,
   },
 };
 

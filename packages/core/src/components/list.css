@@ -1,7 +1,7 @@
 .erb-list {
   padding-left: var(--erb-spacing-4, 1rem);
   margin: var(--erb-spacing-0, 0);
-  color: var(--erb-color-text-primary, #111827);
+  color: var(--erb-color-fg-default, var(--erb-color-fg-default));
   font-family: var(--erb-typography-font-family-base, sans-serif);
 }
 

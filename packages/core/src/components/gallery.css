@@ -8,7 +8,7 @@
 .erb-gallery-item {
   position: relative;
   overflow: hidden;
-  border-radius: var(--erb-border-radius-md, 8px);
+  border-radius: var(--erb-radius-md, 8px);
   aspect-ratio: var(--erb-gallery-item-aspect-ratio, 1 / 1);
   cursor: pointer;
   transition: transform var(--erb-transition-duration-normal, 0.2s) ease;

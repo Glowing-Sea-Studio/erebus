@@ -27,16 +27,16 @@
 }
 
 .erb-tag--variant-solid.erb-tag--color-primary {
-  background-color: var(--erb-color-primary-500, #007bff);
-  color: #fff;
+  background-color: var(--erb-color-accent-bg, var(--erb-color-accent-bg));
+  color: var(--erb-color-gray-50);
 }
 .erb-tag--variant-outline.erb-tag--color-primary {
-  border-color: var(--erb-color-primary-500, #007bff);
-  color: var(--erb-color-primary-500, #007bff);
+  border-color: var(--erb-color-accent-bg, var(--erb-color-accent-bg));
+  color: var(--erb-color-accent-bg, var(--erb-color-accent-bg));
 }
 .erb-tag--variant-soft.erb-tag--color-primary {
-  background-color: var(--erb-color-primary-100, #cce5ff);
-  color: var(--erb-color-primary-700, #0056b3);
+  background-color: var(--erb-color-accent-bg-subtle, var(--erb-color-accent-bg-subtle));
+  color: var(--erb-color-accent-fg, var(--erb-color-accent-fg));
 }
 
 /* Sizes */

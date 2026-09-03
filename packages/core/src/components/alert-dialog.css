@@ -2,7 +2,7 @@
   position: fixed;
   inset: 0;
   z-index: 50;
-  background-color: var(--erb-color-overlay, rgba(0, 0, 0, 0.5));
+  background-color: var(--erb-color-bg-overlay, var(--erb-color-bg-overlay));
 }
 
 .erb-alert-dialog-content {
@@ -15,10 +15,10 @@
   max-width: 32rem;
   transform: translate(-50%, -50%);
   gap: 1rem;
-  border: 1px solid var(--erb-color-border, #e5e7eb);
-  background-color: var(--erb-color-background, #ffffff);
+  border: 1px solid var(--erb-color-border-default, var(--erb-color-border-default-default));
+  background-color: var(--erb-color-bg-surface, var(--erb-color-bg-surface));
   padding: 1.5rem;
-  box-shadow: var(--erb-shadow-lg, 0 10px 15px -3px rgba(0, 0, 0, 0.1));
+  box-shadow: var(--erb-shadow-lg, 0 10px 15px -3px var(--erb-shadow-lg));
   border-radius: var(--erb-radius-md, 0.5rem);
 }
 
@@ -38,19 +38,19 @@
 .erb-alert-dialog-title {
   font-size: var(--erb-font-size-lg, 1.125rem);
   font-weight: 600;
-  color: var(--erb-color-text, #111827);
+  color: var(--erb-color-fg-default, var(--erb-color-fg-default));
   margin: 0;
 }
 
 .erb-alert-dialog-description {
   font-size: var(--erb-font-size-sm, 0.875rem);
-  color: var(--erb-color-text-muted, #6b7280);
+  color: var(--erb-color-fg-muted, var(--erb-color-fg-muted));
   margin: 0;
 }
 
 .erb-alert-dialog-body {
   font-size: var(--erb-font-size-base, 1rem);
-  color: var(--erb-color-text, #111827);
+  color: var(--erb-color-fg-default, var(--erb-color-fg-default));
 }
 
 .erb-alert-dialog-footer {

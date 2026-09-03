@@ -9,7 +9,7 @@ describe('PinInput', () => {
   });
 
   it('handles input and auto-focus', () => {
-    const handleChange = jest.fn();
+    const handleChange = vi.fn();
     render(<PinInput length={4} value="" onChange={handleChange} />);
     
     const inputs = screen.getAllByRole('textbox');

@@ -36,8 +36,8 @@
 
 .erb-search-input:focus {
   outline: none;
-  border-color: var(--erb-search-input-focus-ring);
-  box-shadow: 0 0 0 2px var(--erb-search-input-focus-ring);
+  border-color: var(--erb-color-focus-ring);
+  box-shadow: 0 0 0 2px var(--erb-color-focus-ring);
 }
 
 .erb-search-input:disabled {
