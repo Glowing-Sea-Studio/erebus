@@ -9,7 +9,8 @@ import {
   SliderComponent, ProgressComponent, BreadcrumbComponent,
   ErbTabsComponent, ErbTabsListComponent, ErbTabDirective, ErbTabsPanelComponent,
   AccordionComponent, ErbModalOverlayComponent, ErbModalContentComponent, ErbModalHeaderComponent, ErbModalTitleComponent, ErbModalBodyComponent, ErbModalFooterComponent,
-  CarouselComponent, FeatureGridComponent, TestimonialComponent, CTAComponent
+  CarouselComponent, FeatureGridComponent, TestimonialComponent, CTAComponent,
+  HeroComponent, FAQComponent, LogoCloudComponent, EmptyStateComponent, ErbStatComponent, TimelineComponent, TimelineItemComponent, CodeComponent
 } from '@glowing-sea-studio/erebus-angular';
 
 @Component({
@@ -25,7 +26,8 @@ import {
     SliderComponent, ProgressComponent, BreadcrumbComponent,
     ErbTabsComponent, ErbTabsListComponent, ErbTabDirective, ErbTabsPanelComponent,
     AccordionComponent, ErbModalOverlayComponent, ErbModalContentComponent, ErbModalHeaderComponent, ErbModalTitleComponent, ErbModalBodyComponent, ErbModalFooterComponent,
-    CarouselComponent, FeatureGridComponent, TestimonialComponent, CTAComponent
+    CarouselComponent, FeatureGridComponent, TestimonialComponent, CTAComponent,
+    HeroComponent, FAQComponent, LogoCloudComponent, EmptyStateComponent, ErbStatComponent, TimelineComponent, TimelineItemComponent, CodeComponent
   ],
   template: `
     <div style="display: flex; flex-direction: column; gap: 2rem;">
@@ -177,24 +179,112 @@ import {
 
           <div>
             <erb-heading [level]="3" style="margin-bottom: 1rem;">Marketing / Display</erb-heading>
-            <div style="display: flex; flex-direction: column; gap: 2rem;">
-              <erb-featuregrid></erb-featuregrid>
-              <erb-testimonial
-                quote="This design system is amazing! It makes building applications so much faster."
-                author="John Doe"
-                role="Frontend Developer"
-                avatarUrl="https://i.pravatar.cc/150?u=4"
-              ></erb-testimonial>
-              <erb-cta>
-                <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                  <erb-heading [level]="3">Ready to dive in?</erb-heading>
-                  <p erbText style="margin-bottom: 1rem;">Start building your application today with Erebus.</p>
-                  <div style="display: flex; gap: 1rem;">
-                    <button erbButton variant="solid" color="primary">Get Started</button>
-                    <button erbButton variant="outline">Learn More</button>
+            <div style="display: flex; flex-direction: column; gap: 3rem;">
+              <div>
+                <erb-heading [level]="4" style="margin-bottom: 0.5rem;">Hero</erb-heading>
+                <erb-hero>
+                  <div style="text-align: center; padding: 2rem;">
+                    <erb-heading [level]="1">Build faster with Erebus</erb-heading>
+                    <p erbText style="font-size: 1.25rem;">The ultimate design system for your next big project.</p>
+                    <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+                      <button erbButton variant="solid" color="primary">Get Started</button>
+                      <button erbButton variant="outline">Documentation</button>
+                    </div>
                   </div>
+                </erb-hero>
+              </div>
+
+              <div>
+                <erb-heading [level]="4" style="margin-bottom: 0.5rem;">LogoCloud</erb-heading>
+                <erb-logocloud>
+                  <div style="text-align: center; padding: 2rem;">
+                    <p erbText style="font-weight: bold; margin-bottom: 1rem;">Trusted by innovative teams worldwide</p>
+                    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                      <img src="https://placehold.co/120x40?text=Logo+1" alt="Company 1" />
+                      <img src="https://placehold.co/120x40?text=Logo+2" alt="Company 2" />
+                      <img src="https://placehold.co/120x40?text=Logo+3" alt="Company 3" />
+                      <img src="https://placehold.co/120x40?text=Logo+4" alt="Company 4" />
+                    </div>
+                  </div>
+                </erb-logocloud>
+              </div>
+
+              <div>
+                <erb-heading [level]="4" style="margin-bottom: 0.5rem;">FeatureGrid</erb-heading>
+                <erb-featuregrid></erb-featuregrid>
+              </div>
+
+              <div>
+                <erb-heading [level]="4" style="margin-bottom: 0.5rem;">Testimonial</erb-heading>
+                <erb-testimonial
+                  quote="This design system is amazing! It makes building applications so much faster."
+                  author="John Doe"
+                  role="Frontend Developer"
+                  avatarUrl="https://i.pravatar.cc/150?u=4"
+                ></erb-testimonial>
+              </div>
+
+              <div>
+                <erb-heading [level]="4" style="margin-bottom: 0.5rem;">FAQ</erb-heading>
+                <erb-faq>
+                  <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div>
+                      <erb-heading [level]="5">What is Erebus?</erb-heading>
+                      <p erbText>Erebus is a comprehensive design system.</p>
+                    </div>
+                    <div>
+                      <erb-heading [level]="5">Is it free?</erb-heading>
+                      <p erbText>Yes, it is open-source and free to use.</p>
+                    </div>
+                  </div>
+                </erb-faq>
+              </div>
+
+              <div>
+                <erb-heading [level]="4" style="margin-bottom: 0.5rem;">CTA</erb-heading>
+                <erb-cta>
+                  <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <erb-heading [level]="3">Ready to dive in?</erb-heading>
+                    <p erbText style="margin-bottom: 1rem;">Start building your application today with Erebus.</p>
+                    <div style="display: flex; gap: 1rem;">
+                      <button erbButton variant="solid" color="primary">Get Started</button>
+                      <button erbButton variant="outline">Learn More</button>
+                    </div>
+                  </div>
+                </erb-cta>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <erb-heading [level]="3" style="margin-bottom: 1rem;">Data Display & States</erb-heading>
+            <div style="display: flex; flex-direction: column; gap: 3rem;">
+              <div>
+                <erb-heading [level]="4" style="margin-bottom: 0.5rem;">Stat</erb-heading>
+                <div style="display: flex; gap: 2rem;">
+                  <erb-stat label="Total Users" value="10,234" helpText="+12% from last month"></erb-stat>
+                  <erb-stat label="Revenue" value="$43,000" helpText="+5% from last month"></erb-stat>
                 </div>
-              </erb-cta>
+              </div>
+
+              <div>
+                <erb-heading [level]="4" style="margin-bottom: 0.5rem;">Timeline</erb-heading>
+                <erb-timeline>
+                  <erb-timeline-item title="Project Started" description="Initial commit and setup."></erb-timeline-item>
+                  <erb-timeline-item title="Alpha Release" description="First version released for internal testing."></erb-timeline-item>
+                  <erb-timeline-item title="Public Beta" description="Opened to the public." [isLast]="true"></erb-timeline-item>
+                </erb-timeline>
+              </div>
+
+              <div>
+                <erb-heading [level]="4" style="margin-bottom: 0.5rem;">EmptyState</erb-heading>
+                <erb-empty-state
+                  title="No projects found"
+                  description="Get started by creating a new project."
+                >
+                  <button erbButton variant="solid" color="primary">Create Project</button>
+                </erb-empty-state>
+              </div>
             </div>
           </div>
 

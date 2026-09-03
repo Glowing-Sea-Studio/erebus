@@ -8,7 +8,8 @@ import {
   Tabs, TabsList, Tab, TabsPanel,
   Breadcrumb,
   Progress, Slider, Modal, ModalContent, ModalHeader, ModalTitle, ModalBody, ModalFooter, ModalOverlay,
-  FeatureGrid, Testimonial, CTA, Carousel
+  FeatureGrid, Testimonial, CTA, Carousel,
+  Hero, FAQ, LogoCloud, EmptyState, Stat, Timeline, Code
 } from '@glowing-sea-studio/erebus-react';
 
 export function KitchenSink() {
@@ -165,26 +166,103 @@ export function KitchenSink() {
 
           <div>
             <Heading level={3} style={{ marginBottom: '1rem' }}>Marketing / Display</Heading>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-              <FeatureGrid
-                features={[
-                  { title: 'Feature 1', description: 'Description for feature 1' },
-                  { title: 'Feature 2', description: 'Description for feature 2' },
-                  { title: 'Feature 3', description: 'Description for feature 3' }
-                ]}
-              />
-              <Testimonial
-                quote="This design system is amazing! It makes building applications so much faster."
-                author="John Doe"
-                role="Frontend Developer"
-                avatarUrl="https://i.pravatar.cc/150?u=4"
-              />
-              <CTA
-                title="Ready to dive in?"
-                description="Start building your application today with Erebus."
-                primaryAction={{ label: 'Get Started', onClick: () => {} }}
-                secondaryAction={{ label: 'Learn More', onClick: () => {} }}
-              />
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+              <div>
+                <Heading level={4} style={{ marginBottom: '0.5rem' }}>Hero</Heading>
+                <Hero
+                  title="Build faster with Erebus"
+                  subtitle="The ultimate design system for your next big project."
+                  primaryAction={{ label: 'Get Started', onClick: () => {} }}
+                  secondaryAction={{ label: 'Documentation', onClick: () => {} }}
+                />
+              </div>
+
+              <div>
+                <Heading level={4} style={{ marginBottom: '0.5rem' }}>LogoCloud</Heading>
+                <LogoCloud
+                  title="Trusted by innovative teams worldwide"
+                  logos={[
+                    { src: 'https://placehold.co/120x40?text=Logo+1', alt: 'Company 1' },
+                    { src: 'https://placehold.co/120x40?text=Logo+2', alt: 'Company 2' },
+                    { src: 'https://placehold.co/120x40?text=Logo+3', alt: 'Company 3' },
+                    { src: 'https://placehold.co/120x40?text=Logo+4', alt: 'Company 4' }
+                  ]}
+                />
+              </div>
+
+              <div>
+                <Heading level={4} style={{ marginBottom: '0.5rem' }}>FeatureGrid</Heading>
+                <FeatureGrid
+                  features={[
+                    { title: 'Feature 1', description: 'Description for feature 1' },
+                    { title: 'Feature 2', description: 'Description for feature 2' },
+                    { title: 'Feature 3', description: 'Description for feature 3' }
+                  ]}
+                />
+              </div>
+
+              <div>
+                <Heading level={4} style={{ marginBottom: '0.5rem' }}>Testimonial</Heading>
+                <Testimonial
+                  quote="This design system is amazing! It makes building applications so much faster."
+                  author="John Doe"
+                  role="Frontend Developer"
+                  avatarUrl="https://i.pravatar.cc/150?u=4"
+                />
+              </div>
+
+              <div>
+                <Heading level={4} style={{ marginBottom: '0.5rem' }}>FAQ</Heading>
+                <FAQ
+                  items={[
+                    { question: 'What is Erebus?', answer: 'Erebus is a comprehensive design system.' },
+                    { question: 'Is it free?', answer: 'Yes, it is open-source and free to use.' }
+                  ]}
+                />
+              </div>
+
+              <div>
+                <Heading level={4} style={{ marginBottom: '0.5rem' }}>CTA</Heading>
+                <CTA
+                  title="Ready to dive in?"
+                  description="Start building your application today with Erebus."
+                  primaryAction={{ label: 'Get Started', onClick: () => {} }}
+                  secondaryAction={{ label: 'Learn More', onClick: () => {} }}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <Heading level={3} style={{ marginBottom: '1rem' }}>Data Display & States</Heading>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+              <div>
+                <Heading level={4} style={{ marginBottom: '0.5rem' }}>Stat</Heading>
+                <div style={{ display: 'flex', gap: '2rem' }}>
+                  <Stat label="Total Users" value="10,234" helpText="+12% from last month" />
+                  <Stat label="Revenue" value="$43,000" helpText="+5% from last month" />
+                </div>
+              </div>
+
+              <div>
+                <Heading level={4} style={{ marginBottom: '0.5rem' }}>Timeline</Heading>
+                <Timeline
+                  items={[
+                    { title: 'Project Started', description: 'Initial commit and setup.', date: 'Jan 1, 2026' },
+                    { title: 'Alpha Release', description: 'First version released for internal testing.', date: 'Mar 15, 2026' },
+                    { title: 'Public Beta', description: 'Opened to the public.', date: 'Jun 1, 2026' }
+                  ]}
+                />
+              </div>
+
+              <div>
+                <Heading level={4} style={{ marginBottom: '0.5rem' }}>EmptyState</Heading>
+                <EmptyState
+                  title="No projects found"
+                  description="Get started by creating a new project."
+                  action={{ label: 'Create Project', onClick: () => {} }}
+                />
+              </div>
             </div>
           </div>
 
