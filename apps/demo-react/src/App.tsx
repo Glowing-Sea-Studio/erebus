@@ -1,4 +1,5 @@
-import { Button, Card, CardHeader, CardTitle, CardDescription, CardBody, CardFooter, ToastProvider, useToast } from '@glowing-sea-studio/erebus-react'
+import { ToastProvider, useToast, Button } from '@glowing-sea-studio/erebus-react'
+import { KitchenSink } from './KitchenSink'
 import '@glowing-sea-studio/erebus-tokens/dist/css/variables.css'
 import '@glowing-sea-studio/erebus-core/src/components/index.css'
 
@@ -6,29 +7,18 @@ function DemoContent() {
   const { addToast } = useToast();
 
   return (
-    <div style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+    <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
       <div>
         <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: 'var(--erb-color-neutral-fg)', marginBottom: '0.5rem' }}>Erebus React Demo</h1>
-        <p style={{ color: 'var(--erb-color-fg-muted)', fontSize: '1.125rem' }}>Bienvenue dans la démo du Design System avec React !</p>
+        <p style={{ color: 'var(--erb-color-fg-muted)', fontSize: '1.125rem' }}>Aperçu de l'ensemble des composants du Design System</p>
       </div>
-
-      <Card>
-        <CardHeader>
-          <CardTitle>Composant interactif</CardTitle>
-          <CardDescription>Essaie de cliquer sur le bouton ci-dessous pour voir le toast s'afficher.</CardDescription>
-        </CardHeader>
-        <CardBody>
-          <p style={{ color: 'var(--erb-color-fg-default)' }}>Ce composant utilise les composants du Design System Erebus.</p>
-        </CardBody>
-        <CardFooter>
-          <Button variant="solid" color="primary" onClick={() => addToast('Hello depuis React ! Le design system fonctionne à merveille.')}>
-            Afficher un Toast
-          </Button>
-          <Button variant="outline" color="neutral" style={{ marginLeft: '1rem' }} onClick={() => addToast('Action secondaire effectuée.')}>
-            Autre action
-          </Button>
-        </CardFooter>
-      </Card>
+      <KitchenSink />
+      <div style={{ padding: '1rem', border: '1px solid var(--erb-color-border-default)', borderRadius: '8px' }}>
+        <h2 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>Toasts</h2>
+        <Button variant="solid" color="primary" onClick={() => addToast('Hello depuis React !')}>
+          Afficher un Toast
+        </Button>
+      </div>
     </div>
   );
 }
