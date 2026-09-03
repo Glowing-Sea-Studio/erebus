@@ -3,22 +3,22 @@
   flex-wrap: wrap;
   gap: var(--erb-spacing-xs, 4px);
   padding: var(--erb-spacing-xs, 4px);
-  border: 1px solid var(--erb-color-border-default-default, var(--erb-color-border-default-default));
+  border: 1px solid var(--erb-color-border-default, var(--erb-color-border-default));
   border-radius: var(--erb-radius-md, 6px);
-  background: var(--erb-color-bg-surface, var(--erb-color-gray-50));
+  background: var(--erb-color-bg-canvas-surface, var(--erb-color-bg-canvas-inverse));
   min-height: var(--erb-size-10, 40px);
   align-items: center;
 }
 .erb-tags-input:focus-within {
   border-color: var(--erb-color-accent-bg, var(--erb-color-accent-bg));
-  box-shadow: 0 0 0 2px var(--erb-color-focus-ring, var(--erb-color-focus-ring));
+  box-shadow: 0 0 0 2px var(--erb-color-border-default-focus, var(--erb-color-border-default-focus));
 }
 .erb-tags-input__tag {
   display: inline-flex;
   align-items: center;
   gap: var(--erb-spacing-xs, 4px);
   padding: var(--erb-spacing-xxs, 2px) var(--erb-spacing-sm, 8px);
-  background: var(--erb-color-fg-default, var(--erb-color-bg-surface-raised));
+  background: var(--erb-color-fg-default, var(--erb-color-bg-canvas-surface-raised));
   border-radius: var(--erb-radius-sm, 4px);
   font-size: var(--erb-font-size-sm, 14px);
   color: var(--erb-color-fg-default, var(--erb-color-fg-default));
@@ -47,7 +47,7 @@
   color: var(--erb-color-fg-default, var(--erb-color-fg-default));
 }
 .erb-tags-input--disabled {
-  background: var(--erb-color-bg-muted, var(--erb-color-bg-muted));
+  background: var(--erb-color-bg-canvas-muted, var(--erb-color-bg-canvas-muted));
   cursor: not-allowed;
 }
 .erb-tags-input--disabled .erb-tags-input__input {

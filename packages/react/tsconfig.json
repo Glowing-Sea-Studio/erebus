@@ -4,7 +4,10 @@
     "jsx": "react-jsx",
     "outDir": "dist",
     "rootDir": "src",
-    "moduleResolution": "bundler"
+    "moduleResolution": "bundler",
+    "types": [
+      "vitest/globals"
+    ]
   },
   "include": [
     "src/**/*"

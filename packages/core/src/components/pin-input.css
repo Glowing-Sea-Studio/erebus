@@ -6,19 +6,19 @@
   width: var(--erb-size-10, 40px);
   height: var(--erb-size-10, 40px);
   text-align: center;
-  border: 1px solid var(--erb-color-border-default-default, var(--erb-color-border-default-default));
+  border: 1px solid var(--erb-color-border-default, var(--erb-color-border-default));
   border-radius: var(--erb-radius-md, 6px);
   font-size: var(--erb-font-size-lg, 18px);
   color: var(--erb-color-fg-default, var(--erb-color-fg-default));
-  background: var(--erb-color-bg-surface, var(--erb-color-gray-50));
+  background: var(--erb-color-bg-canvas-surface, var(--erb-color-bg-canvas-inverse));
   transition: border-color var(--erb-transition-fast, 0.2s);
 }
 .erb-pin-input__field:focus {
   outline: none;
   border-color: var(--erb-color-accent-bg, var(--erb-color-accent-bg));
-  box-shadow: 0 0 0 2px var(--erb-color-focus-ring, var(--erb-color-focus-ring));
+  box-shadow: 0 0 0 2px var(--erb-color-border-default-focus, var(--erb-color-border-default-focus));
 }
 .erb-pin-input__field:disabled {
-  background: var(--erb-color-bg-muted, var(--erb-color-bg-muted));
+  background: var(--erb-color-bg-canvas-muted, var(--erb-color-bg-canvas-muted));
   cursor: not-allowed;
 }

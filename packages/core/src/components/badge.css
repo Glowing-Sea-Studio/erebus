@@ -18,7 +18,7 @@
 
 .erb-badge--variant-solid.erb-badge--color-primary {
   background-color: var(--erb-color-accent-bg, var(--erb-color-accent-bg));
-  color: var(--erb-color-gray-50);
+  color: var(--erb-color-bg-canvas-inverse);
 }
 .erb-badge--variant-outline.erb-badge--color-primary {
   border-color: var(--erb-color-accent-bg, var(--erb-color-accent-bg));

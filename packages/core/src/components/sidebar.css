@@ -1,5 +1,5 @@
 
 .erb-sidebar {
-  background-color: var(--erb-sidebar-bg, var(--erb-colors-background));
-  color: var(--erb-sidebar-color, var(--erb-colors-text));
+  background-color: var(--erb-sidebar-bg, var(--erb-color-bg-canvas-canvas));
+  color: var(--erb-sidebar-color, var(--erb-color-fg-default));
 }

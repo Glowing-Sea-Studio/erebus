@@ -35,27 +35,27 @@
 
 /* Variants */
 .erb-icon-button[data-variant="solid"] {
-  background-color: var(--erb-button-bg-solid);
-  color: var(--erb-button-text-solid);
+  background-color: var(--erb-color-accent-bg);
+  color: var(--erb-color-accent-fg-on-bg);
 }
 .erb-icon-button[data-variant="solid"]:hover:not(:disabled) {
-  background-color: var(--erb-button-hover-solid);
+  background-color: var(--erb-color-accent-bg-hover);
 }
 
 .erb-icon-button[data-variant="outline"] {
   background-color: transparent;
-  color: var(--erb-button-text-outline);
-  border-color: var(--erb-button-border-outline);
+  color: var(--erb-color-fg-default);
+  border-color: var(--erb-color-border-default);
 }
 .erb-icon-button[data-variant="outline"]:hover:not(:disabled) {
-  background-color: var(--erb-button-hover-outline);
+  background-color: var(--erb-color-neutral-bg-subtle);
 }
 
 .erb-icon-button[data-variant="ghost"] {
   background-color: transparent;
-  color: var(--erb-button-text-ghost);
+  color: var(--erb-color-fg-default);
 }
 .erb-icon-button[data-variant="ghost"]:hover:not(:disabled) {
-  background-color: var(--erb-button-hover-ghost);
+  background-color: var(--erb-color-neutral-bg-subtle-hover);
 }
 

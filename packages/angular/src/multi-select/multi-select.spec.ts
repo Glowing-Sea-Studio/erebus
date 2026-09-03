@@ -26,11 +26,11 @@ describe('MultiSelectComponent', () => {
   it('should display selected tags', () => {
     component.value = ['react'];
     expect(component.selectedOptions.length).toBe(1);
-    expect(component.selectedOptions[0].value).toBe('react');
+    expect(component.selectedOptions[0]?.value).toBe('react');
   });
 
   it('should add an option', () => {
-    spyOn(component.valueChange, 'emit');
+    vi.spyOn(component.valueChange, 'emit');
     component.selectOption('vue');
     expect(component.value).toContain('vue');
     expect(component.valueChange.emit).toHaveBeenCalledWith(['vue']);
@@ -38,7 +38,7 @@ describe('MultiSelectComponent', () => {
 
   it('should remove an option', () => {
     component.value = ['react', 'vue'];
-    spyOn(component.valueChange, 'emit');
+    vi.spyOn(component.valueChange, 'emit');
     component.removeOption('react');
     expect(component.value).not.toContain('react');
     expect(component.value).toContain('vue');

@@ -60,7 +60,7 @@ export interface ComboboxOption {
           [attr.aria-selected]="opt.value === value"
           (click)="selectOption(opt.value)"
           (mouseenter)="activeIndex = i"
-          [style.backgroundColor]="activeIndex === i ? 'var(--erb-color-bg-subtle)' : ''"
+          [style.backgroundColor]="activeIndex === i ? 'var(--erb-color-bg-surface)' : ''"
         >
           {{ opt.label }}
         </li>

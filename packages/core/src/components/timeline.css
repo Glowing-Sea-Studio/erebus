@@ -34,9 +34,9 @@
 }
 .erb-timeline-title {
   font-weight: var(--erb-font-weight-bold);
-  color: var(--erb-color-neutral-900);
+  color: var(--erb-color-neutral-fg);
 }
 .erb-timeline-description {
-  color: var(--erb-color-neutral-600);
+  color: var(--erb-color-fg-muted);
   margin-top: var(--erb-spacing-1);
 }

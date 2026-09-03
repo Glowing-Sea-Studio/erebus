@@ -30,7 +30,7 @@ describe('CarouselComponent', () => {
   });
 
   it('should go to next image on click', () => {
-    const nextBtn = fixture.debugElement.queryAll(By.css('.erb-carousel-btn'))[1].nativeElement;
+    const nextBtn = fixture.debugElement.queryAll(By.css('.erb-carousel-btn'))[1]?.nativeElement;
     nextBtn.click();
     expect(component.currentIndex).toBe(1);
   });

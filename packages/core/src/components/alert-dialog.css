@@ -2,7 +2,7 @@
   position: fixed;
   inset: 0;
   z-index: 50;
-  background-color: var(--erb-color-bg-overlay, var(--erb-color-bg-overlay));
+  background-color: var(--erb-color-bg-canvas-overlay, var(--erb-color-bg-canvas-overlay));
 }
 
 .erb-alert-dialog-content {
@@ -15,8 +15,8 @@
   max-width: 32rem;
   transform: translate(-50%, -50%);
   gap: 1rem;
-  border: 1px solid var(--erb-color-border-default, var(--erb-color-border-default-default));
-  background-color: var(--erb-color-bg-surface, var(--erb-color-bg-surface));
+  border: 1px solid var(--erb-color-border-default, var(--erb-color-border-default));
+  background-color: var(--erb-color-bg-canvas-surface, var(--erb-color-bg-canvas-surface));
   padding: 1.5rem;
   box-shadow: var(--erb-shadow-lg, 0 10px 15px -3px var(--erb-shadow-lg));
   border-radius: var(--erb-radius-md, 0.5rem);

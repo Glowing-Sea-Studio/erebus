@@ -4,7 +4,10 @@
     "outDir": "dist",
     "rootDir": "src",
     "moduleResolution": "bundler",
-    "preserveSymlinks": true
+    "preserveSymlinks": true,
+    "types": [
+      "vitest/globals"
+    ]
   },
   "angularCompilerOptions": {
     "compilationMode": "partial",

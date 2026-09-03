@@ -25,8 +25,8 @@
 
 .erb-input:focus {
   outline: none;
-  border-color: var(--erb-color-border-focus);
-  box-shadow: 0 0 0 1px var(--erb-color-border-focus);
+  border-color: var(--erb-color-border-default-focus);
+  box-shadow: 0 0 0 1px var(--erb-color-border-default-focus);
 }
 
 .erb-input:disabled {

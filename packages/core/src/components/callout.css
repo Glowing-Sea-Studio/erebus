@@ -1,33 +1,33 @@
 .erb-callout {
   padding: var(--erb-space-4);
   border-radius: var(--erb-radius-md);
-  background-color: var(--erb-color-neutral-3);
-  color: var(--erb-color-neutral-11);
-  border-inline-start: 4px solid var(--erb-color-neutral-6);
+  background-color: var(--erb-color-neutral-bg-subtle);
+  color: var(--erb-color-fg-muted);
+  border-inline-start: 4px solid var(--erb-color-border-default);
   font-family: var(--erb-font-sans);
   line-height: var(--erb-line-height-normal);
 }
 
 .erb-callout[data-intent="info"] {
-  background-color: var(--erb-color-info-3);
-  color: var(--erb-color-info-11);
-  border-color: var(--erb-color-info-6);
+  background-color: var(--erb-color-info-bg-subtle);
+  color: var(--erb-color-info-fg);
+  border-color: var(--erb-color-info-border);
 }
 
 .erb-callout[data-intent="success"] {
-  background-color: var(--erb-color-success-3);
-  color: var(--erb-color-success-11);
-  border-color: var(--erb-color-success-6);
+  background-color: var(--erb-color-success-bg-bg-subtle);
+  color: var(--erb-color-success-bg-fg);
+  border-color: var(--erb-color-success-bg-border);
 }
 
 .erb-callout[data-intent="warning"] {
-  background-color: var(--erb-color-warning-3);
-  color: var(--erb-color-warning-11);
-  border-color: var(--erb-color-warning-6);
+  background-color: var(--erb-color-warning-bg-subtle);
+  color: var(--erb-color-warning-fg);
+  border-color: var(--erb-color-warning-border);
 }
 
 .erb-callout[data-intent="danger"] {
-  background-color: var(--erb-color-danger-3);
-  color: var(--erb-color-danger-11);
-  border-color: var(--erb-color-danger-6);
+  background-color: var(--erb-color-danger-bg-subtle);
+  color: var(--erb-color-danger-fg);
+  border-color: var(--erb-color-danger-border);
 }

@@ -1,5 +1,5 @@
 
 .erb-bottom-nav {
-  background-color: var(--erb-bottom-nav-bg, var(--erb-colors-background));
-  color: var(--erb-bottom-nav-color, var(--erb-colors-text));
+  background-color: var(--erb-bottom-nav-bg, var(--erb-color-bg-canvas-canvas));
+  color: var(--erb-bottom-nav-color, var(--erb-color-fg-default));
 }

@@ -11,12 +11,12 @@
 .erb-field__hint {
   font-family: var(--erb-typography-font-family-base);
   font-size: var(--erb-field-hint-font-size, var(--erb-typography-font-size-xs));
-  color: var(--erb-field-hint-color, var(--erb-colors-neutral-500));
+  color: var(--erb-field-hint-color, var(--erb-color-border-default));
   margin-top: var(--erb-field-hint-margin-top, var(--erb-spacing-1));
 }
 .erb-field__error {
   font-family: var(--erb-typography-font-family-base);
   font-size: var(--erb-field-error-font-size, var(--erb-typography-font-size-xs));
-  color: var(--erb-field-error-color, var(--erb-colors-danger-500));
+  color: var(--erb-field-error-color, var(--erb-color-danger-bg));
   margin-top: var(--erb-field-error-margin-top, var(--erb-spacing-1));
 }

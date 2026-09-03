@@ -28,8 +28,8 @@
 
 .erb-carousel-btn {
   pointer-events: auto;
-  background: var(--erb-color-bg-surface-raised, var(--erb-color-bg-overlay));
-  color: var(--erb-color-fg-default, var(--erb-color-gray-50));
+  background: var(--erb-color-bg-canvas-surface-raised, var(--erb-color-bg-canvas-overlay));
+  color: var(--erb-color-fg-default, var(--erb-color-bg-canvas-inverse));
   border: none;
   border-radius: 50%;
   width: 40px;

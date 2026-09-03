@@ -28,7 +28,7 @@ describe('LightboxComponent', () => {
   });
 
   it('should emit close on button click', () => {
-    spyOn(component.close, 'emit');
+    vi.spyOn(component.close, 'emit');
     const closeBtn = fixture.debugElement.query(By.css('.erb-lightbox-close')).nativeElement;
     closeBtn.click();
     expect(component.close.emit).toHaveBeenCalled();

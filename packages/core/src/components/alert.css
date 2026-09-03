@@ -32,9 +32,9 @@
   color: var(--erb-color-info-fg);
 }
 .erb-alert[data-intent="success"] {
-  background-color: var(--erb-color-success-bg-subtle);
-  border-color: var(--erb-color-success-border);
-  color: var(--erb-color-success-fg);
+  background-color: var(--erb-color-success-bg-bg-subtle);
+  border-color: var(--erb-color-success-bg-border);
+  color: var(--erb-color-success-bg-fg);
 }
 .erb-alert[data-intent="warning"] {
   background-color: var(--erb-color-warning-bg-subtle);

@@ -4,28 +4,28 @@
   }
 
   [data-erb-theme='default'][data-erb-mode='light'] {
-    --erb-color-bg-canvas: var(--erb-color-gray-50);
-    --erb-color-bg-surface: var(--erb-color-gray-50);
-    --erb-color-bg-surface-raised: var(--erb-color-gray-50);
-    --erb-color-bg-surface-sunken: var(--erb-color-gray-100);
-    --erb-color-bg-overlay: rgb(0 0 0 / 0.5);
-    --erb-color-bg-muted: var(--erb-color-gray-100);
-    --erb-color-bg-inverse: var(--erb-color-gray-900);
+    --erb-color-bg-canvas-canvas: var(--erb-color-bg-canvas-inverse);
+    --erb-color-bg-canvas-surface: var(--erb-color-bg-canvas-inverse);
+    --erb-color-bg-canvas-surface-raised: var(--erb-color-bg-canvas-inverse);
+    --erb-color-bg-canvas-surface-sunken: var(--erb-color-gray-100);
+    --erb-color-bg-canvas-overlay: rgb(0 0 0 / 0.5);
+    --erb-color-bg-canvas-muted: var(--erb-color-gray-100);
+    --erb-color-bg-canvas-inverse: var(--erb-color-gray-900);
 
     --erb-color-fg-default: var(--erb-color-gray-900);
     --erb-color-fg-muted: var(--erb-color-gray-600);
-    --erb-color-fg-subtle: var(--erb-color-gray-500);
-    --erb-color-fg-on-accent: var(--erb-color-gray-50);
-    --erb-color-fg-on-inverse: var(--erb-color-gray-50);
+    --erb-color-fg-subtle: var(--erb-color-bg-canvas-inverse);
+    --erb-color-fg-on-accent: var(--erb-color-bg-canvas-inverse);
+    --erb-color-fg-on-inverse: var(--erb-color-bg-canvas-inverse);
     --erb-color-fg-disabled: var(--erb-color-gray-400);
     --erb-color-fg-link: var(--erb-color-blue-600);
     --erb-color-fg-link-hover: var(--erb-color-blue-700);
 
     --erb-color-border-default: var(--erb-color-gray-200);
     --erb-color-border-muted: var(--erb-color-gray-100);
-    --erb-color-border-strong: var(--erb-color-gray-300);
-    --erb-color-border-focus: var(--erb-color-blue-500);
-    --erb-color-border-inverse: var(--erb-color-gray-700);
+    --erb-color-border-default-strong: var(--erb-color-gray-300);
+    --erb-color-border-default-focus: var(--erb-color-blue-500);
+    --erb-color-border-default-inverse: var(--erb-color-gray-700);
     
     --erb-color-accent-bg: var(--erb-color-blue-600);
     --erb-color-accent-bg-hover: var(--erb-color-blue-700);
@@ -42,17 +42,17 @@
     --erb-color-neutral-bg-subtle: var(--erb-color-gray-100);
     --erb-color-neutral-bg-subtle-hover: var(--erb-color-gray-200);
     --erb-color-neutral-fg: var(--erb-color-gray-700);
-    --erb-color-neutral-fg-on-bg: var(--erb-color-gray-50);
+    --erb-color-neutral-fg-on-bg: var(--erb-color-bg-canvas-inverse);
     --erb-color-neutral-border: var(--erb-color-gray-300);
 
-    --erb-color-success-bg: var(--erb-color-green-600);
-    --erb-color-success-bg-hover: var(--erb-color-green-700);
-    --erb-color-success-bg-active: var(--erb-color-green-800);
-    --erb-color-success-bg-subtle: var(--erb-color-green-50);
-    --erb-color-success-bg-subtle-hover: var(--erb-color-green-100);
-    --erb-color-success-fg: var(--erb-color-green-700);
-    --erb-color-success-fg-on-bg: var(--erb-color-green-50);
-    --erb-color-success-border: var(--erb-color-green-200);
+    --erb-color-success-bg-bg: var(--erb-color-green-600);
+    --erb-color-success-bg-bg-hover: var(--erb-color-green-700);
+    --erb-color-success-bg-bg-active: var(--erb-color-green-800);
+    --erb-color-success-bg-bg-subtle: var(--erb-color-green-50);
+    --erb-color-success-bg-bg-subtle-hover: var(--erb-color-green-100);
+    --erb-color-success-bg-fg: var(--erb-color-green-700);
+    --erb-color-success-bg-fg-on-bg: var(--erb-color-green-50);
+    --erb-color-success-bg-border: var(--erb-color-green-200);
 
     --erb-color-warning-bg: var(--erb-color-amber-500);
     --erb-color-warning-bg-hover: var(--erb-color-amber-600);
@@ -83,18 +83,18 @@
   }
 
   [data-erb-theme='default'][data-erb-mode='dark'] {
-    --erb-color-bg-canvas: var(--erb-color-gray-950);
-    --erb-color-bg-surface: var(--erb-color-gray-900);
-    --erb-color-bg-surface-raised: var(--erb-color-gray-800);
-    --erb-color-bg-surface-sunken: var(--erb-color-gray-950);
-    --erb-color-bg-overlay: rgb(0 0 0 / 0.8);
-    --erb-color-bg-muted: var(--erb-color-gray-800);
-    --erb-color-bg-inverse: var(--erb-color-gray-50);
+    --erb-color-bg-canvas-canvas: var(--erb-color-gray-950);
+    --erb-color-bg-canvas-surface: var(--erb-color-gray-900);
+    --erb-color-bg-canvas-surface-raised: var(--erb-color-gray-800);
+    --erb-color-bg-canvas-surface-sunken: var(--erb-color-gray-950);
+    --erb-color-bg-canvas-overlay: rgb(0 0 0 / 0.8);
+    --erb-color-bg-canvas-muted: var(--erb-color-gray-800);
+    --erb-color-bg-canvas-inverse: var(--erb-color-bg-canvas-inverse);
 
-    --erb-color-fg-default: var(--erb-color-gray-50);
+    --erb-color-fg-default: var(--erb-color-bg-canvas-inverse);
     --erb-color-fg-muted: var(--erb-color-gray-400);
-    --erb-color-fg-subtle: var(--erb-color-gray-500);
-    --erb-color-fg-on-accent: var(--erb-color-gray-50);
+    --erb-color-fg-subtle: var(--erb-color-bg-canvas-inverse);
+    --erb-color-fg-on-accent: var(--erb-color-bg-canvas-inverse);
     --erb-color-fg-on-inverse: var(--erb-color-gray-900);
     --erb-color-fg-disabled: var(--erb-color-gray-600);
     --erb-color-fg-link: var(--erb-color-blue-400);
@@ -102,9 +102,9 @@
 
     --erb-color-border-default: var(--erb-color-gray-800);
     --erb-color-border-muted: var(--erb-color-gray-900);
-    --erb-color-border-strong: var(--erb-color-gray-700);
-    --erb-color-border-focus: var(--erb-color-blue-500);
-    --erb-color-border-inverse: var(--erb-color-gray-300);
+    --erb-color-border-default-strong: var(--erb-color-gray-700);
+    --erb-color-border-default-focus: var(--erb-color-blue-500);
+    --erb-color-border-default-inverse: var(--erb-color-gray-300);
 
     --erb-color-accent-bg: var(--erb-color-blue-600);
     --erb-color-accent-bg-hover: var(--erb-color-blue-500);
@@ -115,7 +115,7 @@
     --erb-color-accent-fg-on-bg: var(--erb-color-blue-50);
     --erb-color-accent-border: var(--erb-color-blue-800);
 
-    --erb-color-neutral-bg: var(--erb-color-gray-50);
+    --erb-color-neutral-bg: var(--erb-color-bg-canvas-inverse);
     --erb-color-neutral-bg-hover: var(--erb-color-gray-200);
     --erb-color-neutral-bg-active: var(--erb-color-gray-300);
     --erb-color-neutral-bg-subtle: var(--erb-color-gray-800);
@@ -124,14 +124,14 @@
     --erb-color-neutral-fg-on-bg: var(--erb-color-gray-900);
     --erb-color-neutral-border: var(--erb-color-gray-700);
 
-    --erb-color-success-bg: var(--erb-color-green-600);
-    --erb-color-success-bg-hover: var(--erb-color-green-500);
-    --erb-color-success-bg-active: var(--erb-color-green-400);
-    --erb-color-success-bg-subtle: var(--erb-color-green-900);
-    --erb-color-success-bg-subtle-hover: var(--erb-color-green-800);
-    --erb-color-success-fg: var(--erb-color-green-400);
-    --erb-color-success-fg-on-bg: var(--erb-color-green-50);
-    --erb-color-success-border: var(--erb-color-green-800);
+    --erb-color-success-bg-bg: var(--erb-color-green-600);
+    --erb-color-success-bg-bg-hover: var(--erb-color-green-500);
+    --erb-color-success-bg-bg-active: var(--erb-color-green-400);
+    --erb-color-success-bg-bg-subtle: var(--erb-color-green-900);
+    --erb-color-success-bg-bg-subtle-hover: var(--erb-color-green-800);
+    --erb-color-success-bg-fg: var(--erb-color-green-400);
+    --erb-color-success-bg-fg-on-bg: var(--erb-color-green-50);
+    --erb-color-success-bg-border: var(--erb-color-green-800);
 
     --erb-color-warning-bg: var(--erb-color-amber-500);
     --erb-color-warning-bg-hover: var(--erb-color-amber-400);

@@ -28,7 +28,7 @@ describe('GalleryComponent', () => {
   });
 
   it('should emit click event', () => {
-    spyOn(component.imageClick, 'emit');
+    vi.spyOn(component.imageClick, 'emit');
     const item = fixture.debugElement.query(By.css('.erb-gallery-item')).nativeElement;
     item.click();
     expect(component.imageClick.emit).toHaveBeenCalledWith(0);

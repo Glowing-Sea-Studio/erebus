@@ -9,7 +9,7 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
-  background-color: var(--erb-skip-link-bg, var(--erb-color-gray-50));
+  background-color: var(--erb-skip-link-bg, var(--erb-color-bg-canvas-inverse));
   color: var(--erb-skip-link-color, var(--erb-color-fg-default));
 }
 .erb-skip-link:focus {

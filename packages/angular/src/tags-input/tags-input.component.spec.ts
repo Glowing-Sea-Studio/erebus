@@ -24,11 +24,11 @@ describe('TagsInputComponent', () => {
   it('should render tags correctly', () => {
     const tags = fixture.debugElement.queryAll(By.css('.erb-tags-input__tag'));
     expect(tags.length).toBe(1);
-    expect(tags[0].nativeElement.textContent).toContain('Angular');
+    expect(tags[0]?.nativeElement.textContent).toContain('Angular');
   });
 
   it('should remove tags', () => {
-    spyOn(component.tagsChange, 'emit');
+    vi.spyOn(component.tagsChange, 'emit');
     const removeBtn = fixture.debugElement.query(By.css('.erb-tags-input__tag-remove'));
     removeBtn.nativeElement.click();
     

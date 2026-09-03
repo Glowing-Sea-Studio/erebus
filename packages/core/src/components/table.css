@@ -8,15 +8,15 @@
 .erb-table th,
 .erb-table td {
   padding: var(--erb-spacing-3, 0.75rem);
-  border-bottom: 1px solid var(--erb-color-border-default-muted, var(--erb-color-border-default-default));
+  border-bottom: 1px solid var(--erb-color-border-muted, var(--erb-color-border-default));
 }
 
 .erb-table th {
   font-weight: var(--erb-typography-font-weight-semibold, 600);
   color: var(--erb-color-fg-subtle, var(--erb-color-fg-subtle));
-  background-color: var(--erb-color-bg-surface-raised, var(--erb-color-bg-surface-raised));
+  background-color: var(--erb-color-bg-canvas-surface-raised, var(--erb-color-bg-canvas-surface-raised));
 }
 
 .erb-table tr:hover {
-  background-color: var(--erb-color-bg-muted, var(--erb-color-bg-muted));
+  background-color: var(--erb-color-bg-canvas-muted, var(--erb-color-bg-canvas-muted));
 }

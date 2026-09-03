@@ -5,13 +5,13 @@
   justify-content: center;
   padding: var(--erb-spacing-8);
   text-align: center;
-  color: var(--erb-color-neutral-600);
+  color: var(--erb-color-fg-muted);
 }
 .erb-empty-state-title {
   font-size: var(--erb-font-size-lg);
   font-weight: var(--erb-font-weight-bold);
   margin-bottom: var(--erb-spacing-2);
-  color: var(--erb-color-neutral-900);
+  color: var(--erb-color-neutral-fg);
 }
 .erb-empty-state-description {
   font-size: var(--erb-font-size-md);

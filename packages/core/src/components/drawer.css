@@ -2,7 +2,7 @@
   position: fixed;
   inset: 0;
   z-index: 50;
-  background-color: var(--erb-color-bg-overlay, var(--erb-color-bg-overlay));
+  background-color: var(--erb-color-bg-canvas-overlay, var(--erb-color-bg-canvas-overlay));
 }
 
 .erb-drawer-content {
@@ -10,21 +10,21 @@
   z-index: 50;
   display: flex;
   flex-direction: column;
-  background-color: var(--erb-color-bg-surface, var(--erb-color-bg-surface));
+  background-color: var(--erb-color-bg-canvas-surface, var(--erb-color-bg-canvas-surface));
   box-shadow: var(--erb-shadow-lg, 0 10px 15px -3px var(--erb-shadow-lg));
   top: 0;
   right: 0;
   bottom: 0;
   width: 100%;
   max-width: 24rem;
-  border-left: 1px solid var(--erb-color-border-default, var(--erb-color-border-default-default));
+  border-left: 1px solid var(--erb-color-border-default, var(--erb-color-border-default));
 }
 
 .erb-drawer-header {
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  border-bottom: 1px solid var(--erb-color-border-default, var(--erb-color-border-default-default));
+  border-bottom: 1px solid var(--erb-color-border-default, var(--erb-color-border-default));
 }
 
 .erb-drawer-title {
@@ -53,6 +53,6 @@
   display: flex;
   justify-content: flex-end;
   padding: 1.5rem;
-  border-top: 1px solid var(--erb-color-border-default, var(--erb-color-border-default-default));
+  border-top: 1px solid var(--erb-color-border-default, var(--erb-color-border-default));
   gap: 0.5rem;
 }

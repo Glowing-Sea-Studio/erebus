@@ -14,27 +14,27 @@
 .erb-combobox-input {
   width: 100%;
   padding: var(--erb-spacing-2) var(--erb-spacing-3);
-  border: 1px solid var(--erb-color-border-default-default);
+  border: 1px solid var(--erb-color-border-default);
   border-radius: var(--erb-radius-md);
   font-family: var(--erb-font-sans);
   font-size: var(--erb-font-size-base);
-  color: var(--erb-color-fg-default-default);
-  background-color: var(--erb-color-bg-default);
+  color: var(--erb-color-fg-default);
+  background-color: var(--erb-color-bg-canvas-canvas);
   transition: border-color var(--erb-transition-fast), box-shadow var(--erb-transition-fast);
 }
 
 .erb-combobox-input:focus {
   outline: none;
   border-color: var(--erb-color-accent-bg);
-  box-shadow: 0 0 0 2px var(--erb-color-focus-ring);
+  box-shadow: 0 0 0 2px var(--erb-color-border-default-focus);
 }
 
 .erb-combobox-input[aria-invalid="true"] {
-  border-color: var(--erb-color-error);
+  border-color: var(--erb-color-danger-bg);
 }
 
 .erb-combobox-input:disabled {
-  background-color: var(--erb-color-bg-subtle);
+  background-color: var(--erb-color-bg-canvas-surface);
   color: var(--erb-color-fg-muted);
   cursor: not-allowed;
 }
@@ -46,8 +46,8 @@
   right: 0;
   margin-top: var(--erb-spacing-1);
   padding: var(--erb-spacing-1) 0;
-  background-color: var(--erb-color-bg-default);
-  border: 1px solid var(--erb-color-border-default-default);
+  background-color: var(--erb-color-bg-canvas-canvas);
+  border: 1px solid var(--erb-color-border-default);
   border-radius: var(--erb-radius-md);
   box-shadow: var(--erb-shadow-md);
   max-height: 250px;
@@ -65,12 +65,12 @@
   cursor: pointer;
   font-family: var(--erb-font-sans);
   font-size: var(--erb-font-size-base);
-  color: var(--erb-color-fg-default-default);
+  color: var(--erb-color-fg-default);
 }
 
 .erb-combobox-option:hover,
 .erb-combobox-option[aria-selected="true"] {
-  background-color: var(--erb-color-bg-subtle);
+  background-color: var(--erb-color-bg-canvas-surface);
 }
 
 .erb-combobox-option[aria-selected="true"] {

@@ -26,7 +26,7 @@ describe('ColorPickerComponent', () => {
   });
 
   it('should emit value on input change', () => {
-    jest.spyOn(component.valueChange, 'emit');
+    vi.spyOn(component.valueChange, 'emit');
     const input = fixture.debugElement.query(By.css('input')).nativeElement;
     
     input.value = '#ff0000';

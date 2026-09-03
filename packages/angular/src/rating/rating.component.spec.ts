@@ -25,13 +25,13 @@ describe('RatingComponent', () => {
   it('should render stars correctly', () => {
     const stars = fixture.debugElement.queryAll(By.css('.erb-rating__item'));
     expect(stars.length).toBe(5);
-    expect(stars[0].classes['erb-rating__item--active']).toBeTrue();
-    expect(stars[2].classes['erb-rating__item--active']).toBeTrue();
-    expect(stars[3].classes['erb-rating__item--active']).toBeFalsy();
+    expect(stars[0]?.classes['erb-rating__item--active']).toBeTrue();
+    expect(stars[2]?.classes['erb-rating__item--active']).toBeTrue();
+    expect(stars[3]?.classes['erb-rating__item--active']).toBeFalsy();
   });
 
   it('should handle keyboard navigation', () => {
-    spyOn(component.valueChange, 'emit');
+    vi.spyOn(component.valueChange, 'emit');
     
     const event = new KeyboardEvent('keydown', { key: 'ArrowRight' });
     fixture.debugElement.triggerEventHandler('keydown', event);

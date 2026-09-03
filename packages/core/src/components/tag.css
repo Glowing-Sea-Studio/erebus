@@ -28,7 +28,7 @@
 
 .erb-tag--variant-solid.erb-tag--color-primary {
   background-color: var(--erb-color-accent-bg, var(--erb-color-accent-bg));
-  color: var(--erb-color-gray-50);
+  color: var(--erb-color-bg-canvas-inverse);
 }
 .erb-tag--variant-outline.erb-tag--color-primary {
   border-color: var(--erb-color-accent-bg, var(--erb-color-accent-bg));

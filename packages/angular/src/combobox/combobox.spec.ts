@@ -26,11 +26,11 @@ describe('ComboboxComponent', () => {
   it('should filter options based on input', () => {
     component.inputValue = 'app';
     expect(component.filteredOptions.length).toBe(1);
-    expect(component.filteredOptions[0].value).toBe('apple');
+    expect(component.filteredOptions[0]?.value).toBe('apple');
   });
 
   it('should select an option', () => {
-    spyOn(component.valueChange, 'emit');
+    vi.spyOn(component.valueChange, 'emit');
     component.selectOption('apple');
     expect(component.value).toBe('apple');
     expect(component.inputValue).toBe('Apple');

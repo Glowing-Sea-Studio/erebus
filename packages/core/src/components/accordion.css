@@ -1,6 +1,6 @@
 
 .erb-accordion {
-  border-bottom: 1px solid var(--erb-color-border-default, var(--erb-color-border-default-default));
+  border-bottom: 1px solid var(--erb-color-border-default, var(--erb-color-border-default));
 }
 .erb-accordion__header {
   margin: 0;

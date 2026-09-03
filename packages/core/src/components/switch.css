@@ -57,7 +57,7 @@
 
 .erb-switch:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--erb-color-focus-ring);
+  box-shadow: 0 0 0 2px var(--erb-color-border-default-focus);
 }
 
 .erb-switch:disabled {

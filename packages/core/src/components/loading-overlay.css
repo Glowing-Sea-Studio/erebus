@@ -1,7 +1,7 @@
 .erb-loading-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: var(--erb-color-bg-overlay);
+  background-color: var(--erb-color-bg-canvas-overlay);
   display: flex;
   align-items: center;
   justify-content: center;

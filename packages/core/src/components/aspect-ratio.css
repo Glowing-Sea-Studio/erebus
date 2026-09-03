@@ -2,7 +2,7 @@
   .erb-aspect-ratio {
     position: relative;
     width: 100%;
-    padding-bottom: calc(100% / var(--erb-aspect-ratio, 1));
+    padding-bottom: calc(100% / var(--erb-gallery-item-aspect-ratio, 1));
   }
 
   .erb-aspect-ratio > * {

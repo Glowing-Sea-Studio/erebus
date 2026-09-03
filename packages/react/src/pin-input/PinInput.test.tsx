@@ -13,7 +13,7 @@ describe('PinInput', () => {
     render(<PinInput length={4} value="" onChange={handleChange} />);
     
     const inputs = screen.getAllByRole('textbox');
-    fireEvent.change(inputs[0], { target: { value: '1' } });
+    fireEvent.change(inputs[0]!, { target: { value: '1' } });
     
     expect(handleChange).toHaveBeenCalledWith('1');
   });

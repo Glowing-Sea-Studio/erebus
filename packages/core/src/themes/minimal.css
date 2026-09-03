@@ -1,13 +1,13 @@
 [data-theme="minimal"] {
-  --erb-color-primary: #000000;
-  --erb-color-primary-hover: #333333;
-  --erb-color-secondary: #666666;
-  --erb-color-background: #ffffff;
-  --erb-color-surface: #ffffff;
-  --erb-color-text: #000000;
-  --erb-color-text-muted: #999999;
-  --erb-color-border: #eeeeee;
-  --erb-color-error: #cc0000;
-  --erb-color-success: #009900;
-  --erb-border-radius: 0px;
+  --erb-color-accent-bg: #000000;
+  --erb-color-accent-bg-hover: #333333;
+  --erb-color-neutral-bg: #666666;
+  --erb-color-bg-canvas-canvas: #ffffff;
+  --erb-color-bg-canvas-surface: #ffffff;
+  --erb-color-fg-default: #000000;
+  --erb-color-fg-muted: #999999;
+  --erb-color-border-default: #eeeeee;
+  --erb-color-danger-bg: #cc0000;
+  --erb-color-success-bg: #009900;
+  --erb-badge-border-radius: 0px;
 }

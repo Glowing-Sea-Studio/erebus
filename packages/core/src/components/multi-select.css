@@ -11,12 +11,12 @@
   gap: var(--erb-spacing-1);
   min-height: 40px;
   padding: var(--erb-spacing-1) var(--erb-spacing-3);
-  border: 1px solid var(--erb-color-border-default-default);
+  border: 1px solid var(--erb-color-border-default);
   border-radius: var(--erb-radius-md);
   font-family: var(--erb-font-sans);
   font-size: var(--erb-font-size-base);
-  color: var(--erb-color-fg-default-default);
-  background-color: var(--erb-color-bg-default);
+  color: var(--erb-color-fg-default);
+  background-color: var(--erb-color-bg-canvas-canvas);
   cursor: pointer;
   align-items: center;
 }
@@ -24,15 +24,15 @@
 .erb-multi-select-trigger:focus-within {
   outline: none;
   border-color: var(--erb-color-accent-bg);
-  box-shadow: 0 0 0 2px var(--erb-color-focus-ring);
+  box-shadow: 0 0 0 2px var(--erb-color-border-default-focus);
 }
 
 .erb-multi-select-trigger[aria-invalid="true"] {
-  border-color: var(--erb-color-error);
+  border-color: var(--erb-color-danger-bg);
 }
 
 .erb-multi-select-trigger[aria-disabled="true"] {
-  background-color: var(--erb-color-bg-subtle);
+  background-color: var(--erb-color-bg-canvas-surface);
   color: var(--erb-color-fg-muted);
   cursor: not-allowed;
 }
@@ -42,7 +42,7 @@
   align-items: center;
   gap: var(--erb-spacing-1);
   padding: 2px var(--erb-spacing-2);
-  background-color: var(--erb-color-primary-alpha-10);
+  background-color: var(--erb-color-accent-bg-subtle);
   color: var(--erb-color-accent-bg);
   border-radius: var(--erb-radius-sm);
   font-size: var(--erb-font-size-sm);
@@ -60,7 +60,7 @@
 }
 
 .erb-multi-select-tag-remove:hover {
-  color: var(--erb-color-primary-dark);
+  color: var(--erb-color-accent-bg-active);
 }
 
 .erb-multi-select-input {
@@ -82,8 +82,8 @@
   right: 0;
   margin-top: var(--erb-spacing-1);
   padding: var(--erb-spacing-1) 0;
-  background-color: var(--erb-color-bg-default);
-  border: 1px solid var(--erb-color-border-default-default);
+  background-color: var(--erb-color-bg-canvas-canvas);
+  border: 1px solid var(--erb-color-border-default);
   border-radius: var(--erb-radius-md);
   box-shadow: var(--erb-shadow-md);
   max-height: 250px;
@@ -104,12 +104,12 @@
   cursor: pointer;
   font-family: var(--erb-font-sans);
   font-size: var(--erb-font-size-base);
-  color: var(--erb-color-fg-default-default);
+  color: var(--erb-color-fg-default);
 }
 
 .erb-multi-select-option:hover,
 .erb-multi-select-option[data-focused="true"] {
-  background-color: var(--erb-color-bg-subtle);
+  background-color: var(--erb-color-bg-canvas-surface);
 }
 
 .erb-multi-select-option[aria-selected="true"] {

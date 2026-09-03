@@ -14,7 +14,7 @@
   transform: translateY(-50%);
   width: 100%;
   height: var(--erb-slider-track-height, 4px);
-  background-color: var(--erb-slider-track-bg, var(--erb-color-border-default-default));
+  background-color: var(--erb-slider-track-bg, var(--erb-color-border-default));
   border-radius: var(--erb-slider-track-radius, 9999px);
 }
 
@@ -33,7 +33,7 @@
   transform: translate(-50%, -50%);
   width: var(--erb-slider-thumb-size, 20px);
   height: var(--erb-slider-thumb-size, 20px);
-  background-color: var(--erb-slider-thumb-bg, var(--erb-color-bg-surface));
+  background-color: var(--erb-slider-thumb-bg, var(--erb-color-bg-canvas-surface));
   border: 2px solid var(--erb-slider-thumb-border, var(--erb-color-accent-bg));
   border-radius: 50%;
   box-shadow: var(--erb-slider-thumb-shadow, 0 1px 2px 0 var(--erb-shadow-sm));
@@ -42,7 +42,7 @@
 }
 
 .erb-slider-thumb:focus, .erb-slider-thumb:focus-visible {
-  box-shadow: 0 0 0 4px var(--erb-slider-thumb-focus-ring, var(--erb-color-focus-ring));
+  box-shadow: 0 0 0 4px var(--erb-slider-thumb-focus-ring, var(--erb-color-border-default-focus));
 }
 
 .erb-slider-thumb:active {

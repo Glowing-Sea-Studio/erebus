@@ -8,8 +8,8 @@
   z-index: 9999;
 }
 .erb-toast {
-  background-color: var(--erb-color-neutral-900);
-  color: var(--erb-color-neutral-50);
+  background-color: var(--erb-color-neutral-fg);
+  color: var(--erb-color-neutral-fg-on-bg);
   padding: var(--erb-spacing-3) var(--erb-spacing-4);
   border-radius: var(--erb-radius-md);
   box-shadow: 0 4px 6px var(--erb-shadow-md);

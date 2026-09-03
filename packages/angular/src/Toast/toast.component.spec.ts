@@ -3,7 +3,6 @@ import { ToastComponent } from './toast.component';
 import { ToastService } from './toast.service';
 
 describe('ToastComponent', () => {
-  let component: ToastComponent;
   let fixture: ComponentFixture<ToastComponent>;
   let service: ToastService;
 
@@ -14,7 +13,6 @@ describe('ToastComponent', () => {
     }).compileComponents();
 
     fixture = TestBed.createComponent(ToastComponent);
-    component = fixture.componentInstance;
     service = TestBed.inject(ToastService);
     fixture.detectChanges();
   });

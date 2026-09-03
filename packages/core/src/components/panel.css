@@ -21,7 +21,7 @@
 }
 .erb-panel-header {
   padding: 1.5rem;
-  border-block-end: 1px solid var(--erb-color-border-default-default);
+  border-block-end: 1px solid var(--erb-color-border-default);
 }
 .erb-panel-title {
   font-family: var(--erb-font-family-heading);
@@ -35,7 +35,7 @@
 }
 .erb-panel-footer {
   padding: 1.5rem;
-  border-block-start: 1px solid var(--erb-color-border-default-default);
+  border-block-start: 1px solid var(--erb-color-border-default);
   display: flex;
   justify-content: flex-end;
   gap: 0.5rem;

@@ -12,5 +12,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--erb-color-neutral-500);
+  color: var(--erb-color-neutral-fg-on-bg);
 }

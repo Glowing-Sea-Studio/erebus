@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: var(--erb-spacing-6, 1.5rem);
   gap: var(--erb-spacing-4, 1rem);
-  background-color: var(--erb-color-bg-surface, var(--erb-color-bg-surface));
+  background-color: var(--erb-color-bg-canvas-surface, var(--erb-color-bg-canvas-surface));
   color: var(--erb-color-fg-default, var(--erb-color-fg-default));
 }
 

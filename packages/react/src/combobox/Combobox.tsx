@@ -142,7 +142,7 @@ export const Combobox = forwardRef<HTMLInputElement, ComboboxProps>(
               aria-selected={opt.value === value}
               onClick={() => handleSelect(opt.value)}
               onMouseEnter={() => setActiveIndex(index)}
-              style={activeIndex === index ? { backgroundColor: 'var(--erb-color-bg-subtle)' } : {}}
+              style={activeIndex === index ? { backgroundColor: 'var(--erb-color-bg-surface)' } : {}}
             >
               {opt.label}
             </li>

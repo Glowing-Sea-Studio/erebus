@@ -4,8 +4,8 @@
   justify-content: center;
   border-radius: 50%;
   overflow: hidden;
-  background-color: var(--erb-color-neutral-3);
-  color: var(--erb-color-neutral-11);
+  background-color: var(--erb-color-neutral-bg-subtle);
+  color: var(--erb-color-fg-muted);
   font-family: var(--erb-font-sans);
   font-weight: 500;
   user-select: none;
@@ -41,7 +41,7 @@
 }
 
 .erb-avatar-group .erb-avatar {
-  border: 2px solid var(--erb-color-bg);
+  border: 2px solid var(--erb-color-bg-canvas);
   margin-inline-end: -8px;
 }
 
