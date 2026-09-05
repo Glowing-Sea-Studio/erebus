@@ -16,6 +16,16 @@
   width: 100%;
   position: relative;
 }
+
+@media (max-width: 768px) {
+  .erb-modal-content {
+    max-width: 100%;
+    margin-inline: var(--erb-spacing-4, 1rem);
+    border-radius: var(--erb-radius-lg, 0.5rem);
+    align-self: flex-end;
+    margin-block-end: var(--erb-spacing-4, 1rem);
+  }
+}
 .erb-modal-header {
   margin-block-end: 1rem;
 }

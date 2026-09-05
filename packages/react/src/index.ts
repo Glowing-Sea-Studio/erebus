@@ -52,6 +52,7 @@ export * from './popover';
 export * from './tooltip';
 export * from './Sidebar';
 export * from './AppShell';
+export * from './AppShell/AppShellContext';
 export * from './MobileNav';
 export * from './BottomNav';
 export * from './breadcrumb';
