@@ -51,6 +51,7 @@ export * from './popover';
 export * from './tooltip';
 export * from './sidebar';
 export * from './app-shell';
+export * from './app-shell/app-shell.service';
 export * from './mobile-nav';
 export * from './bottom-nav';
 export * from './breadcrumb';

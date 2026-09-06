@@ -7,6 +7,15 @@
   gap: var(--erb-spacing-2);
   z-index: 9999;
 }
+
+@media (max-width: 768px) {
+  .erb-toast-container {
+    bottom: var(--erb-spacing-4);
+    left: var(--erb-spacing-4);
+    right: var(--erb-spacing-4);
+    align-items: center;
+  }
+}
 .erb-toast {
   background-color: var(--erb-color-neutral-fg);
   color: var(--erb-color-neutral-fg-on-bg);
