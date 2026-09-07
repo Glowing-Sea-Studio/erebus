@@ -1,13 +1,18 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
+
+
   selector: 'erb-featuregrid',
   standalone: true,
   imports: [CommonModule],
-  template: `<div class="erb-featuregrid {{className}}"><ng-content></ng-content></div>`,
-  styleUrls: ['../../../../packages/core/src/components/featuregrid.css']
+  template: `
+    <div class="erb-featuregrid" [ngClass]="className()">
+      <ng-content></ng-content>
+    </div>
+  `,
 })
 export class FeatureGridComponent {
-  @Input() className = '';
+  className = input<string>('');
 }

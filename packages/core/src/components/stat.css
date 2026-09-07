@@ -1,27 +1,32 @@
 .erb-stat {
   display: flex;
   flex-direction: column;
-  padding: var(--erb-spacing-4, 1rem);
-  border: 1px solid var(--erb-color-border-muted, var(--erb-color-border-default));
-  border-radius: var(--erb-radius-md, 0.375rem);
-  background-color: var(--erb-color-bg-canvas-surface, var(--erb-color-bg-canvas-surface));
-  font-family: var(--erb-typography-font-family-base, sans-serif);
+  padding: var(--erb-spacing-6);
+  background-color: var(--erb-color-bg-canvas-surface);
+  border: 1px solid var(--erb-color-border-default);
+  border-radius: var(--erb-radius-lg);
+  min-width: 12rem;
 }
 
 .erb-stat-label {
-  font-size: var(--erb-typography-size-sm, 0.875rem);
-  color: var(--erb-color-fg-subtle, var(--erb-color-fg-subtle));
-  margin-bottom: var(--erb-spacing-1, 0.25rem);
+  font-family: var(--erb-font-sans);
+  font-size: var(--erb-font-size-sm);
+  font-weight: var(--erb-font-weight-medium);
+  color: var(--erb-color-fg-muted);
+  margin: 0 0 var(--erb-spacing-2) 0;
 }
 
 .erb-stat-value {
-  font-size: var(--erb-typography-size-2xl, 1.5rem);
-  font-weight: var(--erb-typography-font-weight-bold, 700);
-  color: var(--erb-color-fg-default, var(--erb-color-fg-default));
+  font-family: var(--erb-font-sans);
+  font-size: var(--erb-font-size-3xl);
+  font-weight: var(--erb-font-weight-bold);
+  color: var(--erb-color-fg-default);
+  margin: 0 0 var(--erb-spacing-2) 0;
 }
 
 .erb-stat-help-text {
-  font-size: var(--erb-typography-size-sm, 0.875rem);
-  color: var(--erb-color-fg-muted, var(--erb-color-fg-muted));
-  margin-top: var(--erb-spacing-1, 0.25rem);
+  font-family: var(--erb-font-sans);
+  font-size: var(--erb-font-size-xs);
+  color: var(--erb-color-fg-subtle);
+  margin: 0;
 }

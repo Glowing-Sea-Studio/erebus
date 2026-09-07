@@ -1,14 +1,44 @@
 .erb-cta {
   display: flex;
   flex-direction: column;
-  padding: var(--erb-spacing-6, 1.5rem);
-  gap: var(--erb-spacing-4, 1rem);
-  background-color: var(--erb-color-bg-canvas-surface, var(--erb-color-bg-canvas-surface));
-  color: var(--erb-color-fg-default, var(--erb-color-fg-default));
+  align-items: center;
+  text-align: center;
+  padding: var(--erb-spacing-12) var(--erb-spacing-6);
+  background-color: var(--erb-color-bg-canvas-surface);
+  border: 1px solid var(--erb-color-border-default);
+  border-radius: var(--erb-radius-xl);
+  margin: var(--erb-spacing-8) 0;
+  gap: var(--erb-spacing-6);
+}
+
+.erb-cta-title {
+  font-family: var(--erb-font-sans);
+  font-weight: var(--erb-font-weight-bold);
+  font-size: var(--erb-font-size-3xl);
+  color: var(--erb-color-fg-default);
+  margin: 0;
+}
+
+.erb-cta-description {
+  font-family: var(--erb-font-sans);
+  font-size: var(--erb-font-size-lg);
+  color: var(--erb-color-fg-muted);
+  max-width: 36rem;
+  margin: 0;
+}
+
+.erb-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--erb-spacing-4);
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
   .erb-cta {
-    padding: var(--erb-spacing-8, 2rem);
+    padding: var(--erb-spacing-16) var(--erb-spacing-12);
+  }
+  .erb-cta-title {
+    font-size: var(--erb-font-size-4xl);
   }
 }

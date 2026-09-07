@@ -1,13 +1,18 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
+
+
   selector: 'erb-hero',
   standalone: true,
   imports: [CommonModule],
-  template: `<div class="erb-hero {{className}}"><ng-content></ng-content></div>`,
-  styleUrls: ['../../../../packages/core/src/components/hero.css']
+  template: `
+    <div class="erb-hero" [ngClass]="className()">
+      <ng-content></ng-content>
+    </div>
+  `,
 })
 export class HeroComponent {
-  @Input() className = '';
+  className = input<string>('');
 }
