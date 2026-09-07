@@ -10,7 +10,8 @@
     "lint": "nx run-many -t lint",
     "typecheck": "nx run-many -t typecheck",
     "release": "pnpm build && changeset publish",
-    "tokens:build": "nx run @glowing-sea-studio/erebus-tokens:build"
+    "tokens:build": "nx run @glowing-sea-studio/erebus-tokens:build",
+    "e2e": "playwright test --config=apps/e2e/playwright.config.ts"
   },
   "packageManager": "pnpm@9.15.0",
   "engines": {
@@ -32,6 +33,7 @@
     "@nx/vite": "19.8.14",
     "@nx/web": "19.8.14",
     "@nx/workspace": "19.8.14",
+    "@playwright/test": "^1.63.0",
     "@storybook/addon-essentials": "^8.2.9",
     "@storybook/addon-interactions": "^8.2.9",
     "@storybook/angular": "^8.2.9",
