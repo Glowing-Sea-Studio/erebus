@@ -61,7 +61,7 @@
 }
 
 .erb-number-input-stepper-btn:hover {
-  background: var(--erb-color-bg-canvas-surface-raised);
+  background: var(--erb-color-bg-surface-raised);
 }
 
 .erb-number-input-stepper-btn:disabled {

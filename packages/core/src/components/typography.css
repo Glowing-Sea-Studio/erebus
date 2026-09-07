@@ -21,7 +21,7 @@
   font-size: var(--erb-text-xs-font-size);
   padding: var(--erb-space-1) var(--erb-space-2);
   border-radius: var(--erb-radius-sm);
-  background-color: var(--erb-color-bg-canvas-surface-raised);
+  background-color: var(--erb-color-bg-surface-raised);
   border: 1px solid var(--erb-color-border-default);
   border-bottom-width: 2px;
   color: var(--erb-color-fg-muted);

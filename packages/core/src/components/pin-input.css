@@ -10,7 +10,7 @@
   border-radius: var(--erb-radius-md, 6px);
   font-size: var(--erb-font-size-lg, 18px);
   color: var(--erb-color-fg-default, var(--erb-color-fg-default));
-  background: var(--erb-color-bg-canvas-surface, var(--erb-color-bg-canvas-inverse));
+  background: var(--erb-color-bg-surface, var(--erb-color-bg-inverse));
   transition: border-color var(--erb-transition-fast, 0.2s);
 }
 .erb-pin-input__field:focus {
@@ -19,6 +19,6 @@
   box-shadow: 0 0 0 2px var(--erb-color-border-default-focus, var(--erb-color-border-default-focus));
 }
 .erb-pin-input__field:disabled {
-  background: var(--erb-color-bg-canvas-muted, var(--erb-color-bg-canvas-muted));
+  background: var(--erb-color-bg-muted, var(--erb-color-bg-muted));
   cursor: not-allowed;
 }

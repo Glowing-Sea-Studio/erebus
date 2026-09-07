@@ -1,10 +1,18 @@
 
 .erb-sidebar {
-  background-color: var(--erb-sidebar-bg, var(--erb-color-bg-canvas-canvas));
+  background-color: var(--erb-sidebar-bg, var(--erb-color-bg-canvas));
   color: var(--erb-sidebar-color, var(--erb-color-fg-default));
   display: flex;
   flex-direction: column;
   width: var(--erb-sidebar-width, 250px);
+}
+
+.erb-sidebar-overlay {
+  display: none;
+}
+
+.erb-sidebar-close {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -39,17 +47,7 @@
     opacity: 1;
     pointer-events: auto;
   }
-}
 
-.erb-sidebar-overlay {
-  display: none;
-}
-
-.erb-sidebar-close {
-  display: none;
-}
-
-@media (max-width: 768px) {
   .erb-sidebar-close {
     display: block;
     align-self: flex-end;

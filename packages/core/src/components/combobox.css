@@ -19,7 +19,7 @@
   font-family: var(--erb-font-sans);
   font-size: var(--erb-font-size-base);
   color: var(--erb-color-fg-default);
-  background-color: var(--erb-color-bg-canvas-canvas);
+  background-color: var(--erb-color-bg-canvas);
   transition: border-color var(--erb-transition-fast), box-shadow var(--erb-transition-fast);
 }
 
@@ -34,7 +34,7 @@
 }
 
 .erb-combobox-input:disabled {
-  background-color: var(--erb-color-bg-canvas-surface);
+  background-color: var(--erb-color-bg-surface);
   color: var(--erb-color-fg-muted);
   cursor: not-allowed;
 }
@@ -46,7 +46,7 @@
   right: 0;
   margin-top: var(--erb-spacing-1);
   padding: var(--erb-spacing-1) 0;
-  background-color: var(--erb-color-bg-canvas-canvas);
+  background-color: var(--erb-color-bg-canvas);
   border: 1px solid var(--erb-color-border-default);
   border-radius: var(--erb-radius-md);
   box-shadow: var(--erb-shadow-md);
@@ -70,7 +70,7 @@
 
 .erb-combobox-option:hover,
 .erb-combobox-option[aria-selected="true"] {
-  background-color: var(--erb-color-bg-canvas-surface);
+  background-color: var(--erb-color-bg-surface);
 }
 
 .erb-combobox-option[aria-selected="true"] {

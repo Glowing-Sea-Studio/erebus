@@ -16,7 +16,7 @@
   font-family: var(--erb-font-sans);
   font-size: var(--erb-font-size-base);
   color: var(--erb-color-fg-default);
-  background-color: var(--erb-color-bg-canvas-canvas);
+  background-color: var(--erb-color-bg-canvas);
   cursor: pointer;
   align-items: center;
 }
@@ -32,7 +32,7 @@
 }
 
 .erb-multi-select-trigger[aria-disabled="true"] {
-  background-color: var(--erb-color-bg-canvas-surface);
+  background-color: var(--erb-color-bg-surface);
   color: var(--erb-color-fg-muted);
   cursor: not-allowed;
 }
@@ -82,7 +82,7 @@
   right: 0;
   margin-top: var(--erb-spacing-1);
   padding: var(--erb-spacing-1) 0;
-  background-color: var(--erb-color-bg-canvas-canvas);
+  background-color: var(--erb-color-bg-canvas);
   border: 1px solid var(--erb-color-border-default);
   border-radius: var(--erb-radius-md);
   box-shadow: var(--erb-shadow-md);
@@ -109,7 +109,7 @@
 
 .erb-multi-select-option:hover,
 .erb-multi-select-option[data-focused="true"] {
-  background-color: var(--erb-color-bg-canvas-surface);
+  background-color: var(--erb-color-bg-surface);
 }
 
 .erb-multi-select-option[aria-selected="true"] {

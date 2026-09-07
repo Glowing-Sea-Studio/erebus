@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
     </div>
   `,
 })
-export class StatComponent {
+export class ErbStatComponent {
   className = input<string>('');
   label = input.required<string>();
   value = input.required<string | number>();

@@ -1,5 +1,5 @@
 
 .erb-mobile-nav {
-  background-color: var(--erb-mobile-nav-bg, var(--erb-color-bg-canvas-canvas));
+  background-color: var(--erb-mobile-nav-bg, var(--erb-color-bg-canvas));
   color: var(--erb-mobile-nav-color, var(--erb-color-fg-default));
 }

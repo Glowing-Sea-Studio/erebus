@@ -6,7 +6,7 @@
   text-align: center;
   padding: var(--erb-spacing-12) var(--erb-spacing-6);
   gap: var(--erb-spacing-6);
-  background-color: var(--erb-color-bg-canvas-surface);
+  background-color: var(--erb-color-bg-surface);
   color: var(--erb-color-fg-default);
 }
 

@@ -10,7 +10,7 @@
   flex-direction: column;
   gap: var(--erb-spacing-2);
   padding: var(--erb-spacing-4);
-  background-color: var(--erb-color-bg-canvas-surface);
+  background-color: var(--erb-color-bg-surface);
   border: 1px solid var(--erb-color-border-default);
   border-radius: var(--erb-radius-md);
 }

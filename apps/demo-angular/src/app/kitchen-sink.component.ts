@@ -10,7 +10,7 @@ import {
   ErbTabsComponent, ErbTabsListComponent, ErbTabDirective, ErbTabsPanelComponent,
   AccordionComponent, ErbModalOverlayComponent, ErbModalContentComponent, ErbModalHeaderComponent, ErbModalTitleComponent, ErbModalBodyComponent, ErbModalFooterComponent,
   CarouselComponent, FeatureGridComponent, TestimonialComponent, CTAComponent,
-  HeroComponent, FAQComponent, LogoCloudComponent, EmptyStateComponent, StatComponent, TimelineComponent, TimelineItemComponent, CodeComponent
+  HeroComponent, FAQComponent, LogoCloudComponent, EmptyStateComponent, ErbStatComponent, TimelineComponent, TimelineItemComponent, CodeComponent
 } from '@glowing-sea-studio/erebus-angular';
 
 @Component({
@@ -27,7 +27,7 @@ import {
     ErbTabsComponent, ErbTabsListComponent, ErbTabDirective, ErbTabsPanelComponent,
     AccordionComponent, ErbModalOverlayComponent, ErbModalContentComponent, ErbModalHeaderComponent, ErbModalTitleComponent, ErbModalBodyComponent, ErbModalFooterComponent,
     CarouselComponent, FeatureGridComponent, TestimonialComponent, CTAComponent,
-    HeroComponent, FAQComponent, LogoCloudComponent, EmptyStateComponent, StatComponent, TimelineComponent, TimelineItemComponent, CodeComponent
+    HeroComponent, FAQComponent, LogoCloudComponent, EmptyStateComponent, ErbStatComponent, TimelineComponent, TimelineItemComponent, CodeComponent
   ],
   template: `
     <div style="display: flex; flex-direction: column; gap: 2rem;">

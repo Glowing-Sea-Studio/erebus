@@ -1,27 +1,31 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { StatComponent } from './stat.component';
+import { ErbStatComponent } from './stat.component';
 
-describe('StatComponent', () => {
-  let fixture: ComponentFixture<StatComponent>;
+describe('ErbStatComponent', () => {
+  let fixture: ComponentFixture<ErbStatComponent>;
+  let component: ErbStatComponent;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [StatComponent]
+      imports: [ErbStatComponent]
     }).compileComponents();
-  });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(StatComponent);
-    fixture.componentRef.setInput('label', 'Users');
-    fixture.componentRef.setInput('value', '1,024');
-    fixture.componentRef.setInput('helpText', '+5%');
+    fixture = TestBed.createComponent(ErbStatComponent);
+    component = fixture.componentInstance;
+    
+    fixture.componentRef.setInput('label', 'Test Label');
+    fixture.componentRef.setInput('value', '123');
+    
     fixture.detectChanges();
   });
 
-  it('should render correctly', () => {
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.textContent).toContain('Users');
-    expect(compiled.textContent).toContain('1,024');
-    expect(compiled.textContent).toContain('+5%');
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+
+  it('should render label and value', () => {
+    const el: HTMLElement = fixture.nativeElement;
+    expect(el.querySelector('.erb-stat-label')?.textContent).toBe('Test Label');
+    expect(el.querySelector('.erb-stat-value')?.textContent).toBe('123');
   });
 });

@@ -4,7 +4,7 @@
   align-items: center;
   text-align: center;
   padding: var(--erb-spacing-12) var(--erb-spacing-6);
-  background-color: var(--erb-color-bg-canvas-surface);
+  background-color: var(--erb-color-bg-surface);
   border: 1px solid var(--erb-color-border-default);
   border-radius: var(--erb-radius-xl);
   margin: var(--erb-spacing-8) 0;

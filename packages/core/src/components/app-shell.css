@@ -1,6 +1,6 @@
 
 .erb-app-shell {
-  background-color: var(--erb-app-shell-bg, var(--erb-color-bg-canvas-canvas));
+  background-color: var(--erb-app-shell-bg, var(--erb-color-bg-canvas));
   color: var(--erb-app-shell-color, var(--erb-color-fg-default));
   font-family: var(--erb-font-sans, system-ui, sans-serif);
   display: grid;

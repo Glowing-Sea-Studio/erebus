@@ -33,7 +33,7 @@
   transform: translate(-50%, -50%);
   width: var(--erb-slider-thumb-size, 20px);
   height: var(--erb-slider-thumb-size, 20px);
-  background-color: var(--erb-slider-thumb-bg, var(--erb-color-bg-canvas-surface));
+  background-color: var(--erb-slider-thumb-bg, var(--erb-color-bg-surface));
   border: 2px solid var(--erb-slider-thumb-border, var(--erb-color-accent-bg));
   border-radius: 50%;
   box-shadow: var(--erb-slider-thumb-shadow, 0 1px 2px 0 var(--erb-shadow-sm));
