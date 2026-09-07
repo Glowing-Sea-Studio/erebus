@@ -1,14 +1,46 @@
 .erb-logocloud {
   display: flex;
   flex-direction: column;
-  padding: var(--erb-spacing-6, 1.5rem);
-  gap: var(--erb-spacing-4, 1rem);
-  background-color: var(--erb-color-bg-canvas-surface, var(--erb-color-bg-canvas-surface));
-  color: var(--erb-color-fg-default, var(--erb-color-fg-default));
+  align-items: center;
+  padding: var(--erb-spacing-12) var(--erb-spacing-6);
+  background-color: var(--erb-color-bg-canvas-default);
+  gap: var(--erb-spacing-8);
+}
+
+.erb-logocloud-title {
+  font-family: var(--erb-font-sans);
+  font-size: var(--erb-font-size-sm);
+  font-weight: var(--erb-font-weight-semibold);
+  color: var(--erb-color-fg-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-align: center;
+}
+
+.erb-logocloud-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--erb-spacing-8);
+}
+
+.erb-logocloud-logo {
+  max-height: 2.5rem;
+  opacity: 0.75;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.erb-logocloud-logo:hover {
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
   .erb-logocloud {
-    padding: var(--erb-spacing-8, 2rem);
+    padding: var(--erb-spacing-16) var(--erb-spacing-12);
+  }
+  .erb-logocloud-logos {
+    gap: var(--erb-spacing-12);
   }
 }

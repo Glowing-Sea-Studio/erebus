@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
+
+
   selector: 'erb-faq',
   standalone: true,
-  template: `<ng-content></ng-content>`,
-  host: {
-    class: 'erb-faq'
-  }
+  imports: [CommonModule],
+  template: `
+    <div class="erb-faq" [ngClass]="className()">
+      <ng-content></ng-content>
+    </div>
+  `,
 })
-export class FAQComponent {}
-
+export class FAQComponent {
+  className = input<string>('');
+}

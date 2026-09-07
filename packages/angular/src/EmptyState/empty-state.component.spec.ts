@@ -12,7 +12,7 @@ describe('EmptyStateComponent', () => {
 
     fixture = TestBed.createComponent(EmptyStateComponent);
     component = fixture.componentInstance;
-    component.title = 'Empty';
+    fixture.componentRef.setInput('title', 'Empty');
     fixture.detectChanges();
   });
 

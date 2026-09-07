@@ -1,14 +1,45 @@
 .erb-featuregrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--erb-spacing-8);
+  padding: var(--erb-spacing-12) var(--erb-spacing-6);
+  background-color: var(--erb-color-bg-canvas-default);
+}
+
+.erb-featuregrid-item {
   display: flex;
   flex-direction: column;
-  padding: var(--erb-spacing-6, 1.5rem);
-  gap: var(--erb-spacing-4, 1rem);
-  background-color: var(--erb-color-bg-canvas-surface, var(--erb-color-bg-canvas-surface));
-  color: var(--erb-color-fg-default, var(--erb-color-fg-default));
+  gap: var(--erb-spacing-3);
+  padding: var(--erb-spacing-6);
+  background-color: var(--erb-color-bg-canvas-surface);
+  border: 1px solid var(--erb-color-border-default);
+  border-radius: var(--erb-radius-lg);
+}
+
+.erb-featuregrid-title {
+  font-family: var(--erb-font-sans);
+  font-weight: var(--erb-font-weight-semibold);
+  font-size: var(--erb-font-size-lg);
+  color: var(--erb-color-fg-default);
+  margin: 0;
+}
+
+.erb-featuregrid-description {
+  font-family: var(--erb-font-sans);
+  font-size: var(--erb-font-size-base);
+  color: var(--erb-color-fg-muted);
+  margin: 0;
 }
 
 @media (min-width: 768px) {
   .erb-featuregrid {
-    padding: var(--erb-spacing-8, 2rem);
+    grid-template-columns: repeat(2, 1fr);
+    padding: var(--erb-spacing-16) var(--erb-spacing-12);
+  }
+}
+
+@media (min-width: 1024px) {
+  .erb-featuregrid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

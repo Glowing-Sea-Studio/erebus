@@ -1,14 +1,46 @@
 .erb-hero {
   display: flex;
   flex-direction: column;
-  padding: var(--erb-spacing-6, 1.5rem);
-  gap: var(--erb-spacing-4, 1rem);
-  background-color: var(--erb-color-bg-canvas-surface, var(--erb-color-bg-canvas-surface));
-  color: var(--erb-color-fg-default, var(--erb-color-fg-default));
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--erb-spacing-12) var(--erb-spacing-6);
+  gap: var(--erb-spacing-6);
+  background-color: var(--erb-color-bg-canvas-surface);
+  color: var(--erb-color-fg-default);
+}
+
+.erb-hero-title {
+  font-family: var(--erb-font-sans);
+  font-weight: var(--erb-font-weight-extrabold);
+  font-size: var(--erb-font-size-4xl);
+  line-height: var(--erb-line-height-tight);
+  margin: 0;
+}
+
+.erb-hero-subtitle {
+  font-family: var(--erb-font-sans);
+  font-size: var(--erb-font-size-xl);
+  color: var(--erb-color-fg-muted);
+  max-width: 48rem;
+  margin: 0;
+}
+
+.erb-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--erb-spacing-4);
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
   .erb-hero {
-    padding: var(--erb-spacing-8, 2rem);
+    padding: var(--erb-spacing-24) var(--erb-spacing-12);
+  }
+  .erb-hero-title {
+    font-size: var(--erb-font-size-6xl);
+  }
+  .erb-hero-subtitle {
+    font-size: var(--erb-font-size-2xl);
   }
 }

@@ -1,0 +1,31 @@
+.erb-faq {
+  display: flex;
+  flex-direction: column;
+  gap: var(--erb-spacing-4);
+  width: 100%;
+}
+
+.erb-faq-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--erb-spacing-2);
+  padding: var(--erb-spacing-4);
+  background-color: var(--erb-color-bg-canvas-surface);
+  border: 1px solid var(--erb-color-border-default);
+  border-radius: var(--erb-radius-md);
+}
+
+.erb-faq-question {
+  font-family: var(--erb-font-sans);
+  font-weight: var(--erb-font-weight-bold);
+  font-size: var(--erb-font-size-lg);
+  color: var(--erb-color-fg-default);
+  margin: 0;
+}
+
+.erb-faq-answer {
+  font-family: var(--erb-font-sans);
+  font-size: var(--erb-font-size-base);
+  color: var(--erb-color-fg-muted);
+  margin: 0;
+}

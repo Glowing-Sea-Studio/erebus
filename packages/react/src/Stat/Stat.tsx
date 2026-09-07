@@ -1,17 +1,24 @@
 import React from 'react';
-export interface StatProps extends React.HTMLAttributes<HTMLDivElement> {
-  label: React.ReactNode;
-  value: React.ReactNode;
-  helpText?: React.ReactNode;
+
+export interface StatProps {
+  className?: string;
+  label: string;
+  value: string | number;
+  helpText?: string;
 }
-export const Stat = React.forwardRef<HTMLDivElement, StatProps>((props, ref) => {
-  const { label, value, helpText, className = '', ...rest } = props;
+
+export const Stat: React.FC<StatProps> = ({
+  className = '',
+  label,
+  value,
+  helpText,
+  ...props
+}) => {
   return (
-    <div ref={ref} className={`erb-stat ${className}`.trim()} {...rest}>
-      <div className="erb-stat-label">{label}</div>
-      <div className="erb-stat-value">{value}</div>
-      {helpText && <div className="erb-stat-help-text">{helpText}</div>}
+    <div className={`erb-stat ${className}`} {...props}>
+      <p className="erb-stat-label">{label}</p>
+      <p className="erb-stat-value">{value}</p>
+      {helpText && <p className="erb-stat-help-text">{helpText}</p>}
     </div>
   );
-});
-Stat.displayName = 'Stat';
+};

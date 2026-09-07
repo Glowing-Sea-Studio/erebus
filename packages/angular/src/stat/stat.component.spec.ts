@@ -1,22 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ErbStatComponent } from './stat.component';
+import { StatComponent } from './stat.component';
 
-describe('ErbStatComponent', () => {
-  let component: ErbStatComponent;
-  let fixture: ComponentFixture<ErbStatComponent>;
+describe('StatComponent', () => {
+  let fixture: ComponentFixture<StatComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ErbStatComponent]
+      imports: [StatComponent]
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ErbStatComponent);
-    component = fixture.componentInstance;
-    component.label = 'Users';
-    component.value = '1,024';
-    component.helpText = '+5%';
+    fixture = TestBed.createComponent(StatComponent);
+    fixture.componentRef.setInput('label', 'Users');
+    fixture.componentRef.setInput('value', '1,024');
+    fixture.componentRef.setInput('helpText', '+5%');
     fixture.detectChanges();
   });
 
