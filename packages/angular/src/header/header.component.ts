@@ -22,7 +22,6 @@ import { AppShellService } from '../app-shell/app-shell.service';
         </svg>
       </button>
     }
-    <ng-content></ng-content>
   `,
   host: { class: 'erb-header' },
   

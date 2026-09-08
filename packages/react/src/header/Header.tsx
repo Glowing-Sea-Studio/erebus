@@ -14,6 +14,7 @@ export const Header = forwardRef<HTMLElement, HeaderProps>(
 
     return (
       <header ref={ref} className={cn('erb-header', className)} {...props}>
+        {children}
         {showHamburgerMenu && (
           <button
             type="button"
@@ -28,7 +29,6 @@ export const Header = forwardRef<HTMLElement, HeaderProps>(
             </svg>
           </button>
         )}
-        {children}
       </header>
     );
   }

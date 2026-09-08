@@ -14,6 +14,7 @@ export function DocsLayout() {
     <AppShell>
       <Header showHamburgerMenu={true}>
         <div className="docs-header-title">
+          <img src="/logo.svg" alt="Logo" className="docs-header-logo" />
           <span className="desktop-only">Erebus React Docs</span>
           <span className="mobile-only">Erebus React</span>
         </div>
@@ -49,7 +50,8 @@ export function DocsLayout() {
 
       <style>{`
         .docs-main { padding: 1rem; max-width: 1000px; margin: 0 auto; width: 100%; box-sizing: border-box; }
-        .docs-header-title { flex: 1; font-weight: bold; font-size: 1.125rem; color: var(--erb-color-neutral-fg); }
+        .docs-header-title { flex: 1; display: flex; align-items: center; gap: 0.75rem; font-weight: bold; font-size: 1.125rem; color: var(--erb-color-neutral-fg); }
+        .docs-header-logo { width: 32px; height: 32px; }
         .mobile-only { display: block; }
         .desktop-only { display: none !important; }
         @media (min-width: 769px) {

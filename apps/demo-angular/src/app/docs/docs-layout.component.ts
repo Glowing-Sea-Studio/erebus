@@ -21,6 +21,7 @@ import { CommonModule } from '@angular/common';
     <erb-app-shell>
       <erb-header [showHamburgerMenu]="true">
         <div class="docs-header-title">
+          <img src="/logo.svg" alt="Logo" class="docs-header-logo" />
           <span class="desktop-only">Erebus Angular Docs</span>
           <span class="mobile-only">Erebus Angular</span>
         </div>
@@ -69,9 +70,16 @@ import { CommonModule } from '@angular/common';
     }
     .docs-header-title {
       flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
       font-weight: bold;
       font-size: 1.125rem;
       color: var(--erb-color-neutral-fg);
+    }
+    .docs-header-logo {
+      width: 32px;
+      height: 32px;
     }
     .mobile-only {
       display: block;
