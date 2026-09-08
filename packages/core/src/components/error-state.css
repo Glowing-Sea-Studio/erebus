@@ -12,7 +12,7 @@
 .erb-error-state-title {
   font-size: var(--erb-font-size-lg);
   font-weight: var(--erb-font-weight-bold);
-  margin-bottom: var(--erb-spacing-2);
+  margin-block-end: var(--erb-spacing-2);
 }
 .erb-error-state-description {
   font-size: var(--erb-font-size-md);

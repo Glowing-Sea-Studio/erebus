@@ -182,36 +182,36 @@ import {
             <div style="display: flex; flex-direction: column; gap: 3rem;">
               <div>
                 <erb-heading [level]="4" style="margin-bottom: 0.5rem;">Hero</erb-heading>
-                <erb-hero>
-                  <div style="text-align: center; padding: 2rem;">
-                    <erb-heading [level]="1">Build faster with Erebus</erb-heading>
-                    <p erbText style="font-size: 1.25rem;">The ultimate design system for your next big project.</p>
-                    <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
-                      <button erbButton variant="solid" color="primary">Get Started</button>
-                      <button erbButton variant="outline">Documentation</button>
-                    </div>
-                  </div>
+                <erb-hero
+                  title="Build faster with Erebus"
+                  subtitle="The ultimate design system for your next big project."
+                  [primaryAction]="{ label: 'Get Started' }"
+                  [secondaryAction]="{ label: 'Documentation' }">
                 </erb-hero>
               </div>
 
               <div>
                 <erb-heading [level]="4" style="margin-bottom: 0.5rem;">LogoCloud</erb-heading>
-                <erb-logocloud>
-                  <div style="text-align: center; padding: 2rem;">
-                    <p erbText style="font-weight: bold; margin-bottom: 1rem;">Trusted by innovative teams worldwide</p>
-                    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-                      <img src="https://placehold.co/120x40?text=Logo+1" alt="Company 1" />
-                      <img src="https://placehold.co/120x40?text=Logo+2" alt="Company 2" />
-                      <img src="https://placehold.co/120x40?text=Logo+3" alt="Company 3" />
-                      <img src="https://placehold.co/120x40?text=Logo+4" alt="Company 4" />
-                    </div>
-                  </div>
+                <erb-logocloud
+                  title="Trusted by innovative teams worldwide"
+                  [logos]="[
+                    { src: 'https://via.placeholder.com/150x50?text=Logo+1', alt: 'Logo 1' },
+                    { src: 'https://via.placeholder.com/150x50?text=Logo+2', alt: 'Logo 2' },
+                    { src: 'https://via.placeholder.com/150x50?text=Logo+3', alt: 'Logo 3' },
+                    { src: 'https://via.placeholder.com/150x50?text=Logo+4', alt: 'Logo 4' }
+                  ]">
                 </erb-logocloud>
               </div>
 
               <div>
                 <erb-heading [level]="4" style="margin-bottom: 0.5rem;">FeatureGrid</erb-heading>
-                <erb-featuregrid></erb-featuregrid>
+                <erb-featuregrid
+                  [features]="[
+                    { title: 'Lightning Fast', description: 'Built on modern web standards for maximum performance.' },
+                    { title: 'Accessible', description: 'Fully compliant with WCAG 2.1 AA accessibility guidelines.' },
+                    { title: 'Customizable', description: 'Easily adapt the design system to match your brand identity.' }
+                  ]">
+                </erb-featuregrid>
               </div>
 
               <div>
@@ -226,31 +226,22 @@ import {
 
               <div>
                 <erb-heading [level]="4" style="margin-bottom: 0.5rem;">FAQ</erb-heading>
-                <erb-faq>
-                  <div style="display: flex; flex-direction: column; gap: 1rem;">
-                    <div>
-                      <erb-heading [level]="5">What is Erebus?</erb-heading>
-                      <p erbText>Erebus is a comprehensive design system.</p>
-                    </div>
-                    <div>
-                      <erb-heading [level]="5">Is it free?</erb-heading>
-                      <p erbText>Yes, it is open-source and free to use.</p>
-                    </div>
-                  </div>
+                <erb-faq
+                  [items]="[
+                    { question: 'What is Erebus?', answer: 'Erebus is a comprehensive design system for modern web applications.' },
+                    { question: 'Is it free to use?', answer: 'Yes, Erebus is completely open-source and free to use in your projects.' },
+                    { question: 'Does it support Angular and React?', answer: 'Absolutely! We provide first-class support for both frameworks.' }
+                  ]">
                 </erb-faq>
               </div>
 
               <div>
                 <erb-heading [level]="4" style="margin-bottom: 0.5rem;">CTA</erb-heading>
-                <erb-cta>
-                  <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <erb-heading [level]="3">Ready to dive in?</erb-heading>
-                    <p erbText style="margin-bottom: 1rem;">Start building your application today with Erebus.</p>
-                    <div style="display: flex; gap: 1rem;">
-                      <button erbButton variant="solid" color="primary">Get Started</button>
-                      <button erbButton variant="outline">Learn More</button>
-                    </div>
-                  </div>
+                <erb-cta
+                  title="Ready to dive in?"
+                  description="Start building your next masterpiece today with Erebus UI."
+                  [primaryAction]="{ label: 'Get Started' }"
+                  [secondaryAction]="{ label: 'Learn More' }">
                 </erb-cta>
               </div>
             </div>

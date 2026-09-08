@@ -12,6 +12,7 @@ describe('CTAComponent', () => {
 
   it('should create', () => {
     fixture = TestBed.createComponent(CTAComponent);
+    fixture.componentRef.setInput('title', 'Test Title');
     fixture.detectChanges();
     expect(fixture.componentInstance).toBeTruthy();
   });

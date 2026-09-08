@@ -71,11 +71,11 @@
   color: var(--erb-color-fg-muted);
   line-height: 1.6;
 }
-.erb-prose p { margin-bottom: 1em; }
+.erb-prose p { margin-block-end: 1em; }
 .erb-prose h1, .erb-prose h2, .erb-prose h3 {
   color: var(--erb-color-neutral-fg);
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
+  margin-block-start: 1.5em;
+  margin-block-end: 0.5em;
 }
 .erb-prose a { color: var(--erb-color-accent-fg); text-decoration: underline; }
-.erb-prose ul, .erb-prose ol { padding-inline-start: 1.5em; margin-bottom: 1em; }
+.erb-prose ul, .erb-prose ol { padding-inline-start: 1.5em; margin-block-end: 1em; }

@@ -7,8 +7,8 @@
 
 .erb-alert-dialog-content {
   position: fixed;
-  left: 50%;
-  top: 50%;
+  inset-inline-start: 50%;
+  inset-block-start: 50%;
   z-index: 50;
   display: grid;
   width: 100%;

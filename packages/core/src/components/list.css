@@ -1,5 +1,5 @@
 .erb-list {
-  padding-left: var(--erb-spacing-4, 1rem);
+  padding-inline-start: var(--erb-spacing-4, 1rem);
   margin: var(--erb-spacing-0, 0);
   color: var(--erb-color-fg-default, var(--erb-color-fg-default));
   font-family: var(--erb-typography-font-family-base, sans-serif);
@@ -14,5 +14,5 @@
 }
 
 .erb-list-item {
-  margin-bottom: var(--erb-spacing-1, 0.25rem);
+  margin-block-end: var(--erb-spacing-1, 0.25rem);
 }

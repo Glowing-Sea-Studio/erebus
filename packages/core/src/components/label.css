@@ -4,7 +4,7 @@
   font-size: var(--erb-label-font-size, var(--erb-typography-font-size-sm));
   font-weight: var(--erb-label-font-weight, var(--erb-typography-font-weight-medium));
   color: var(--erb-label-color, var(--erb-color-fg-default));
-  margin-bottom: var(--erb-label-margin-bottom, var(--erb-spacing-1));
+  margin-block-end: var(--erb-label-margin-bottom, var(--erb-spacing-1));
   line-height: var(--erb-typography-line-height-normal);
 }
 .erb-label--disabled {
@@ -14,5 +14,5 @@
 .erb-label--required::after {
   content: "*";
   color: var(--erb-label-required-color, var(--erb-color-danger-bg));
-  margin-left: var(--erb-spacing-1);
+  margin-inline-start: var(--erb-spacing-1);
 }

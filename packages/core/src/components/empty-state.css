@@ -29,5 +29,5 @@
 }
 
 .erb-empty-state-action {
-  margin-top: var(--erb-spacing-2);
+  margin-block-start: var(--erb-spacing-2);
 }
