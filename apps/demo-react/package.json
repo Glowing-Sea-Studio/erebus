@@ -9,17 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@glowing-sea-studio/erebus-react": "workspace:*",
     "@glowing-sea-studio/erebus-core": "workspace:*",
+    "@glowing-sea-studio/erebus-react": "workspace:*",
+    "@glowing-sea-studio/erebus-tokens": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@glowing-sea-studio/erebus-tokens": "workspace:*"
+    "react-router-dom": "^7.18.3"
   },
   "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
     "typescript": "^5.2.2",
-    "vite": "^5.2.0",
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22"
+    "vite": "^5.2.0"
   }
 }

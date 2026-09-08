@@ -9,7 +9,7 @@ import {
   Breadcrumb,
   Progress, Slider, Modal, ModalContent, ModalHeader, ModalTitle, ModalBody, ModalFooter, ModalOverlay,
   FeatureGrid, Testimonial, CTA, Carousel,
-  Hero, FAQ, LogoCloud, EmptyState, Stat, Timeline, Code
+  Hero, FAQ, LogoCloud, EmptyState, Stat, Timeline
 } from '@glowing-sea-studio/erebus-react';
 
 export function KitchenSink() {
@@ -45,7 +45,7 @@ export function KitchenSink() {
           <Switch id="sw1" label="Toggle switch" defaultChecked />
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
             <Text>Slider</Text>
-            <div style={{ flex: 1 }}><Slider defaultValue={[50]} max={100} step={1} /></div>
+            <div style={{ flex: 1 }}><Slider defaultValue={50} max={100} step={1} /></div>
           </div>
         </div>
       </section>
@@ -65,9 +65,9 @@ export function KitchenSink() {
               <Skeleton style={{ height: '20px', width: '80%' }} />
             </div>
             <AvatarGroup>
-              <Avatar src="https://i.pravatar.cc/150?u=1" alt="User 1" />
-              <Avatar src="https://i.pravatar.cc/150?u=2" alt="User 2" />
-              <Avatar src="https://i.pravatar.cc/150?u=3" alt="User 3" />
+              <Avatar src="https://i.pravatar.cc/150?u=1" name="User 1" />
+              <Avatar src="https://i.pravatar.cc/150?u=2" name="User 2" />
+              <Avatar src="https://i.pravatar.cc/150?u=3" name="User 3" />
             </AvatarGroup>
           </div>
 
