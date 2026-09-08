@@ -1,47 +1,26 @@
 import { test, expect } from '@playwright/test';
 
-// React Routes
-const REACT_ROUTES = [
-  '/',
-  '/button',
-  '/forms',
-  '/feedback-display',
-  '/layout-navigation',
-  '/advanced-components'
-];
-
-// Angular Routes
-const ANGULAR_ROUTES = [
-  '/',
-  '/button',
-  '/forms',
-  '/feedback-display',
-  '/layout-navigation',
-  '/advanced-components'
-];
+const REACT_ROUTES = ['/', '/button', '/forms', '/feedback-display', '/layout-navigation', '/advanced-components'];
+const ANGULAR_ROUTES = ['/', '/button', '/forms', '/feedback-display', '/layout-navigation', '/advanced-components'];
 
 test.describe('React Demo Visual Tests', () => {
   for (const route of REACT_ROUTES) {
-    test(`React - ${route || '/'}`, async ({ page }) => {
+    test(`React - ${route || '/'}`, async ({ page }, testInfo) => {
       await page.goto(`http://localhost:4200${route}`);
-      // Wait for page to be stable
       await page.waitForLoadState('networkidle');
-      // Take screenshot
       const safeRouteName = route === '/' ? 'index' : route.replace(/\//g, '-');
-      await page.screenshot({ path: `tests/snapshots/react-${safeRouteName}.png`, fullPage: true });
+      await page.screenshot({ path: `apps/e2e/tests/snapshots/react-${safeRouteName}-${testInfo.project.name}.png`, fullPage: true });
     });
   }
 });
 
 test.describe('Angular Demo Visual Tests', () => {
   for (const route of ANGULAR_ROUTES) {
-    test(`Angular - ${route || '/'}`, async ({ page }) => {
+    test(`Angular - ${route || '/'}`, async ({ page }, testInfo) => {
       await page.goto(`http://localhost:4201${route}`);
-      // Wait for page to be stable
       await page.waitForLoadState('networkidle');
-      // Take screenshot
       const safeRouteName = route === '/' ? 'index' : route.replace(/\//g, '-');
-      await page.screenshot({ path: `tests/snapshots/angular-${safeRouteName}.png`, fullPage: true });
+      await page.screenshot({ path: `apps/e2e/tests/snapshots/angular-${safeRouteName}-${testInfo.project.name}.png`, fullPage: true });
     });
   }
 });
