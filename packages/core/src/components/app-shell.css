@@ -35,7 +35,7 @@
 
 .erb-app-shell erb-sidebar > .erb-sidebar {
   grid-area: sidebar;
-  display: contents; /* If erb-sidebar uses display: contents, the child needs grid-area */
+  
 }
 
 /* On desktop, the wrapper component uses display: contents, so apply grid-area to the inner element directly */

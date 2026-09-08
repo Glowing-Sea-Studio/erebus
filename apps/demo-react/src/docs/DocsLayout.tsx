@@ -20,12 +20,12 @@ export function DocsLayout() {
         </nav>
       </Header>
 
-      <Sidebar style={{ padding: '1rem', gap: '1rem' }}>
-        <div style={{ fontWeight: 'bold', color: 'var(--erb-color-neutral-fg)' }}>Components</div>
+      <Sidebar style={{ padding: '1rem', gap: '0.25rem' }}>
+        <h3 style={{ fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--erb-color-fg-muted)', fontWeight: 600, margin: '0.5rem 0', padding: '0 0.5rem' }}>Components</h3>
         <NavLink 
           to="/" 
           end
-          style={({isActive}) => ({ color: isActive ? 'var(--erb-color-primary-base)' : 'var(--erb-color-fg-muted)', textDecoration: 'none', display: 'block', marginBottom: '0.5rem', fontWeight: isActive ? 'bold' : 'normal' })}
+          style={({isActive}) => ({ color: isActive ? 'var(--erb-color-primary-base)' : 'var(--erb-color-fg-muted)', textDecoration: 'none', display: 'block', marginBottom: '0.25rem', padding: '0.5rem', borderRadius: '6px', backgroundColor: isActive ? 'var(--erb-color-bg-subtle)' : 'transparent', fontWeight: isActive ? '600' : '400' })}
         >
           Overview
         </NavLink>
