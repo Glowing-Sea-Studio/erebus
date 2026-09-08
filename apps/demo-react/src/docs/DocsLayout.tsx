@@ -4,6 +4,9 @@ import { Outlet, NavLink } from 'react-router-dom';
 const COMPONENT_ROUTES = [
   { path: '/button', name: 'Button' },
   { path: '/forms', name: 'Forms' },
+  { path: '/feedback-display', name: 'Feedback & Display' },
+  { path: '/layout-navigation', name: 'Layout & Navigation' },
+  { path: '/advanced-components', name: 'Advanced Components' },
 ];
 
 export function DocsLayout() {

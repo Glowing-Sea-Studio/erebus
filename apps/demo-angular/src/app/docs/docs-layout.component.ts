@@ -32,6 +32,9 @@ import { CommonModule } from '@angular/common';
         <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" style="text-decoration: none; display: block; margin-bottom: 0.5rem;" [ngStyle]="{'color': isActive('/') ? 'var(--erb-color-primary-base)' : 'var(--erb-color-fg-muted)'}">Overview</a>
         <a routerLink="/button" routerLinkActive="active-link" style="text-decoration: none; display: block; margin-bottom: 0.5rem;" [ngStyle]="{'color': isActive('/button') ? 'var(--erb-color-primary-base)' : 'var(--erb-color-fg-muted)'}">Button</a>
         <a routerLink="/forms" routerLinkActive="active-link" style="text-decoration: none; display: block; margin-bottom: 0.5rem;" [ngStyle]="{'color': isActive('/forms') ? 'var(--erb-color-primary-base)' : 'var(--erb-color-fg-muted)'}">Forms</a>
+        <a routerLink="/feedback-display" routerLinkActive="active-link" style="text-decoration: none; display: block; margin-bottom: 0.5rem;" [ngStyle]="{'color': isActive('/feedback-display') ? 'var(--erb-color-primary-base)' : 'var(--erb-color-fg-muted)'}">Feedback & Display</a>
+        <a routerLink="/layout-navigation" routerLinkActive="active-link" style="text-decoration: none; display: block; margin-bottom: 0.5rem;" [ngStyle]="{'color': isActive('/layout-navigation') ? 'var(--erb-color-primary-base)' : 'var(--erb-color-fg-muted)'}">Layout & Navigation</a>
+        <a routerLink="/advanced-components" routerLinkActive="active-link" style="text-decoration: none; display: block; margin-bottom: 0.5rem;" [ngStyle]="{'color': isActive('/advanced-components') ? 'var(--erb-color-primary-base)' : 'var(--erb-color-fg-muted)'}">Advanced Components</a>
       </erb-sidebar>
 
       <main style="padding: 3rem; max-width: 1000px; margin: 0 auto; width: 100%;">
