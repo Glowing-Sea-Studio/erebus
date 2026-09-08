@@ -18,8 +18,8 @@
 @media (max-width: 768px) {
   .erb-sidebar {
     position: fixed;
-    top: 0;
-    bottom: 0;
+    inset-block-start: 0;
+    inset-block-end: 0;
     inset-inline-start: 0;
     z-index: var(--erb-z-overlay, 100);
     width: 250px;

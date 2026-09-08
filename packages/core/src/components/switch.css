@@ -29,7 +29,7 @@
 .erb-switch::before {
   content: "";
   position: absolute;
-  top: 50%;
+  inset-block-start: 50%;
   transform: translateY(-50%);
   inset-inline-start: 2px;
   background-color: var(--erb-switch-thumb-bg);

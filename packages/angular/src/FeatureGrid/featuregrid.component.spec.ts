@@ -12,6 +12,7 @@ describe('FeatureGridComponent', () => {
 
   it('should create', () => {
     fixture = TestBed.createComponent(FeatureGridComponent);
+    fixture.componentRef.setInput('features', []);
     fixture.detectChanges();
     expect(fixture.componentInstance).toBeTruthy();
   });
