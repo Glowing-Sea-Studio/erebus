@@ -7,6 +7,7 @@ import { AppShellService } from '../app-shell/app-shell.service';
   standalone: true,
   imports: [CommonModule],
   template: `
+    <ng-content></ng-content>
     @if (showHamburgerMenu()) {
       <button
         type="button"

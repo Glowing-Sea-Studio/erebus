@@ -13,14 +13,21 @@ export function DocsLayout() {
   return (
     <AppShell>
       <Header showHamburgerMenu={true}>
-        <div style={{ flex: 1, fontWeight: 'bold', fontSize: '1.5rem', color: 'var(--erb-color-neutral-fg)' }}>Erebus React Docs</div>
-        <nav>
+        <div className="docs-header-title">
+          <span className="desktop-only">Erebus React Docs</span>
+          <span className="mobile-only">Erebus React</span>
+        </div>
+        <nav className="desktop-only" style={{ display: 'flex' }}>
           <a href="#" style={{ color: 'var(--erb-color-fg-muted)', textDecoration: 'none', marginRight: '1rem' }}>Docs</a>
           <a href="#" style={{ color: 'var(--erb-color-fg-muted)', textDecoration: 'none' }}>GitHub</a>
         </nav>
       </Header>
 
       <Sidebar style={{ padding: '1rem', gap: '0.25rem' }}>
+        <div className="mobile-only" style={{ marginBottom: '1rem', paddingBottom: '1rem', borderBottom: '1px solid var(--erb-color-border-default)' }}>
+          <a href="#" style={{ textDecoration: 'none', display: 'block', marginBottom: '0.5rem', padding: '0.5rem', color: 'var(--erb-color-fg-muted)' }}>Docs</a>
+          <a href="#" style={{ textDecoration: 'none', display: 'block', padding: '0.5rem', color: 'var(--erb-color-fg-muted)' }}>GitHub</a>
+        </div>
         <h3 style={{ fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--erb-color-fg-muted)', fontWeight: 600, margin: '0.5rem 0', padding: '0 0.5rem' }}>Components</h3>
         <NavLink 
           to="/" 
@@ -40,7 +47,20 @@ export function DocsLayout() {
         ))}
       </Sidebar>
 
-      <main style={{ padding: '3rem', maxWidth: '1000px', margin: '0 auto', width: '100%', boxSizing: 'border-box' }}>
+      <style>{`
+        .docs-main { padding: 1rem; max-width: 1000px; margin: 0 auto; width: 100%; box-sizing: border-box; }
+        .docs-header-title { flex: 1; font-weight: bold; font-size: 1.125rem; color: var(--erb-color-neutral-fg); }
+        .mobile-only { display: block; }
+        .desktop-only { display: none !important; }
+        @media (min-width: 769px) {
+          .docs-main { padding: 3rem; }
+          .docs-header-title { font-size: 1.5rem; }
+          .mobile-only { display: none !important; }
+          .desktop-only { display: block !important; }
+          nav.desktop-only { display: flex !important; }
+        }
+      `}</style>
+      <main className="docs-main">
         <Outlet />
       </main>
 
