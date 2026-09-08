@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { HeroComponent } from './hero.component';
+import { FAQComponent } from './FAQ.component';
 
-describe('HeroComponent', () => {
-  let fixture: ComponentFixture<HeroComponent>;
+describe('FAQComponent', () => {
+  let fixture: ComponentFixture<FAQComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HeroComponent]
+      imports: [FAQComponent]
     }).compileComponents();
   });
 
   it('should create', () => {
-    fixture = TestBed.createComponent(HeroComponent);
-    fixture.componentRef.setInput('title', 'Test Title');
+    fixture = TestBed.createComponent(FAQComponent);
+    fixture.componentRef.setInput('items', []);
     fixture.detectChanges();
     expect(fixture.componentInstance).toBeTruthy();
   });

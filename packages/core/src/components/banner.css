@@ -5,7 +5,7 @@
   background-color: var(--erb-color-accent-bg-subtle);
   color: var(--erb-color-accent-bg-active);
   border-radius: var(--erb-radius-md);
-  margin-bottom: var(--erb-spacing-4);
+  margin-block-end: var(--erb-spacing-4);
 }
 .erb-banner--success { background-color: var(--erb-color-success-bg-bg-subtle); color: var(--erb-color-success-bg-fg-on-bg); }
 .erb-banner--warning { background-color: var(--erb-color-warning-bg-subtle); color: var(--erb-color-warning-fg-on-bg); }

@@ -1,7 +1,7 @@
 .erb-lightbox {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset-block-start: 0;
+  inset-inline-start: 0;
   width: 100vw;
   height: 100vh;
   background-color: var(--erb-color-bg-overlay, var(--erb-color-bg-overlay));
@@ -25,8 +25,8 @@
 
 .erb-lightbox-close {
   position: absolute;
-  top: var(--erb-spacing-2, 8px);
-  right: var(--erb-spacing-2, 8px);
+  inset-block-start: var(--erb-spacing-2, 8px);
+  inset-inline-end: var(--erb-spacing-2, 8px);
   background: var(--erb-color-bg-surface-raised, var(--erb-color-fg-default));
   color: var(--erb-color-fg-default, var(--erb-color-bg-inverse));
   border: none;

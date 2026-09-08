@@ -12,19 +12,19 @@
   flex-direction: column;
   background-color: var(--erb-color-bg-surface, var(--erb-color-bg-surface));
   box-shadow: var(--erb-shadow-lg, 0 10px 15px -3px var(--erb-shadow-lg));
-  top: 0;
-  right: 0;
-  bottom: 0;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  inset-block-end: 0;
   width: 100%;
   max-width: 24rem;
-  border-left: 1px solid var(--erb-color-border-default, var(--erb-color-border-default));
+  border-inline-start: 1px solid var(--erb-color-border-default, var(--erb-color-border-default));
 }
 
 .erb-drawer-header {
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  border-bottom: 1px solid var(--erb-color-border-default, var(--erb-color-border-default));
+  border-block-end: 1px solid var(--erb-color-border-default, var(--erb-color-border-default));
 }
 
 .erb-drawer-title {
@@ -38,7 +38,7 @@
   font-size: var(--erb-font-size-sm, 0.875rem);
   color: var(--erb-color-fg-muted, var(--erb-color-fg-muted));
   margin: 0;
-  margin-top: 0.25rem;
+  margin-block-start: 0.25rem;
 }
 
 .erb-drawer-body {
@@ -53,6 +53,6 @@
   display: flex;
   justify-content: flex-end;
   padding: 1.5rem;
-  border-top: 1px solid var(--erb-color-border-default, var(--erb-color-border-default));
+  border-block-start: 1px solid var(--erb-color-border-default, var(--erb-color-border-default));
   gap: 0.5rem;
 }

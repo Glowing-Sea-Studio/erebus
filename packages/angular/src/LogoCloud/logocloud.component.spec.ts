@@ -12,6 +12,7 @@ describe('LogoCloudComponent', () => {
 
   it('should create', () => {
     fixture = TestBed.createComponent(LogoCloudComponent);
+    fixture.componentRef.setInput('logos', []);
     fixture.detectChanges();
     expect(fixture.componentInstance).toBeTruthy();
   });
