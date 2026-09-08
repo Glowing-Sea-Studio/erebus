@@ -16,7 +16,7 @@ export function ComponentPreview({ title, description, children, code }: Compone
       
       <div style={{ border: '1px solid var(--erb-color-border-default)', borderRadius: '8px', overflow: 'hidden' }}>
         <Tabs defaultValue="preview">
-          <div style={{ borderBottom: '1px solid var(--erb-color-border-default)', padding: '0 1rem', backgroundColor: 'var(--erb-color-bg-subtle)' }}>
+          <div style={{ padding: '0 1rem', backgroundColor: 'var(--erb-color-bg-subtle)' }}>
             <TabsList>
               <Tab value="preview">Preview</Tab>
               <Tab value="code">Code (TSX)</Tab>

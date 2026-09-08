@@ -37,7 +37,7 @@ import { CommonModule } from '@angular/common';
         <a routerLink="/advanced-components" routerLinkActive="active-link" style="text-decoration: none; display: block; margin-bottom: 0.5rem;" [ngStyle]="{'color': isActive('/advanced-components') ? 'var(--erb-color-primary-base)' : 'var(--erb-color-fg-muted)'}">Advanced Components</a>
       </erb-sidebar>
 
-      <main style="padding: 3rem; max-width: 1000px; margin: 0 auto; width: 100%;">
+      <main style="padding: 3rem; max-width: 1000px; margin: 0 auto; width: 100%; box-sizing: border-box;">
         <router-outlet></router-outlet>
       </main>
 

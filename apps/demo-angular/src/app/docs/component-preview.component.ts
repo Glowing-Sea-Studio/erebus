@@ -19,7 +19,7 @@ import { ErbTabsComponent, ErbTabDirective, ErbTabsListComponent, ErbTabsPanelCo
       
       <div style="border: 1px solid var(--erb-color-border-default); border-radius: 8px; overflow: hidden;">
         <erb-tabs defaultValue="preview">
-          <div style="border-bottom: 1px solid var(--erb-color-border-default); padding: 0 1rem; background-color: var(--erb-color-bg-subtle);">
+          <div style="/* removed border */; padding: 0 1rem; background-color: var(--erb-color-bg-subtle);">
             <erb-tabs-list>
               <button erbTab value="preview">Preview</button>
               <button erbTab value="ts">Code (TS)</button>

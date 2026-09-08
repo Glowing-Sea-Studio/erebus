@@ -1,5 +1,4 @@
-
-import { Component} from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { AppShellService } from './app-shell.service';
 
 @Component({
@@ -7,7 +6,7 @@ import { AppShellService } from './app-shell.service';
   template: `<div class="erb-app-shell"><ng-content></ng-content></div>`,
   styleUrls: ['../../../../packages/core/src/components/app-shell.css'],
   standalone: true,
-
+  encapsulation: ViewEncapsulation.None,
   providers: [AppShellService]
 })
 export class AppShellComponent {

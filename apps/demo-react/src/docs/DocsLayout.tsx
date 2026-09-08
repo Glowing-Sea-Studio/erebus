@@ -25,7 +25,7 @@ export function DocsLayout() {
         <NavLink 
           to="/" 
           end
-          style={({isActive}) => ({ color: isActive ? 'var(--erb-color-primary-base)' : 'var(--erb-color-fg-muted)', textDecoration: 'none' })}
+          style={({isActive}) => ({ color: isActive ? 'var(--erb-color-primary-base)' : 'var(--erb-color-fg-muted)', textDecoration: 'none', display: 'block', marginBottom: '0.5rem', fontWeight: isActive ? 'bold' : 'normal' })}
         >
           Overview
         </NavLink>
@@ -33,14 +33,14 @@ export function DocsLayout() {
           <NavLink 
             key={route.path}
             to={route.path} 
-            style={({isActive}) => ({ color: isActive ? 'var(--erb-color-primary-base)' : 'var(--erb-color-fg-muted)', textDecoration: 'none' })}
+            style={({isActive}) => ({ color: isActive ? 'var(--erb-color-primary-base)' : 'var(--erb-color-fg-muted)', textDecoration: 'none', display: 'block', marginBottom: '0.5rem', fontWeight: isActive ? 'bold' : 'normal' })}
           >
             {route.name}
           </NavLink>
         ))}
       </Sidebar>
 
-      <main style={{ padding: '3rem', maxWidth: '1000px', margin: '0 auto', width: '100%' }}>
+      <main style={{ padding: '3rem', maxWidth: '1000px', margin: '0 auto', width: '100%', boxSizing: 'border-box' }}>
         <Outlet />
       </main>
 
