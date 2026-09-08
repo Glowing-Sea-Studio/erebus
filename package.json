@@ -11,7 +11,7 @@
     "typecheck": "nx run-many -t typecheck",
     "release": "pnpm build && changeset publish",
     "tokens:build": "nx run @glowing-sea-studio/erebus-tokens:build",
-    "e2e": "playwright test --config=apps/e2e/playwright.config.ts"
+    "e2e": "playwright test --config=apps/e2e/playwright.config.ts && echo \"\n📸 All screenshots have been successfully generated in the ./e2e-screenshots/ directory at the root of the project.\n\""
   },
   "packageManager": "pnpm@9.15.0",
   "engines": {

@@ -9,7 +9,7 @@ test.describe('React Demo Visual Tests', () => {
       await page.goto(`http://localhost:4200${route}`);
       await page.waitForLoadState('networkidle');
       const safeRouteName = route === '/' ? 'index' : route.replace(/\//g, '-');
-      await page.screenshot({ path: `apps/e2e/tests/snapshots/react-${safeRouteName}-${testInfo.project.name}.png`, fullPage: true });
+      await page.screenshot({ path: `e2e-screenshots/react-${safeRouteName}-${testInfo.project.name}.png`, fullPage: true });
     });
   }
 });
@@ -20,7 +20,7 @@ test.describe('Angular Demo Visual Tests', () => {
       await page.goto(`http://localhost:4201${route}`);
       await page.waitForLoadState('networkidle');
       const safeRouteName = route === '/' ? 'index' : route.replace(/\//g, '-');
-      await page.screenshot({ path: `apps/e2e/tests/snapshots/angular-${safeRouteName}-${testInfo.project.name}.png`, fullPage: true });
+      await page.screenshot({ path: `e2e-screenshots/angular-${safeRouteName}-${testInfo.project.name}.png`, fullPage: true });
     });
   }
 });
